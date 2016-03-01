@@ -1,0 +1,316 @@
+### 1.用户登录
+####  App向服务器发送用户账号和密码,服务器返回登录成功或者登陆失败，如果是登陆成功，在header中包含token信息。
+url: http://website/user/user!login
+method: post
+Request:    
+* with headers{
+	client:"F9FQXGP8FCM5",#客户端标识	
+}
+* with parameters{
+    	 "userVO.userName”:’13800000000’, #用户名，一般是手机号
+    	“userVO.password”:”bae5e3208a3c70e3db642b6631e95b9”#登录密码，加密后的密码
+}
+Response:
+*headers{
+    	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+*data{
+  	"success": true,#是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “登录成功”,#提示信息
+  	"data": {
+     	“userVO”: {
+                	“userId”:112231,#用户ID
+                	“sex”:”1”, #性别 1男 2女
+                	“age”:”28”,#年龄
+                	“phoneNumber”:”1362222222”,#电话号码
+                	“country”:”001”,#国家
+                	“province”:”44”,#省份
+                	“city”:”4103”,#城市
+                	“district”:”440304”,#区县
+                	“street”:” 福华一路10001号”,#街道
+                	“company”:”汇梦互联网有限公司”,#所在公司
+                	“occupation”:” 互联网/电子商务”,#行业
+                	“role”:” 高级软件工程师”,#职务
+                	“degrees”:” 本科”,#学历
+                	“school”:” 深圳大学”,#毕业院校
+                	“nickName”:” 彪彪小王子”, #昵称
+                	“userPhoto”:”http://website/upload/images/userPhoto/10176_avatar.jpg”, #用户头像
+                	“signature”:”这里是个性签名”#个性签名
+            } 
+    }
+}
+
+
+
+### 2.读取用户信息
+####  App像服务器发送userId,服务器反会成功或者失败，如果成功，返回查询用户的详细信息
+url: http://website/user/user!readUser
+method: post
+Request:
+* with headers{
+	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+Response:
+*headers{
+    	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+*data{
+  	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “获取用户信息成功”,#提示信息
+  	"data": {
+		“userVO”: {
+	  		“userId”:112322, #用户ID
+    			“sex”:”1”, #性别 1男 2女
+			“age”:”28”,#年龄
+			“phoneNumber”:”1362222222”,#电话号码
+			“country”:”001”,#国家
+			“province”:”44”,#省份
+			“city”:”4103”,#城市
+			“district”:”440304”,#区县
+			“street”:” 福华一路10001号”,#街道
+			“company”:”汇梦互联网有限公司”,#所在公司
+			“occupation”:” 互联网/电子商务”,#行业
+			“role”:” 高级软件工程师”,#职务
+			“degrees”:” 本科”,#学历
+			“school”:” 深圳大学”,#毕业院校
+			“nickName”:” 彪彪小王子”, #昵称
+	   		“userPhoto”:” http://website/upload/images/userPhoto/10176_avatar.jpg”, #用户头像
+			“signature”:”这里是个性签名”#个性签名
+		} 
+  	}
+}
+
+
+
+### 3.修改用户信息
+####   修改用户的基本信息，返回成功或者失败。参数中只有token是必选的，其他参数，如果传递了值才表示修改，未传递值得，表示不变。
+url: http://website/user/user!updateUser
+method: post
+Request:
+* with headers{
+	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+* with parameters{
+	“userVO.userId”:” 12323”,#用户ID
+	“userVO.sex”:”1”, #性别 1男 2女 
+	“userExtendVO.age”:”28”,#年龄
+	“userExtendVO.phoneNumber”:”1362222222”,#电话号码
+	“userExtendVO.country”:”001”,#国家
+	“userExtendVO.province”:”44”,#省份
+	“userExtendVO.city”:”4103”,#城市
+	“userExtendVO.district”:”440304”,#区县
+	“userExtendVO.street”:” 福华一路10001号”,#街道
+	“userExtendVO.company”:”汇梦互联网有限公司”,#所在公司
+	“userExtendVO.occupation”:” 互联网/电子商务”,#行业
+	“userExtendVO.role”:” 高级软件工程师”,#职务
+	“userExtendVO.degrees”:” 本科”,#学历
+	“userExtendVO.school”:” 深圳大学”,#毕业院校
+	“userExtendVO.nickName”:” 彪彪小王子”,#昵称
+	“userExtendVO.signature”:”这里是个性签名”#个性签名
+}
+Response:
+*headers{
+    	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+*data{
+  	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “修改用户信息成功”,#提示信息
+}
+
+
+
+### 4.上传用户头像
+####   用户修改头像时上传用户头像，服务器返回成功或者失败
+url: http://website/user/user!uploadPhoto
+method: post
+Request:
+* with headers{
+	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+* with parameters
+File userPhoto;#上传的头像只能是jpg、jpeg、bmp、png格式,不能大于3M
+Response:
+*headers{
+    	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+*data{
+  	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “上传用户头像成功”,#提示信息
+}
+
+
+
+### 5.修改用户密码
+####   登陆状态下修改密码，输入旧密码，新密码，后进行密码重置。密码是加密后的密码。重置密码成功后，后台会注销登陆信息，app需要重新登陆。
+url: http://website/user/user!updatePassword
+method: post
+Request:
+* with headers{
+	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+* with parameters{
+	“oldPassword”:”39c4e285c0377afd56fc495c2d663e”,#用户登录时取得的token值 
+	“userVO.password”:” 39c4e285c0377afd56fc495c2d6621”#用户设置的新密码
+}
+Response:
+*headers{
+    	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+*data{
+  	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “用户密码修改成功”,#提示信息
+}
+
+
+
+### 6.获取重置密码验证码
+####   未登陆状态下，重置密码时，先通过注册的手机获取验证码。
+url: http://website/user/user!sendValidateCodeByRetreve
+method: post
+Request:
+* with headers{
+    	client:"F9FQXGP8FCM5",#客户端标识
+}
+* with parameters{
+	“userVO.userMobile”:” 13512345678”#用户要重置密码的手机号
+}
+Response:{
+  	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “重置密码的验证码已发送到指定手机”,#提示信息
+}
+
+
+
+### 7.重置用户登录密码
+####  填写手机号，验证码和新密码后，重新设置用户登陆密码。新密码应该是加密后的字符串。
+url: http://website/user/user!noLoginUpdatePassword
+method: post
+Request:
+* with headers{
+    	client:"F9FQXGP8FCM5",#客户端标识
+}
+* with parameters{
+	“userVO.userMobile”:” 13760000000”,#用户登陆的手机
+	“userVO.password”:” bae5e3208a3c70e3db642b6631e95b9”,#加密后的新密码 
+	“validateCode”:”005512” #重置密码的验证码
+
+}
+Response:{
+  	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “重置密码成功”,#提示信息
+}
+
+
+
+### 8.获取注册验证码
+####   App向服务器发送有效的手机号码，服务器发送短信到对应手机上，并返回成功或者失败.
+url: http://website/user/user!sendRegisterCode
+method: post
+Request:
+* with headers{
+    	client:"F9FQXGP8FCM5",#客户端标识
+}
+* with parameters{
+	“userVO.userMobile”:” 13512345678”#用户要重置密码的手机号
+}
+Response:{
+  	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “验证码已发送到手机”,#提示信息
+}
+
+
+### 9.用户注册
+####  App传入注册验证码，手机号码和加密后的密码，服务器完成用户的注册操作,返回成功或者失败。
+url: http://website/user/user!register
+method: post
+Request:
+* with headers{
+    	client:"F9FQXGP8FCM5",#客户端标识
+}
+* with parameters{
+	“userVO.userMobile”:”13800000000”,#用户登录时取得的token值 
+	“userVO.password”:”bae5e3208a3c70e3db642b6631e95b9”,#用户密码(加密后的密码)
+	“telSecurityCode”:”079224”,#注册验证码
+}
+Response:{
+  	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “用户注册成功”,#提示信息
+}
+
+
+### 10.用户注销
+####   登陆用户注销登陆状态，用户需要重新输入账号和密码才能进行登陆。
+url: http://website/user/user!signOut
+method: post
+Request:
+* with headers{
+	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+Response:{
+  	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “用户注销成功”,#提示信息
+}
+
+### 11.用户群资料设置
+####   当前登陆用户根据自己的ID和群ID，设置个人在群中的名称，消息提醒方式，是否可以让群主修改名称等信息。
+url: http://website/chat/group!setingGroup
+method: post
+Request:
+* with headers{
+	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+* with parameters{
+	“groupId”:”122321”#群ID
+	“messageRemainMode”:”1”,#1接受并提示，2 接收不提示；可以为空，为空表示不设置。只能给自己设置
+ 	“showName”:”彪彪小王子”#在群中显示的名称,可以为空，为空表示不设置，管理员可以为别人设置，自己可以给自己设置
+}
+
+Response:
+*headers{
+    	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+*data{
+  	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “群设置成功”,#提示信息
+}
+
+
+
+
+
