@@ -1,0 +1,365 @@
+### 获取店铺列表
+call:http://website/hmvoucher/voucher!getStoreList
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        pageNo:'', // 查询的页码
+        pageSize:'', // 每页显示的数据条数
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取店铺信息列表成功', 
+        data:{
+            // 返回店铺StoreVO实体列表
+            storeVO:[
+            {
+                projectId:'',  // 店铺ID
+                projectName:'', // 店铺名称
+                minDiscount:'', // 最低折扣
+                projectLogo:'', // 店铺logo图片
+                addressDetail:'' // 店铺地址
+            },
+            {
+                projectId:'',  // 店铺ID
+                projectName:'', // 店铺名称
+                minDiscount:'', // 最低折扣
+                projectLogo:'', // 店铺logo图片
+                addressDetail:'' // 店铺地址
+            },
+            {
+                ...
+            }
+            ]
+        }
+    }
+
+}
+
+### 获取某一店铺Banner广告
+call:http://website/hmvoucher/voucher!getAllVoucherList
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:'' // 店铺ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取店铺广告信息成功', 
+        data:{
+            projectId:'', // 店铺ID
+            advertPicture:'', // 店铺广告图片
+        }
+    }
+
+}
+
+
+
+### 获取某一店铺股东券
+call:http://website/hmvoucher/voucher!getShareholderVoucherList
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:'', // 店铺ID
+        pageNo:'', // 查询的页码
+        pageSize:'', // 每页显示的数据条数
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取股东消费券信息成功', 
+        data:{
+            // 店铺消费券实体voucherVO列表
+            voucherVO:[
+            {
+                voucherId:'', // 股东券ID
+                projectId:'',  // 店铺ID
+                projectName:'', // 店铺名称
+                voucherLogo:'' // 股东头像
+                phoneNumber:'', // 股东手机号
+                voucherAmount:'' // 股东券金额
+                discountRate:'' // 股东券折扣
+                voucherPrice:'' // 股东券折后售价
+                avilidateTime:'' // 股东券有效期
+                couponType:''  // 消费券类型（1、店铺团购券，3股东券）
+            },
+            {
+                voucherId:'', // 股东券ID
+                projectId:'',  // 店铺ID
+                projectName:'', // 店铺名称
+                voucherLogo:'' // 股东头像
+                phoneNumber:'', // 股东手机号
+                voucherAmount:'' // 股东券金额
+                discountRate:'' // 股东券折扣
+                voucherPrice:'' // 股东券折后售价
+                avilidateTime:'' // 股东券有效期
+                couponType:''  // 消费券类型（1、店铺团购券，3股东券）
+            },
+            {
+                ...
+            }
+            ]
+        }
+    }
+
+}
+
+### 获取某一店铺的店铺团购活动券
+call:http://website/hmvoucher/voucher!getStoreVoucherList
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:'', // 店铺ID
+        pageNo:'', // 查询的页码
+        pageSize:'', // 每页显示的数据条数
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取店铺团购活动券信息成功', 
+        data:{
+            // 店铺消费券实体voucherVO列表
+            voucherVO:[
+            {
+                voucherId:'', // 店铺团购券ID
+                projectId:'',  // 店铺ID
+                projectName:'',  // 店铺名称
+                voucherLogo:''  // 店铺头像
+                voucherAmount:'' // 消费券金额
+                discountRate:'' // 消费券折扣
+                voucherPrice:'' // 消费券折后售价
+                avilidateTime:''  // 消费券有效期
+                couponType:''  // 消费券类型（1、店铺团购券，3股东券）
+            },
+            {
+                voucherId:'', // 店铺团购券ID
+                projectId:'',  // 店铺ID
+                projectName:'',  // 店铺名称
+                voucherLogo:''  // 店铺头像
+                voucherAmount:'' // 消费券金额
+                discountRate:'' // 消费券折扣
+                voucherPrice:'' // 消费券折后售价
+                avilidateTime:''  // 消费券有效期
+                couponType:''  // 消费券类型（1、店铺团购券，3股东券）
+            },
+            {
+                ...
+            }
+            ]
+        }
+    }
+
+}
+
+### 购买下单
+#### 此接口会检查消费券是否处于可卖状态，如是进行正常业务处理，如没有返回提示信息
+call:http://website/hmvoucher/voucher!buyVoucher
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        voucherId:'', // 出售的消费券ID
+        couponType:'' // 消费券类型
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'购买下单成功', 
+        data:{
+            voucherId:'',  // 购买者新生成的消费券ID
+            voucherAmount:'' // 消费券金额
+            discountRate:'',  // 消费券折扣
+            sharePrice:'',  // 消费券分享砍价优惠
+            voucherPrice:'' // 消费券折后售价
+            shareId:'' // 消费券分享ID
+            qrCodeURL:'' // 助力二维码的链接地址，需要移动端转成二维码形式展现
+        }
+    }
+
+}
+
+### 获取助力人员信息列表
+call:http://website/hmvoucher/voucher!getShareSupportList
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        shareId:'', // 消费券的分享ID
+        currentNum:'' // 当前助力人数，如果助力人数与上一次查询一样，没有增加则不用刷新界面重新加载
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取助力人员信息成功', 
+        data:{
+            shareId:'', // 消费券的分享ID
+            currentNum:'' // 最新助力人数，如果助力人数不变，则不需要后续更新操作
+            sharePrice:''  // 助力总额，助力总额变动需要同步更新界面实际支付金额
+            voucherPrice:''  // 实际支付金额
+            shareSupportList:[{
+                shareSupportId:'',  // 助力记录ID
+                shareId:'',  // 分享ID
+                supportName:'',  // 助力人员微信名称
+                supportPhoto:'',  // 助力人员微信头像
+                supportValue:''  // 助力金额
+            },
+            {
+                shareSupportId:'',  // 助力记录ID
+                shareId:'',  // 分享ID
+                supportName:'',  // 助力人员微信名称
+                supportPhoto:'',  // 助力人员微信头像
+                supportValue:''  // 助力金额
+            },
+            {
+                ...
+            }
+            ]
+        }
+    }
+
+}
+
+### 支付完成
+
+call:http://website/hmvoucher/voucher!payCallBack
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+            voucherId:''  // 购买者新生成的消费券ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'支付成功', 
+        data:{
+
+        }
+    }
+
+}
