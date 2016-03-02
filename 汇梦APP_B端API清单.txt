@@ -199,7 +199,7 @@ Request:
     	client:"F9FQXGP8FCM5",#客户端标识
 }
 * with parameters{
-	“userVO.userMobile”:” 13512345678”#用户要重置密码的手机号
+	“userExtendVO.phoneNumber”:” 13512345678”#用户要重置密码的手机号
 }
 Response:{
   	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
