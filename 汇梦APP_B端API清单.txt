@@ -217,7 +217,7 @@ Request:
     	client:"F9FQXGP8FCM5",#客户端标识
 }
 * with parameters{
-	“userVO.userMobile”:” 13760000000”,#用户登陆的手机
+	“userExtendVO.phoneNumber”:” 13760000000”,#用户登陆的手机
 	“userVO.password”:” bae5e3208a3c70e3db642b6631e95b9”,#加密后的新密码 
 	“validateCode”:”005512” #重置密码的验证码
 
@@ -238,7 +238,7 @@ Request:
     	client:"F9FQXGP8FCM5",#客户端标识
 }
 * with parameters{
-	“userVO.userMobile”:” 13512345678”#用户要重置密码的手机号
+	“userExtendVO.phoneNumber”:” 13512345678”#用户要重置密码的手机号
 }
 Response:{
   	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
@@ -255,7 +255,7 @@ Request:
     	client:"F9FQXGP8FCM5",#客户端标识
 }
 * with parameters{
-	“userVO.userMobile”:”13800000000”,#用户登录时取得的token值 
+	“userExtendVO.phoneNumber”:”13800000000”,#用户登录时取得的token值 
 	“userVO.password”:”bae5e3208a3c70e3db642b6631e95b9”,#用户密码(加密后的密码)
 	“telSecurityCode”:”079224”,#注册验证码
 }
