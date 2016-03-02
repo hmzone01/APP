@@ -7,7 +7,12 @@ method:post
 
 Request:{
     
-    head:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     params:{
         address:"",    // 项目过滤条件-项目地址
         status："",    // 项目过滤条件-项目状态
@@ -20,7 +25,12 @@ Request:{
 
 Response:{
 
-    headers:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     body:{
         success:true,
         info:'获取项目列表信息成功', 
@@ -110,7 +120,12 @@ method:post
 
 Request:{
     
-    head:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     params:{
         projectId:''  // 项目ID
     }
@@ -118,7 +133,12 @@ Request:{
 
 Response:{
 
-    headers:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     body:{
         success:true,
         info:'获取项目详细信息成功', 
@@ -200,7 +220,12 @@ method:post
 
 Request:{
     
-    head:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     params:{
         projectId:''  // 项目ID
     }
@@ -208,7 +233,12 @@ Request:{
 
 Response:{
 
-    headers:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     body:{
         success:true,
         info:'获取项目故事信息成功', 
@@ -231,7 +261,12 @@ method:post
 
 Request:{
     
-    head:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     params:{
         projectId:'',  // 项目ID
         pageNo:'',     // 查询的页码
@@ -241,7 +276,12 @@ Request:{
 
 Response:{
 
-    headers:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     body:{
         success:true,
         info:'获取项目投资记录成功', 
@@ -276,7 +316,12 @@ method:post
 
 Request:{
     
-    head:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     params:{
         projectId:'',  // 项目ID
         pageNo:'',     // 查询的页码
@@ -286,7 +331,12 @@ Request:{
 
 Response:{
 
-    headers:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     body:{
         success:true,
         info:'获取项目问答信息成功', 
@@ -321,7 +371,12 @@ method:post
 
 Request:{
     
-    head:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     params:{
         projectId:''  // 项目ID
     }
@@ -329,7 +384,12 @@ Request:{
 
 Response:{
 
-    headers:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     body:{
         success:true,
         info:'获取项目试吃信息成功', 
@@ -356,7 +416,12 @@ method:post
 
 Request:{
     
-    head:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     params:{
         projectId:'',  // 项目ID
         name:'',  // 报名者姓名
@@ -367,7 +432,12 @@ Request:{
 
 Response:{
 
-    headers:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     body:{
         success:true,
         info:'新增报名者信息成功', 
@@ -386,7 +456,12 @@ method:post
 
 Request:{
     
-    head:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     params:{
         projectId:''  // 项目ID
     }
@@ -394,7 +469,12 @@ Request:{
 
 Response:{
 
-    headers:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     body:{
         success:true,
         info:'获取项目进展信息成功', 
@@ -420,7 +500,12 @@ method:post
 
 Request:{
     
-    head:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     params:{
         projectId:''  // 项目ID
     }
@@ -428,7 +513,12 @@ Request:{
 
 Response:{
 
-    headers:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     body:{
         success:true,
         info:'关注项目成功', 
@@ -445,7 +535,12 @@ method:post
 
 Request:{
     
-    head:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     params:{
         pageNo:"",     // 查询的页码
         pageSize:""    // 每页显示条数，与pageNo组合，这两个字段不传则查询全部
@@ -454,7 +549,12 @@ Request:{
 
 Response:{
 
-    headers:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     body:{
         success:true,
         info:'获取投资抵用券列表成功', 
@@ -472,7 +572,12 @@ method:post
 
 Request:{
     
-    head:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     params:{
         projectId:'',  // 项目ID
         investCopy:'', // 投资份数
@@ -483,7 +588,12 @@ Request:{
 
 Response:{
 
-    headers:{...},
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
     body:{
         success:true,
         info:'购买项目成功', 
