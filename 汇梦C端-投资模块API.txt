@@ -544,6 +544,7 @@ Request:{
     params:{
         pageNo:"",     // 查询的页码
         pageSize:""    // 每页显示条数，与pageNo组合，这两个字段不传则查询全部
+        investAmount:''  // 投资金额(份数*每份单价)
     }
 }
 
@@ -559,6 +560,8 @@ Response:{
         success:true,
         info:'获取投资抵用券列表成功', 
         data:{
+            investCouponsId:'',  // 抵用券ID
+            roleAmount:''  // 抵用券金额
         }
     }
 
@@ -581,8 +584,7 @@ Request:{
     params:{
         projectId:'',  // 项目ID
         investCopy:'', // 投资份数
-        couponsAmount:'', // 投资抵用券金额
-        realPay:''  // 实际支付金额
+        investCouponsId:''  // 投资抵用券ID
     }
 }
 
