@@ -281,34 +281,6 @@ Response:{
   	"info": “用户注销成功”,#提示信息
 }
 
-### 11.用户群资料设置
-####   当前登陆用户根据自己的ID和群ID，设置个人在群中的名称，消息提醒方式，是否可以让群主修改名称等信息。
-url: http://website/chat/group!setingGroup
-method: post
-Request:
-* with headers{
-	uid:"1000221",#用户ID
-    	accessToken:"",#用户token
-    	client:"F9FQXGP8FCM5",#客户端标识
-    	expire:1411527886457#失效时间
-}
-* with parameters{
-	“groupId”:”122321”#群ID
-	“messageRemainMode”:”1”,#1接受并提示，2 接收不提示；可以为空，为空表示不设置。只能给自己设置
- 	“showName”:”彪彪小王子”#在群中显示的名称,可以为空，为空表示不设置，管理员可以为别人设置，自己可以给自己设置
-}
-
-Response:
-*headers{
-    	uid:"1000221",#用户ID
-    	accessToken:"",#用户token
-    	client:"F9FQXGP8FCM5",#客户端标识
-    	expire:1411527886457#失效时间
-}
-*data{
-  	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
-  	"info": “群设置成功”,#提示信息
-}
 
 
 
