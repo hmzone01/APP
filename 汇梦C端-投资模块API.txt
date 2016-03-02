@@ -20,6 +20,7 @@ Request:{
 
 Response:{
 
+    headers:{...},
     body:{
         success:true,
         info:'获取项目列表信息成功', 
@@ -117,6 +118,7 @@ Request:{
 
 Response:{
 
+    headers:{...},
     body:{
         success:true,
         info:'获取项目详细信息成功', 
@@ -206,6 +208,7 @@ Request:{
 
 Response:{
 
+    headers:{...},
     body:{
         success:true,
         info:'获取项目故事信息成功', 
@@ -238,6 +241,7 @@ Request:{
 
 Response:{
 
+    headers:{...},
     body:{
         success:true,
         info:'获取项目投资记录成功', 
@@ -282,6 +286,7 @@ Request:{
 
 Response:{
 
+    headers:{...},
     body:{
         success:true,
         info:'获取项目问答信息成功', 
@@ -324,6 +329,7 @@ Request:{
 
 Response:{
 
+    headers:{...},
     body:{
         success:true,
         info:'获取项目试吃信息成功', 
@@ -361,6 +367,7 @@ Request:{
 
 Response:{
 
+    headers:{...},
     body:{
         success:true,
         info:'新增报名者信息成功', 
@@ -387,6 +394,7 @@ Request:{
 
 Response:{
 
+    headers:{...},
     body:{
         success:true,
         info:'获取项目进展信息成功', 
@@ -420,6 +428,7 @@ Request:{
 
 Response:{
 
+    headers:{...},
     body:{
         success:true,
         info:'关注项目成功', 
@@ -445,6 +454,7 @@ Request:{
 
 Response:{
 
+    headers:{...},
     body:{
         success:true,
         info:'获取投资抵用券列表成功', 
@@ -473,6 +483,7 @@ Request:{
 
 Response:{
 
+    headers:{...},
     body:{
         success:true,
         info:'购买项目成功', 
