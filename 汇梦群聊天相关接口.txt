@@ -1,0 +1,268 @@
+### 1.用户申请入群
+####用户在App端申请加入项目群，系统自动允许用户进入所申请的群,入群后刷新个人群列表。
+url: http://website/chat/group!joinGroup
+method: post
+Request:{
+	headers{
+		uid:"1000221",#用户ID
+    		accessToken:"",#用户token
+    		client:"F9FQXGP8FCM5",#客户端标识
+    		expire:1411527886457#失效时间
+	}
+	data{
+	       “groupId”:”22321”# 群ID
+	}
+}
+Response:{
+	headers{
+    		uid:"1000221",#用户ID
+    		accessToken:"",#用户token
+    		client:"F9FQXGP8FCM5",#客户端标识
+    		expire:1411527886457#失效时间
+	}
+	data{
+  		"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  		"info": “申请入群成功”,#提示信息
+  	}
+}
+
+### 2.获取群列表
+####当前登陆用户获取所加入的群列表,不分页，一次性查询出用户加入的全部群。
+url: http://website/chat/group!groupList
+method: post
+Request:{
+	headers{
+		uid:"1000221",#用户ID
+    		accessToken:"",#用户token
+    		client:"F9FQXGP8FCM5",#客户端标识
+    		expire:1411527886457#失效时间
+	}
+}
+Response:{
+	headers{
+    		uid:"1000221",#用户ID
+    		accessToken:"",#用户token
+    		client:"F9FQXGP8FCM5",#客户端标识
+    		expire:1411527886457#失效时间
+	}
+	data{
+  		 "success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  		 "info": “获取群列表成功”,#提示信息
+	         “groupList”: [{
+				   “groupId”:”1221”,
+				    ”projectName”:”悦尚九鲜”,
+				    ”groupName”,”悦尚九鲜项目群”,
+				    “type”:”1”, # 1项目群 2 股东群
+				    “introduction”:”这是悦尚九鲜股东群”,#群介绍
+				    “notice”:“这是群通知内容”,
+				    “creator_id”:”123551”#创建人ID
+                                    
+				 },{
+				   “groupId”:”1221”,
+				    ”projectName”:”悦尚九鲜股东群”,
+				    ”groupName”,”悦尚九鲜项目群”,
+				    “type”:”2”, # 1项目群 2 股东群
+				    “introduction”:”这是悦尚九鲜股东群”,#群介绍
+				    “notice”:“这是群通知内容”,
+				    “creator_id”:”123551”#创建人ID
+				 }]
+
+  
+ 	 }
+}
+
+### 3.获取群详情
+####App根据群ID,获取群详细信息和群成员信息
+url: http://website/chat/group!getGroupDetail
+method: post
+Request:{
+	headers{
+		uid:"1000221",#用户ID
+    		accessToken:"",#用户token
+    		client:"F9FQXGP8FCM5",#客户端标识
+    		expire:1411527886457#失效时间
+	}
+	data{
+	       “groupId”:”22321”# 群ID
+	}
+}
+Response:{
+	headers{
+    		uid:"1000221",#用户ID
+    		accessToken:"",#用户token
+    		client:"F9FQXGP8FCM5",#客户端标识
+    		expire:1411527886457#失效时间
+	}
+	data{
+  		"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  		"info": “获取群详情成功”,#提示信息
+		"groupInfo":{
+		 		“groupId”:”1221”,
+				”projectName”:”悦尚九鲜”,
+				”groupName”,”悦尚九鲜项目群”,
+				“type”:”1”, # 1项目群 2 股东群
+				“introduction”:”这是悦尚九鲜股东群”,#群介绍
+				“notice”:“这是群公告内容”,
+				“creator_id”:”123551”,#创建人ID
+
+		},
+		"userList":[{  “userId”:112322, #用户ID
+    				“sex”:”1”, #性别 1男 2女
+				“age”:”28”,#年龄
+				“phoneNumber”:”1362222222”,#电话号码
+				“country”:”001”,#国家
+				“province”:”44”,#省份
+				“city”:”4103”,#城市
+				“district”:”440304”,#区县
+				“street”:” 福华一路10001号”,#街道
+				“company”:”汇梦互联网有限公司”,#所在公司
+				“occupation”:” 互联网/电子商务”,#行业
+				“role”:” 高级软件工程师”,#职务
+				“degrees”:” 本科”,#学历
+				“school”:” 深圳大学”,#毕业院校
+				“nickName”:” 彪彪小王子”, #昵称
+	   			“userPhoto”:”upload/images/userPhoto/10176_avatar.jpg”, #用户头像
+				“signature”:”这里是个性签名”,#个性签名
+ 				“user_type”:“3”,#用户类别1群主2管理员3普通成员
+ 				“show_name”:”彪彪”#群中显示名称
+
+			},{“userId”:112322, #用户ID
+    				“sex”:”1”, #性别 1男 2女
+				“age”:”28”,#年龄
+				“phoneNumber”:”1362222222”,#电话号码
+				“country”:”001”,#国家
+				“province”:”44”,#省份
+				“city”:”4103”,#城市
+				“district”:”440304”,#区县
+				“street”:” 福华一路10001号”,#街道
+				“company”:”汇梦互联网有限公司”,#所在公司
+				“occupation”:” 互联网/电子商务”,#行业
+				“role”:” 高级软件工程师”,#职务
+				“degrees”:” 本科”,#学历
+				“school”:” 深圳大学”,#毕业院校
+				“nickName”:” 彪彪小王子”, #昵称
+	   			“userPhoto”:”upload/images/userPhoto/10176_avatar.jpg”, #用户头像
+				“signature”:”这里是个性签名”,#个性签名
+ 				“user_type”:“3”,#用户类别1群主2管理员3普通成员
+ 				“show_name”:”彪彪”#群中显示名称
+			}]
+  		}
+}
+
+### 4.用户用户设置在群中显示的名称
+####当前登陆用户根据自己的ID和群ID，设置个人在群中的名称。只能修改自己的显示名称
+url: http://website/chat/group!userSetGroup
+method: post
+Request:{
+	headers{
+		uid:"1000221",#用户ID
+    		accessToken:"",#用户token
+    		client:"F9FQXGP8FCM5",#客户端标识
+    		expire:1411527886457#失效时间
+	}
+	data{
+	       “groupId”:”22321”# 群ID
+		“showName”:”彪彪小王子”#在群中显示的名称,可以为空，为空表示不设置，管理员可以为别人设置，自己可以给自己设置
+	}
+}
+Response:{
+	headers{
+    		uid:"1000221",#用户ID
+    		accessToken:"",#用户token
+    		client:"F9FQXGP8FCM5",#客户端标识
+    		expire:1411527886457#失效时间
+	}
+	data{
+  		"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  		"info": “设置群显示名称成功”,#提示信息
+  	}
+}
+
+### 5.退出群
+####根据群id和当前用户的Id,调用接口，返回成功或者失败。管理员不允许退出群
+url: http://website/chat/group!exitGroup
+method: post
+Request:{
+	headers{
+		uid:"1000221",#用户ID
+    		accessToken:"",#用户token
+    		client:"F9FQXGP8FCM5",#客户端标识
+    		expire:1411527886457#失效时间
+	}
+	data{
+	       “groupId”:”22321”# 群ID
+	}
+}
+Response:{
+	headers{
+    		uid:"1000221",#用户ID
+    		accessToken:"",#用户token
+    		client:"F9FQXGP8FCM5",#客户端标识
+    		expire:1411527886457#失效时间
+	}
+	data{
+  		"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  		"info": “您已成功退出xxx群”,#提示信息
+  	}
+}
+
+### 6.踢出群成员
+####群主或者管理员踢出其他成员，不能踢出群主或者管理员。
+url: http://website/chat/group!deleteUser
+method: post
+Request:{
+	headers{
+		uid:"1000221",#用户ID
+    		accessToken:"",#用户token
+    		client:"F9FQXGP8FCM5",#客户端标识
+    		expire:1411527886457#失效时间
+	}
+	data{
+	       “groupId”:”22321”# 群ID
+	       “groupUserId”:”12555”,#要删除群成员ID
+	}
+}
+Response:{
+	headers{
+    		uid:"1000221",#用户ID
+    		accessToken:"",#用户token
+    		client:"F9FQXGP8FCM5",#客户端标识
+    		expire:1411527886457#失效时间
+	}
+	data{
+  		"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  		"info": “已成功踢出成员XX”,#提示信息,XX表示成员名称
+  	}
+}
+
+### 7.设置群资料
+#### 根据群ID和用户ID修改群公告、群介绍，群名称。只有管理员可以使用此功能，非管理员不能使用。
+url: http://website/chat/group!updateGroup
+method: post
+Request:{
+	headers{
+		uid:"1000221",#用户ID
+    		accessToken:"",#用户token
+    		client:"F9FQXGP8FCM5",#客户端标识
+    		expire:1411527886457#失效时间
+	}
+	data{
+	       “groupId”:”22321”# 群ID
+	       “groupName”:”悦尚九鲜股东群”,#新的群名称，如果为空则表示不修改
+ 	       “type”:”群类别”,#群类别，为空表示不修改
+               “introduction”:”这是悦尚九鲜股东群”,#群介绍，为空表示不修改
+               “notice”:“这是群公告内容”#群公告,为空表示不修改	
+	}
+}
+Response:{
+	headers{
+    		uid:"1000221",#用户ID
+    		accessToken:"",#用户token
+    		client:"F9FQXGP8FCM5",#客户端标识
+    		expire:1411527886457#失效时间
+	}
+	data{
+  		"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  		"info": “修改群资料成功”,#提示信息
+  	}
+}
