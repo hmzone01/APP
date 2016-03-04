@@ -568,7 +568,59 @@ Response:{
 }
 
 ### 项目投资购买
-#### 用户投资购买项目成功时业务处理
+#### 用户投资购买下单
+call:http://website/project/project!gotoBuy
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:'',  // 项目ID
+        investCopy:'', // 投资份数
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'购买下单成功', 
+        data:{
+            investRecordId:'',  // 投资记录ID
+			investRecordCode:'',  // 认购单号
+			projectId:'',  // 认购的项目ID
+			projectCode:'',  // 项目编码
+			userId:'',  // 投资人ID
+		    investCopy:'',  // 认购份数
+			unitPrice:'',  // 每份单价
+			investAmount:'',  // 认购总额
+			couponsAmount:'',  // 抵扣金额
+			realPay:'',  // 实际支付
+			payType:'',  // 支付方式
+			status:'',  // 状态
+			investCouponsId:'',  // 抵用券ID
+			bankcard:'',  // 使用新银行卡支付
+			userBankcardId:'',  // 用户选择银行卡
+			identity:''  // 投资人身份 1：普通投资人，2：明星投资人
+        }
+    }
+
+}
+
+### 项目投资支付
 call:http://website/project/project!pay
 
 method:post
