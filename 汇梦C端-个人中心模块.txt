@@ -1,4 +1,4 @@
-### ¸öÈËÉèÖÃ-ÉÏ´«Í·Ïñ
+### ä¸ªäººè®¾ç½®-ä¸Šä¼ å¤´åƒ
 call:http://website/usercenter/personalSetting!uploadLogo
 
 method:post
@@ -6,35 +6,35 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        photoFile:''  // Í·ÏñÍ¼Æ¬ÎÄ¼şÁ÷
+        photoFile:''  // å¤´åƒå›¾ç‰‡æ–‡ä»¶æµ
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'Í·ÏñÉÏ´«³É¹¦', 
+        info:'å¤´åƒä¸Šä¼ æˆåŠŸ', 
         data:{
-            userPhoto:''  // ÓÃ»§ĞÂÍ·ÏñµØÖ·
+            userPhoto:''  // ç”¨æˆ·æ–°å¤´åƒåœ°å€
         }
     }
 
 }
 
-### ¸öÈËÉèÖÃ-ĞŞ¸ÄêÇ³Æ
+### ä¸ªäººè®¾ç½®-ä¿®æ”¹æ˜µç§°
 call:http://website/usercenter/personalSetting!updateNickname
 
 method:post
@@ -42,34 +42,34 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        nickName:''  // ÓÃ»§êÇ³Æ
+        nickName:''  // ç”¨æˆ·æ˜µç§°
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'ÓÃ»§êÇ³ÆÉèÖÃ³É¹¦', 
+        info:'ç”¨æˆ·æ˜µç§°è®¾ç½®æˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### ¸öÈËÉèÖÃ-ĞŞ¸ÄÃÜÂë
+### ä¸ªäººè®¾ç½®-ä¿®æ”¹å¯†ç 
 call:http://website/usercenter/personalSetting!updatePassword
 
 method:post
@@ -77,35 +77,35 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        oldPassword:''  // ÓÃ»§Ô­ÃÜÂë
-        newPassword:''  // ÓÃ»§ĞÂÃÜÂë
+        oldPassword:''  // ç”¨æˆ·åŸå¯†ç 
+        newPassword:''  // ç”¨æˆ·æ–°å¯†ç 
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'ÓÃ»§ÃÜÂëĞŞ¸Ä³É¹¦', 
+        info:'ç”¨æˆ·å¯†ç ä¿®æ”¹æˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### ¸öÈËÉèÖÃ-»ñÈ¡ÓÃ»§¸öÈËĞÅÏ¢
+### ä¸ªäººè®¾ç½®-è·å–ç”¨æˆ·ä¸ªäººä¿¡æ¯
 call:http://website/usercenter/personalSetting!getUserInfo
 
 method:post
@@ -113,10 +113,10 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
     }
@@ -125,38 +125,38 @@ Request:{
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'ÓÃ»§ÃÜÂëĞŞ¸Ä³É¹¦', 
+        info:'ç”¨æˆ·å¯†ç ä¿®æ”¹æˆåŠŸ', 
         data:{
-            nikeName:''  // êÇ³Æ
-            realName:''  // ÓÃ»§ÕæÊµĞÕÃû
-            phoneNumber:''   // ÓÃ»§ÏÖÔÚ°ó¶¨µÄÊÖ»úºÅ
-            sex:''  // ĞÔ±ğĞÅÏ¢
-            userPhoto:''  // ÓÃ»§Í·Ïñ
-            address:''   // ÓÃ»§Ä¬ÈÏµØÖ·
-            province:''  // Ê¡·İ´úÂë
-            city:''  // ³ÇÊĞ´úÂë
-            district:''  // µØÇø´úÂë
-            nameVerification:''  // ÊÇ·ñÊµÃûÈÏÖ¤(1 ÊÇ£¬0 ·ñ, 2ÉóºËÖĞ , 3Î´Í¨¹ı)
-            userIdFileA:''  // Éí·İÖ¤ÕıÃæÎÄ¼şÂ·¾¶
-            userIdFileB:''  // Éí·İÖ¤·´ÃæÎÄ¼şÂ·¾¶
-            userIdFileC:''  // ÊÖ³ÖÉí·İÖ¤ÎÄ¼şÂ·¾¶
-            status:''  // Ã÷ĞÇÍ¶×ÊÈËÉóºË×´Ì¬£º0 Ä¬ÈÏ£¬ 1 Í¨¹ı£¬ 2 ÉóºËÖĞ £¬3 ²»Í¨¹ı
-            verifiedInfo:'' // Ã÷ĞÇÍ¶×ÊÈËÈÏÖ¤ĞÅÏ¢
-            verifiedAttachment:''  // Ã÷ĞÇÍ¶×ÊÈËÈÏÖ¤¸½¼şÍ¼Æ¬µØÖ·
-            conditions:''  // Ã÷ĞÇÍ¶×ÊÈËÈÏÖ¤Ìõ¼ş
+            nikeName:''  // æ˜µç§°
+            realName:''  // ç”¨æˆ·çœŸå®å§“å
+            phoneNumber:''   // ç”¨æˆ·ç°åœ¨ç»‘å®šçš„æ‰‹æœºå·
+            sex:''  // æ€§åˆ«ä¿¡æ¯
+            userPhoto:''  // ç”¨æˆ·å¤´åƒ
+            address:''   // ç”¨æˆ·é»˜è®¤åœ°å€
+            province:''  // çœä»½ä»£ç 
+            city:''  // åŸå¸‚ä»£ç 
+            district:''  // åœ°åŒºä»£ç 
+            nameVerification:''  // æ˜¯å¦å®åè®¤è¯(1 æ˜¯ï¼Œ0 å¦, 2å®¡æ ¸ä¸­ , 3æœªé€šè¿‡)
+            userIdFileA:''  // èº«ä»½è¯æ­£é¢æ–‡ä»¶è·¯å¾„
+            userIdFileB:''  // èº«ä»½è¯åé¢æ–‡ä»¶è·¯å¾„
+            userIdFileC:''  // æ‰‹æŒèº«ä»½è¯æ–‡ä»¶è·¯å¾„
+            status:''  // æ˜æ˜ŸæŠ•èµ„äººå®¡æ ¸çŠ¶æ€ï¼š0 é»˜è®¤ï¼Œ 1 é€šè¿‡ï¼Œ 2 å®¡æ ¸ä¸­ ï¼Œ3 ä¸é€šè¿‡
+            verifiedInfo:'' // æ˜æ˜ŸæŠ•èµ„äººè®¤è¯ä¿¡æ¯
+            verifiedAttachment:''  // æ˜æ˜ŸæŠ•èµ„äººè®¤è¯é™„ä»¶å›¾ç‰‡åœ°å€
+            conditions:''  // æ˜æ˜ŸæŠ•èµ„äººè®¤è¯æ¡ä»¶
         }
     }
 
 }
 
-### ¸öÈËÉèÖÃ-°ó¶¨ÊÖ»úÊ±·¢ËÍÑéÖ¤Âëµ½ĞÂÊÖ»ú
+### ä¸ªäººè®¾ç½®-ç»‘å®šæ‰‹æœºæ—¶å‘é€éªŒè¯ç åˆ°æ–°æ‰‹æœº
 call:http://website/usercenter/personalSetting!sendValidateCode
 
 method:post
@@ -164,28 +164,28 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        phoneNumber:''  // ĞÂ°ó¶¨µÄÊÖ»úºÅ
+        phoneNumber:''  // æ–°ç»‘å®šçš„æ‰‹æœºå·
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
-        // ÈçĞŞ¸ÄÊ§°Ü·µ»ØÌáÊ¾ĞÅÏ¢
+        // å¦‚ä¿®æ”¹å¤±è´¥è¿”å›æç¤ºä¿¡æ¯
         success:true,
-        info:'ÓÃ»§ÃÜÂëĞŞ¸Ä³É¹¦', 
+        info:'ç”¨æˆ·å¯†ç ä¿®æ”¹æˆåŠŸ', 
         data:{
         }
     }
@@ -193,7 +193,7 @@ Response:{
 }
 
 
-### ¸öÈËÉèÖÃ-ĞŞ¸Ä°ó¶¨ÊÖ»ú
+### ä¸ªäººè®¾ç½®-ä¿®æ”¹ç»‘å®šæ‰‹æœº
 call:http://website/usercenter/personalSetting!updatePhoneNumber
 
 method:post
@@ -201,35 +201,35 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        phoneNumber:''  // ĞÂ°ó¶¨µÄÊÖ»úºÅ
-        validateCode:''  // ÑéÖ¤Âë
+        phoneNumber:''  // æ–°ç»‘å®šçš„æ‰‹æœºå·
+        validateCode:''  // éªŒè¯ç 
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'ÊÖ»úºÅÂë°ó¶¨³É¹¦', 
+        info:'æ‰‹æœºå·ç ç»‘å®šæˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### ¸öÈËÉèÖÃ-¸üĞÂĞÔ±ğĞÅÏ¢
+### ä¸ªäººè®¾ç½®-æ›´æ–°æ€§åˆ«ä¿¡æ¯
 call:http://website/usercenter/personalSetting!updateSexInfo
 
 method:post
@@ -237,34 +237,34 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        sex:''  // ĞÔ±ğĞÅÏ¢£¬1-ÄĞ£¬2-Å®
+        sex:''  // æ€§åˆ«ä¿¡æ¯ï¼Œ1-ç”·ï¼Œ2-å¥³
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'ĞÔ±ğĞÅÏ¢¸üĞÂ³É¹¦', 
+        info:'æ€§åˆ«ä¿¡æ¯æ›´æ–°æˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### ¸öÈËÉèÖÃ-¸üĞÂ³£ÓÃµØÖ·
+### ä¸ªäººè®¾ç½®-æ›´æ–°å¸¸ç”¨åœ°å€
 call:http://website/usercenter/personalSetting!updateAddressInfo
 
 method:post
@@ -272,34 +272,34 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        sex:''  // ĞÔ±ğĞÅÏ¢£¬1-ÄĞ£¬2-Å®
+        sex:''  // æ€§åˆ«ä¿¡æ¯ï¼Œ1-ç”·ï¼Œ2-å¥³
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'ĞÔ±ğĞÅÏ¢¸üĞÂ³É¹¦', 
+        info:'æ€§åˆ«ä¿¡æ¯æ›´æ–°æˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### ÊµÃûÈÏÖ¤
+### å®åè®¤è¯
 call:http://website/usercenter/user!applyIdVerify
 
 method:post
@@ -307,40 +307,40 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        realName:''  // ÓÃ»§ÕæÊµĞÕÃû
-        phoneNumber:''  // ÓÃ»§ÊÖ»úºÅÂë
-        id:''  // ÓÃ»§Éí·İÖ¤ºÅ
-        userIdFileA:''  // Éí·İÖ¤ÕıÃæÎÄ¼şÁ÷
-        userIdFileB:''  // Éí·İÖ¤·´ÃæÎÄ¼şÁ÷
-        userIdFileC:''  // ÊÖ³ÖÉí·İÖ¤ÎÄ¼şÁ÷
+        realName:''  // ç”¨æˆ·çœŸå®å§“å
+        phoneNumber:''  // ç”¨æˆ·æ‰‹æœºå·ç 
+        id:''  // ç”¨æˆ·èº«ä»½è¯å·
+        userIdFileA:''  // èº«ä»½è¯æ­£é¢æ–‡ä»¶æµ
+        userIdFileB:''  // èº«ä»½è¯åé¢æ–‡ä»¶æµ
+        userIdFileC:''  // æ‰‹æŒèº«ä»½è¯æ–‡ä»¶æµ
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'ÉêÇëÊµÃûÈÏÖ¤³É¹¦£¬µÈ´ıÑéÖ¤ÉóÅú', 
+        info:'ç”³è¯·å®åè®¤è¯æˆåŠŸï¼Œç­‰å¾…éªŒè¯å®¡æ‰¹', 
         data:{
-            nameVerification:''  // ÊÇ·ñÊµÃûÈÏÖ¤(1 ÊÇ£¬0 ·ñ, 2ÉóºËÖĞ , 3Î´Í¨¹ı)
+            nameVerification:''  // æ˜¯å¦å®åè®¤è¯(1 æ˜¯ï¼Œ0 å¦, 2å®¡æ ¸ä¸­ , 3æœªé€šè¿‡)
         }
     }
 
 }
 
-### ÉêÇëÃ÷ĞÇÍ¶×ÊÈË
+### ç”³è¯·æ˜æ˜ŸæŠ•èµ„äºº
 call:http://website/usercenter/user!applyStarInvestor
 
 method:post
@@ -348,30 +348,30 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        nikeName:''  // ÓÃ»§êÇ³Æ
-        verifiedInfo:''  // ÈÏÖ¤ĞÅÏ¢
-        verifiedAttachment:''  // ¸½¼şÍ¼Æ¬ÎÄ¼şÁ÷
-        conditions:''  // ¶àÑ¡Ìí¼Ó£¬ÒÔ¡°|¡±·Ö¸ô
+        nikeName:''  // ç”¨æˆ·æ˜µç§°
+        verifiedInfo:''  // è®¤è¯ä¿¡æ¯
+        verifiedAttachment:''  // é™„ä»¶å›¾ç‰‡æ–‡ä»¶æµ
+        conditions:''  // å¤šé€‰æ·»åŠ ï¼Œä»¥â€œ|â€åˆ†éš”
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'ÉêÇëÃ÷ĞÇÍ¶×ÊÈË³É¹¦£¬µÈ´ıÉóºËÖĞ', 
+        info:'ç”³è¯·æ˜æ˜ŸæŠ•èµ„äººæˆåŠŸï¼Œç­‰å¾…å®¡æ ¸ä¸­', 
         data:{
 
         }
@@ -379,7 +379,7 @@ Response:{
 
 }
 
-### ÎÒµÄµêÆÌ-»ñÈ¡ÎÒµÄµêÆÌÁĞ±íĞÅÏ¢
+### æˆ‘çš„åº—é“º-è·å–æˆ‘çš„åº—é“ºåˆ—è¡¨ä¿¡æ¯
 call:http://website/usercenter/store!getStoreList
 
 method:post
@@ -387,51 +387,51 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        pageNo:''  // ²éÑ¯µÄÒ³Âë
-        pageSize  // Ã¿Ò³ÏÔÊ¾ÌõÊı£¨ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯ËùÓĞÊı¾İ£©
+        pageNo:''  // æŸ¥è¯¢çš„é¡µç 
+        pageSize  // æ¯é¡µæ˜¾ç¤ºæ¡æ•°ï¼ˆä¸pageNoä¸€èµ·ï¼Œå¦‚ä¸ä¼ åˆ™æŸ¥è¯¢æ‰€æœ‰æ•°æ®ï¼‰
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡ÎÒµÄµêÆÌÁĞ±í³É¹¦', 
+        info:'è·å–æˆ‘çš„åº—é“ºåˆ—è¡¨æˆåŠŸ', 
         data:{
             storeVOList:[
             {
-                projectId:''  // µêÆÌID
-                projectCode:''  // µêÆÌ±àÂë
-                projectName:''  // µêÆÌÃû³Æ
-                projectPhoto:''  // µêÆÌLogo
-                investAmount:''  // ÎÒÍ¶×ÊµÄ½ğ¶î
-                lastDividend:''  // ÉÏ´ÎÊÕÒæ½ğ¶î
-                shareRatio:''  // ·İ¶îÕ¼±È
-                totalProfit:''  // ÀÛ¼ÆÊÕÒæ
-                createTime:'' // ×î½üÒ»´Î·ÖºìÊ±¼ä
+                projectId:''  // åº—é“ºID
+                projectCode:''  // åº—é“ºç¼–ç 
+                projectName:''  // åº—é“ºåç§°
+                projectPhoto:''  // åº—é“ºLogo
+                investAmount:''  // æˆ‘æŠ•èµ„çš„é‡‘é¢
+                lastDividend:''  // ä¸Šæ¬¡æ”¶ç›Šé‡‘é¢
+                shareRatio:''  // ä»½é¢å æ¯”
+                totalProfit:''  // ç´¯è®¡æ”¶ç›Š
+                createTime:'' // æœ€è¿‘ä¸€æ¬¡åˆ†çº¢æ—¶é—´
             },
             {
-                projectId:''  // µêÆÌID
-                projectCode:''  // µêÆÌ±àÂë
-                projectName:''  // µêÆÌÃû³Æ
-                projectPhoto:''  // µêÆÌLogo
-                investAmount:''  // ÎÒÍ¶×ÊµÄ½ğ¶î
-                lastDividend:''  // ÉÏ´ÎÊÕÒæ½ğ¶î
-                shareRatio:''  // ·İ¶îÕ¼±È
-                totalProfit:''  // ÀÛ¼ÆÊÕÒæ
-                createTime:'' // ×î½üÒ»´Î·ÖºìÊ±¼ä
+                projectId:''  // åº—é“ºID
+                projectCode:''  // åº—é“ºç¼–ç 
+                projectName:''  // åº—é“ºåç§°
+                projectPhoto:''  // åº—é“ºLogo
+                investAmount:''  // æˆ‘æŠ•èµ„çš„é‡‘é¢
+                lastDividend:''  // ä¸Šæ¬¡æ”¶ç›Šé‡‘é¢
+                shareRatio:''  // ä»½é¢å æ¯”
+                totalProfit:''  // ç´¯è®¡æ”¶ç›Š
+                createTime:'' // æœ€è¿‘ä¸€æ¬¡åˆ†çº¢æ—¶é—´
             },
             {...}
             ]
@@ -440,7 +440,7 @@ Response:{
 
 }
 
-### ÎÒµÄµêÆÌ-»ñÈ¡µêÆÌÈÕÓªÒµÁ÷Ë®
+### æˆ‘çš„åº—é“º-è·å–åº—é“ºæ—¥è¥ä¸šæµæ°´
 call:http://website/usercenter/store!getStoreOrders
 
 method:post
@@ -448,65 +448,65 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        projectId:''  // µêÆÌID
-        queryDate:''  // ²éÑ¯µÄÈÕÆÚ£¬yyyy-MM-dd£¬ÈçÎª¿Õ»á·µ»ØÒ»¸öÄ¬ÈÏÈÕÆÚ
-        pageNo:''  // ²éÑ¯µÄÒ³Âë
-        pageSize  // Ã¿Ò³ÏÔÊ¾ÌõÊı£¨ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯ËùÓĞÊı¾İ£©
+        projectId:''  // åº—é“ºID
+        queryDate:''  // æŸ¥è¯¢çš„æ—¥æœŸï¼Œyyyy-MM-ddï¼Œå¦‚ä¸ºç©ºä¼šè¿”å›ä¸€ä¸ªé»˜è®¤æ—¥æœŸ
+        pageNo:''  // æŸ¥è¯¢çš„é¡µç 
+        pageSize  // æ¯é¡µæ˜¾ç¤ºæ¡æ•°ï¼ˆä¸pageNoä¸€èµ·ï¼Œå¦‚ä¸ä¼ åˆ™æŸ¥è¯¢æ‰€æœ‰æ•°æ®ï¼‰
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡µêÆÌÈÕÓªÒµÁ÷Ë®', 
+        info:'è·å–åº—é“ºæ—¥è¥ä¸šæµæ°´', 
         data:{
-            projectId:''  // µêÆÌID
-            queryDate:''  // ²éÑ¯µÄÈÕÆÚ£¬yyyy-MM-dd£¬ÈçÎª¿Õ»á·µ»ØÒ»¸öÄ¬ÈÏÈÕÆÚ
+            projectId:''  // åº—é“ºID
+            queryDate:''  // æŸ¥è¯¢çš„æ—¥æœŸï¼Œyyyy-MM-ddï¼Œå¦‚ä¸ºç©ºä¼šè¿”å›ä¸€ä¸ªé»˜è®¤æ—¥æœŸ
             storeOrdersVOList:[
                 {
-                    orderSummaryId:'' // Á÷Ë®ID
-                    payNO:''  // Á÷Ë®µ¥ºÅ
-                    costAmount:'' // Ïû·Ñ½ğ¶î£¬ÈçĞ¡ÓÚ0´ú±íÍËµ¥
-                    discountAmount:''  // ÕÛ¿Û½ğ¶î
-                    // Ö§¸¶·½Ê½£¬Ò»¸öµ¥¿ÉÄÜ´æÔÚ¶àÖÖÖ§¸¶·½Ê½£¬×î¶à4ÖÖ
+                    orderSummaryId:'' // æµæ°´ID
+                    payNO:''  // æµæ°´å•å·
+                    costAmount:'' // æ¶ˆè´¹é‡‘é¢ï¼Œå¦‚å°äº0ä»£è¡¨é€€å•
+                    discountAmount:''  // æŠ˜æ‰£é‡‘é¢
+                    // æ”¯ä»˜æ–¹å¼ï¼Œä¸€ä¸ªå•å¯èƒ½å­˜åœ¨å¤šç§æ”¯ä»˜æ–¹å¼ï¼Œæœ€å¤š4ç§
                     payDetailsVOList:[
                     {
-                        payTypeName:''  // Ö§¸¶·½Ê½Ãû³Æ
-                        payAmount:''  // Ö§¸¶·½Ê½
+                        payTypeName:''  // æ”¯ä»˜æ–¹å¼åç§°
+                        payAmount:''  // æ”¯ä»˜æ–¹å¼
                     },
                     {
-                        payTypeName:''  // Ö§¸¶·½Ê½Ãû³Æ
-                        payAmount:''  // Ö§¸¶·½Ê½
+                        payTypeName:''  // æ”¯ä»˜æ–¹å¼åç§°
+                        payAmount:''  // æ”¯ä»˜æ–¹å¼
                     }
                     ]
                 },
                 {
-                    orderSummaryId:'' // Á÷Ë®ID
-                    payNO:''  // Á÷Ë®µ¥ºÅ
-                    costAmount:'' // Ïû·Ñ½ğ¶î£¬ÈçĞ¡ÓÚ0´ú±íÍËµ¥
-                    discountAmount:''  // ÕÛ¿Û½ğ¶î
-                    // Ö§¸¶·½Ê½£¬Ò»¸öµ¥¿ÉÄÜ´æÔÚ¶àÖÖÖ§¸¶·½Ê½£¬×î¶à4ÖÖ
+                    orderSummaryId:'' // æµæ°´ID
+                    payNO:''  // æµæ°´å•å·
+                    costAmount:'' // æ¶ˆè´¹é‡‘é¢ï¼Œå¦‚å°äº0ä»£è¡¨é€€å•
+                    discountAmount:''  // æŠ˜æ‰£é‡‘é¢
+                    // æ”¯ä»˜æ–¹å¼ï¼Œä¸€ä¸ªå•å¯èƒ½å­˜åœ¨å¤šç§æ”¯ä»˜æ–¹å¼ï¼Œæœ€å¤š4ç§
                     payDetailsVOList:[
                     {
-                        payTypeName:''  // Ö§¸¶·½Ê½Ãû³Æ
-                        payAmount:''  // Ö§¸¶·½Ê½
+                        payTypeName:''  // æ”¯ä»˜æ–¹å¼åç§°
+                        payAmount:''  // æ”¯ä»˜æ–¹å¼
                     },
                     {
-                        payTypeName:''  // Ö§¸¶·½Ê½Ãû³Æ
-                        payAmount:''  // Ö§¸¶·½Ê½
+                        payTypeName:''  // æ”¯ä»˜æ–¹å¼åç§°
+                        payAmount:''  // æ”¯ä»˜æ–¹å¼
                     }
                     ]
                 },
@@ -517,7 +517,7 @@ Response:{
 
 }
 
-### ÎÒµÄµêÆÌ-»ñÈ¡µêÆÌÁ÷Ë®Ã÷Ï¸
+### æˆ‘çš„åº—é“º-è·å–åº—é“ºæµæ°´æ˜ç»†
 call:http://website/usercenter/store!getStoreOrderDetails
 
 method:post
@@ -525,47 +525,47 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        orderSummaryId:''  // µêÆÌID
-        pageNo:''  // ²éÑ¯µÄÒ³Âë
-        pageSize  // Ã¿Ò³ÏÔÊ¾ÌõÊı£¨ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯ËùÓĞÊı¾İ£©
+        orderSummaryId:''  // åº—é“ºID
+        pageNo:''  // æŸ¥è¯¢çš„é¡µç 
+        pageSize  // æ¯é¡µæ˜¾ç¤ºæ¡æ•°ï¼ˆä¸pageNoä¸€èµ·ï¼Œå¦‚ä¸ä¼ åˆ™æŸ¥è¯¢æ‰€æœ‰æ•°æ®ï¼‰
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡µêÆÌÁ÷Ë®Ã÷Ï¸', 
+        info:'è·å–åº—é“ºæµæ°´æ˜ç»†', 
         data:{
-            costSum:''  // Ïû·Ñ×Ü¶î
+            costSum:''  // æ¶ˆè´¹æ€»é¢
             storeOrderDetailsVOList:[
             {
-                orderDetailId:''  // ²Ëµ¥Ã÷Ï¸ID
-                dishName:''  // ²ËÆ·Ãû³Æ
-                num:''  // ÊıÁ¿
-                backNum:''  // ÍË²ËÊıÁ¿
-                price:''  // µ¥¼Û
-                amount:''  // Ïû·Ñ½ğ¶î
+                orderDetailId:''  // èœå•æ˜ç»†ID
+                dishName:''  // èœå“åç§°
+                num:''  // æ•°é‡
+                backNum:''  // é€€èœæ•°é‡
+                price:''  // å•ä»·
+                amount:''  // æ¶ˆè´¹é‡‘é¢
             },
             {
-                orderDetailId:''  // ²Ëµ¥Ã÷Ï¸ID
-                dishName:''  // ²ËÆ·Ãû³Æ
-                num:''  // ÊıÁ¿
-                backNum:''  // ÍË²ËÊıÁ¿
-                price:''  // µ¥¼Û
-                amount:''  // Ïû·Ñ½ğ¶î
+                orderDetailId:''  // èœå•æ˜ç»†ID
+                dishName:''  // èœå“åç§°
+                num:''  // æ•°é‡
+                backNum:''  // é€€èœæ•°é‡
+                price:''  // å•ä»·
+                amount:''  // æ¶ˆè´¹é‡‘é¢
             },
             {...}
             ]
@@ -575,7 +575,7 @@ Response:{
 
 }
 
-### ÎÒµÄµêÆÌ-»ñÈ¡Ã¿ÆÚÃ÷Ï¸ÁĞ±í
+### æˆ‘çš„åº—é“º-è·å–æ¯æœŸæ˜ç»†åˆ—è¡¨
 call:http://website/usercenter/store!getStoreOrderDetails
 
 method:post
@@ -583,44 +583,44 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        projectId:''  // µêÆÌID
-        pageNo:''  // ²éÑ¯µÄÒ³Âë
-        pageSize  // Ã¿Ò³ÏÔÊ¾ÌõÊı£¨ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯ËùÓĞÊı¾İ£©
+        projectId:''  // åº—é“ºID
+        pageNo:''  // æŸ¥è¯¢çš„é¡µç 
+        pageSize  // æ¯é¡µæ˜¾ç¤ºæ¡æ•°ï¼ˆä¸pageNoä¸€èµ·ï¼Œå¦‚ä¸ä¼ åˆ™æŸ¥è¯¢æ‰€æœ‰æ•°æ®ï¼‰
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡ÎÒµÄµêÆÌÁĞ±í³É¹¦', 
+        info:'è·å–æˆ‘çš„åº—é“ºåˆ—è¡¨æˆåŠŸ', 
         data:{
             shareholderDividendRecordVOList:[
             {
-                shareholderDividendRecordId:''  // ·ÖºìÃ÷Ï¸ID
-                issueNumber:''  // ·ÖºìÆÚºÅ
-                userProfit:''  // ¹É¶«ÊÕÒæ
-                projectTurnover:''  // µêÆÌÓªÒµ¶î
-                projectProfit:'' // µêÆÌÓ¯Àû¶î
+                shareholderDividendRecordId:''  // åˆ†çº¢æ˜ç»†ID
+                issueNumber:''  // åˆ†çº¢æœŸå·
+                userProfit:''  // è‚¡ä¸œæ”¶ç›Š
+                projectTurnover:''  // åº—é“ºè¥ä¸šé¢
+                projectProfit:'' // åº—é“ºç›ˆåˆ©é¢
             },
             {
-                shareholderDividendRecordId:''  // ·ÖºìÃ÷Ï¸ID
-                issueNumber:''  // ·ÖºìÆÚºÅ
-                userProfit:''  // ¹É¶«ÊÕÒæ
-                projectTurnover:''  // µêÆÌÓªÒµ¶î
-                projectProfit:'' // µêÆÌÓ¯Àû¶î
+                shareholderDividendRecordId:''  // åˆ†çº¢æ˜ç»†ID
+                issueNumber:''  // åˆ†çº¢æœŸå·
+                userProfit:''  // è‚¡ä¸œæ”¶ç›Š
+                projectTurnover:''  // åº—é“ºè¥ä¸šé¢
+                projectProfit:'' // åº—é“ºç›ˆåˆ©é¢
             },
             {...}
             ]
@@ -630,50 +630,50 @@ Response:{
 
 }
 
-### ÎÒµÄµêÆÌ-»ñÈ¡Í¶×Ê±¨¸æÁĞ±í
-call:http://website/usercenter/store!getInvestReport
+### æˆ‘çš„åº—é“º-è·å–æŠ•èµ„æŠ¥å‘Šåˆ—è¡¨
+call:http://website/usercenter/store!getInvestReportList
 
 method:post
 
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        projectId:''  // µêÆÌID
-        pageNo:''  // ²éÑ¯µÄÒ³Âë
-        pageSize  // Ã¿Ò³ÏÔÊ¾ÌõÊı£¨ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯ËùÓĞÊı¾İ£©
+        projectId:''  // åº—é“ºID
+        pageNo:''  // æŸ¥è¯¢çš„é¡µç 
+        pageSize  // æ¯é¡µæ˜¾ç¤ºæ¡æ•°ï¼ˆä¸pageNoä¸€èµ·ï¼Œå¦‚ä¸ä¼ åˆ™æŸ¥è¯¢æ‰€æœ‰æ•°æ®ï¼‰
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡Í¶×Ê±¨¸æÁĞ±í³É¹¦', 
+        info:'è·å–æŠ•èµ„æŠ¥å‘Šåˆ—è¡¨æˆåŠŸ', 
         data:{
             investReportVOList:[
             {
-                investReportId:''  // Í¶×Ê±¨¸æID
-                title:''  // Í¶×Ê±¨¸æ±êÌâ
-                periodNumber:''  // Í¶×Ê±¨¸æÆÚºÅ
-                content:''  // ±¨¸æÄÚÈİ
+                investReportId:''  // æŠ•èµ„æŠ¥å‘ŠID
+                title:''  // æŠ•èµ„æŠ¥å‘Šæ ‡é¢˜
+                periodNumber:''  // æŠ•èµ„æŠ¥å‘ŠæœŸå·
+                content:''  // æŠ¥å‘Šå†…å®¹
             },
             {
-                investReportId:''  // Í¶×Ê±¨¸æID
-                title:''  // Í¶×Ê±¨¸æ±êÌâ
-                periodNumber:''  // Í¶×Ê±¨¸æÆÚºÅ
-                content:''  // ±¨¸æÄÚÈİ
+                investReportId:''  // æŠ•èµ„æŠ¥å‘ŠID
+                title:''  // æŠ•èµ„æŠ¥å‘Šæ ‡é¢˜
+                periodNumber:''  // æŠ•èµ„æŠ¥å‘ŠæœŸå·
+                content:''  // æŠ¥å‘Šå†…å®¹
             },
             {...}
             ]
@@ -683,46 +683,46 @@ Response:{
 
 }
 
-### ÎÒµÄµêÆÌ-»ñÈ¡µêÆÌ¼à¿ØÉãÏñÍ·ÁĞ±í
-call:http://website/usercenter/store!getInvestReport
+### æˆ‘çš„åº—é“º-è·å–åº—é“ºç›‘æ§æ‘„åƒå¤´åˆ—è¡¨
+call:http://website/usercenter/store!getMonitorList
 
 method:post
 
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        projectId:''  // µêÆÌID
+        projectId:''  // åº—é“ºID
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡µêÆÌ¼à¿ØÉãÏñÍ·ÁĞ±í³É¹¦', 
+        info:'è·å–åº—é“ºç›‘æ§æ‘„åƒå¤´åˆ—è¡¨æˆåŠŸ', 
         data:{
             monitorVOList:[
                 {
-                    monitorId:''  // ÉãÏñÍ·ID
-                    monitorName:''  // ÉãÏñÍ·Ãû³Æ
-                    url:''  // ÊÓÆµµØÖ·
+                    monitorId:''  // æ‘„åƒå¤´ID
+                    monitorName:''  // æ‘„åƒå¤´åç§°
+                    url:''  // è§†é¢‘åœ°å€
                 },
                 {
-                    monitorId:''  // ÉãÏñÍ·ID
-                    monitorName:''  // ÉãÏñÍ·Ãû³Æ
-                    url:''  // ÊÓÆµµØÖ·
+                    monitorId:''  // æ‘„åƒå¤´ID
+                    monitorName:''  // æ‘„åƒå¤´åç§°
+                    url:''  // è§†é¢‘åœ°å€
                 },
                 {...}
             ]
@@ -732,7 +732,7 @@ Response:{
 
 }
 
-### »ãÃÎÏû·ÑÈ¯-»ñÈ¡Ïû·ÑÈ¯ÕË»§ĞÅÏ¢
+### æ±‡æ¢¦æ¶ˆè´¹åˆ¸-è·å–æ¶ˆè´¹åˆ¸è´¦æˆ·ä¿¡æ¯
 call:http://website/usercenter/voucher!getExpenseAccountInfo
 
 method:post
@@ -740,10 +740,10 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
     }
@@ -752,72 +752,72 @@ Request:{
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡µêÆÌÏû·ÑÈ¯ÁĞ±í³É¹¦', 
+        info:'è·å–åº—é“ºæ¶ˆè´¹åˆ¸åˆ—è¡¨æˆåŠŸ', 
         data:{
-			availableAmount:'' // ÕË»§¿ÉÓÃ×ÜºÍ
-			amount:''  // ¸ÃµêÆÌÒÑ·¢·Å×ÜºÍ
-			spentAmount:''  // ¸ÃµêÆÌÒÑÏû·Ñ×ÜºÍ
-			transferOutAmount:''  // ¸ÃµêÆÌÒÑ×ª³ö×ÜºÍ
+			availableAmount:'' // è´¦æˆ·å¯ç”¨æ€»å’Œ
+			amount:''  // è¯¥åº—é“ºå·²å‘æ”¾æ€»å’Œ
+			spentAmount:''  // è¯¥åº—é“ºå·²æ¶ˆè´¹æ€»å’Œ
+			transferOutAmount:''  // è¯¥åº—é“ºå·²è½¬å‡ºæ€»å’Œ
         }
     }
 
 }
 
 
-### »ãÃÎÏû·ÑÈ¯-»ñÈ¡ÎÒµÄÏû·ÑÈ¯µêÆÌÁĞ±í
-call:http://website/usercenter/voucher!getVoucherStore
+### æ±‡æ¢¦æ¶ˆè´¹åˆ¸-è·å–æˆ‘çš„æ¶ˆè´¹åˆ¸åº—é“ºåˆ—è¡¨
+call:http://website/usercenter/voucher!getVoucherStoreList
 
 method:post
 
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		pageNo:''  // ²éÑ¯µÄÒ³Âë
-        pageSize  // Ã¿Ò³ÏÔÊ¾ÌõÊı£¨ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯ËùÓĞÊı¾İ£©
+		pageNo:''  // æŸ¥è¯¢çš„é¡µç 
+        pageSize  // æ¯é¡µæ˜¾ç¤ºæ¡æ•°ï¼ˆä¸pageNoä¸€èµ·ï¼Œå¦‚ä¸ä¼ åˆ™æŸ¥è¯¢æ‰€æœ‰æ•°æ®ï¼‰
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡µêÆÌÏû·ÑÈ¯ÁĞ±í³É¹¦', 
+        info:'è·å–åº—é“ºæ¶ˆè´¹åˆ¸åˆ—è¡¨æˆåŠŸ', 
         data:{
 			expenseVoucherAccountVOList[
 			{
-				evaId:''  // Ïû·ÑÈ¯ÕË»§ID
-				projectId:''  // µêÆÌID
-				availableAmount:'' // ¿ÉÓÃÓà¶î
-				amount:'' // ·¢·Å½ğ¶î
-				spentAmount:'' // ÒÑÓÃ½ğ¶î
-				transferOutAmount:''  // ÒÑ×ª³ö½ğ¶î
+				evaId:''  // æ¶ˆè´¹åˆ¸è´¦æˆ·ID
+				projectId:''  // åº—é“ºID
+				availableAmount:'' // å¯ç”¨ä½™é¢
+				amount:'' // å‘æ”¾é‡‘é¢
+				spentAmount:'' // å·²ç”¨é‡‘é¢
+				transferOutAmount:''  // å·²è½¬å‡ºé‡‘é¢
 			},
 			{
-				evaId:''  // Ïû·ÑÈ¯ÕË»§ID
-				projectId:''  // µêÆÌID
-				availableAmount:'' // ¿ÉÓÃÓà¶î
-				amount:'' // ·¢·Å½ğ¶î
-				spentAmount:'' // ÒÑÓÃ½ğ¶î
-				transferOutAmount:''  // ÒÑ×ª³ö½ğ¶î
+				evaId:''  // æ¶ˆè´¹åˆ¸è´¦æˆ·ID
+				projectId:''  // åº—é“ºID
+				availableAmount:'' // å¯ç”¨ä½™é¢
+				amount:'' // å‘æ”¾é‡‘é¢
+				spentAmount:'' // å·²ç”¨é‡‘é¢
+				transferOutAmount:''  // å·²è½¬å‡ºé‡‘é¢
 			},
 			{...}
 			]
@@ -827,7 +827,7 @@ Response:{
 }
 
 
-### »ãÃÎÏû·ÑÈ¯-»ñÈ¡Ä³Ò»µêÆÌÏû·ÑÈ¯ÕË»§ĞÅÏ¢
+### æ±‡æ¢¦æ¶ˆè´¹åˆ¸-è·å–æŸä¸€åº—é“ºæ¶ˆè´¹åˆ¸è´¦æˆ·ä¿¡æ¯
 call:http://website/usercenter/voucher!getStoreAccountInfo
 
 method:post
@@ -835,98 +835,98 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        projectId:''  // µêÆÌID
+        projectId:''  // åº—é“ºID
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡µêÆÌÏû·ÑÈ¯ÁĞ±í³É¹¦', 
+        info:'è·å–åº—é“ºæ¶ˆè´¹åˆ¸åˆ—è¡¨æˆåŠŸ', 
         data:{
-			projectId:''  // µêÆÌID
-			projectName:''  // µêÆÌÃû³Æ
-			availableAmount:'' // ¸ÃµêÆÌÕË»§¿ÉÓÃÓà¶î
-			amount:''  // ¸ÃµêÆÌÒÑ·¢·Å
-			spentAmount:''  // ¸ÃµêÆÌÒÑÏû·Ñ½ğ¶î
-			transferOutAmount:''  // ¸ÃµêÆÌÒÑ×ª³ö½ğ¶î
-			saleAmount:''  // ¸ÃµêÆÌÒÑ³öÊÛ½ğ¶î
+			projectId:''  // åº—é“ºID
+			projectName:''  // åº—é“ºåç§°
+			availableAmount:'' // è¯¥åº—é“ºè´¦æˆ·å¯ç”¨ä½™é¢
+			amount:''  // è¯¥åº—é“ºå·²å‘æ”¾
+			spentAmount:''  // è¯¥åº—é“ºå·²æ¶ˆè´¹é‡‘é¢
+			transferOutAmount:''  // è¯¥åº—é“ºå·²è½¬å‡ºé‡‘é¢
+			saleAmount:''  // è¯¥åº—é“ºå·²å‡ºå”®é‡‘é¢
         }
     }
 
 }
 
-### »ãÃÎÏû·ÑÈ¯-»ñÈ¡Ä³Ò»µêÆÌÏû·ÑÈ¯ÁĞ±í
-call:http://website/usercenter/voucher!getStoreExpenseVoucher
+### æ±‡æ¢¦æ¶ˆè´¹åˆ¸-è·å–æŸä¸€åº—é“ºæ¶ˆè´¹åˆ¸åˆ—è¡¨
+call:http://website/usercenter/voucher!getStoreExpenseVoucherList
 
 method:post
 
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        projectId:''  // µêÆÌID
-		pageNo:''  // ²éÑ¯µÄÒ³Âë
-        pageSize  // Ã¿Ò³ÏÔÊ¾ÌõÊı£¨ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯ËùÓĞÊı¾İ£©
+        projectId:''  // åº—é“ºID
+		pageNo:''  // æŸ¥è¯¢çš„é¡µç 
+        pageSize  // æ¯é¡µæ˜¾ç¤ºæ¡æ•°ï¼ˆä¸pageNoä¸€èµ·ï¼Œå¦‚ä¸ä¼ åˆ™æŸ¥è¯¢æ‰€æœ‰æ•°æ®ï¼‰
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡µêÆÌÏû·ÑÈ¯ÁĞ±í³É¹¦', 
+        info:'è·å–åº—é“ºæ¶ˆè´¹åˆ¸åˆ—è¡¨æˆåŠŸ', 
         data:{
 			expenseVoucherAccountVOList:[
 				{
-					expenseVoucherId:'' // Ïû·ÑÈ¯ID
-					projectId:'' // µêÆÌID
-					code:''  // Ïû·ÑÈ¯±àÂë
-					amount:''  // Ïû·ÑÈ¯½ğ¶î
-					useTime:''  // Ê¹ÓÃÊ±¼ä
-					availableTime:''  // ÓĞĞ§Ê±¼ä
-					trustDeadline:''  // ÍĞ¹Ü½ØÖ¹Ê±¼ä
-					expectedPrice:''  // ÆÚÍûÊÛ¼Û
-					shareFlag:''  // ÖúÁ¦±êÊ¶£¬0 Í¬Òâ 1²»Í¬ÒâÖúÁ¦
-					type:''  // Ïû·ÑÈ¯ÀàĞÍ  È¯ÀàĞÍ 1 »ãÃÎ¹É¶«È¯ 2 µêÆÌÏû·ÑÈ¯
-					status:''  // Ïû·ÑÈ¯×´Ì¬£¨0Î´Ê¹ÓÃ£¬1ÒÑÊ¹ÓÃ£¬2¹ıÆÚ£¬3È¡Ïû£¬4×ª³ö£¬5×ªÈë£¬6ÍĞ¹ÜÖĞ£¬7Ëø¶¨ÖĞ£¬8ÒÑ³öÊÛ£¬9¹ºÂòÖĞ,10ÒÑ¹ºÂò£¬11ÒÑ¹ıÆÚ£©
+					expenseVoucherId:'' // æ¶ˆè´¹åˆ¸ID
+					projectId:'' // åº—é“ºID
+					code:''  // æ¶ˆè´¹åˆ¸ç¼–ç 
+					amount:''  // æ¶ˆè´¹åˆ¸é‡‘é¢
+					useTime:''  // ä½¿ç”¨æ—¶é—´
+					availableTime:''  // æœ‰æ•ˆæ—¶é—´
+					trustDeadline:''  // æ‰˜ç®¡æˆªæ­¢æ—¶é—´
+					expectedPrice:''  // æœŸæœ›å”®ä»·
+					shareFlag:''  // åŠ©åŠ›æ ‡è¯†ï¼Œ0 åŒæ„ 1ä¸åŒæ„åŠ©åŠ›
+					type:''  // æ¶ˆè´¹åˆ¸ç±»å‹  åˆ¸ç±»å‹ 1 æ±‡æ¢¦è‚¡ä¸œåˆ¸ 2 åº—é“ºæ¶ˆè´¹åˆ¸
+					status:''  // æ¶ˆè´¹åˆ¸çŠ¶æ€ï¼ˆ0æœªä½¿ç”¨ï¼Œ1å·²ä½¿ç”¨ï¼Œ2è¿‡æœŸï¼Œ3å–æ¶ˆï¼Œ4è½¬å‡ºï¼Œ5è½¬å…¥ï¼Œ6æ‰˜ç®¡ä¸­ï¼Œ7é”å®šä¸­ï¼Œ8å·²å‡ºå”®ï¼Œ9è´­ä¹°ä¸­,10å·²è´­ä¹°ï¼Œ11å·²è¿‡æœŸï¼‰
 				},
 				{
-					expenseVoucherId:'' // Ïû·ÑÈ¯ID
-					projectId:'' // µêÆÌID
-					code:''  // Ïû·ÑÈ¯±àÂë
-					amount:''  // Ïû·ÑÈ¯½ğ¶î
-					useTime:''  // Ê¹ÓÃÊ±¼ä
-					availableTime:''  // ÓĞĞ§Ê±¼ä
-					trustDeadline:''  // ÍĞ¹Ü½ØÖ¹Ê±¼ä
-					expectedPrice:''  // ÆÚÍûÊÛ¼Û
-					shareFlag:''  // ÖúÁ¦±êÊ¶£¬0 Í¬Òâ 1²»Í¬ÒâÖúÁ¦
-					type:''  // Ïû·ÑÈ¯ÀàĞÍ  È¯ÀàĞÍ 1 »ãÃÎ¹É¶«È¯ 2 µêÆÌÏû·ÑÈ¯
-					status:''  // Ïû·ÑÈ¯×´Ì¬£¨0Î´Ê¹ÓÃ£¬1ÒÑÊ¹ÓÃ£¬2¹ıÆÚ£¬3È¡Ïû£¬4×ª³ö£¬5×ªÈë£¬6ÍĞ¹ÜÖĞ£¬7Ëø¶¨ÖĞ£¬8ÒÑ³öÊÛ£¬9¹ºÂòÖĞ,10ÒÑ¹ºÂò£¬11ÒÑ¹ıÆÚ£©
+					expenseVoucherId:'' // æ¶ˆè´¹åˆ¸ID
+					projectId:'' // åº—é“ºID
+					code:''  // æ¶ˆè´¹åˆ¸ç¼–ç 
+					amount:''  // æ¶ˆè´¹åˆ¸é‡‘é¢
+					useTime:''  // ä½¿ç”¨æ—¶é—´
+					availableTime:''  // æœ‰æ•ˆæ—¶é—´
+					trustDeadline:''  // æ‰˜ç®¡æˆªæ­¢æ—¶é—´
+					expectedPrice:''  // æœŸæœ›å”®ä»·
+					shareFlag:''  // åŠ©åŠ›æ ‡è¯†ï¼Œ0 åŒæ„ 1ä¸åŒæ„åŠ©åŠ›
+					type:''  // æ¶ˆè´¹åˆ¸ç±»å‹  åˆ¸ç±»å‹ 1 æ±‡æ¢¦è‚¡ä¸œåˆ¸ 2 åº—é“ºæ¶ˆè´¹åˆ¸
+					status:''  // æ¶ˆè´¹åˆ¸çŠ¶æ€ï¼ˆ0æœªä½¿ç”¨ï¼Œ1å·²ä½¿ç”¨ï¼Œ2è¿‡æœŸï¼Œ3å–æ¶ˆï¼Œ4è½¬å‡ºï¼Œ5è½¬å…¥ï¼Œ6æ‰˜ç®¡ä¸­ï¼Œ7é”å®šä¸­ï¼Œ8å·²å‡ºå”®ï¼Œ9è´­ä¹°ä¸­,10å·²è´­ä¹°ï¼Œ11å·²è¿‡æœŸï¼‰
 				},
 				{...}
 			]
@@ -935,7 +935,7 @@ Response:{
 
 }
 
-### »ãÃÎÏû·ÑÈ¯-Ïû·Ñ½Ó¿Ú£¬Éú³ÉÏû·ÑÈ¯
+### æ±‡æ¢¦æ¶ˆè´¹åˆ¸-æ¶ˆè´¹æ¥å£ï¼Œç”Ÿæˆæ¶ˆè´¹åˆ¸
 call:http://website/usercenter/voucher!createVoucher
 
 method:post
@@ -943,37 +943,37 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        projectId:''  // µêÆÌID
+        projectId:''  // åº—é“ºID
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'Éú³ÉÏû·ÑÈ¯³É¹¦', 
+        info:'ç”Ÿæˆæ¶ˆè´¹åˆ¸æˆåŠŸ', 
         data:{
-			projectId:'' // ÏîÄ¿ID
-			expenseVoucherId:''  // Ïû·ÑÈ¯ID
-			code:''  // Ïû·ÑÈ¯±àÂë
+			projectId:'' // é¡¹ç›®ID
+			expenseVoucherId:''  // æ¶ˆè´¹åˆ¸ID
+			code:''  // æ¶ˆè´¹åˆ¸ç¼–ç 
         }
     }
 
 }
 
-### »ãÃÎÏû·ÑÈ¯-³öÊÛ£¬Ïû·ÑÈ¯ÍĞ¹Ü½Ó¿Ú
+### æ±‡æ¢¦æ¶ˆè´¹åˆ¸-å‡ºå”®ï¼Œæ¶ˆè´¹åˆ¸æ‰˜ç®¡æ¥å£
 call:http://website/usercenter/voucher!generateTrusteeshipVoucher
 
 method:post
@@ -981,41 +981,41 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        projectId:''  // µêÆÌID
-		amount:''  // ÍĞ¹Ü½ğ¶î£¨10µÄÕûÊı±¶£©
-		discount:'' // ÕÛ¿Û£¨²»ÄÜĞ¡ÓÚ0£©
-		trustDeadline:''  // ÍĞ¹Ü½ØÖ¹Ê±¼ä
-		shareFlag:''  // ÖúÁ¦±êÊ¶ 1 Í¬Òâ 0²»Í¬ÒâÖúÁ¦
+        projectId:''  // åº—é“ºID
+		amount:''  // æ‰˜ç®¡é‡‘é¢ï¼ˆ10çš„æ•´æ•°å€ï¼‰
+		discount:'' // æŠ˜æ‰£ï¼ˆä¸èƒ½å°äº0ï¼‰
+		trustDeadline:''  // æ‰˜ç®¡æˆªæ­¢æ—¶é—´
+		shareFlag:''  // åŠ©åŠ›æ ‡è¯† 1 åŒæ„ 0ä¸åŒæ„åŠ©åŠ›
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'ÍĞ¹Ü³É¹¦', 
+        info:'æ‰˜ç®¡æˆåŠŸ', 
         data:{
-			expenseVoucherId:''  // Éú³ÉµÄÏû·ÑÈ¯ID
-			trustDeadline:'' // ÍĞ¹Ü½ØÖ¹Ê±¼ä
-			amount:''  // ÍĞ¹Ü½ğ¶î
+			expenseVoucherId:''  // ç”Ÿæˆçš„æ¶ˆè´¹åˆ¸ID
+			trustDeadline:'' // æ‰˜ç®¡æˆªæ­¢æ—¶é—´
+			amount:''  // æ‰˜ç®¡é‡‘é¢
         }
     }
 
 }
 
-### »ãÃÎÏû·ÑÈ¯-×ªÈÃ
+### æ±‡æ¢¦æ¶ˆè´¹åˆ¸-è½¬è®©
 call:http://website/usercenter/voucher!transferVoucher
 
 method:post
@@ -1023,91 +1023,91 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        projectId:''  // µêÆÌID
-		amount:''  // ×ªÈÃ½ğ¶î
-		phoneNumber:''  // ½ÓÊÕ·½ÊÖ»úºÅÂë
-		postscript:''  // ±¸×¢ĞÅÏ¢
+        projectId:''  // åº—é“ºID
+		amount:''  // è½¬è®©é‡‘é¢
+		phoneNumber:''  // æ¥æ”¶æ–¹æ‰‹æœºå·ç 
+		postscript:''  // å¤‡æ³¨ä¿¡æ¯
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'×ªÈÃ³É¹¦', 
+        info:'è½¬è®©æˆåŠŸ', 
         data:{
-			expenseTransferId:''  // ×ªÈÃ¼ÇÂ¼ID
-			projectId:''  // µêÆÌID
-			projectName:''  // µêÆÌÃû³Æ
-			transferOutAmount:''  // ×ªÈÃ½ğ¶î
-			availableAmount:''  // ÕË»§Óà¶î
-			receiverName:''  // ½ÓÊÕÈËÃû³Æ
-			transferTime''  // ×ªÈÃÊ±¼ä
+			expenseTransferId:''  // è½¬è®©è®°å½•ID
+			projectId:''  // åº—é“ºID
+			projectName:''  // åº—é“ºåç§°
+			transferOutAmount:''  // è½¬è®©é‡‘é¢
+			availableAmount:''  // è´¦æˆ·ä½™é¢
+			receiverName:''  // æ¥æ”¶äººåç§°
+			transferTime''  // è½¬è®©æ—¶é—´
         }
     }
 
 }
 
-### »ñÈ¡ÎÒµÄÑûÇëÁĞ±í
-call:http://website/usercenter/user!getInvitationalPerson
+### è·å–æˆ‘çš„é‚€è¯·åˆ—è¡¨
+call:http://website/usercenter/user!getInvitationalPersonList
 
 method:post
 
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		pageNo:''  // ²éÑ¯µÄÒ³Âë
-        pageSize  // Ã¿Ò³ÏÔÊ¾ÌõÊı£¨ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯ËùÓĞÊı¾İ£©
+		pageNo:''  // æŸ¥è¯¢çš„é¡µç 
+        pageSize  // æ¯é¡µæ˜¾ç¤ºæ¡æ•°ï¼ˆä¸pageNoä¸€èµ·ï¼Œå¦‚ä¸ä¼ åˆ™æŸ¥è¯¢æ‰€æœ‰æ•°æ®ï¼‰
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡ÑûÇëÁĞ±í³É¹¦', 
+        info:'è·å–é‚€è¯·åˆ—è¡¨æˆåŠŸ', 
         data:{
-			invitationNum:''  // ÑûÇë×ÜÈËÊı
-			invitationAmount:'' // ÑûÇë×Ü½ğ¶î
-			invitationURL:'' // ÑûÇëÁ´½Ó
+			invitationNum:''  // é‚€è¯·æ€»äººæ•°
+			invitationAmount:'' // é‚€è¯·æ€»é‡‘é¢
+			invitationURL:'' // é‚€è¯·é“¾æ¥
 			userInvitationVOList:[
 			{
-				invitationUserId:''  // ÓÃ»§ID
-				invitationUserValidate:''  // ÓÃ»§×´Ì¬£¨0-Î´ÈÏÖ¤£¬1-ÒÑÈÏÖ¤£¬2-ÈÏÖ¤ÖĞ£¬3-ÈÏÖ¤Ê§°Ü£©
-				invitationUserName:''  // ÓÃ»§Ãû³Æ
-				invitationUserPhoto:'' // ÓÃ»§Í·Ïñ
-				invitationAmount:''  // Í¶×Ê½ğ¶î
+				invitationUserId:''  // ç”¨æˆ·ID
+				invitationUserValidate:''  // ç”¨æˆ·çŠ¶æ€ï¼ˆ0-æœªè®¤è¯ï¼Œ1-å·²è®¤è¯ï¼Œ2-è®¤è¯ä¸­ï¼Œ3-è®¤è¯å¤±è´¥ï¼‰
+				invitationUserName:''  // ç”¨æˆ·åç§°
+				invitationUserPhoto:'' // ç”¨æˆ·å¤´åƒ
+				invitationAmount:''  // æŠ•èµ„é‡‘é¢
 			},
 			{
-				invitationUserId:''  // ÓÃ»§ID
-				invitationUserValidate:''  // ÓÃ»§×´Ì¬£¨0-Î´ÈÏÖ¤£¬1-ÒÑÈÏÖ¤£¬2-ÈÏÖ¤ÖĞ£¬3-ÈÏÖ¤Ê§°Ü£©
-				invitationUserName:''  // ÓÃ»§Ãû³Æ
-				invitationUserPhoto:'' // ÓÃ»§Í·Ïñ
-				invitationAmount:''  // Í¶×Ê½ğ¶î
+				invitationUserId:''  // ç”¨æˆ·ID
+				invitationUserValidate:''  // ç”¨æˆ·çŠ¶æ€ï¼ˆ0-æœªè®¤è¯ï¼Œ1-å·²è®¤è¯ï¼Œ2-è®¤è¯ä¸­ï¼Œ3-è®¤è¯å¤±è´¥ï¼‰
+				invitationUserName:''  // ç”¨æˆ·åç§°
+				invitationUserPhoto:'' // ç”¨æˆ·å¤´åƒ
+				invitationAmount:''  // æŠ•èµ„é‡‘é¢
 			},
 			{...}
 			]
@@ -1118,21 +1118,21 @@ Response:{
 }
 
 
-### »ñÈ¡ÎÒµÄ¹Ø×¢ÁĞ±í
+### è·å–æˆ‘çš„å…³æ³¨åˆ—è¡¨
 
-### »ñÈ¡ÎÒµÄ·ÛË¿ÁĞ±í
+### è·å–æˆ‘çš„ç²‰ä¸åˆ—è¡¨
 
-### »ñÈ¡ÎÒµÄÎÄÕÂÀñ°İ
+### è·å–æˆ‘çš„æ–‡ç« ç¤¼æ‹œ
 
-### »ñÈ¡ÎÒµÄÊÕ²ØÁĞ±í
+### è·å–æˆ‘çš„æ”¶è—åˆ—è¡¨
 
-### »ñÈ¡ÎÒÊÕµ½´òÉÍµÄÁĞ±í
+### è·å–æˆ‘æ”¶åˆ°æ‰“èµçš„åˆ—è¡¨
 
-### »ñÈ¡ÎÒ·¢³ö´òÉÍµÄÁĞ±í
+### è·å–æˆ‘å‘å‡ºæ‰“èµçš„åˆ—è¡¨
 
 
 
-### ÎÒµÄÕË»§-»ñÈ¡ÎÒµÄÕË»§ĞÅÏ¢
+### æˆ‘çš„è´¦æˆ·-è·å–æˆ‘çš„è´¦æˆ·ä¿¡æ¯
 call:http://website/usercenter/account!getCurrentUserAccount
 
 method:post
@@ -1140,10 +1140,10 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
     }
@@ -1152,97 +1152,97 @@ Request:{
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡ÕË»§ĞÅÏ¢³É¹¦', 
+        info:'è·å–è´¦æˆ·ä¿¡æ¯æˆåŠŸ', 
         data:{
-			accountId:'',  // ÕË»§ID(Ö÷¼ü)
-			userId:'',  // ÓÃ»§ID
-			accountAmount:'',  // ÕË»§×Ü¶î
-			usableAmount:'',  // ÕË»§¿ÉÓÃÓà¶î
-			cashAllowAmount:'',  // ÕË»§¿ÉÌáÏÖÓà¶î
-			cashDisallowAmount:'',  // ÕË»§²»¿ÉÌáÏÖÓà¶î
-			investAmount:'',  // ×ÜÍ¶×Ê¶î
-			revenuesAmount:'',  // ×ÜÊÕÒæ
-			receivedAmount:'',  // ÏµÍ³ÔùËÍ×Ü¶î
+			accountId:'',  // è´¦æˆ·ID(ä¸»é”®)
+			userId:'',  // ç”¨æˆ·ID
+			accountAmount:'',  // è´¦æˆ·æ€»é¢
+			usableAmount:'',  // è´¦æˆ·å¯ç”¨ä½™é¢
+			cashAllowAmount:'',  // è´¦æˆ·å¯æç°ä½™é¢
+			cashDisallowAmount:'',  // è´¦æˆ·ä¸å¯æç°ä½™é¢
+			investAmount:'',  // æ€»æŠ•èµ„é¢
+			revenuesAmount:'',  // æ€»æ”¶ç›Š
+			receivedAmount:'',  // ç³»ç»Ÿèµ é€æ€»é¢
         }
     }
 
 }
 
-### ÎÒµÄÕË»§-»ñÈ¡Í¶×Ê¼ÇÂ¼
-call:http://website/usercenter/account!getUserInverstRecord
+### æˆ‘çš„è´¦æˆ·-è·å–æŠ•èµ„è®°å½•
+call:http://website/usercenter/account!getUserInverstRecordList
 
 method:post
 
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		tabNo:''  // ²éÑ¯Ìõ¼ş£¬¶©µ¥×´Ì¬£¬Ä¬ÈÏ0-È«²¿¶©µ¥£¬1-Î´Ö§¸¶¶©µ¥£¬2ÒÑÖ§¸¶¶©µ¥
-		pageNo:''  // ²éÑ¯µÄÒ³Âë
-        pageSize:''  // Ã¿Ò³ÏÔÊ¾ÌõÊı£¨ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯ËùÓĞÊı¾İ£©
+		tabNo:''  // æŸ¥è¯¢æ¡ä»¶ï¼Œè®¢å•çŠ¶æ€ï¼Œé»˜è®¤0-å…¨éƒ¨è®¢å•ï¼Œ1-æœªæ”¯ä»˜è®¢å•ï¼Œ2å·²æ”¯ä»˜è®¢å•
+		pageNo:''  // æŸ¥è¯¢çš„é¡µç 
+        pageSize:''  // æ¯é¡µæ˜¾ç¤ºæ¡æ•°ï¼ˆä¸pageNoä¸€èµ·ï¼Œå¦‚ä¸ä¼ åˆ™æŸ¥è¯¢æ‰€æœ‰æ•°æ®ï¼‰
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡ÕË»§ĞÅÏ¢³É¹¦', 
+        info:'è·å–è´¦æˆ·ä¿¡æ¯æˆåŠŸ', 
         data:{
 			investRecordList[
 				{
-					investRecordId:'',  // Í¶×Ê¼ÇÂ¼ID
-					investRecordCode:'',  // ÈÏ¹ºµ¥ºÅ
-					projectId:'',  // ÈÏ¹ºµÄÏîÄ¿ID
-					projectCode:'',  // ÏîÄ¿±àÂë
-					userId:'',  // Í¶×ÊÈËID
-					investCopy:'',  // ÈÏ¹º·İÊı
-					unitPrice:'',  // Ã¿·İµ¥¼Û
-					investAmount:'',  // ÈÏ¹º×Ü¶î
-					couponsAmount:'',  // µÖ¿Û½ğ¶î
-					realPay:'',  // Êµ¼ÊÖ§¸¶
-					payType:'',  // Ö§¸¶·½Ê½
-					status:'',  // ×´Ì¬
-					investCouponsId:'',  // µÖÓÃÈ¯ID
-					bankcard:'',  // Ê¹ÓÃĞÂÒøĞĞ¿¨Ö§¸¶
-					userBankcardId:'',  // ÓÃ»§Ñ¡ÔñÒøĞĞ¿¨
-					identity:''  // Í¶×ÊÈËÉí·İ 1£ºÆÕÍ¨Í¶×ÊÈË£¬2£ºÃ÷ĞÇÍ¶×ÊÈË
+					investRecordId:'',  // æŠ•èµ„è®°å½•ID
+					investRecordCode:'',  // è®¤è´­å•å·
+					projectId:'',  // è®¤è´­çš„é¡¹ç›®ID
+					projectCode:'',  // é¡¹ç›®ç¼–ç 
+					userId:'',  // æŠ•èµ„äººID
+					investCopy:'',  // è®¤è´­ä»½æ•°
+					unitPrice:'',  // æ¯ä»½å•ä»·
+					investAmount:'',  // è®¤è´­æ€»é¢
+					couponsAmount:'',  // æŠµæ‰£é‡‘é¢
+					realPay:'',  // å®é™…æ”¯ä»˜
+					payType:'',  // æ”¯ä»˜æ–¹å¼
+					status:'',  // çŠ¶æ€
+					investCouponsId:'',  // æŠµç”¨åˆ¸ID
+					bankcard:'',  // ä½¿ç”¨æ–°é“¶è¡Œå¡æ”¯ä»˜
+					userBankcardId:'',  // ç”¨æˆ·é€‰æ‹©é“¶è¡Œå¡
+					identity:''  // æŠ•èµ„äººèº«ä»½ 1ï¼šæ™®é€šæŠ•èµ„äººï¼Œ2ï¼šæ˜æ˜ŸæŠ•èµ„äºº
 				},
 				{
-					investRecordId:'',  // Í¶×Ê¼ÇÂ¼ID
-					investRecordCode:'',  // ÈÏ¹ºµ¥ºÅ
-					projectId:'',  // ÈÏ¹ºµÄÏîÄ¿ID
-					projectCode:'',  // ÏîÄ¿±àÂë
-					userId:'',  // Í¶×ÊÈËID
-					investCopy:'',  // ÈÏ¹º·İÊı
-					unitPrice:'',  // Ã¿·İµ¥¼Û
-					investAmount:'',  // ÈÏ¹º×Ü¶î
-					couponsAmount:'',  // µÖ¿Û½ğ¶î
-					realPay:'',  // Êµ¼ÊÖ§¸¶
-					payType:'',  // Ö§¸¶·½Ê½
-					status:'',  // ×´Ì¬
-					investCouponsId:'',  // µÖÓÃÈ¯ID
-					bankcard:'',  // Ê¹ÓÃĞÂÒøĞĞ¿¨Ö§¸¶
-					userBankcardId:'',  // ÓÃ»§Ñ¡ÔñÒøĞĞ¿¨
-					identity:''  // Í¶×ÊÈËÉí·İ 1£ºÆÕÍ¨Í¶×ÊÈË£¬2£ºÃ÷ĞÇÍ¶×ÊÈË
+					investRecordId:'',  // æŠ•èµ„è®°å½•ID
+					investRecordCode:'',  // è®¤è´­å•å·
+					projectId:'',  // è®¤è´­çš„é¡¹ç›®ID
+					projectCode:'',  // é¡¹ç›®ç¼–ç 
+					userId:'',  // æŠ•èµ„äººID
+					investCopy:'',  // è®¤è´­ä»½æ•°
+					unitPrice:'',  // æ¯ä»½å•ä»·
+					investAmount:'',  // è®¤è´­æ€»é¢
+					couponsAmount:'',  // æŠµæ‰£é‡‘é¢
+					realPay:'',  // å®é™…æ”¯ä»˜
+					payType:'',  // æ”¯ä»˜æ–¹å¼
+					status:'',  // çŠ¶æ€
+					investCouponsId:'',  // æŠµç”¨åˆ¸ID
+					bankcard:'',  // ä½¿ç”¨æ–°é“¶è¡Œå¡æ”¯ä»˜
+					userBankcardId:'',  // ç”¨æˆ·é€‰æ‹©é“¶è¡Œå¡
+					identity:''  // æŠ•èµ„äººèº«ä»½ 1ï¼šæ™®é€šæŠ•èµ„äººï¼Œ2ï¼šæ˜æ˜ŸæŠ•èµ„äºº
 				},
 				{...}
 			]
@@ -1251,7 +1251,7 @@ Response:{
 
 }
 
-### ÎÒµÄÕË»§-Í¶×Ê¼ÇÂ¼-Á¢¼´Ö§¸¶Ç°ÑéÖ¤£¬ÑéÖ¤³É¹¦ÔòÌø×ªÖ§¸¶
+### æˆ‘çš„è´¦æˆ·-æŠ•èµ„è®°å½•-ç«‹å³æ”¯ä»˜å‰éªŒè¯ï¼ŒéªŒè¯æˆåŠŸåˆ™è·³è½¬æ”¯ä»˜
 call:http://website/usercenter/account!goPay
 
 method:post
@@ -1259,28 +1259,28 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		investRecordCode:'' // ÈÏ¹ºµ¥ºÅ
-		status:''  // ¶©µ¥×´Ì¬
+		investRecordCode:'' // è®¤è´­å•å·
+		status:''  // è®¢å•çŠ¶æ€
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'Ö§¸¶Ç°ÑéÖ¤Í¨¹ı', 
+        info:'æ”¯ä»˜å‰éªŒè¯é€šè¿‡', 
         data:{
 			
         }
@@ -1288,7 +1288,7 @@ Response:{
 
 }
 
-### ÎÒµÄÕË»§-Í¶×Ê¼ÇÂ¼-È¡Ïû¶©µ¥½Ó¿Ú
+### æˆ‘çš„è´¦æˆ·-æŠ•èµ„è®°å½•-å–æ¶ˆè®¢å•æ¥å£
 call:http://website/usercenter/account!cancelOrder
 
 method:post
@@ -1296,28 +1296,28 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		investRecordCode:'' // ÈÏ¹ºµ¥ºÅ
-		investCouponsId:''  // µÖÓÃÈ¯ID
+		investRecordCode:'' // è®¤è´­å•å·
+		investCouponsId:''  // æŠµç”¨åˆ¸ID
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'¶©µ¥È¡Ïû³É¹¦', 
+        info:'è®¢å•å–æ¶ˆæˆåŠŸ', 
         data:{
 			
         }
@@ -1325,51 +1325,51 @@ Response:{
 
 }
 
-### ÎÒµÄÕË»§-»ñÈ¡½»Ò×¼ÇÂ¼
-call:http://website/usercenter/account!getWithdrawCashRecord
+### æˆ‘çš„è´¦æˆ·-è·å–äº¤æ˜“è®°å½•
+call:http://website/usercenter/account!getWithdrawCashRecordList
 
 method:post
 
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		pageNo:''  // ²éÑ¯µÄÒ³Âë
-        pageSize:''  // Ã¿Ò³ÏÔÊ¾ÌõÊı£¨ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯ËùÓĞÊı¾İ£©
+		pageNo:''  // æŸ¥è¯¢çš„é¡µç 
+        pageSize:''  // æ¯é¡µæ˜¾ç¤ºæ¡æ•°ï¼ˆä¸pageNoä¸€èµ·ï¼Œå¦‚ä¸ä¼ åˆ™æŸ¥è¯¢æ‰€æœ‰æ•°æ®ï¼‰
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡½»Ò×¼ÇÂ¼³É¹¦', 
+        info:'è·å–äº¤æ˜“è®°å½•æˆåŠŸ', 
         data:{
 			withdrawCashRecordVOList:[
 				{
-					withdrawId:''  // ¼ÇÂ¼ID
-					applicantBank:''  // ÒøĞĞÃû³Æ
-					applicantBankCard:''  // ÒøĞĞ¿¨ºÅ
-					status:''  // ´¦Àí×´Ì¬ 0£ºÎ´Í¨¹ı 1£ºÉêÇëÖĞ 2£º´¦ÀíÖĞ 3£º´¦ÀíÍê³É 
-					applicantAmount:''  // ½»Ò×½ğ¶î
+					withdrawId:''  // è®°å½•ID
+					applicantBank:''  // é“¶è¡Œåç§°
+					applicantBankCard:''  // é“¶è¡Œå¡å·
+					status:''  // å¤„ç†çŠ¶æ€ 0ï¼šæœªé€šè¿‡ 1ï¼šç”³è¯·ä¸­ 2ï¼šå¤„ç†ä¸­ 3ï¼šå¤„ç†å®Œæˆ 
+					applicantAmount:''  // äº¤æ˜“é‡‘é¢
 				},
 				{
-					withdrawId:''  // ¼ÇÂ¼ID
-					applicantBank:''  // ÒøĞĞÃû³Æ
-					applicantBankCard:''  // ÒøĞĞ¿¨ºÅ
-					status:''  // ´¦Àí×´Ì¬ 0£ºÎ´Í¨¹ı 1£ºÉêÇëÖĞ 2£º´¦ÀíÖĞ 3£º´¦ÀíÍê³É 
-					applicantAmount:''  // ½»Ò×½ğ¶î
+					withdrawId:''  // è®°å½•ID
+					applicantBank:''  // é“¶è¡Œåç§°
+					applicantBankCard:''  // é“¶è¡Œå¡å·
+					status:''  // å¤„ç†çŠ¶æ€ 0ï¼šæœªé€šè¿‡ 1ï¼šç”³è¯·ä¸­ 2ï¼šå¤„ç†ä¸­ 3ï¼šå¤„ç†å®Œæˆ 
+					applicantAmount:''  // äº¤æ˜“é‡‘é¢
 				},
 				{...}
 			]
@@ -1378,49 +1378,49 @@ Response:{
 
 }
 
-### ÎÒµÄÕË»§-»ñÈ¡ÒøĞĞ¿¨ÁĞ±í
-call:http://website/usercenter/account!getUserBankCard
+### æˆ‘çš„è´¦æˆ·-è·å–é“¶è¡Œå¡åˆ—è¡¨
+call:http://website/usercenter/account!getUserBankCardList
 
 method:post
 
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		pageNo:''  // ²éÑ¯µÄÒ³Âë
-        pageSize:''  // Ã¿Ò³ÏÔÊ¾ÌõÊı£¨ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯ËùÓĞÊı¾İ£©
+		pageNo:''  // æŸ¥è¯¢çš„é¡µç 
+        pageSize:''  // æ¯é¡µæ˜¾ç¤ºæ¡æ•°ï¼ˆä¸pageNoä¸€èµ·ï¼Œå¦‚ä¸ä¼ åˆ™æŸ¥è¯¢æ‰€æœ‰æ•°æ®ï¼‰
     }
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡ÒøĞĞ¿¨ÁĞ±í³É¹¦', 
+        info:'è·å–é“¶è¡Œå¡åˆ—è¡¨æˆåŠŸ', 
         data:{
 			userBankcardList:[
 				{
-					userBankcardId  // ÒøĞĞ¿¨ID
-					bankcard:''  // ÒøĞĞ¿¨ºÅ
-					bankName:''  // ÒøĞĞÃû³Æ
-					isDefault:''  // ÊÇ·ñÄ¬ÈÏ£¬10Ä¬ÈÏ£¬20ÆÕÍ¨¿¨
+					userBankcardId  // é“¶è¡Œå¡ID
+					bankcard:''  // é“¶è¡Œå¡å·
+					bankName:''  // é“¶è¡Œåç§°
+					isDefault:''  // æ˜¯å¦é»˜è®¤ï¼Œ10é»˜è®¤ï¼Œ20æ™®é€šå¡
 				},
 				{
-					userBankcardId:''  // ÒøĞĞ¿¨ID
-					bankcard:''  // ÒøĞĞ¿¨ºÅ
-					bankName:''  // ÒøĞĞÃû³Æ
-					isDefault:''  // ÊÇ·ñÄ¬ÈÏ£¬10Ä¬ÈÏ£¬20ÆÕÍ¨¿¨
+					userBankcardId:''  // é“¶è¡Œå¡ID
+					bankcard:''  // é“¶è¡Œå¡å·
+					bankName:''  // é“¶è¡Œåç§°
+					isDefault:''  // æ˜¯å¦é»˜è®¤ï¼Œ10é»˜è®¤ï¼Œ20æ™®é€šå¡
 				},
 				{...}
 			]
@@ -1429,7 +1429,7 @@ Response:{
 
 }
 
-### ÎÒµÄÕË»§-ÎÒµÄÒøĞĞ¿¨-ĞÂÔöÒøĞĞ¿¨
+### æˆ‘çš„è´¦æˆ·-æˆ‘çš„é“¶è¡Œå¡-æ–°å¢é“¶è¡Œå¡
 call:http://website/usercenter/account!addBankCard
 
 method:post
@@ -1437,37 +1437,37 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		bankName:''  // ÒøĞĞÃû³Æ
-		realName:''  // ³Ö¿¨ÈËÃû³Æ
-		bankcard:''  // ´¢Ğî¿¨ºÅ£¨ĞèÒªÑéÖ¤ÒøĞĞ¿¨ºÅ¸ñÊ½£©
-		isDefault:'' // ÊÇ·ñÉèÖÃÎªÄ¬ÈÏ·Öºì¿¨
+		bankName:''  // é“¶è¡Œåç§°
+		realName:''  // æŒå¡äººåç§°
+		bankcard:''  // å‚¨è“„å¡å·ï¼ˆéœ€è¦éªŒè¯é“¶è¡Œå¡å·æ ¼å¼ï¼‰
+		isDefault:'' // æ˜¯å¦è®¾ç½®ä¸ºé»˜è®¤åˆ†çº¢å¡
 	}
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'ĞÂÔöÒøĞĞ¿¨³É¹¦', 
+        info:'æ–°å¢é“¶è¡Œå¡æˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### ÎÒµÄÕË»§-ÎÒµÄÒøĞĞ¿¨-ÉèÖÃÄ¬ÈÏ·Öºì¿¨½Ó¿Ú
+### æˆ‘çš„è´¦æˆ·-æˆ‘çš„é“¶è¡Œå¡-è®¾ç½®é»˜è®¤åˆ†çº¢å¡æ¥å£
 call:http://website/usercenter/account!setDefaultCard
 
 method:post
@@ -1475,27 +1475,27 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		userBankcardId:''  // ÒøĞĞ¿¨ID
+		userBankcardId:''  // é“¶è¡Œå¡ID
 	}
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'ÉèÖÃÄ¬ÈÏ·Öºì¿¨³É¹¦', 
+        info:'è®¾ç½®é»˜è®¤åˆ†çº¢å¡æˆåŠŸ', 
         data:{
         }
     }
@@ -1503,7 +1503,7 @@ Response:{
 }
 
 
-### ÎÒµÄÕË»§-ÎÒµÄÒøĞĞ¿¨-½â³ıÒøĞĞ¿¨°ó¶¨½Ó¿Ú
+### æˆ‘çš„è´¦æˆ·-æˆ‘çš„é“¶è¡Œå¡-è§£é™¤é“¶è¡Œå¡ç»‘å®šæ¥å£
 call:http://website/usercenter/account!deleteCard
 
 method:post
@@ -1511,90 +1511,90 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		userBankcardId:''  // ÒøĞĞ¿¨ID
+		userBankcardId:''  // é“¶è¡Œå¡ID
 	}
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'½â³ı°ó¶¨³É¹¦', 
+        info:'è§£é™¤ç»‘å®šæˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### ÎÒµÄÕË»§-»ñÈ¡Í¶×ÊµÖÓÃÈ¯ÁĞ±í
-call:http://website/usercenter/account!getInvestCoupons
+### æˆ‘çš„è´¦æˆ·-è·å–æŠ•èµ„æŠµç”¨åˆ¸åˆ—è¡¨
+call:http://website/usercenter/account!getInvestCouponsList
 
 method:post
 
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		pageNo:''  // ²éÑ¯µÄÒ³Âë
-        pageSize:''  // Ã¿Ò³ÏÔÊ¾ÌõÊı£¨ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯ËùÓĞÊı¾İ£©
+		pageNo:''  // æŸ¥è¯¢çš„é¡µç 
+        pageSize:''  // æ¯é¡µæ˜¾ç¤ºæ¡æ•°ï¼ˆä¸pageNoä¸€èµ·ï¼Œå¦‚ä¸ä¼ åˆ™æŸ¥è¯¢æ‰€æœ‰æ•°æ®ï¼‰
 	}
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡Í¶×ÊµÖÓÃÈ¯ÁĞ±í³É¹¦', 
+        info:'è·å–æŠ•èµ„æŠµç”¨åˆ¸åˆ—è¡¨æˆåŠŸ', 
         data:{
 			investCouponsVOList:[
 				{
-					investCouponsId:'',  // µÖÓÃÈ¯ID
-					investCouponsCode:'',  // µÖÓÃÈ¯±àÂë
-					promotionId:'',  // »î¶¯ID
-					promotionCode:'',  // »î¶¯±àÂë
-					amount:'',  // Óà¶î
-					roleAmountLine:'',  // Ïû·Ñ½ğ¶î¹æÔò(Âú×ã±¾½ğ¶î¿ÉÊ¹ÓÃ,0ÎªÎŞÃÅ¼÷ÏŞÖÆ))
-					roleAmount:'',  // Âú×ãROLE_AMOUNT_LINE¿ÉÊ¹ÓÃ±¾×Ö¶ÎÕâÃ´¶àµÄÇ®
-					roleProjectLine:'',  // Âú×ã´ËÏîÄ¿¸öÊı¿ÉÊ¹ÓÃ(0ÎªÎŞÃÅ¼÷ÏŞÖÆ)
-					validBegin:'',  // ÓĞĞ§ÆÚ¿ªÊ¼Ê±¼ä
-					validEnd:'',  // ÓĞĞ§ÆÚ½áÊøÊ±¼ä
-					status:'',  // ×´Ì¬(0£ºÎ´Ê¹ÓÃ£¬1£ºÒÑÊ¹ÓÃ)
+					investCouponsId:'',  // æŠµç”¨åˆ¸ID
+					investCouponsCode:'',  // æŠµç”¨åˆ¸ç¼–ç 
+					promotionId:'',  // æ´»åŠ¨ID
+					promotionCode:'',  // æ´»åŠ¨ç¼–ç 
+					amount:'',  // ä½™é¢
+					roleAmountLine:'',  // æ¶ˆè´¹é‡‘é¢è§„åˆ™(æ»¡è¶³æœ¬é‡‘é¢å¯ä½¿ç”¨,0ä¸ºæ— é—¨æ§›é™åˆ¶))
+					roleAmount:'',  // æ»¡è¶³ROLE_AMOUNT_LINEå¯ä½¿ç”¨æœ¬å­—æ®µè¿™ä¹ˆå¤šçš„é’±
+					roleProjectLine:'',  // æ»¡è¶³æ­¤é¡¹ç›®ä¸ªæ•°å¯ä½¿ç”¨(0ä¸ºæ— é—¨æ§›é™åˆ¶)
+					validBegin:'',  // æœ‰æ•ˆæœŸå¼€å§‹æ—¶é—´
+					validEnd:'',  // æœ‰æ•ˆæœŸç»“æŸæ—¶é—´
+					status:'',  // çŠ¶æ€(0ï¼šæœªä½¿ç”¨ï¼Œ1ï¼šå·²ä½¿ç”¨)
 				},
 				{
-					investCouponsId:'',  // µÖÓÃÈ¯ID
-					investCouponsCode:'',  // µÖÓÃÈ¯±àÂë
-					promotionId:'',  // »î¶¯ID
-					promotionCode:'',  // »î¶¯±àÂë
-					amount:'',  // Óà¶î
-					roleAmountLine:'',  // Ïû·Ñ½ğ¶î¹æÔò(Âú×ã±¾½ğ¶î¿ÉÊ¹ÓÃ,0ÎªÎŞÃÅ¼÷ÏŞÖÆ))
-					roleAmount:'',  // Âú×ãROLE_AMOUNT_LINE¿ÉÊ¹ÓÃ±¾×Ö¶ÎÕâÃ´¶àµÄÇ®
-					roleProjectLine:'',  // Âú×ã´ËÏîÄ¿¸öÊı¿ÉÊ¹ÓÃ(0ÎªÎŞÃÅ¼÷ÏŞÖÆ)
-					validBegin:'',  // ÓĞĞ§ÆÚ¿ªÊ¼Ê±¼ä
-					validEnd:'',  // ÓĞĞ§ÆÚ½áÊøÊ±¼ä
-					status:'',  // ×´Ì¬(0£ºÎ´Ê¹ÓÃ£¬1£ºÒÑÊ¹ÓÃ)
+					investCouponsId:'',  // æŠµç”¨åˆ¸ID
+					investCouponsCode:'',  // æŠµç”¨åˆ¸ç¼–ç 
+					promotionId:'',  // æ´»åŠ¨ID
+					promotionCode:'',  // æ´»åŠ¨ç¼–ç 
+					amount:'',  // ä½™é¢
+					roleAmountLine:'',  // æ¶ˆè´¹é‡‘é¢è§„åˆ™(æ»¡è¶³æœ¬é‡‘é¢å¯ä½¿ç”¨,0ä¸ºæ— é—¨æ§›é™åˆ¶))
+					roleAmount:'',  // æ»¡è¶³ROLE_AMOUNT_LINEå¯ä½¿ç”¨æœ¬å­—æ®µè¿™ä¹ˆå¤šçš„é’±
+					roleProjectLine:'',  // æ»¡è¶³æ­¤é¡¹ç›®ä¸ªæ•°å¯ä½¿ç”¨(0ä¸ºæ— é—¨æ§›é™åˆ¶)
+					validBegin:'',  // æœ‰æ•ˆæœŸå¼€å§‹æ—¶é—´
+					validEnd:'',  // æœ‰æ•ˆæœŸç»“æŸæ—¶é—´
+					status:'',  // çŠ¶æ€(0ï¼šæœªä½¿ç”¨ï¼Œ1ï¼šå·²ä½¿ç”¨)
 				},
 				{...}
 			]
@@ -1603,51 +1603,51 @@ Response:{
 
 }
 
-### ÏµÍ³ÏûÏ¢Í¨Öª
-call:http://website/usercenter/user!getSystemMessage
+### ç³»ç»Ÿæ¶ˆæ¯é€šçŸ¥
+call:http://website/usercenter/user!getSystemMessageList
 
 method:post
 
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		pageNo:''  // ²éÑ¯µÄÒ³Âë
-        pageSize:''  // Ã¿Ò³ÏÔÊ¾ÌõÊı£¨ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯ËùÓĞÊı¾İ£©
+		pageNo:''  // æŸ¥è¯¢çš„é¡µç 
+        pageSize:''  // æ¯é¡µæ˜¾ç¤ºæ¡æ•°ï¼ˆä¸pageNoä¸€èµ·ï¼Œå¦‚ä¸ä¼ åˆ™æŸ¥è¯¢æ‰€æœ‰æ•°æ®ï¼‰
 	}
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'»ñÈ¡ÏµÍ³Í¨ÖªÁĞ±í³É¹¦', 
+        info:'è·å–ç³»ç»Ÿé€šçŸ¥åˆ—è¡¨æˆåŠŸ', 
         data:{
 			systemMessageVOList:[
 				{
-					messageId:''  // Í¨ÖªID
-					title:'' // Í¨ÖªµÄ¼òÒªËµÃ÷
-					messgeLogo:''  // Í¨ÖªµÄÍ·Ïñ£¬ÏµÍ³Í¨ÖªÎªÏµÍ³Í·Ïñ£¬ÓÃ»§ÆÀÂÛÍ¨ÖªÎªÓÃ»§Í·Ïñ
-					type:''  // Í¨ÖªÀàĞÍ£¬ÒÔ´ËÅĞ¶Ïµã»÷²é¿´»ò¿ªÊ¼Í¶×ÊĞèÒªÌø×ªµ½µÄÒ³Ãæ£¬0´ú±íÏîÄ¿ÁĞ±í£¬1´ú±íÏîÄ¿ÏêÇé£¬Í¬Ê±objectId´«µÄÊÇprojectId£¬2´ú±íÃÀÊ³Ğã³¡ÎÄÕÂ£¬Í¬Ê±objectId´ú±íµÄÊÇÎÄÕÂID
-					objectId:''  // ¶ÔÏóID
+					messageId:''  // é€šçŸ¥ID
+					title:'' // é€šçŸ¥çš„ç®€è¦è¯´æ˜
+					messgeLogo:''  // é€šçŸ¥çš„å¤´åƒï¼Œç³»ç»Ÿé€šçŸ¥ä¸ºç³»ç»Ÿå¤´åƒï¼Œç”¨æˆ·è¯„è®ºé€šçŸ¥ä¸ºç”¨æˆ·å¤´åƒ
+					type:''  // é€šçŸ¥ç±»å‹ï¼Œä»¥æ­¤åˆ¤æ–­ç‚¹å‡»æŸ¥çœ‹æˆ–å¼€å§‹æŠ•èµ„éœ€è¦è·³è½¬åˆ°çš„é¡µé¢ï¼Œ0ä»£è¡¨é¡¹ç›®åˆ—è¡¨ï¼Œ1ä»£è¡¨é¡¹ç›®è¯¦æƒ…ï¼ŒåŒæ—¶objectIdä¼ çš„æ˜¯projectIdï¼Œ2ä»£è¡¨ç¾é£Ÿç§€åœºæ–‡ç« ï¼ŒåŒæ—¶objectIdä»£è¡¨çš„æ˜¯æ–‡ç« ID
+					objectId:''  // å¯¹è±¡ID
 				},
 				{
-					messageId:''  // Í¨ÖªID
-					title:'' // Í¨ÖªµÄ¼òÒªËµÃ÷
-					messgeLogo:''  // Í¨ÖªµÄÍ·Ïñ£¬ÏµÍ³Í¨ÖªÎªÏµÍ³Í·Ïñ£¬ÓÃ»§ÆÀÂÛÍ¨ÖªÎªÓÃ»§Í·Ïñ
-					type:''  // Í¨ÖªÀàĞÍ£¬ÒÔ´ËÅĞ¶Ïµã»÷²é¿´»ò¿ªÊ¼Í¶×ÊĞèÒªÌø×ªµ½µÄÒ³Ãæ£¬0´ú±íÏîÄ¿ÁĞ±í£¬1´ú±íÏîÄ¿ÏêÇé£¬Í¬Ê±objectId´«µÄÊÇprojectId£¬2´ú±íÃÀÊ³Ğã³¡ÎÄÕÂ£¬Í¬Ê±objectId´ú±íµÄÊÇÎÄÕÂID
-					objectId:''  // ¶ÔÏóID
+					messageId:''  // é€šçŸ¥ID
+					title:'' // é€šçŸ¥çš„ç®€è¦è¯´æ˜
+					messgeLogo:''  // é€šçŸ¥çš„å¤´åƒï¼Œç³»ç»Ÿé€šçŸ¥ä¸ºç³»ç»Ÿå¤´åƒï¼Œç”¨æˆ·è¯„è®ºé€šçŸ¥ä¸ºç”¨æˆ·å¤´åƒ
+					type:''  // é€šçŸ¥ç±»å‹ï¼Œä»¥æ­¤åˆ¤æ–­ç‚¹å‡»æŸ¥çœ‹æˆ–å¼€å§‹æŠ•èµ„éœ€è¦è·³è½¬åˆ°çš„é¡µé¢ï¼Œ0ä»£è¡¨é¡¹ç›®åˆ—è¡¨ï¼Œ1ä»£è¡¨é¡¹ç›®è¯¦æƒ…ï¼ŒåŒæ—¶objectIdä¼ çš„æ˜¯projectIdï¼Œ2ä»£è¡¨ç¾é£Ÿç§€åœºæ–‡ç« ï¼ŒåŒæ—¶objectIdä»£è¡¨çš„æ˜¯æ–‡ç« ID
+					objectId:''  // å¯¹è±¡ID
 				},
 				{...}
 			]
@@ -1663,27 +1663,27 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		systemMessageId:''  // ÏµÍ³Í¨ÖªID
+		systemMessageId:''  // ç³»ç»Ÿé€šçŸ¥ID
 	}
 }
 
 Response:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     body:{
         success:true,
-        info:'É¾³ıÍ¨Öª³É¹¦', 
+        info:'åˆ é™¤é€šçŸ¥æˆåŠŸ', 
         data:{
         }
     }
