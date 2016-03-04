@@ -1,0 +1,1694 @@
+### 个人设置-上传头像
+call:http://website/usercenter/personalSetting!uploadLogo
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        photoFile:''  // 头像图片文件流
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'头像上传成功', 
+        data:{
+            userPhoto:''  // 用户新头像地址
+        }
+    }
+
+}
+
+### 个人设置-修改昵称
+call:http://website/usercenter/personalSetting!updateNickname
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        nickName:''  // 用户昵称
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'用户昵称设置成功', 
+        data:{
+        }
+    }
+
+}
+
+### 个人设置-修改密码
+call:http://website/usercenter/personalSetting!updatePassword
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        oldPassword:''  // 用户原密码
+        newPassword:''  // 用户新密码
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'用户密码修改成功', 
+        data:{
+        }
+    }
+
+}
+
+### 个人设置-获取用户个人信息
+call:http://website/usercenter/personalSetting!getUserInfo
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'用户密码修改成功', 
+        data:{
+            nikeName:''  // 昵称
+            realName:''  // 用户真实姓名
+            phoneNumber:''   // 用户现在绑定的手机号
+            sex:''  // 性别信息
+            userPhoto:''  // 用户头像
+            address:''   // 用户默认地址
+            province:''  // 省份代码
+            city:''  // 城市代码
+            district:''  // 地区代码
+            nameVerification:''  // 是否实名认证(1 是，0 否, 2审核中 , 3未通过)
+            userIdFileA:''  // 身份证正面文件路径
+            userIdFileB:''  // 身份证反面文件路径
+            userIdFileC:''  // 手持身份证文件路径
+            status:''  // 明星投资人审核状态：0 默认， 1 通过， 2 审核中 ，3 不通过
+            verifiedInfo:'' // 明星投资人认证信息
+            verifiedAttachment:''  // 明星投资人认证附件图片地址
+            conditions:''  // 明星投资人认证条件
+        }
+    }
+
+}
+
+### 个人设置-绑定手机时发送验证码到新手机
+call:http://website/usercenter/personalSetting!sendValidateCode
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        phoneNumber:''  // 新绑定的手机号
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        // 如修改失败返回提示信息
+        success:true,
+        info:'用户密码修改成功', 
+        data:{
+        }
+    }
+
+}
+
+
+### 个人设置-修改绑定手机
+call:http://website/usercenter/personalSetting!updatePhoneNumber
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        phoneNumber:''  // 新绑定的手机号
+        validateCode:''  // 验证码
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'手机号码绑定成功', 
+        data:{
+        }
+    }
+
+}
+
+### 个人设置-更新性别信息
+call:http://website/usercenter/personalSetting!updateSexInfo
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        sex:''  // 性别信息，1-男，2-女
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'性别信息更新成功', 
+        data:{
+        }
+    }
+
+}
+
+### 个人设置-更新常用地址
+call:http://website/usercenter/personalSetting!updateAddressInfo
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        sex:''  // 性别信息，1-男，2-女
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'性别信息更新成功', 
+        data:{
+        }
+    }
+
+}
+
+### 实名认证
+call:http://website/usercenter/user!applyIdVerify
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        realName:''  // 用户真实姓名
+        phoneNumber:''  // 用户手机号码
+        id:''  // 用户身份证号
+        userIdFileA:''  // 身份证正面文件流
+        userIdFileB:''  // 身份证反面文件流
+        userIdFileC:''  // 手持身份证文件流
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'申请实名认证成功，等待验证审批', 
+        data:{
+            nameVerification:''  // 是否实名认证(1 是，0 否, 2审核中 , 3未通过)
+        }
+    }
+
+}
+
+### 申请明星投资人
+call:http://website/usercenter/user!applyStarInvestor
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        nikeName:''  // 用户昵称
+        verifiedInfo:''  // 认证信息
+        verifiedAttachment:''  // 附件图片文件流
+        conditions:''  // 多选添加，以“|”分隔
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'申请明星投资人成功，等待审核中', 
+        data:{
+
+        }
+    }
+
+}
+
+### 我的店铺-获取我的店铺列表信息
+call:http://website/usercenter/store!getStoreList
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        pageNo:''  // 查询的页码
+        pageSize  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取我的店铺列表成功', 
+        data:{
+            storeVOList:[
+            {
+                projectId:''  // 店铺ID
+                projectCode:''  // 店铺编码
+                projectName:''  // 店铺名称
+                projectPhoto:''  // 店铺Logo
+                investAmount:''  // 我投资的金额
+                lastDividend:''  // 上次收益金额
+                shareRatio:''  // 份额占比
+                totalProfit:''  // 累计收益
+                createTime:'' // 最近一次分红时间
+            },
+            {
+                projectId:''  // 店铺ID
+                projectCode:''  // 店铺编码
+                projectName:''  // 店铺名称
+                projectPhoto:''  // 店铺Logo
+                investAmount:''  // 我投资的金额
+                lastDividend:''  // 上次收益金额
+                shareRatio:''  // 份额占比
+                totalProfit:''  // 累计收益
+                createTime:'' // 最近一次分红时间
+            },
+            {...}
+            ]
+        }
+    }
+
+}
+
+### 我的店铺-获取店铺日营业流水
+call:http://website/usercenter/store!getStoreOrders
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 店铺ID
+        queryDate:''  // 查询的日期，yyyy-MM-dd，如为空会返回一个默认日期
+        pageNo:''  // 查询的页码
+        pageSize  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取店铺日营业流水', 
+        data:{
+            projectId:''  // 店铺ID
+            queryDate:''  // 查询的日期，yyyy-MM-dd，如为空会返回一个默认日期
+            storeOrdersVOList:[
+                {
+                    orderSummaryId:'' // 流水ID
+                    payNO:''  // 流水单号
+                    costAmount:'' // 消费金额，如小于0代表退单
+                    discountAmount:''  // 折扣金额
+                    // 支付方式，一个单可能存在多种支付方式，最多4种
+                    payDetailsVOList:[
+                    {
+                        payTypeName:''  // 支付方式名称
+                        payAmount:''  // 支付方式
+                    },
+                    {
+                        payTypeName:''  // 支付方式名称
+                        payAmount:''  // 支付方式
+                    }
+                    ]
+                },
+                {
+                    orderSummaryId:'' // 流水ID
+                    payNO:''  // 流水单号
+                    costAmount:'' // 消费金额，如小于0代表退单
+                    discountAmount:''  // 折扣金额
+                    // 支付方式，一个单可能存在多种支付方式，最多4种
+                    payDetailsVOList:[
+                    {
+                        payTypeName:''  // 支付方式名称
+                        payAmount:''  // 支付方式
+                    },
+                    {
+                        payTypeName:''  // 支付方式名称
+                        payAmount:''  // 支付方式
+                    }
+                    ]
+                },
+                {...}
+            ]
+        }
+    }
+
+}
+
+### 我的店铺-获取店铺流水明细
+call:http://website/usercenter/store!getStoreOrderDetails
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        orderSummaryId:''  // 店铺ID
+        pageNo:''  // 查询的页码
+        pageSize  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取店铺流水明细', 
+        data:{
+            costSum:''  // 消费总额
+            storeOrderDetailsVOList:[
+            {
+                orderDetailId:''  // 菜单明细ID
+                dishName:''  // 菜品名称
+                num:''  // 数量
+                backNum:''  // 退菜数量
+                price:''  // 单价
+                amount:''  // 消费金额
+            },
+            {
+                orderDetailId:''  // 菜单明细ID
+                dishName:''  // 菜品名称
+                num:''  // 数量
+                backNum:''  // 退菜数量
+                price:''  // 单价
+                amount:''  // 消费金额
+            },
+            {...}
+            ]
+
+        }
+    }
+
+}
+
+### 我的店铺-获取每期明细列表
+call:http://website/usercenter/store!getStoreOrderDetails
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 店铺ID
+        pageNo:''  // 查询的页码
+        pageSize  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取我的店铺列表成功', 
+        data:{
+            shareholderDividendRecordVOList:[
+            {
+                shareholderDividendRecordId:''  // 分红明细ID
+                issueNumber:''  // 分红期号
+                userProfit:''  // 股东收益
+                projectTurnover:''  // 店铺营业额
+                projectProfit:'' // 店铺盈利额
+            },
+            {
+                shareholderDividendRecordId:''  // 分红明细ID
+                issueNumber:''  // 分红期号
+                userProfit:''  // 股东收益
+                projectTurnover:''  // 店铺营业额
+                projectProfit:'' // 店铺盈利额
+            },
+            {...}
+            ]
+
+        }
+    }
+
+}
+
+### 我的店铺-获取投资报告列表
+call:http://website/usercenter/store!getInvestReport
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 店铺ID
+        pageNo:''  // 查询的页码
+        pageSize  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取投资报告列表成功', 
+        data:{
+            investReportVOList:[
+            {
+                investReportId:''  // 投资报告ID
+                title:''  // 投资报告标题
+                periodNumber:''  // 投资报告期号
+                content:''  // 报告内容
+            },
+            {
+                investReportId:''  // 投资报告ID
+                title:''  // 投资报告标题
+                periodNumber:''  // 投资报告期号
+                content:''  // 报告内容
+            },
+            {...}
+            ]
+
+        }
+    }
+
+}
+
+### 我的店铺-获取店铺监控摄像头列表
+call:http://website/usercenter/store!getInvestReport
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 店铺ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取店铺监控摄像头列表成功', 
+        data:{
+            monitorVOList:[
+                {
+                    monitorId:''  // 摄像头ID
+                    monitorName:''  // 摄像头名称
+                    url:''  // 视频地址
+                },
+                {
+                    monitorId:''  // 摄像头ID
+                    monitorName:''  // 摄像头名称
+                    url:''  // 视频地址
+                },
+                {...}
+            ]
+
+        }
+    }
+
+}
+
+### 汇梦消费券-获取消费券账户信息
+call:http://website/usercenter/voucher!getExpenseAccountInfo
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取店铺消费券列表成功', 
+        data:{
+			availableAmount:'' // 账户可用总和
+			amount:''  // 该店铺已发放总和
+			spentAmount:''  // 该店铺已消费总和
+			transferOutAmount:''  // 该店铺已转出总和
+        }
+    }
+
+}
+
+
+### 汇梦消费券-获取我的消费券店铺列表
+call:http://website/usercenter/voucher!getVoucherStore
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		pageNo:''  // 查询的页码
+        pageSize  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取店铺消费券列表成功', 
+        data:{
+			expenseVoucherAccountVOList[
+			{
+				evaId:''  // 消费券账户ID
+				projectId:''  // 店铺ID
+				availableAmount:'' // 可用余额
+				amount:'' // 发放金额
+				spentAmount:'' // 已用金额
+				transferOutAmount:''  // 已转出金额
+			},
+			{
+				evaId:''  // 消费券账户ID
+				projectId:''  // 店铺ID
+				availableAmount:'' // 可用余额
+				amount:'' // 发放金额
+				spentAmount:'' // 已用金额
+				transferOutAmount:''  // 已转出金额
+			},
+			{...}
+			]
+        }
+    }
+
+}
+
+
+### 汇梦消费券-获取某一店铺消费券账户信息
+call:http://website/usercenter/voucher!getStoreAccountInfo
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 店铺ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取店铺消费券列表成功', 
+        data:{
+			projectId:''  // 店铺ID
+			projectName:''  // 店铺名称
+			availableAmount:'' // 该店铺账户可用余额
+			amount:''  // 该店铺已发放
+			spentAmount:''  // 该店铺已消费金额
+			transferOutAmount:''  // 该店铺已转出金额
+			saleAmount:''  // 该店铺已出售金额
+        }
+    }
+
+}
+
+### 汇梦消费券-获取某一店铺消费券列表
+call:http://website/usercenter/voucher!getStoreExpenseVoucher
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 店铺ID
+		pageNo:''  // 查询的页码
+        pageSize  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取店铺消费券列表成功', 
+        data:{
+			expenseVoucherAccountVOList:[
+				{
+					expenseVoucherId:'' // 消费券ID
+					projectId:'' // 店铺ID
+					code:''  // 消费券编码
+					amount:''  // 消费券金额
+					useTime:''  // 使用时间
+					availableTime:''  // 有效时间
+					trustDeadline:''  // 托管截止时间
+					expectedPrice:''  // 期望售价
+					shareFlag:''  // 助力标识，0 同意 1不同意助力
+					type:''  // 消费券类型  券类型 1 汇梦股东券 2 店铺消费券
+					status:''  // 消费券状态（0未使用，1已使用，2过期，3取消，4转出，5转入，6托管中，7锁定中，8已出售，9购买中,10已购买，11已过期）
+				},
+				{
+					expenseVoucherId:'' // 消费券ID
+					projectId:'' // 店铺ID
+					code:''  // 消费券编码
+					amount:''  // 消费券金额
+					useTime:''  // 使用时间
+					availableTime:''  // 有效时间
+					trustDeadline:''  // 托管截止时间
+					expectedPrice:''  // 期望售价
+					shareFlag:''  // 助力标识，0 同意 1不同意助力
+					type:''  // 消费券类型  券类型 1 汇梦股东券 2 店铺消费券
+					status:''  // 消费券状态（0未使用，1已使用，2过期，3取消，4转出，5转入，6托管中，7锁定中，8已出售，9购买中,10已购买，11已过期）
+				},
+				{...}
+			]
+        }
+    }
+
+}
+
+### 汇梦消费券-消费接口，生成消费券
+call:http://website/usercenter/voucher!createVoucher
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 店铺ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'生成消费券成功', 
+        data:{
+			projectId:'' // 项目ID
+			expenseVoucherId:''  // 消费券ID
+			code:''  // 消费券编码
+        }
+    }
+
+}
+
+### 汇梦消费券-出售，消费券托管接口
+call:http://website/usercenter/voucher!generateTrusteeshipVoucher
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 店铺ID
+		amount:''  // 托管金额（10的整数倍）
+		discount:'' // 折扣（不能小于0）
+		trustDeadline:''  // 托管截止时间
+		shareFlag:''  // 助力标识 1 同意 0不同意助力
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'托管成功', 
+        data:{
+			expenseVoucherId:''  // 生成的消费券ID
+			trustDeadline:'' // 托管截止时间
+			amount:''  // 托管金额
+        }
+    }
+
+}
+
+### 汇梦消费券-转让
+call:http://website/usercenter/voucher!transferVoucher
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 店铺ID
+		amount:''  // 转让金额
+		phoneNumber:''  // 接收方手机号码
+		postscript:''  // 备注信息
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'转让成功', 
+        data:{
+			expenseTransferId:''  // 转让记录ID
+			projectId:''  // 店铺ID
+			projectName:''  // 店铺名称
+			transferOutAmount:''  // 转让金额
+			availableAmount:''  // 账户余额
+			receiverName:''  // 接收人名称
+			transferTime''  // 转让时间
+        }
+    }
+
+}
+
+### 获取我的邀请列表
+call:http://website/usercenter/user!getInvitationalPerson
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		pageNo:''  // 查询的页码
+        pageSize  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取邀请列表成功', 
+        data:{
+			invitationNum:''  // 邀请总人数
+			invitationAmount:'' // 邀请总金额
+			invitationURL:'' // 邀请链接
+			userInvitationVOList:[
+			{
+				invitationUserId:''  // 用户ID
+				invitationUserValidate:''  // 用户状态（0-未认证，1-已认证，2-认证中，3-认证失败）
+				invitationUserName:''  // 用户名称
+				invitationUserPhoto:'' // 用户头像
+				invitationAmount:''  // 投资金额
+			},
+			{
+				invitationUserId:''  // 用户ID
+				invitationUserValidate:''  // 用户状态（0-未认证，1-已认证，2-认证中，3-认证失败）
+				invitationUserName:''  // 用户名称
+				invitationUserPhoto:'' // 用户头像
+				invitationAmount:''  // 投资金额
+			},
+			{...}
+			]
+			
+        }
+    }
+
+}
+
+
+### 获取我的关注列表
+
+### 获取我的粉丝列表
+
+### 获取我的文章礼拜
+
+### 获取我的收藏列表
+
+### 获取我收到打赏的列表
+
+### 获取我发出打赏的列表
+
+
+
+### 我的账户-获取我的账户信息
+call:http://website/usercenter/account!getCurrentUserAccount
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取账户信息成功', 
+        data:{
+			accountId:'',  // 账户ID(主键)
+			userId:'',  // 用户ID
+			accountAmount:'',  // 账户总额
+			usableAmount:'',  // 账户可用余额
+			cashAllowAmount:'',  // 账户可提现余额
+			cashDisallowAmount:'',  // 账户不可提现余额
+			investAmount:'',  // 总投资额
+			revenuesAmount:'',  // 总收益
+			receivedAmount:'',  // 系统赠送总额
+        }
+    }
+
+}
+
+### 我的账户-获取投资记录
+call:http://website/usercenter/account!getUserInverstRecord
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		tabNo:''  // 查询条件，订单状态，默认0-全部订单，1-未支付订单，2已支付订单
+		pageNo:''  // 查询的页码
+        pageSize:''  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取账户信息成功', 
+        data:{
+			investRecordList[
+				{
+					investRecordId:'',  // 投资记录ID
+					investRecordCode:'',  // 认购单号
+					projectId:'',  // 认购的项目ID
+					projectCode:'',  // 项目编码
+					userId:'',  // 投资人ID
+					investCopy:'',  // 认购份数
+					unitPrice:'',  // 每份单价
+					investAmount:'',  // 认购总额
+					couponsAmount:'',  // 抵扣金额
+					realPay:'',  // 实际支付
+					payType:'',  // 支付方式
+					status:'',  // 状态
+					investCouponsId:'',  // 抵用券ID
+					bankcard:'',  // 使用新银行卡支付
+					userBankcardId:'',  // 用户选择银行卡
+					identity:''  // 投资人身份 1：普通投资人，2：明星投资人
+				},
+				{
+					investRecordId:'',  // 投资记录ID
+					investRecordCode:'',  // 认购单号
+					projectId:'',  // 认购的项目ID
+					projectCode:'',  // 项目编码
+					userId:'',  // 投资人ID
+					investCopy:'',  // 认购份数
+					unitPrice:'',  // 每份单价
+					investAmount:'',  // 认购总额
+					couponsAmount:'',  // 抵扣金额
+					realPay:'',  // 实际支付
+					payType:'',  // 支付方式
+					status:'',  // 状态
+					investCouponsId:'',  // 抵用券ID
+					bankcard:'',  // 使用新银行卡支付
+					userBankcardId:'',  // 用户选择银行卡
+					identity:''  // 投资人身份 1：普通投资人，2：明星投资人
+				},
+				{...}
+			]
+        }
+    }
+
+}
+
+### 我的账户-投资记录-立即支付前验证，验证成功则跳转支付
+call:http://website/usercenter/account!goPay
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		investRecordCode:'' // 认购单号
+		status:''  // 订单状态
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'支付前验证通过', 
+        data:{
+			
+        }
+    }
+
+}
+
+### 我的账户-投资记录-取消订单接口
+call:http://website/usercenter/account!cancelOrder
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		investRecordCode:'' // 认购单号
+		investCouponsId:''  // 抵用券ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'订单取消成功', 
+        data:{
+			
+        }
+    }
+
+}
+
+### 我的账户-获取交易记录
+call:http://website/usercenter/account!getWithdrawCashRecord
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		pageNo:''  // 查询的页码
+        pageSize:''  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取交易记录成功', 
+        data:{
+			withdrawCashRecordVOList:[
+				{
+					withdrawId:''  // 记录ID
+					applicantBank:''  // 银行名称
+					applicantBankCard:''  // 银行卡号
+					status:''  // 处理状态 0：未通过 1：申请中 2：处理中 3：处理完成 
+					applicantAmount:''  // 交易金额
+				},
+				{
+					withdrawId:''  // 记录ID
+					applicantBank:''  // 银行名称
+					applicantBankCard:''  // 银行卡号
+					status:''  // 处理状态 0：未通过 1：申请中 2：处理中 3：处理完成 
+					applicantAmount:''  // 交易金额
+				},
+				{...}
+			]
+        }
+    }
+
+}
+
+### 我的账户-获取银行卡列表
+call:http://website/usercenter/account!getUserBankCard
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		pageNo:''  // 查询的页码
+        pageSize:''  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取银行卡列表成功', 
+        data:{
+			userBankcardList:[
+				{
+					userBankcardId  // 银行卡ID
+					bankcard:''  // 银行卡号
+					bankName:''  // 银行名称
+					isDefault:''  // 是否默认，10默认，20普通卡
+				},
+				{
+					userBankcardId:''  // 银行卡ID
+					bankcard:''  // 银行卡号
+					bankName:''  // 银行名称
+					isDefault:''  // 是否默认，10默认，20普通卡
+				},
+				{...}
+			]
+        }
+    }
+
+}
+
+### 我的账户-我的银行卡-新增银行卡
+call:http://website/usercenter/account!addBankCard
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		bankName:''  // 银行名称
+		realName:''  // 持卡人名称
+		bankcard:''  // 储蓄卡号（需要验证银行卡号格式）
+		isDefault:'' // 是否设置为默认分红卡
+	}
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'新增银行卡成功', 
+        data:{
+        }
+    }
+
+}
+
+### 我的账户-我的银行卡-设置默认分红卡接口
+call:http://website/usercenter/account!setDefaultCard
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		userBankcardId:''  // 银行卡ID
+	}
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'设置默认分红卡成功', 
+        data:{
+        }
+    }
+
+}
+
+
+### 我的账户-我的银行卡-解除银行卡绑定接口
+call:http://website/usercenter/account!deleteCard
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		userBankcardId:''  // 银行卡ID
+	}
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'解除绑定成功', 
+        data:{
+        }
+    }
+
+}
+
+### 我的账户-获取投资抵用券列表
+call:http://website/usercenter/account!getInvestCoupons
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		pageNo:''  // 查询的页码
+        pageSize:''  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
+	}
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取投资抵用券列表成功', 
+        data:{
+			investCouponsVOList:[
+				{
+					investCouponsId:'',  // 抵用券ID
+					investCouponsCode:'',  // 抵用券编码
+					promotionId:'',  // 活动ID
+					promotionCode:'',  // 活动编码
+					amount:'',  // 余额
+					roleAmountLine:'',  // 消费金额规则(满足本金额可使用,0为无门槛限制))
+					roleAmount:'',  // 满足ROLE_AMOUNT_LINE可使用本字段这么多的钱
+					roleProjectLine:'',  // 满足此项目个数可使用(0为无门槛限制)
+					validBegin:'',  // 有效期开始时间
+					validEnd:'',  // 有效期结束时间
+					status:'',  // 状态(0：未使用，1：已使用)
+				},
+				{
+					investCouponsId:'',  // 抵用券ID
+					investCouponsCode:'',  // 抵用券编码
+					promotionId:'',  // 活动ID
+					promotionCode:'',  // 活动编码
+					amount:'',  // 余额
+					roleAmountLine:'',  // 消费金额规则(满足本金额可使用,0为无门槛限制))
+					roleAmount:'',  // 满足ROLE_AMOUNT_LINE可使用本字段这么多的钱
+					roleProjectLine:'',  // 满足此项目个数可使用(0为无门槛限制)
+					validBegin:'',  // 有效期开始时间
+					validEnd:'',  // 有效期结束时间
+					status:'',  // 状态(0：未使用，1：已使用)
+				},
+				{...}
+			]
+        }
+    }
+
+}
+
+### 系统消息通知
+call:http://website/usercenter/user!getSystemMessage
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		pageNo:''  // 查询的页码
+        pageSize:''  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
+	}
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取系统通知列表成功', 
+        data:{
+			systemMessageVOList:[
+				{
+					messageId:''  // 通知ID
+					title:'' // 通知的简要说明
+					messgeLogo:''  // 通知的头像，系统通知为系统头像，用户评论通知为用户头像
+					type:''  // 通知类型，以此判断点击查看或开始投资需要跳转到的页面，0代表项目列表，1代表项目详情，同时objectId传的是projectId，2代表美食秀场文章，同时objectId代表的是文章ID
+					objectId:''  // 对象ID
+				},
+				{
+					messageId:''  // 通知ID
+					title:'' // 通知的简要说明
+					messgeLogo:''  // 通知的头像，系统通知为系统头像，用户评论通知为用户头像
+					type:''  // 通知类型，以此判断点击查看或开始投资需要跳转到的页面，0代表项目列表，1代表项目详情，同时objectId传的是projectId，2代表美食秀场文章，同时objectId代表的是文章ID
+					objectId:''  // 对象ID
+				},
+				{...}
+			]
+        }
+    }
+
+}
+
+call:http://website/usercenter/user!deleteSystemMessage
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		systemMessageId:''  // 系统通知ID
+	}
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'删除通知成功', 
+        data:{
+        }
+    }
+
+}
+
+
+
