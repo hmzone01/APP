@@ -1,0 +1,609 @@
+### 获取美食秀场列表
+call:http://website/show/show!getFoodShowArticleList
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        type:''  // 查询条件，0-推荐列表，1-最新列表，2-关注列表
+        pageNo:'',     // 查询的页码
+        pageSize:''    // 每页显示条数(与pageNo一起，如不传则查询全部数据)
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'获取美食秀场列表成功', 
+        data:{
+            foodShowArticleVOList:[
+            {
+                articleId:''  // 秀场文章ID
+				nikeName:''   // 昵称
+				authorId:''  // 作者ID
+				userPhoto:''  // 用户头像
+				title:''  // 文章标题
+				titlePage:''  // 封面图片
+				type:''  // 文章类型：1、图文；2、视频
+				createTime:''  // 发表时间
+				praiseCount:''  // 点赞总次数
+				commentCount:''  // 评论总次数
+				rewardCount:''  // 打赏总次数
+				userCircleFlag:''  // 是否已关注标识，0代表未关注，1代表已关注
+				articleCollectionFlag:''  //  是否收藏标识，0代表未收藏，1代表已收藏
+            },
+            {
+                articleId:''  // 秀场文章ID
+				nikeName:''   // 昵称
+				authorId:''  // 作者ID
+				userPhoto:''  // 用户头像
+				title:''  // 文章标题
+				titlePage:''  // 封面图片
+				type:''  // 文章类型：1、图文；2、视频
+				createTime:''  // 发表时间
+				praiseCount:''  // 点赞总次数
+				commentCount:''  // 评论总次数
+				rewardCount:''  // 打赏总次数
+				userCircleFlag:''  // 是否已关注标识，0代表未关注，1代表已关注
+				articleCollectionFlag:''  //  是否收藏标识，0代表未收藏，1代表已收藏
+            }，
+            {
+                ...
+            }
+            ]
+        }
+    }
+
+}
+
+### 获取评论列表
+call:http://website/show/show!getArticleCommentList
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        articleId:'',  // 文章ID
+        pageNo:'',     // 查询的页码
+        pageSize:''    // 每页显示条数(与pageNo一起，如不传则查询全部数据)
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'获取评论列表成功', 
+        data:{
+            articleCommentVOList:[
+            {
+				articleCommentId:''  // 评论ID
+				userId:''  // 评论人ID
+				parentId:''  // 被评论人ID，0表示对文章评论
+				nickName:''  // 评论人昵称
+				comment:''  // 评论内容
+            },
+            {
+				articleCommentId:''  // 评论ID
+				userId:''  // 评论人ID
+				parentId:''  // 被评论人ID，0表示对文章评论
+				nickName:''  // 评论人昵称
+				comment:''  // 评论内容
+            }，
+            {
+                ...
+            }
+            ]
+        }
+    }
+
+}
+
+### 获取文章详情
+call:http://website/show/show!getShowArticleDetailList
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        articleId:'',  // 文章ID
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'获取文章详情成功', 
+        data:{
+			articleId:''  // 文章ID
+			authorId:''  // 作者ID
+			userCircleFlag:''  // 是否已关注标识，0代表未关注，1代表已关注
+			articleCollectionFlag:''  //  是否收藏标识，0代表未收藏，1代表已收藏
+            showArticleDetailVOList:[
+            {
+				detail_id:''  // 详情ID
+				path:''  // 图片或者视频的路径
+				desc:''  // 图片或视频对应的描述
+            },
+            {
+				detail_id:''  // 详情ID
+				path:''  // 图片或者视频的路径
+				desc:''  // 图片或视频对应的描述
+            }，
+            {
+                ...
+            }
+            ]
+        }
+    }
+
+}
+
+### 新增点赞
+call:http://website/show/show!praise
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        articleId:'',  // 文章ID
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'点赞成功', 
+        data:{
+        }
+    }
+
+}
+
+### 取消点赞
+call:http://website/show/show!cancelPraise
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        articleId:'',  // 文章ID
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'取消点赞成功', 
+        data:{
+        }
+    }
+
+}
+
+### 新增评论
+call:http://website/show/show!addComment
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        articleId:'',  // 文章ID
+		parentId:''  // 评论对象ID，评论文章传0，回复其他人评论传评论人ID
+		comment:''  // 评论内容
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'新增评论成功', 
+        data:{
+			articleCommentId:''  // 评论ID
+        }
+    }
+
+}
+
+### 删除评论
+call:http://website/show/show!deleteComment
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        articleCommentId:''  // 评论ID
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'删除评论成功', 
+        data:{
+        }
+    }
+
+}
+
+### 新增打赏
+call:http://website/show/show!addReward
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		articleId:''  // 文章ID
+		amount:''  // 打赏金额
+		content:''  // 打赏批注
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'打赏成功', 
+        data:{
+			rewardId:''  // 打赏记录ID
+        }
+    }
+
+}
+
+### 新增关注
+call:http://website/show/show!addUserCircle
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		authorId:''  // 关注的人的ID
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'关注成功', 
+        data:{
+        }
+    }
+
+}
+
+### 取消关注
+call:http://website/show/show!cancelUserCircle
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		authorId:''  // 关注的人的ID
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'取消关注成功', 
+        data:{
+        }
+    }
+
+}
+
+### 收藏文章
+call:http://website/show/show!addArticleCollection
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		articleId:''  // 文章ID
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'收藏成功', 
+        data:{
+        }
+    }
+
+}
+
+
+### 取消文章收藏
+call:http://website/show/show!cancelArticleCollection
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		articleId:''  // 文章ID
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'取消收藏成功', 
+        data:{
+        }
+    }
+
+}
+
+### 发表文章
+call:http://website/show/show!publishArticle
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		title:''  // 文章标题
+		type:''  // 文章类别
+		articleVOList:[
+		{
+			file:''  // 图片或视频文件流
+			desc:''  // 图片或视频描述
+			sort:''  // 图片或视频顺序
+		},
+		{
+			file:''  // 图片或视频文件流
+			desc:''  // 图片或视频描述
+			sort:''  // 图片或视频顺序
+		},
+		{...}
+		]
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'发布文章成功', 
+        data:{
+			articleId:''  // 文章ID
+        }
+    }
+
+}
+
+### 删除文章明细
+call:http://website/show/show!deleteArticleDetail
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		detailId:''  // 文章对应明细ID
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'删除文章明细成功', 
+        data:{
+        }
+    }
+
+}
+
+### 删除文章
+call:http://website/show/show!deleteArticle
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		articleId:''  // 文章ID
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'删除文章成功', 
+        data:{
+        }
+    }
+
+}
+
+### 更新文章明细
+call:http://website/show/show!updateArticleDetail
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		detailId:''  // 文章明细ID
+		file:''  // 图片或视频文件流（为空则不更新）
+		desc:''  // 图片或视频描述
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'更新文章明细成功', 
+        data:{
+        }
+    }
+
+}
+
+### 更新文章
+call:http://website/show/show!updateArticleDetail
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		articleId:''  // 文章ID
+		title:''  // 文章标题
+		type:''  // 文章类别
+		articleVOList:[
+		{
+			file:''  // 图片或视频文件流
+			desc:''  // 图片或视频描述
+			sort:''  // 图片或视频顺序
+		},
+		{
+			file:''  // 图片或视频文件流
+			desc:''  // 图片或视频描述
+			sort:''  // 图片或视频顺序
+		},
+		{...}
+		]
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'更新文章成功', 
+        data:{
+        }
+    }
+
+}
+
