@@ -446,7 +446,7 @@ Request:{
     params:{
 		title:''  // 文章标题
 		type:''  // 文章类别
-		articleVOList:[
+		foodShowArticleVOList:[
 		{
 			file:''  // 图片或视频文件流
 			desc:''  // 图片或视频描述
@@ -602,6 +602,381 @@ Response:{
         success:true,
         info:'更新文章成功', 
         data:{
+        }
+    }
+
+}
+
+------  一下接口在个人中心界面会用到  -------------------------------------------------------
+
+### 获取我的关注列表
+call:http://website/show/show!getMyUserCircleList
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		pageNo:'',     // 查询的页码
+        pageSize:''    // 每页显示条数(与pageNo一起，如不传则查询全部数据)
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'获取我的关注列表成功', 
+        data:{
+			UserCircleVOList:[
+			{
+				userId:''  // 用户ID
+				nikeName:''  // 昵称
+				userPhoto:''  // 用户头像
+				showTitle:''  // 秀场头衔，1-美食达人，2-美食家，3-厨神
+				goodContent:''  // 擅长内容
+				sign:''  // 个性签名
+			},
+			{
+				userId:''  // 用户ID
+				nikeName:''  // 昵称
+				userPhoto:''  // 用户头像
+				showTitle:''  // 秀场头衔，1-美食达人，2-美食家，3-厨神
+				goodContent:''  // 擅长内容
+				sign:''  // 个性签名
+			},
+			{...}
+			]
+        }
+    }
+
+}
+
+### 获取我的粉丝列表
+call:http://website/show/show!getMyFansList
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		pageNo:'',     // 查询的页码
+        pageSize:''    // 每页显示条数(与pageNo一起，如不传则查询全部数据)
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'获取我的粉丝列表成功', 
+        data:{
+			fansCount:''  // 粉丝总数
+			todayIncreaseCount:''  // 今日新增总数
+			UserCircleVOList:[
+			{
+				userId:''  // 用户ID
+				nikeName:''  // 昵称
+				userPhoto:''  // 用户头像
+				showTitle:''  // 秀场头衔，1-美食达人，2-美食家，3-厨神
+				goodContent:''  // 擅长内容
+				sign:''  // 个性签名
+			},
+			{
+				userId:''  // 用户ID
+				nikeName:''  // 昵称
+				userPhoto:''  // 用户头像
+				showTitle:''  // 秀场头衔，1-美食达人，2-美食家，3-厨神
+				goodContent:''  // 擅长内容
+				sign:''  // 个性签名
+			},
+			{...}
+			]
+        }
+    }
+
+}
+
+### 获取美食秀场个人信息
+call:http://website/show/show!getUserShowInfo
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'获取美食秀场个人信息成功', 
+        data:{
+			nickName:''  // 用户昵称
+			userPhot:''  // 用户头像
+			goodContent:''  // 擅长内容
+			sign:''  // 个性签名
+			showTitle:''  // 秀场头衔，1-美食达人，2-美食家，3-厨神
+        }
+    }
+
+}
+
+### 更新美食秀场个人信息
+call:http://website/show/show!updateUserShowInfo
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+			goodContent:''  // 擅长内容（不为null，则更新）
+			sign:''  // 个性签名（不为null，则更新）
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'更新美食秀场个人信息成功', 
+        data:{
+        }
+    }
+
+}
+
+### 获取我的文章列表
+call:http://website/show/show!getMyArticleList
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		pageNo:'',     // 查询的页码
+        pageSize:''    // 每页显示条数(与pageNo一起，如不传则查询全部数据)
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'获取我的文章列表成功', 
+        data:{
+			foodShowArticleVOList:[
+			{
+				articleId:''  // 秀场文章ID
+				title:''  // 文章标题
+				titlePage:''  // 封面图片
+				type:''  // 文章类型：1、图文；2、视频
+				createTime:''  // 发表时间
+				rewardSum:''  // 打赏总额，为0则不显示
+			},
+			{
+				articleId:''  // 秀场文章ID
+				title:''  // 文章标题
+				titlePage:''  // 封面图片
+				type:''  // 文章类型：1、图文；2、视频
+				createTime:''  // 发表时间
+				rewardSum:''  // 打赏总额，为0则不显示
+			},
+			{...}
+			]
+        }
+    }
+
+}
+
+### 获取我的收藏列表
+call:http://website/show/show!getMyCollectionList
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		pageNo:'',     // 查询的页码
+        pageSize:''    // 每页显示条数(与pageNo一起，如不传则查询全部数据)
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'获取我的关注列表成功', 
+        data:{
+			foodShowArticleVOList:[
+			{
+                articleId:''  // 秀场文章ID
+				nikeName:''   // 昵称
+				authorId:''  // 作者ID
+				userPhoto:''  // 用户头像
+				title:''  // 文章标题
+				titlePage:''  // 封面图片
+				type:''  // 文章类型：1、图文；2、视频
+				createTime:''  // 发表时间
+				praiseCount:''  // 点赞总次数
+				commentCount:''  // 评论总次数
+				rewardCount:''  // 打赏总次数
+				userCircleFlag:''  // 是否已关注标识，0代表未关注，1代表已关注
+				articleCollectionFlag:''  //  是否收藏标识，0代表未收藏，1代表已收藏
+			},
+			{
+                articleId:''  // 秀场文章ID
+				nikeName:''   // 昵称
+				authorId:''  // 作者ID
+				userPhoto:''  // 用户头像
+				title:''  // 文章标题
+				titlePage:''  // 封面图片
+				type:''  // 文章类型：1、图文；2、视频
+				createTime:''  // 发表时间
+				praiseCount:''  // 点赞总次数
+				commentCount:''  // 评论总次数
+				rewardCount:''  // 打赏总次数
+				userCircleFlag:''  // 是否已关注标识，0代表未关注，1代表已关注
+				articleCollectionFlag:''  //  是否收藏标识，0代表未收藏，1代表已收藏
+			},
+			{...}
+			]
+        }
+    }
+
+}
+
+### 获取我收到打赏的列表
+call:http://website/show/show!getMyRewardInList
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		pageNo:'',     // 查询的页码
+        pageSize:''    // 每页显示条数(与pageNo一起，如不传则查询全部数据)
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'获取我的关注列表成功', 
+        data:{
+			articleRewardRecordVOList:[
+			{
+				rewardId:''  // 打赏记录ID
+                articleId:''  // 文章ID
+				title:''  // 文章标题
+				itlePage:''  // 封面图片
+				amount:''  // 打赏金额
+				content:''  // 打赏批注
+			},
+			{
+				rewardId:''  // 打赏记录ID
+                articleId:''  // 文章ID
+				title:''  // 文章标题
+				itlePage:''  // 封面图片
+				amount:''  // 打赏金额
+				content:''  // 打赏批注
+			},
+			{...}
+			]
+        }
+    }
+
+}
+
+### 获取我发出打赏的列表
+call:http://website/show/show!getMyRewardOutList
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		pageNo:'',     // 查询的页码
+        pageSize:''    // 每页显示条数(与pageNo一起，如不传则查询全部数据)
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'获取我的关注列表成功', 
+        data:{
+			articleRewardRecordVOList:[
+			{
+				rewardId:''  // 打赏记录ID
+                articleId:''  // 文章ID
+				title:''  // 文章标题
+				itlePage:''  // 封面图片
+				amount:''  // 打赏金额
+				content:''  // 打赏批注
+			},
+			{
+				rewardId:''  // 打赏记录ID
+                articleId:''  // 文章ID
+				title:''  // 文章标题
+				itlePage:''  // 封面图片
+				amount:''  // 打赏金额
+				content:''  // 打赏批注
+			},
+			{...}
+			]
         }
     }
 

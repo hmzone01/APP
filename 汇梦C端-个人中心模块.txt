@@ -1117,21 +1117,6 @@ Response:{
 
 }
 
-
-### 获取我的关注列表
-
-### 获取我的粉丝列表
-
-### 获取我的文章礼拜
-
-### 获取我的收藏列表
-
-### 获取我收到打赏的列表
-
-### 获取我发出打赏的列表
-
-
-
 ### 我的账户-获取我的账户信息
 call:http://website/usercenter/account!getCurrentUserAccount
 
