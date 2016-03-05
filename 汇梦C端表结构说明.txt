@@ -214,6 +214,47 @@ CREATE TABLE `article_reward_record` (
   `status` int(2) DEFAULT NULL COMMENT '打赏状态 0:待支付;1:支付成功;2支付失败'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='美食秀场打赏记录';
 
+-- 美食秀场文章表
+CREATE TABLE `food_show_article` (
+  `article_id` int(10) NOT NULL COMMENT '美食秀场文章ID',
+  `user_id` int(20) NOT NULL COMMENT '发表用户ID',
+  `title` varchar(2000) NOT NULL COMMENT '文章标题',
+  `is_recommend` int(11) NOT NULL COMMENT '是否推荐',
+  `type` int(11) NOT NULL COMMENT '文章类型：1、图文；2、视频',
+  `create_time` time NOT NULL COMMENT '创建时间',
+  `is_delete` int(11) NOT NULL DEFAULT '0' COMMENT '是否删除 0：未删除；1：已删除'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='美食秀场文章表';
+
+-- 美食秀场个人信息表
+CREATE TABLE hmzone.user_show_info (
+  SHOW_INFO_ID int(20) NOT NULL AUTO_INCREMENT COMMENT '美食秀场个人信息ID',
+  USER_ID int(20) NOT NULL COMMENT '用户ID',
+  GOOD_CONTENT varchar(255) DEFAULT NULL COMMENT '擅长内容',
+  SIGN varchar(255) DEFAULT NULL COMMENT '个性签名',
+  SHOW_TITLE int(1) DEFAULT 0 COMMENT '秀场头衔，1-美食达人，2-美食家，3-厨神',
+  PRIMARY KEY (SHOW_INFO_ID)
+)
+ENGINE = INNODB
+AUTO_INCREMENT = 1
+CHARACTER SET utf8
+COLLATE utf8_general_ci
+COMMENT = '美食秀场个人信息';
+
+-- 美食秀场文章收藏表
+CREATE TABLE hmzone.article_collection_record (
+  COLLECTION_ID int(20) NOT NULL AUTO_INCREMENT COMMENT '收藏记录ID',
+  USER_ID int(20) NOT NULL COMMENT '收藏人ID',
+  ARTICLE_ID int(20) NOT NULL COMMENT '文章ID',
+  CREATE_TIME time DEFAULT NULL COMMENT '创建时间',
+  IS_DELETE int(1) DEFAULT 0 COMMENT '是否已删除，0未删除，1已删除',
+  PRIMARY KEY (COLLECTION_ID)
+)
+ENGINE = INNODB
+AUTO_INCREMENT = 1
+CHARACTER SET utf8
+COLLATE utf8_general_ci
+COMMENT = '文章收藏记录';
+
 -- 股东券明细表
 CREATE TABLE `expense_record` (
   `expense_record_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
@@ -277,17 +318,6 @@ CREATE TABLE `expense_voucher_account` (
   PRIMARY KEY (`eva_id`),
   UNIQUE KEY `idx_unique_projectid_userid` (`project_id`,`user_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COMMENT='消费劵账户';
-
--- 美食秀场文章表
-CREATE TABLE `food_show_article` (
-  `article_id` int(10) NOT NULL COMMENT '美食秀场文章ID',
-  `user_id` int(20) NOT NULL COMMENT '发表用户ID',
-  `title` varchar(2000) NOT NULL COMMENT '文章标题',
-  `is_recommend` int(11) NOT NULL COMMENT '是否推荐',
-  `type` int(11) NOT NULL COMMENT '文章类型：1、图文；2、视频',
-  `create_time` time NOT NULL COMMENT '创建时间',
-  `is_delete` int(11) NOT NULL DEFAULT '0' COMMENT '是否删除 0：未删除；1：已删除'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='美食秀场文章表';
 
 -- 投资抵用券
 CREATE TABLE `invest_coupons` (
