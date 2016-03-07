@@ -319,7 +319,7 @@ Response:{
 
 
 ### 个人设置-绑定手机时发送验证码到新手机
-call:http://website/usercenter/personalSetting!sendValidateCode
+call:http://website/user/user!sendValidateCode
 
 method:post
 
@@ -356,7 +356,7 @@ Response:{
 
 
 ### 个人设置-修改绑定手机
-call:http://website/usercenter/personalSetting!updatePhoneNumber
+call:http://website/user/user!updatePhoneNumber
 
 method:post
 
@@ -393,7 +393,7 @@ Response:{
 
 
 ### 实名认证
-call:http://website/usercenter/user!applyIdVerify
+call:http://website/user/user!applyIdVerify
 
 method:post
 
@@ -434,7 +434,7 @@ Response:{
 }
 
 ### 申请明星投资人
-call:http://website/usercenter/user!applyStarInvestor
+call:http://website/user/user!applyStarInvestor
 
 method:post
 
