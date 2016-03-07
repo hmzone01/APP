@@ -332,7 +332,7 @@ Request:{
         expire:1411527886457  // 失效时间
     },
     params:{
-        phoneNumber:''  // 新绑定的手机号
+        userExtendVO.phoneNumber:''  // 新绑定的手机号
     }
 }
 
@@ -369,7 +369,7 @@ Request:{
         expire:1411527886457  // 失效时间
     },
     params:{
-        phoneNumber:''  // 新绑定的手机号
+        userExtendVO.phoneNumber:''  // 新绑定的手机号
         validateCode:''  // 验证码
     }
 }
@@ -406,12 +406,12 @@ Request:{
         expire:1411527886457  // 失效时间
     },
     params:{
-        realName:''  // 用户真实姓名
-        phoneNumber:''  // 用户手机号码
+        userVO.realName:''  // 用户真实姓名
+        userExtendVO.phoneNumber:''  // 用户手机号码
         id:''  // 用户身份证号
-        userIdFileA:''  // 身份证正面文件流
-        userIdFileB:''  // 身份证反面文件流
-        userIdFileC:''  // 手持身份证文件流
+        userExtendVO.userIdFileA:''  // 身份证正面文件流
+        userExtendVO.userIdFileB:''  // 身份证反面文件流
+        userExtendVO.userIdFileC:''  // 手持身份证文件流
     }
 }
 
@@ -447,10 +447,10 @@ Request:{
         expire:1411527886457  // 失效时间
     },
     params:{
-        nikeName:''  // 用户昵称
-        verifiedInfo:''  // 认证信息
-        verifiedAttachment:''  // 附件图片文件流
-        conditions:''  // 多选添加，以“|”分隔
+        userExtendVO.nikeName:''  // 用户昵称
+        starInvestorVO.verifiedInfo:''  // 认证信息
+        starInvestorVO.verifiedAttachment:''  // 附件图片文件流
+        starInvestorVO.conditions:''  // 多选添加，以“|”分隔
     }
 }
 
