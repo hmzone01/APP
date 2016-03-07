@@ -211,9 +211,9 @@ Response:{
 
 }
 
-### 获取项目城市
+### 获取项目查询条件
 ### 获取汇梦目前所有项目城市
-call:http://website/project/project!getProjectCity
+call:http://website/project/project!getAllFilterCondition
 
 method:post
 
@@ -239,9 +239,10 @@ Response:{
     },
     body:{
         success:true,
-        info:'获取项目故事信息成功', 
+        info:'获取项目城市成功', 
         data:{
-			arrayCity:''  // 所有城市名称，用于搜索，多个城市以|分隔
+			citys:''  // 所有城市名称，用于搜索
+			status:''  // 所有项目状态，用于搜索
 		}
     }
 

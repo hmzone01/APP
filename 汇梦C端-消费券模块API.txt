@@ -298,7 +298,7 @@ Response:{
     },
     body:{
         success:true,
-        info:'获取助力人员信息成功', 
+        info:'获取助力人员列表成功', 
         data:{
             [{
                 shareSupportId:'',  // 助力记录ID

@@ -759,7 +759,7 @@ Response:{
 
     body:{
         success:true,
-        info:'获取我的粉丝列表成功', 
+        info:'获取我的粉丝信息成功', 
         data:{
 			fansCount:''  // 粉丝总数
 			todayIncreaseCount:''  // 今日新增总数

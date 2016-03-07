@@ -600,7 +600,7 @@ Response:{
     },
     body:{
         success:true,
-        info:'获取店铺流水明细', 
+        info:'获取店铺流水明细总额成功', 
         data:{
             costSum:''  // 消费总额
         }
