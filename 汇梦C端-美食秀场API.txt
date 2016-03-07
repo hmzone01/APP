@@ -24,7 +24,7 @@ Response:{
         success:true,
         info:'获取美食秀场列表成功', 
         data:{
-            foodShowArticleVOList:[
+            [
             {
                 articleId:''  // 秀场文章ID
 				nikeName:''   // 昵称
@@ -90,7 +90,7 @@ Response:{
         success:true,
         info:'获取评论列表成功', 
         data:{
-            articleCommentVOList:[
+            [
             {
 				articleCommentId:''  // 评论ID
 				userId:''  // 评论人ID
@@ -138,11 +138,7 @@ Response:{
         success:true,
         info:'获取文章详情成功', 
         data:{
-			articleId:''  // 文章ID
-			authorId:''  // 作者ID
-			userCircleFlag:''  // 是否已关注标识，0代表未关注，1代表已关注
-			articleCollectionFlag:''  //  是否收藏标识，0代表未收藏，1代表已收藏
-            showArticleDetailVOList:[
+            [
             {
 				detail_id:''  // 详情ID
 				path:''  // 图片或者视频的路径
@@ -157,6 +153,39 @@ Response:{
                 ...
             }
             ]
+        }
+    }
+
+}
+
+### 获取文章详情信息
+call:http://website/show/show!getShowArticleDetailInfo
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        articleId:'',  // 文章ID
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'获取文章详情成功', 
+        data:{
+			articleId:''  // 文章ID
+			authorId:''  // 作者ID
+			userCircleFlag:''  // 是否已关注标识，0代表未关注，1代表已关注
+			articleCollectionFlag:''  //  是否收藏标识，0代表未收藏，1代表已收藏
         }
     }
 
@@ -634,7 +663,7 @@ Response:{
         success:true,
         info:'获取我的关注列表成功', 
         data:{
-			UserCircleVOList:[
+			[
 			{
 				userId:''  // 用户ID
 				nikeName:''  // 昵称
@@ -683,9 +712,7 @@ Response:{
         success:true,
         info:'获取我的粉丝列表成功', 
         data:{
-			fansCount:''  // 粉丝总数
-			todayIncreaseCount:''  // 今日新增总数
-			UserCircleVOList:[
+			[
 			{
 				userId:''  // 用户ID
 				nikeName:''  // 昵称
@@ -704,6 +731,38 @@ Response:{
 			},
 			{...}
 			]
+        }
+    }
+
+}
+
+### 获取我的粉丝信息
+call:http://website/show/show!getMyFansInfo
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		pageNo:'',     // 查询的页码
+        pageSize:''    // 每页显示条数(与pageNo一起，如不传则查询全部数据)
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'获取我的粉丝列表成功', 
+        data:{
+			fansCount:''  // 粉丝总数
+			todayIncreaseCount:''  // 今日新增总数
         }
     }
 
@@ -797,7 +856,7 @@ Response:{
         success:true,
         info:'获取我的文章列表成功', 
         data:{
-			foodShowArticleVOList:[
+			[
 			{
 				articleId:''  // 秀场文章ID
 				title:''  // 文章标题
@@ -846,7 +905,7 @@ Response:{
         success:true,
         info:'获取我的关注列表成功', 
         data:{
-			foodShowArticleVOList:[
+			[
 			{
                 articleId:''  // 秀场文章ID
 				nikeName:''   // 昵称
@@ -909,7 +968,7 @@ Response:{
         success:true,
         info:'获取我的关注列表成功', 
         data:{
-			articleRewardRecordVOList:[
+			[
 			{
 				rewardId:''  // 打赏记录ID
                 articleId:''  // 文章ID
@@ -958,7 +1017,7 @@ Response:{
         success:true,
         info:'获取我的关注列表成功', 
         data:{
-			articleRewardRecordVOList:[
+			[
 			{
 				rewardId:''  // 打赏记录ID
                 articleId:''  // 文章ID

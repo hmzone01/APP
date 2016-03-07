@@ -36,7 +36,7 @@ Response:{
         info:'获取项目列表信息成功', 
         data:{
             // 返回项目实体对象ProjectVO的list
-            projectList:[{
+            [{
                 projectStoreId:'',  // 项目库ID
                 projectCode:'', // 项目编号
                 projectName:'',  // 项目名称
@@ -321,7 +321,7 @@ Response:{
         success:true,
         info:'获取项目投资记录成功', 
         data:{
-            investRecordList:[
+            [
             {
                 userId:'',  // 用户ID
                 realName:'', // 用户真实信息，界面显示时如姓名2个字隐藏名，如姓名3个字则隐藏中间的字
@@ -376,7 +376,7 @@ Response:{
         success:true,
         info:'获取项目问答信息成功', 
         data:{
-            projectQuestionList:[
+            [
             {
                 pqaId:'',  // 问答记录主键ID
                 projectId:'',  // 项目ID
@@ -595,8 +595,15 @@ Response:{
         success:true,
         info:'获取投资抵用券列表成功', 
         data:{
+			[{
             investCouponsId:'',  // 抵用券ID
             roleAmount:''  // 抵用券金额
+			},
+			{
+			investCouponsId:'',  // 抵用券ID
+            roleAmount:''  // 抵用券金额
+			},
+			{...}]
         }
     }
 

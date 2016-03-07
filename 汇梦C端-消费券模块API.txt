@@ -30,7 +30,7 @@ Response:{
         info:'获取店铺信息列表成功', 
         data:{
             // 返回店铺StoreVO实体列表
-            storeVO:[
+            [
             {
                 projectId:'',  // 店铺ID
                 projectName:'', // 店铺名称
@@ -126,7 +126,7 @@ Response:{
         info:'获取股东消费券信息成功', 
         data:{
             // 店铺消费券实体voucherVO列表
-            voucherVO:[
+            [
             {
                 voucherId:'', // 股东券ID
                 projectId:'',  // 店铺ID
@@ -193,7 +193,7 @@ Response:{
         info:'获取店铺团购活动券信息成功', 
         data:{
             // 店铺消费券实体voucherVO列表
-            voucherVO:[
+            [
             {
                 voucherId:'', // 店铺团购券ID
                 projectId:'',  // 店铺ID
@@ -300,11 +300,7 @@ Response:{
         success:true,
         info:'获取助力人员信息成功', 
         data:{
-            shareId:'', // 消费券的分享ID
-            currentNum:'' // 最新助力人数，如果助力人数不变，则不需要后续更新操作
-            sharePrice:''  // 助力总额，助力总额变动需要同步更新界面实际支付金额
-            voucherPrice:''  // 实际支付金额
-            shareSupportList:[{
+            [{
                 shareSupportId:'',  // 助力记录ID
                 shareId:'',  // 分享ID
                 supportName:'',  // 助力人员微信名称
@@ -322,6 +318,46 @@ Response:{
                 ...
             }
             ]
+        }
+    }
+
+}
+
+### 获取助力信息
+call:http://website/hmvoucher/voucher!getShareSupportInfo
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        shareId:'', // 消费券的分享ID
+        currentNum:'' // 当前助力人数，如果助力人数与上一次查询一样，没有增加则不用刷新界面重新加载
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取助力人员信息成功', 
+        data:{
+            shareId:'', // 消费券的分享ID
+            currentNum:'' // 最新助力人数，如果助力人数不变，则不需要后续更新操作
+            sharePrice:''  // 助力总额，助力总额变动需要同步更新界面实际支付金额
+            voucherPrice:''  // 实际支付金额
         }
     }
 

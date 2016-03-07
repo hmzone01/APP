@@ -410,7 +410,7 @@ Response:{
         success:true,
         info:'获取我的店铺列表成功', 
         data:{
-            storeVOList:[
+            [
             {
                 projectId:''  // 店铺ID
                 projectCode:''  // 店铺编码
@@ -473,9 +473,7 @@ Response:{
         success:true,
         info:'获取店铺日营业流水', 
         data:{
-            projectId:''  // 店铺ID
-            queryDate:''  // 查询的日期，yyyy-MM-dd，如为空会返回一个默认日期
-            storeOrdersVOList:[
+            [
                 {
                     orderSummaryId:'' // 流水ID
                     payNO:''  // 流水单号
@@ -518,7 +516,7 @@ Response:{
 }
 
 ### 我的店铺-获取店铺流水明细
-call:http://website/usercenter/store!getStoreOrderDetails
+call:http://website/usercenter/store!getStoreOrderDetailsList
 
 method:post
 
@@ -531,7 +529,7 @@ Request:{
         expire:1411527886457  // 失效时间
     },
     params:{
-        orderSummaryId:''  // 店铺ID
+        orderSummaryId:''  // 订单ID
         pageNo:''  // 查询的页码
         pageSize  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
     }
@@ -549,7 +547,6 @@ Response:{
         success:true,
         info:'获取店铺流水明细', 
         data:{
-            costSum:''  // 消费总额
             storeOrderDetailsVOList:[
             {
                 orderDetailId:''  // 菜单明细ID
@@ -574,6 +571,43 @@ Response:{
     }
 
 }
+
+### 我的店铺-获取店铺流水明细总额
+call:http://website/usercenter/store!getStoreOrderDetailsInfo
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        orderSummaryId:''  // 订单ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取店铺流水明细', 
+        data:{
+            costSum:''  // 消费总额
+        }
+    }
+
+}
+
 
 ### 我的店铺-获取每期明细列表
 call:http://website/usercenter/store!getStoreOrderDetails
@@ -607,7 +641,7 @@ Response:{
         success:true,
         info:'获取我的店铺列表成功', 
         data:{
-            shareholderDividendRecordVOList:[
+            [
             {
                 shareholderDividendRecordId:''  // 分红明细ID
                 issueNumber:''  // 分红期号
@@ -662,7 +696,7 @@ Response:{
         success:true,
         info:'获取投资报告列表成功', 
         data:{
-            investReportVOList:[
+            [
             {
                 investReportId:''  // 投资报告ID
                 title:''  // 投资报告标题
@@ -713,7 +747,7 @@ Response:{
         success:true,
         info:'获取店铺监控摄像头列表成功', 
         data:{
-            monitorVOList:[
+            [
                 {
                     monitorId:''  // 摄像头ID
                     monitorName:''  // 摄像头名称
@@ -802,7 +836,7 @@ Response:{
         success:true,
         info:'获取店铺消费券列表成功', 
         data:{
-			expenseVoucherAccountVOList[
+			[
 			{
 				evaId:''  // 消费券账户ID
 				projectId:''  // 店铺ID
@@ -901,7 +935,7 @@ Response:{
         success:true,
         info:'获取店铺消费券列表成功', 
         data:{
-			expenseVoucherAccountVOList:[
+			[
 				{
 					expenseVoucherId:'' // 消费券ID
 					projectId:'' // 店铺ID
@@ -1091,10 +1125,7 @@ Response:{
         success:true,
         info:'获取邀请列表成功', 
         data:{
-			invitationNum:''  // 邀请总人数
-			invitationAmount:'' // 邀请总金额
-			invitationURL:'' // 邀请链接
-			userInvitationVOList:[
+			[
 			{
 				invitationUserId:''  // 用户ID
 				invitationUserValidate:''  // 用户状态（0-未认证，1-已认证，2-认证中，3-认证失败）
@@ -1112,6 +1143,43 @@ Response:{
 			{...}
 			]
 			
+        }
+    }
+
+}
+
+### 获取我的邀请信息
+call:http://website/usercenter/user!getInvitationalPersonInfo
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取邀请列表成功', 
+        data:{
+			invitationNum:''  // 邀请总人数
+			invitationAmount:'' // 邀请总金额
+			invitationURL:'' // 邀请链接
         }
     }
 
@@ -1192,7 +1260,7 @@ Response:{
         success:true,
         info:'获取账户信息成功', 
         data:{
-			investRecordList[
+			[
 				{
 					investRecordId:'',  // 投资记录ID
 					investRecordCode:'',  // 认购单号
@@ -1341,7 +1409,7 @@ Response:{
         success:true,
         info:'获取交易记录成功', 
         data:{
-			withdrawCashRecordVOList:[
+			[
 				{
 					withdrawId:''  // 记录ID
 					applicantBank:''  // 银行名称
@@ -1394,7 +1462,7 @@ Response:{
         success:true,
         info:'获取银行卡列表成功', 
         data:{
-			userBankcardList:[
+			[
 				{
 					userBankcardId  // 银行卡ID
 					bankcard:''  // 银行卡号
@@ -1554,7 +1622,7 @@ Response:{
         success:true,
         info:'获取投资抵用券列表成功', 
         data:{
-			investCouponsVOList:[
+			[
 				{
 					investCouponsId:'',  // 抵用券ID
 					investCouponsCode:'',  // 抵用券编码
@@ -1619,7 +1687,7 @@ Response:{
         success:true,
         info:'获取系统通知列表成功', 
         data:{
-			systemMessageVOList:[
+			[
 				{
 					messageId:''  // 通知ID
 					title:'' // 通知的简要说明
