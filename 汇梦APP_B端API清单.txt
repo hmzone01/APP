@@ -282,6 +282,194 @@ Response:{
 }
 
 
+### 个人设置-修改昵称
+call:http://website/usercenter/personalSetting!updateNickname
 
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        nickName:''  // 用户昵称
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'用户昵称设置成功', 
+        data:{
+        }
+    }
+
+}
+
+
+### 个人设置-绑定手机时发送验证码到新手机
+call:http://website/usercenter/personalSetting!sendValidateCode
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        phoneNumber:''  // 新绑定的手机号
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        // 如修改失败返回提示信息
+        success:true,
+        info:'用户密码修改成功', 
+        data:{
+        }
+    }
+
+}
+
+
+### 个人设置-修改绑定手机
+call:http://website/usercenter/personalSetting!updatePhoneNumber
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        phoneNumber:''  // 新绑定的手机号
+        validateCode:''  // 验证码
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'手机号码绑定成功', 
+        data:{
+        }
+    }
+
+}
+
+
+### 实名认证
+call:http://website/usercenter/user!applyIdVerify
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        realName:''  // 用户真实姓名
+        phoneNumber:''  // 用户手机号码
+        id:''  // 用户身份证号
+        userIdFileA:''  // 身份证正面文件流
+        userIdFileB:''  // 身份证反面文件流
+        userIdFileC:''  // 手持身份证文件流
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'申请实名认证成功，等待验证审批', 
+        data:{
+            nameVerification:''  // 是否实名认证(1 是，0 否, 2审核中 , 3未通过)
+        }
+    }
+
+}
+
+### 申请明星投资人
+call:http://website/usercenter/user!applyStarInvestor
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        nikeName:''  // 用户昵称
+        verifiedInfo:''  // 认证信息
+        verifiedAttachment:''  // 附件图片文件流
+        conditions:''  // 多选添加，以“|”分隔
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'申请明星投资人成功，等待审核中', 
+        data:{
+
+        }
+    }
+
+}
 
 
