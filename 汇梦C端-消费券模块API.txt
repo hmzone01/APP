@@ -55,7 +55,7 @@ Response:{
 }
 
 ### 获取某一店铺Banner广告
-call:http://website/hmvoucher/voucher!getAllVoucherList
+call:http://website/hmvoucher/voucher!getStoreAdvert
 
 method:post
 
