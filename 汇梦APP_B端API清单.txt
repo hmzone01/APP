@@ -408,7 +408,7 @@ Request:{
     params:{
         userVO.realName:''  // 用户真实姓名
         userExtendVO.phoneNumber:''  // 用户手机号码
-        id:''  // 用户身份证号
+        userExtendVO.id:''  // 用户身份证号
         userExtendVO.userIdFileA:''  // 身份证正面文件流
         userExtendVO.userIdFileB:''  // 身份证反面文件流
         userExtendVO.userIdFileC:''  // 手持身份证文件流
