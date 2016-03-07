@@ -211,6 +211,41 @@ Response:{
 
 }
 
+### 获取项目城市
+### 获取汇梦目前所有项目城市
+call:http://website/project/project!getProjectCity
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取项目故事信息成功', 
+        data:{
+			arrayCity:''  // 所有城市名称，用于搜索，多个城市以|分隔
+		}
+    }
+
+}
 
 ### 获取项目故事
 #### 获取项目故事信息
