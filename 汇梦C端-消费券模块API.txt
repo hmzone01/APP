@@ -86,6 +86,7 @@ Response:{
         data:{
             projectId:'', // 店铺ID
             advertPicture:'', // 店铺广告图片
+            type:''  // 0时表示默认广告,1托管页面的广告,2购买列表页面的广告,
         }
     }
 
