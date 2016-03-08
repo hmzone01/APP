@@ -85,6 +85,18 @@ Response:
 			“nickName”:” 彪彪小王子”, #昵称
 	   		“userPhoto”:” http://website/upload/images/userPhoto/10176_avatar.jpg”, #用户头像
 			“signature”:”这里是个性签名”#个性签名
+			
+			
+		            realName:''  // 用户真实姓名
+		            address:''   // 用户默认地址
+		            nameVerification:''  // 是否实名认证(1 是，0 否, 2审核中 , 3未通过)
+		            userIdFileA:''  // 身份证正面文件路径
+		            userIdFileB:''  // 身份证反面文件路径
+		            userIdFileC:''  // 手持身份证文件路径
+		            status:''  // 明星投资人审核状态：0 默认， 1 通过， 2 审核中 ，3 不通过
+		            verifiedInfo:'' // 明星投资人认证信息
+		            verifiedAttachment:''  // 明星投资人认证附件图片地址
+		            conditions:''  // 明星投资人认证条件
 		} 
   	}
 }
