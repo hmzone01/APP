@@ -378,7 +378,6 @@ Response:{
             shareId:'', // 消费券的分享ID
             currentNum:'' // 最新助力人数，如果助力人数不变，则不需要后续更新操作
             sharePrice:''  // 助力总额，助力总额变动需要同步更新界面实际支付金额
-            voucherPrice:''  // 实际支付金额
         }
     }
 
