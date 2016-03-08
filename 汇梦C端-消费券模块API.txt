@@ -12,8 +12,8 @@ Request:{
     	expire:1411527886457  // 失效时间
     },
     params:{
-        pageNo:'', // 查询的页码
-        pageSize:'', // 每页显示的数据条数
+        pageNo:'', // 查询的页码，默认为1
+        pageSize:'', // 每页显示的数据条数，默认为10
     }
 }
 
@@ -111,8 +111,8 @@ Request:{
     },
     params:{
         projectId:'', // 店铺ID
-        pageNo:'', // 查询的页码
-        pageSize:'', // 每页显示的数据条数
+        pageNo:'', // 查询的页码，默认为1
+        pageSize:'', // 每页显示的数据条数，默认为10
     }
 }
 
@@ -178,8 +178,8 @@ Request:{
     },
     params:{
         projectId:'', // 店铺ID
-        pageNo:'', // 查询的页码
-        pageSize:'', // 每页显示的数据条数
+        pageNo:'', // 查询的页码，默认为1 
+        pageSize:'', // 每页显示的数据条数，默认为10
     }
 }
 
