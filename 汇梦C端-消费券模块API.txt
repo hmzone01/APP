@@ -196,26 +196,46 @@ Response:{
             // 店铺消费券实体voucherVO列表
             [
             {
-                voucherId:'', // 店铺团购券ID
-                projectId:'',  // 店铺ID
-                projectName:'',  // 店铺名称
-                voucherLogo:''  // 店铺头像
-                voucherAmount:'' // 消费券金额
-                discountRate:'' // 消费券折扣
-                voucherPrice:'' // 消费券折后售价
-                avilidateTime:''  // 消费券有效期
-                couponType:''  // 消费券类型（1、店铺团购券，3股东券）
+                couponId:'',  // 团购券ID
+                projectId:'',  // 项目ID
+                projectName:'',  // 项目名称
+                code:'',  // 优惠券编码
+                type:'',  // 优惠券类型(1.打折券，2活动券)
+                typeName:'',  // 优惠券类型名称
+                title:'',  // 标题
+                discount:'',  // 折扣金额
+                discountRate:'',  // 折扣率
+                originalPrice:'',  // 原价
+                amountOrRate:'',  // 价格或折扣率
+                startTime:'',  // 活动开始时间
+                endTime:'',  // 活动结束时间
+                state:'',  // 优惠券状态(1.录入 2.生效 3.取消4. 活动结束)
+                pic:'',  // 图片
+                remark:'',  // 备注
+                couponType:'',  // 费券类型：1:用钱买的券 , 2:免费券， 3股东消费券
+                count:'',  // 限制购买数量
+                residueCount:'',  // 剩余购买数量
             },
             {
-                voucherId:'', // 店铺团购券ID
-                projectId:'',  // 店铺ID
-                projectName:'',  // 店铺名称
-                voucherLogo:''  // 店铺头像
-                voucherAmount:'' // 消费券金额
-                discountRate:'' // 消费券折扣
-                voucherPrice:'' // 消费券折后售价
-                avilidateTime:''  // 消费券有效期
-                couponType:''  // 消费券类型（1、店铺团购券，3股东券）
+                couponId:'',  // 团购券ID
+                projectId:'',  // 项目ID
+                projectName:'',  // 项目名称
+                code:'',  // 优惠券编码
+                type:'',  // 优惠券类型(1.打折券，2活动券)
+                typeName:'',  // 优惠券类型名称
+                title:'',  // 标题
+                discount:'',  // 折扣金额
+                discountRate:'',  // 折扣率
+                originalPrice:'',  // 原价
+                amountOrRate:'',  // 价格或折扣率
+                startTime:'',  // 活动开始时间
+                endTime:'',  // 活动结束时间
+                state:'',  // 优惠券状态(1.录入 2.生效 3.取消4. 活动结束)
+                pic:'',  // 图片
+                remark:'',  // 备注
+                couponType:'',  // 费券类型：1:用钱买的券 , 2:免费券， 3股东消费券
+                count:'',  // 限制购买数量
+                residueCount:'',  // 剩余购买数量
             },
             {
                 ...
