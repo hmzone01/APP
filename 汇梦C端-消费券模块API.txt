@@ -283,6 +283,7 @@ Response:{
             discountRate:'',  // 消费券折扣
             sharePrice:'',  // 消费券分享砍价优惠
             voucherPrice:'' // 消费券折后售价
+            shareFlag:''  // 消费券是否支持分享助力（0不同意，1同意）
             shareId:'' // 消费券分享ID
             qrCodeURL:'' // 助力二维码的链接地址，需要移动端转成二维码形式展现
         }
