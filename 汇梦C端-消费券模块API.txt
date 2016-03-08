@@ -35,6 +35,7 @@ Response:{
                 projectId:'',  // 店铺ID
                 projectName:'', // 店铺名称
                 minDiscount:'', // 最低折扣
+                storePromRate:'' // 促销折扣（如minDiscount为空取此值）
                 projectLogo:'', // 店铺logo图片
                 addressDetail:'' // 店铺地址
             },
@@ -42,6 +43,7 @@ Response:{
                 projectId:'',  // 店铺ID
                 projectName:'', // 店铺名称
                 minDiscount:'', // 最低折扣
+                storePromRate:'' // 促销折扣（如minDiscount为空取此值）
                 projectLogo:'', // 店铺logo图片
                 addressDetail:'' // 店铺地址
             },
