@@ -437,10 +437,7 @@ Response:{
     },
     body:{
         success:true,
-        info:'申请实名认证成功，等待验证审批', 
-        data:{
-            nameVerification:''  // 是否实名认证(1 是，0 否, 2审核中 , 3未通过)
-        }
+        info:'申请实名认证成功，等待验证审批'
     }
 
 }
