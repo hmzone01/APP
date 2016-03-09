@@ -1,4 +1,4 @@
-### »ñÈ¡ÃÀÊ³Ğã³¡ÁĞ±í
+### è·å–ç¾é£Ÿç§€åœºåˆ—è¡¨
 call:http://website/show/show!getFoodShowArticleList
 
 method:post
@@ -6,15 +6,15 @@ method:post
 Request:{
     
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        type:''  // ²éÑ¯Ìõ¼ş£¬0-ÍÆ¼öÁĞ±í£¬1-×îĞÂÁĞ±í£¬2-¹Ø×¢ÁĞ±í
-        pageNo:'',     // ²éÑ¯µÄÒ³Âë
-        pageSize:''    // Ã¿Ò³ÏÔÊ¾ÌõÊı(ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯È«²¿Êı¾İ)
+        type:''  // æŸ¥è¯¢æ¡ä»¶ï¼Œ0-æ¨èåˆ—è¡¨ï¼Œ1-æœ€æ–°åˆ—è¡¨ï¼Œ2-å…³æ³¨åˆ—è¡¨
+        pageNo:'',     // æŸ¥è¯¢çš„é¡µç (é»˜è®¤ä¸º1)
+        pageSize:''    // æ¯é¡µæ˜¾ç¤ºæ¡æ•°(é»˜è®¤ä¸º10)
     }
 }
 
@@ -22,39 +22,39 @@ Response:{
 
     body:{
         success:true,
-        info:'»ñÈ¡ÃÀÊ³Ğã³¡ÁĞ±í³É¹¦', 
+        info:'è·å–ç¾é£Ÿç§€åœºåˆ—è¡¨æˆåŠŸ', 
         data:{
             [
             {
-                articleId:''  // Ğã³¡ÎÄÕÂID
-				nikeName:''   // êÇ³Æ
-				authorId:''  // ×÷ÕßID
-				userPhoto:''  // ÓÃ»§Í·Ïñ
-				title:''  // ÎÄÕÂ±êÌâ
-				titlePage:''  // ·âÃæÍ¼Æ¬
-				type:''  // ÎÄÕÂÀàĞÍ£º1¡¢Í¼ÎÄ£»2¡¢ÊÓÆµ
-				createTime:''  // ·¢±íÊ±¼ä
-				praiseCount:''  // µãÔŞ×Ü´ÎÊı
-				commentCount:''  // ÆÀÂÛ×Ü´ÎÊı
-				rewardCount:''  // ´òÉÍ×Ü´ÎÊı
-				userCircleFlag:''  // ÊÇ·ñÒÑ¹Ø×¢±êÊ¶£¬0´ú±íÎ´¹Ø×¢£¬1´ú±íÒÑ¹Ø×¢
-				articleCollectionFlag:''  //  ÊÇ·ñÊÕ²Ø±êÊ¶£¬0´ú±íÎ´ÊÕ²Ø£¬1´ú±íÒÑÊÕ²Ø
+                articleId:''  // ç§€åœºæ–‡ç« ID
+				nikeName:''   // æ˜µç§°
+				authorId:''  // ä½œè€…ID
+				userPhoto:''  // ç”¨æˆ·å¤´åƒ
+				title:''  // æ–‡ç« æ ‡é¢˜
+				titlePage:''  // å°é¢å›¾ç‰‡
+				type:''  // æ–‡ç« ç±»å‹ï¼š1ã€å›¾æ–‡ï¼›2ã€è§†é¢‘
+				createTime:''  // å‘è¡¨æ—¶é—´
+				praiseCount:''  // ç‚¹èµæ€»æ¬¡æ•°
+				commentCount:''  // è¯„è®ºæ€»æ¬¡æ•°
+				rewardCount:''  // æ‰“èµæ€»æ¬¡æ•°
+				userCircleFlag:''  // æ˜¯å¦å·²å…³æ³¨æ ‡è¯†ï¼Œ0ä»£è¡¨æœªå…³æ³¨ï¼Œ1ä»£è¡¨å·²å…³æ³¨
+				articleCollectionFlag:''  //  æ˜¯å¦æ”¶è—æ ‡è¯†ï¼Œ0ä»£è¡¨æœªæ”¶è—ï¼Œ1ä»£è¡¨å·²æ”¶è—
             },
             {
-                articleId:''  // Ğã³¡ÎÄÕÂID
-				nikeName:''   // êÇ³Æ
-				authorId:''  // ×÷ÕßID
-				userPhoto:''  // ÓÃ»§Í·Ïñ
-				title:''  // ÎÄÕÂ±êÌâ
-				titlePage:''  // ·âÃæÍ¼Æ¬
-				type:''  // ÎÄÕÂÀàĞÍ£º1¡¢Í¼ÎÄ£»2¡¢ÊÓÆµ
-				createTime:''  // ·¢±íÊ±¼ä
-				praiseCount:''  // µãÔŞ×Ü´ÎÊı
-				commentCount:''  // ÆÀÂÛ×Ü´ÎÊı
-				rewardCount:''  // ´òÉÍ×Ü´ÎÊı
-				userCircleFlag:''  // ÊÇ·ñÒÑ¹Ø×¢±êÊ¶£¬0´ú±íÎ´¹Ø×¢£¬1´ú±íÒÑ¹Ø×¢
-				articleCollectionFlag:''  //  ÊÇ·ñÊÕ²Ø±êÊ¶£¬0´ú±íÎ´ÊÕ²Ø£¬1´ú±íÒÑÊÕ²Ø
-            }£¬
+                articleId:''  // ç§€åœºæ–‡ç« ID
+				nikeName:''   // æ˜µç§°
+				authorId:''  // ä½œè€…ID
+				userPhoto:''  // ç”¨æˆ·å¤´åƒ
+				title:''  // æ–‡ç« æ ‡é¢˜
+				titlePage:''  // å°é¢å›¾ç‰‡
+				type:''  // æ–‡ç« ç±»å‹ï¼š1ã€å›¾æ–‡ï¼›2ã€è§†é¢‘
+				createTime:''  // å‘è¡¨æ—¶é—´
+				praiseCount:''  // ç‚¹èµæ€»æ¬¡æ•°
+				commentCount:''  // è¯„è®ºæ€»æ¬¡æ•°
+				rewardCount:''  // æ‰“èµæ€»æ¬¡æ•°
+				userCircleFlag:''  // æ˜¯å¦å·²å…³æ³¨æ ‡è¯†ï¼Œ0ä»£è¡¨æœªå…³æ³¨ï¼Œ1ä»£è¡¨å·²å…³æ³¨
+				articleCollectionFlag:''  //  æ˜¯å¦æ”¶è—æ ‡è¯†ï¼Œ0ä»£è¡¨æœªæ”¶è—ï¼Œ1ä»£è¡¨å·²æ”¶è—
+            }ï¼Œ
             {
                 ...
             }
@@ -64,7 +64,7 @@ Response:{
 
 }
 
-### »ñÈ¡ÆÀÂÛÁĞ±í
+### è·å–è¯„è®ºåˆ—è¡¨
 call:http://website/show/show!getArticleCommentList
 
 method:post
@@ -72,15 +72,15 @@ method:post
 Request:{
     
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        articleId:'',  // ÎÄÕÂID
-        pageNo:'',     // ²éÑ¯µÄÒ³Âë
-        pageSize:''    // Ã¿Ò³ÏÔÊ¾ÌõÊı(ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯È«²¿Êı¾İ)
+        articleId:'',  // æ–‡ç« ID
+        pageNo:'',     // æŸ¥è¯¢çš„é¡µç (é»˜è®¤ä¸º1)
+        pageSize:''    // æ¯é¡µæ˜¾ç¤ºæ¡æ•°(é»˜è®¤ä¸º10)
     }
 }
 
@@ -88,23 +88,23 @@ Response:{
 
     body:{
         success:true,
-        info:'»ñÈ¡ÆÀÂÛÁĞ±í³É¹¦', 
+        info:'è·å–è¯„è®ºåˆ—è¡¨æˆåŠŸ', 
         data:{
             [
             {
-				articleCommentId:''  // ÆÀÂÛID
-				userId:''  // ÆÀÂÛÈËID
-				parentId:''  // ±»ÆÀÂÛÈËID£¬0±íÊ¾¶ÔÎÄÕÂÆÀÂÛ
-				nickName:''  // ÆÀÂÛÈËêÇ³Æ
-				comment:''  // ÆÀÂÛÄÚÈİ
+				articleCommentId:''  // è¯„è®ºID
+				userId:''  // è¯„è®ºäººID
+				parentId:''  // è¢«è¯„è®ºäººIDï¼Œ0è¡¨ç¤ºå¯¹æ–‡ç« è¯„è®º
+				nickName:''  // è¯„è®ºäººæ˜µç§°
+				comment:''  // è¯„è®ºå†…å®¹
             },
             {
-				articleCommentId:''  // ÆÀÂÛID
-				userId:''  // ÆÀÂÛÈËID
-				parentId:''  // ±»ÆÀÂÛÈËID£¬0±íÊ¾¶ÔÎÄÕÂÆÀÂÛ
-				nickName:''  // ÆÀÂÛÈËêÇ³Æ
-				comment:''  // ÆÀÂÛÄÚÈİ
-            }£¬
+				articleCommentId:''  // è¯„è®ºID
+				userId:''  // è¯„è®ºäººID
+				parentId:''  // è¢«è¯„è®ºäººIDï¼Œ0è¡¨ç¤ºå¯¹æ–‡ç« è¯„è®º
+				nickName:''  // è¯„è®ºäººæ˜µç§°
+				comment:''  // è¯„è®ºå†…å®¹
+            }ï¼Œ
             {
                 ...
             }
@@ -114,7 +114,7 @@ Response:{
 
 }
 
-### »ñÈ¡ÎÄÕÂÏêÇé
+### è·å–æ–‡ç« è¯¦æƒ…
 call:http://website/show/show!getShowArticleDetailList
 
 method:post
@@ -122,13 +122,13 @@ method:post
 Request:{
     
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        articleId:'',  // ÎÄÕÂID
+        articleId:'',  // æ–‡ç« ID
     }
 }
 
@@ -136,19 +136,19 @@ Response:{
 
     body:{
         success:true,
-        info:'»ñÈ¡ÎÄÕÂÏêÇé³É¹¦', 
+        info:'è·å–æ–‡ç« è¯¦æƒ…æˆåŠŸ', 
         data:{
             [
             {
-				detail_id:''  // ÏêÇéID
-				path:''  // Í¼Æ¬»òÕßÊÓÆµµÄÂ·¾¶
-				desc:''  // Í¼Æ¬»òÊÓÆµ¶ÔÓ¦µÄÃèÊö
+				detail_id:''  // è¯¦æƒ…ID
+				path:''  // å›¾ç‰‡æˆ–è€…è§†é¢‘çš„è·¯å¾„
+				desc:''  // å›¾ç‰‡æˆ–è§†é¢‘å¯¹åº”çš„æè¿°
             },
             {
-				detail_id:''  // ÏêÇéID
-				path:''  // Í¼Æ¬»òÕßÊÓÆµµÄÂ·¾¶
-				desc:''  // Í¼Æ¬»òÊÓÆµ¶ÔÓ¦µÄÃèÊö
-            }£¬
+				detail_id:''  // è¯¦æƒ…ID
+				path:''  // å›¾ç‰‡æˆ–è€…è§†é¢‘çš„è·¯å¾„
+				desc:''  // å›¾ç‰‡æˆ–è§†é¢‘å¯¹åº”çš„æè¿°
+            }ï¼Œ
             {
                 ...
             }
@@ -158,7 +158,7 @@ Response:{
 
 }
 
-### »ñÈ¡ÎÄÕÂÏêÇéĞÅÏ¢
+### è·å–æ–‡ç« è¯¦æƒ…ä¿¡æ¯
 call:http://website/show/show!getShowArticleDetailInfo
 
 method:post
@@ -166,13 +166,13 @@ method:post
 Request:{
     
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        articleId:'',  // ÎÄÕÂID
+        articleId:'',  // æ–‡ç« ID
     }
 }
 
@@ -180,18 +180,18 @@ Response:{
 
     body:{
         success:true,
-        info:'»ñÈ¡ÎÄÕÂÏêÇé³É¹¦', 
+        info:'è·å–æ–‡ç« è¯¦æƒ…æˆåŠŸ', 
         data:{
-			articleId:''  // ÎÄÕÂID
-			authorId:''  // ×÷ÕßID
-			userCircleFlag:''  // ÊÇ·ñÒÑ¹Ø×¢±êÊ¶£¬0´ú±íÎ´¹Ø×¢£¬1´ú±íÒÑ¹Ø×¢
-			articleCollectionFlag:''  //  ÊÇ·ñÊÕ²Ø±êÊ¶£¬0´ú±íÎ´ÊÕ²Ø£¬1´ú±íÒÑÊÕ²Ø
+			articleId:''  // æ–‡ç« ID
+			authorId:''  // ä½œè€…ID
+			userCircleFlag:''  // æ˜¯å¦å·²å…³æ³¨æ ‡è¯†ï¼Œ0ä»£è¡¨æœªå…³æ³¨ï¼Œ1ä»£è¡¨å·²å…³æ³¨
+			articleCollectionFlag:''  //  æ˜¯å¦æ”¶è—æ ‡è¯†ï¼Œ0ä»£è¡¨æœªæ”¶è—ï¼Œ1ä»£è¡¨å·²æ”¶è—
         }
     }
 
 }
 
-### ĞÂÔöµãÔŞ
+### æ–°å¢ç‚¹èµ
 call:http://website/show/show!praise
 
 method:post
@@ -199,13 +199,13 @@ method:post
 Request:{
     
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        articleId:'',  // ÎÄÕÂID
+        articleId:'',  // æ–‡ç« ID
     }
 }
 
@@ -213,14 +213,14 @@ Response:{
 
     body:{
         success:true,
-        info:'µãÔŞ³É¹¦', 
+        info:'ç‚¹èµæˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### È¡ÏûµãÔŞ
+### å–æ¶ˆç‚¹èµ
 call:http://website/show/show!cancelPraise
 
 method:post
@@ -228,13 +228,13 @@ method:post
 Request:{
     
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        articleId:'',  // ÎÄÕÂID
+        articleId:'',  // æ–‡ç« ID
     }
 }
 
@@ -242,14 +242,14 @@ Response:{
 
     body:{
         success:true,
-        info:'È¡ÏûµãÔŞ³É¹¦', 
+        info:'å–æ¶ˆç‚¹èµæˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### ĞÂÔöÆÀÂÛ
+### æ–°å¢è¯„è®º
 call:http://website/show/show!addComment
 
 method:post
@@ -257,15 +257,15 @@ method:post
 Request:{
     
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        articleId:'',  // ÎÄÕÂID
-		parentId:''  // ÆÀÂÛ¶ÔÏóID£¬ÆÀÂÛÎÄÕÂ´«0£¬»Ø¸´ÆäËûÈËÆÀÂÛ´«ÆÀÂÛÈËID
-		comment:''  // ÆÀÂÛÄÚÈİ
+        articleId:'',  // æ–‡ç« ID
+	parentId:''  // è¯„è®ºå¯¹è±¡IDï¼Œè¯„è®ºæ–‡ç« ä¼ 0ï¼Œå›å¤å…¶ä»–äººè¯„è®ºä¼ è¯„è®ºäººID
+	comment:''  // è¯„è®ºå†…å®¹
     }
 }
 
@@ -273,15 +273,15 @@ Response:{
 
     body:{
         success:true,
-        info:'ĞÂÔöÆÀÂÛ³É¹¦', 
+        info:'æ–°å¢è¯„è®ºæˆåŠŸ', 
         data:{
-			articleCommentId:''  // ÆÀÂÛID
+		articleCommentId:''  // è¯„è®ºID
         }
     }
 
 }
 
-### É¾³ıÆÀÂÛ
+### åˆ é™¤è¯„è®º
 call:http://website/show/show!deleteComment
 
 method:post
@@ -289,13 +289,13 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-        articleCommentId:''  // ÆÀÂÛID
+        articleCommentId:''  // è¯„è®ºID
     }
 }
 
@@ -303,14 +303,14 @@ Response:{
 
     body:{
         success:true,
-        info:'É¾³ıÆÀÂÛ³É¹¦', 
+        info:'åˆ é™¤è¯„è®ºæˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### ĞÂÔö´òÉÍ
+### æ–°å¢æ‰“èµ
 call:http://website/show/show!addReward
 
 method:post
@@ -318,15 +318,15 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		articleId:''  // ÎÄÕÂID
-		amount:''  // ´òÉÍ½ğ¶î
-		content:''  // ´òÉÍÅú×¢
+	articleId:''  // æ–‡ç« ID
+	amount:''  // æ‰“èµé‡‘é¢
+	content:''  // æ‰“èµæ‰¹æ³¨
     }
 }
 
@@ -334,15 +334,15 @@ Response:{
 
     body:{
         success:true,
-        info:'´òÉÍ³É¹¦', 
+        info:'æ‰“èµæˆåŠŸ', 
         data:{
-			rewardId:''  // ´òÉÍ¼ÇÂ¼ID
+		rewardId:''  // æ‰“èµè®°å½•ID
         }
     }
 
 }
 
-### ĞÂÔö¹Ø×¢
+### æ–°å¢å…³æ³¨
 call:http://website/show/show!addUserCircle
 
 method:post
@@ -350,13 +350,13 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		authorId:''  // ¹Ø×¢µÄÈËµÄID
+	authorId:''  // å…³æ³¨çš„äººçš„ID
     }
 }
 
@@ -364,14 +364,14 @@ Response:{
 
     body:{
         success:true,
-        info:'¹Ø×¢³É¹¦', 
+        info:'å…³æ³¨æˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### È¡Ïû¹Ø×¢
+### å–æ¶ˆå…³æ³¨
 call:http://website/show/show!cancelUserCircle
 
 method:post
@@ -379,13 +379,13 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		authorId:''  // ¹Ø×¢µÄÈËµÄID
+	authorId:''  // å…³æ³¨çš„äººçš„ID
     }
 }
 
@@ -393,14 +393,14 @@ Response:{
 
     body:{
         success:true,
-        info:'È¡Ïû¹Ø×¢³É¹¦', 
+        info:'å–æ¶ˆå…³æ³¨æˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### ÊÕ²ØÎÄÕÂ
+### æ”¶è—æ–‡ç« 
 call:http://website/show/show!addArticleCollection
 
 method:post
@@ -408,13 +408,13 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		articleId:''  // ÎÄÕÂID
+	articleId:''  // æ–‡ç« ID
     }
 }
 
@@ -422,7 +422,7 @@ Response:{
 
     body:{
         success:true,
-        info:'ÊÕ²Ø³É¹¦', 
+        info:'æ”¶è—æˆåŠŸ', 
         data:{
         }
     }
@@ -430,7 +430,7 @@ Response:{
 }
 
 
-### È¡ÏûÎÄÕÂÊÕ²Ø
+### å–æ¶ˆæ–‡ç« æ”¶è—
 call:http://website/show/show!cancelArticleCollection
 
 method:post
@@ -438,13 +438,13 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		articleId:''  // ÎÄÕÂID
+	articleId:''  // æ–‡ç« ID
     }
 }
 
@@ -452,14 +452,14 @@ Response:{
 
     body:{
         success:true,
-        info:'È¡ÏûÊÕ²Ø³É¹¦', 
+        info:'å–æ¶ˆæ”¶è—æˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### ·¢±íÎÄÕÂ
+### å‘è¡¨æ–‡ç« 
 call:http://website/show/show!publishArticle
 
 method:post
@@ -467,24 +467,24 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		title:''  // ÎÄÕÂ±êÌâ
-		type:''  // ÎÄÕÂÀà±ğ
+		title:''  // æ–‡ç« æ ‡é¢˜
+		type:''  // æ–‡ç« ç±»åˆ«
 		foodShowArticleVOList:[
 		{
-			file:''  // Í¼Æ¬»òÊÓÆµÎÄ¼şÁ÷
-			desc:''  // Í¼Æ¬»òÊÓÆµÃèÊö
-			sort:''  // Í¼Æ¬»òÊÓÆµË³Ğò
+			file:''  // å›¾ç‰‡æˆ–è§†é¢‘æ–‡ä»¶æµ
+			desc:''  // å›¾ç‰‡æˆ–è§†é¢‘æè¿°
+			sort:''  // å›¾ç‰‡æˆ–è§†é¢‘é¡ºåº
 		},
 		{
-			file:''  // Í¼Æ¬»òÊÓÆµÎÄ¼şÁ÷
-			desc:''  // Í¼Æ¬»òÊÓÆµÃèÊö
-			sort:''  // Í¼Æ¬»òÊÓÆµË³Ğò
+			file:''  // å›¾ç‰‡æˆ–è§†é¢‘æ–‡ä»¶æµ
+			desc:''  // å›¾ç‰‡æˆ–è§†é¢‘æè¿°
+			sort:''  // å›¾ç‰‡æˆ–è§†é¢‘é¡ºåº
 		},
 		{...}
 		]
@@ -495,15 +495,15 @@ Response:{
 
     body:{
         success:true,
-        info:'·¢²¼ÎÄÕÂ³É¹¦', 
+        info:'å‘å¸ƒæ–‡ç« æˆåŠŸ', 
         data:{
-			articleId:''  // ÎÄÕÂID
+		articleId:''  // æ–‡ç« ID
         }
     }
 
 }
 
-### É¾³ıÎÄÕÂÃ÷Ï¸
+### åˆ é™¤æ–‡ç« æ˜ç»†
 call:http://website/show/show!deleteArticleDetail
 
 method:post
@@ -511,13 +511,13 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		detailId:''  // ÎÄÕÂ¶ÔÓ¦Ã÷Ï¸ID
+	detailId:''  // æ–‡ç« å¯¹åº”æ˜ç»†ID
     }
 }
 
@@ -525,14 +525,14 @@ Response:{
 
     body:{
         success:true,
-        info:'É¾³ıÎÄÕÂÃ÷Ï¸³É¹¦', 
+        info:'åˆ é™¤æ–‡ç« æ˜ç»†æˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### É¾³ıÎÄÕÂ
+### åˆ é™¤æ–‡ç« 
 call:http://website/show/show!deleteArticle
 
 method:post
@@ -540,13 +540,13 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		articleId:''  // ÎÄÕÂID
+	articleId:''  // æ–‡ç« ID
     }
 }
 
@@ -554,14 +554,14 @@ Response:{
 
     body:{
         success:true,
-        info:'É¾³ıÎÄÕÂ³É¹¦', 
+        info:'åˆ é™¤æ–‡ç« æˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### ¸üĞÂÎÄÕÂÃ÷Ï¸
+### æ›´æ–°æ–‡ç« æ˜ç»†
 call:http://website/show/show!updateArticleDetail
 
 method:post
@@ -569,15 +569,15 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		detailId:''  // ÎÄÕÂÃ÷Ï¸ID
-		file:''  // Í¼Æ¬»òÊÓÆµÎÄ¼şÁ÷£¨Îª¿ÕÔò²»¸üĞÂ£©
-		desc:''  // Í¼Æ¬»òÊÓÆµÃèÊö
+	detailId:''  // æ–‡ç« æ˜ç»†ID
+	file:''  // å›¾ç‰‡æˆ–è§†é¢‘æ–‡ä»¶æµï¼ˆä¸ºç©ºåˆ™ä¸æ›´æ–°ï¼‰
+	desc:''  // å›¾ç‰‡æˆ–è§†é¢‘æè¿°
     }
 }
 
@@ -585,14 +585,14 @@ Response:{
 
     body:{
         success:true,
-        info:'¸üĞÂÎÄÕÂÃ÷Ï¸³É¹¦', 
+        info:'æ›´æ–°æ–‡ç« æ˜ç»†æˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### ¸üĞÂÎÄÕÂ
+### æ›´æ–°æ–‡ç« 
 call:http://website/show/show!updateArticleDetail
 
 method:post
@@ -600,25 +600,25 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		articleId:''  // ÎÄÕÂID
-		title:''  // ÎÄÕÂ±êÌâ
-		type:''  // ÎÄÕÂÀà±ğ
+		articleId:''  // æ–‡ç« ID
+		title:''  // æ–‡ç« æ ‡é¢˜
+		type:''  // æ–‡ç« ç±»åˆ«
 		articleVOList:[
 		{
-			file:''  // Í¼Æ¬»òÊÓÆµÎÄ¼şÁ÷
-			desc:''  // Í¼Æ¬»òÊÓÆµÃèÊö
-			sort:''  // Í¼Æ¬»òÊÓÆµË³Ğò
+			file:''  // å›¾ç‰‡æˆ–è§†é¢‘æ–‡ä»¶æµ
+			desc:''  // å›¾ç‰‡æˆ–è§†é¢‘æè¿°
+			sort:''  // å›¾ç‰‡æˆ–è§†é¢‘é¡ºåº
 		},
 		{
-			file:''  // Í¼Æ¬»òÊÓÆµÎÄ¼şÁ÷
-			desc:''  // Í¼Æ¬»òÊÓÆµÃèÊö
-			sort:''  // Í¼Æ¬»òÊÓÆµË³Ğò
+			file:''  // å›¾ç‰‡æˆ–è§†é¢‘æ–‡ä»¶æµ
+			desc:''  // å›¾ç‰‡æˆ–è§†é¢‘æè¿°
+			sort:''  // å›¾ç‰‡æˆ–è§†é¢‘é¡ºåº
 		},
 		{...}
 		]
@@ -629,16 +629,16 @@ Response:{
 
     body:{
         success:true,
-        info:'¸üĞÂÎÄÕÂ³É¹¦', 
+        info:'æ›´æ–°æ–‡ç« æˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-------  Ò»ÏÂ½Ó¿ÚÔÚ¸öÈËÖĞĞÄ½çÃæ»áÓÃµ½  -------------------------------------------------------
+------  ä¸€ä¸‹æ¥å£åœ¨ä¸ªäººä¸­å¿ƒç•Œé¢ä¼šç”¨åˆ°  -------------------------------------------------------
 
-### »ñÈ¡ÎÒµÄ¹Ø×¢ÁĞ±í
+### è·å–æˆ‘çš„å…³æ³¨åˆ—è¡¨
 call:http://website/show/show!getMyUserCircleList
 
 method:post
@@ -646,14 +646,14 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		pageNo:'',     // ²éÑ¯µÄÒ³Âë
-        pageSize:''    // Ã¿Ò³ÏÔÊ¾ÌõÊı(ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯È«²¿Êı¾İ)
+	pageNo:'',     // æŸ¥è¯¢çš„é¡µç (é»˜è®¤ä¸º1)
+        pageSize:''    // æ¯é¡µæ˜¾ç¤ºæ¡æ•°(é»˜è®¤ä¸º10)
     }
 }
 
@@ -661,24 +661,24 @@ Response:{
 
     body:{
         success:true,
-        info:'»ñÈ¡ÎÒµÄ¹Ø×¢ÁĞ±í³É¹¦', 
+        info:'è·å–æˆ‘çš„å…³æ³¨åˆ—è¡¨æˆåŠŸ', 
         data:{
 			[
 			{
-				userId:''  // ÓÃ»§ID
-				nikeName:''  // êÇ³Æ
-				userPhoto:''  // ÓÃ»§Í·Ïñ
-				showTitle:''  // Ğã³¡Í·ÏÎ£¬1-ÃÀÊ³´ïÈË£¬2-ÃÀÊ³¼Ò£¬3-³øÉñ
-				goodContent:''  // ÉÃ³¤ÄÚÈİ
-				sign:''  // ¸öĞÔÇ©Ãû
+				userId:''  // ç”¨æˆ·ID
+				nikeName:''  // æ˜µç§°
+				userPhoto:''  // ç”¨æˆ·å¤´åƒ
+				showTitle:''  // ç§€åœºå¤´è¡”ï¼Œ1-ç¾é£Ÿè¾¾äººï¼Œ2-ç¾é£Ÿå®¶ï¼Œ3-å¨ç¥
+				goodContent:''  // æ“…é•¿å†…å®¹
+				sign:''  // ä¸ªæ€§ç­¾å
 			},
 			{
-				userId:''  // ÓÃ»§ID
-				nikeName:''  // êÇ³Æ
-				userPhoto:''  // ÓÃ»§Í·Ïñ
-				showTitle:''  // Ğã³¡Í·ÏÎ£¬1-ÃÀÊ³´ïÈË£¬2-ÃÀÊ³¼Ò£¬3-³øÉñ
-				goodContent:''  // ÉÃ³¤ÄÚÈİ
-				sign:''  // ¸öĞÔÇ©Ãû
+				userId:''  // ç”¨æˆ·ID
+				nikeName:''  // æ˜µç§°
+				userPhoto:''  // ç”¨æˆ·å¤´åƒ
+				showTitle:''  // ç§€åœºå¤´è¡”ï¼Œ1-ç¾é£Ÿè¾¾äººï¼Œ2-ç¾é£Ÿå®¶ï¼Œ3-å¨ç¥
+				goodContent:''  // æ“…é•¿å†…å®¹
+				sign:''  // ä¸ªæ€§ç­¾å
 			},
 			{...}
 			]
@@ -687,7 +687,7 @@ Response:{
 
 }
 
-### »ñÈ¡ÎÒµÄ·ÛË¿ÁĞ±í
+### è·å–æˆ‘çš„ç²‰ä¸åˆ—è¡¨
 call:http://website/show/show!getMyFansList
 
 method:post
@@ -695,14 +695,14 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		pageNo:'',     // ²éÑ¯µÄÒ³Âë
-        pageSize:''    // Ã¿Ò³ÏÔÊ¾ÌõÊı(ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯È«²¿Êı¾İ)
+        pageNo:'',     // æŸ¥è¯¢çš„é¡µç (é»˜è®¤ä¸º1)
+        pageSize:''    // æ¯é¡µæ˜¾ç¤ºæ¡æ•°(é»˜è®¤ä¸º10)
     }
 }
 
@@ -710,24 +710,24 @@ Response:{
 
     body:{
         success:true,
-        info:'»ñÈ¡ÎÒµÄ·ÛË¿ÁĞ±í³É¹¦', 
+        info:'è·å–æˆ‘çš„ç²‰ä¸åˆ—è¡¨æˆåŠŸ', 
         data:{
 			[
 			{
-				userId:''  // ÓÃ»§ID
-				nikeName:''  // êÇ³Æ
-				userPhoto:''  // ÓÃ»§Í·Ïñ
-				showTitle:''  // Ğã³¡Í·ÏÎ£¬1-ÃÀÊ³´ïÈË£¬2-ÃÀÊ³¼Ò£¬3-³øÉñ
-				goodContent:''  // ÉÃ³¤ÄÚÈİ
-				sign:''  // ¸öĞÔÇ©Ãû
+				userId:''  // ç”¨æˆ·ID
+				nikeName:''  // æ˜µç§°
+				userPhoto:''  // ç”¨æˆ·å¤´åƒ
+				showTitle:''  // ç§€åœºå¤´è¡”ï¼Œ1-ç¾é£Ÿè¾¾äººï¼Œ2-ç¾é£Ÿå®¶ï¼Œ3-å¨ç¥
+				goodContent:''  // æ“…é•¿å†…å®¹
+				sign:''  // ä¸ªæ€§ç­¾å
 			},
 			{
-				userId:''  // ÓÃ»§ID
-				nikeName:''  // êÇ³Æ
-				userPhoto:''  // ÓÃ»§Í·Ïñ
-				showTitle:''  // Ğã³¡Í·ÏÎ£¬1-ÃÀÊ³´ïÈË£¬2-ÃÀÊ³¼Ò£¬3-³øÉñ
-				goodContent:''  // ÉÃ³¤ÄÚÈİ
-				sign:''  // ¸öĞÔÇ©Ãû
+				userId:''  // ç”¨æˆ·ID
+				nikeName:''  // æ˜µç§°
+				userPhoto:''  // ç”¨æˆ·å¤´åƒ
+				showTitle:''  // ç§€åœºå¤´è¡”ï¼Œ1-ç¾é£Ÿè¾¾äººï¼Œ2-ç¾é£Ÿå®¶ï¼Œ3-å¨ç¥
+				goodContent:''  // æ“…é•¿å†…å®¹
+				sign:''  // ä¸ªæ€§ç­¾å
 			},
 			{...}
 			]
@@ -736,7 +736,7 @@ Response:{
 
 }
 
-### »ñÈ¡ÎÒµÄ·ÛË¿ĞÅÏ¢
+### è·å–æˆ‘çš„ç²‰ä¸ä¿¡æ¯
 call:http://website/show/show!getMyFansInfo
 
 method:post
@@ -744,14 +744,14 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		pageNo:'',     // ²éÑ¯µÄÒ³Âë
-        pageSize:''    // Ã¿Ò³ÏÔÊ¾ÌõÊı(ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯È«²¿Êı¾İ)
+        pageNo:'',     // æŸ¥è¯¢çš„é¡µç (é»˜è®¤ä¸º1)
+        pageSize:''    // æ¯é¡µæ˜¾ç¤ºæ¡æ•°(é»˜è®¤ä¸º10)
     }
 }
 
@@ -759,16 +759,16 @@ Response:{
 
     body:{
         success:true,
-        info:'»ñÈ¡ÎÒµÄ·ÛË¿ĞÅÏ¢³É¹¦', 
+        info:'è·å–æˆ‘çš„ç²‰ä¸ä¿¡æ¯æˆåŠŸ', 
         data:{
-			fansCount:''  // ·ÛË¿×ÜÊı
-			todayIncreaseCount:''  // ½ñÈÕĞÂÔö×ÜÊı
+			fansCount:''  // ç²‰ä¸æ€»æ•°
+			todayIncreaseCount:''  // ä»Šæ—¥æ–°å¢æ€»æ•°
         }
     }
 
 }
 
-### »ñÈ¡ÃÀÊ³Ğã³¡¸öÈËĞÅÏ¢
+### è·å–ç¾é£Ÿç§€åœºä¸ªäººä¿¡æ¯
 call:http://website/show/show!getUserShowInfo
 
 method:post
@@ -776,10 +776,10 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
     }
@@ -789,19 +789,19 @@ Response:{
 
     body:{
         success:true,
-        info:'»ñÈ¡ÃÀÊ³Ğã³¡¸öÈËĞÅÏ¢³É¹¦', 
+        info:'è·å–ç¾é£Ÿç§€åœºä¸ªäººä¿¡æ¯æˆåŠŸ', 
         data:{
-			nickName:''  // ÓÃ»§êÇ³Æ
-			userPhot:''  // ÓÃ»§Í·Ïñ
-			goodContent:''  // ÉÃ³¤ÄÚÈİ
-			sign:''  // ¸öĞÔÇ©Ãû
-			showTitle:''  // Ğã³¡Í·ÏÎ£¬1-ÃÀÊ³´ïÈË£¬2-ÃÀÊ³¼Ò£¬3-³øÉñ
+			nickName:''  // ç”¨æˆ·æ˜µç§°
+			userPhot:''  // ç”¨æˆ·å¤´åƒ
+			goodContent:''  // æ“…é•¿å†…å®¹
+			sign:''  // ä¸ªæ€§ç­¾å
+			showTitle:''  // ç§€åœºå¤´è¡”ï¼Œ1-ç¾é£Ÿè¾¾äººï¼Œ2-ç¾é£Ÿå®¶ï¼Œ3-å¨ç¥
         }
     }
 
 }
 
-### ¸üĞÂÃÀÊ³Ğã³¡¸öÈËĞÅÏ¢
+### æ›´æ–°ç¾é£Ÿç§€åœºä¸ªäººä¿¡æ¯
 call:http://website/show/show!updateUserShowInfo
 
 method:post
@@ -809,14 +809,14 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-			goodContent:''  // ÉÃ³¤ÄÚÈİ£¨²»Îªnull£¬Ôò¸üĞÂ£©
-			sign:''  // ¸öĞÔÇ©Ãû£¨²»Îªnull£¬Ôò¸üĞÂ£©
+			goodContent:''  // æ“…é•¿å†…å®¹ï¼ˆä¸ä¸ºnullï¼Œåˆ™æ›´æ–°ï¼‰
+			sign:''  // ä¸ªæ€§ç­¾åï¼ˆä¸ä¸ºnullï¼Œåˆ™æ›´æ–°ï¼‰
     }
 }
 
@@ -824,14 +824,14 @@ Response:{
 
     body:{
         success:true,
-        info:'¸üĞÂÃÀÊ³Ğã³¡¸öÈËĞÅÏ¢³É¹¦', 
+        info:'æ›´æ–°ç¾é£Ÿç§€åœºä¸ªäººä¿¡æ¯æˆåŠŸ', 
         data:{
         }
     }
 
 }
 
-### »ñÈ¡ÎÒµÄÎÄÕÂÁĞ±í
+### è·å–æˆ‘çš„æ–‡ç« åˆ—è¡¨
 call:http://website/show/show!getMyArticleList
 
 method:post
@@ -839,14 +839,14 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		pageNo:'',     // ²éÑ¯µÄÒ³Âë
-        pageSize:''    // Ã¿Ò³ÏÔÊ¾ÌõÊı(ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯È«²¿Êı¾İ)
+        pageNo:'',     // æŸ¥è¯¢çš„é¡µç (é»˜è®¤ä¸º1)
+        pageSize:''    // æ¯é¡µæ˜¾ç¤ºæ¡æ•°(é»˜è®¤ä¸º10)
     }
 }
 
@@ -854,24 +854,24 @@ Response:{
 
     body:{
         success:true,
-        info:'»ñÈ¡ÎÒµÄÎÄÕÂÁĞ±í³É¹¦', 
+        info:'è·å–æˆ‘çš„æ–‡ç« åˆ—è¡¨æˆåŠŸ', 
         data:{
 			[
 			{
-				articleId:''  // Ğã³¡ÎÄÕÂID
-				title:''  // ÎÄÕÂ±êÌâ
-				titlePage:''  // ·âÃæÍ¼Æ¬
-				type:''  // ÎÄÕÂÀàĞÍ£º1¡¢Í¼ÎÄ£»2¡¢ÊÓÆµ
-				createTime:''  // ·¢±íÊ±¼ä
-				rewardSum:''  // ´òÉÍ×Ü¶î£¬Îª0Ôò²»ÏÔÊ¾
+				articleId:''  // ç§€åœºæ–‡ç« ID
+				title:''  // æ–‡ç« æ ‡é¢˜
+				titlePage:''  // å°é¢å›¾ç‰‡
+				type:''  // æ–‡ç« ç±»å‹ï¼š1ã€å›¾æ–‡ï¼›2ã€è§†é¢‘
+				createTime:''  // å‘è¡¨æ—¶é—´
+				rewardSum:''  // æ‰“èµæ€»é¢ï¼Œä¸º0åˆ™ä¸æ˜¾ç¤º
 			},
 			{
-				articleId:''  // Ğã³¡ÎÄÕÂID
-				title:''  // ÎÄÕÂ±êÌâ
-				titlePage:''  // ·âÃæÍ¼Æ¬
-				type:''  // ÎÄÕÂÀàĞÍ£º1¡¢Í¼ÎÄ£»2¡¢ÊÓÆµ
-				createTime:''  // ·¢±íÊ±¼ä
-				rewardSum:''  // ´òÉÍ×Ü¶î£¬Îª0Ôò²»ÏÔÊ¾
+				articleId:''  // ç§€åœºæ–‡ç« ID
+				title:''  // æ–‡ç« æ ‡é¢˜
+				titlePage:''  // å°é¢å›¾ç‰‡
+				type:''  // æ–‡ç« ç±»å‹ï¼š1ã€å›¾æ–‡ï¼›2ã€è§†é¢‘
+				createTime:''  // å‘è¡¨æ—¶é—´
+				rewardSum:''  // æ‰“èµæ€»é¢ï¼Œä¸º0åˆ™ä¸æ˜¾ç¤º
 			},
 			{...}
 			]
@@ -880,7 +880,7 @@ Response:{
 
 }
 
-### »ñÈ¡ÎÒµÄÊÕ²ØÁĞ±í
+### è·å–æˆ‘çš„æ”¶è—åˆ—è¡¨
 call:http://website/show/show!getMyCollectionList
 
 method:post
@@ -888,14 +888,14 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		pageNo:'',     // ²éÑ¯µÄÒ³Âë
-        pageSize:''    // Ã¿Ò³ÏÔÊ¾ÌõÊı(ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯È«²¿Êı¾İ)
+        pageNo:'',     // æŸ¥è¯¢çš„é¡µç (é»˜è®¤ä¸º1)
+        pageSize:''    // æ¯é¡µæ˜¾ç¤ºæ¡æ•°(é»˜è®¤ä¸º10)
     }
 }
 
@@ -903,38 +903,38 @@ Response:{
 
     body:{
         success:true,
-        info:'»ñÈ¡ÎÒµÄ¹Ø×¢ÁĞ±í³É¹¦', 
+        info:'è·å–æˆ‘çš„å…³æ³¨åˆ—è¡¨æˆåŠŸ', 
         data:{
 			[
 			{
-                articleId:''  // Ğã³¡ÎÄÕÂID
-				nikeName:''   // êÇ³Æ
-				authorId:''  // ×÷ÕßID
-				userPhoto:''  // ÓÃ»§Í·Ïñ
-				title:''  // ÎÄÕÂ±êÌâ
-				titlePage:''  // ·âÃæÍ¼Æ¬
-				type:''  // ÎÄÕÂÀàĞÍ£º1¡¢Í¼ÎÄ£»2¡¢ÊÓÆµ
-				createTime:''  // ·¢±íÊ±¼ä
-				praiseCount:''  // µãÔŞ×Ü´ÎÊı
-				commentCount:''  // ÆÀÂÛ×Ü´ÎÊı
-				rewardCount:''  // ´òÉÍ×Ü´ÎÊı
-				userCircleFlag:''  // ÊÇ·ñÒÑ¹Ø×¢±êÊ¶£¬0´ú±íÎ´¹Ø×¢£¬1´ú±íÒÑ¹Ø×¢
-				articleCollectionFlag:''  //  ÊÇ·ñÊÕ²Ø±êÊ¶£¬0´ú±íÎ´ÊÕ²Ø£¬1´ú±íÒÑÊÕ²Ø
+                articleId:''  // ç§€åœºæ–‡ç« ID
+				nikeName:''   // æ˜µç§°
+				authorId:''  // ä½œè€…ID
+				userPhoto:''  // ç”¨æˆ·å¤´åƒ
+				title:''  // æ–‡ç« æ ‡é¢˜
+				titlePage:''  // å°é¢å›¾ç‰‡
+				type:''  // æ–‡ç« ç±»å‹ï¼š1ã€å›¾æ–‡ï¼›2ã€è§†é¢‘
+				createTime:''  // å‘è¡¨æ—¶é—´
+				praiseCount:''  // ç‚¹èµæ€»æ¬¡æ•°
+				commentCount:''  // è¯„è®ºæ€»æ¬¡æ•°
+				rewardCount:''  // æ‰“èµæ€»æ¬¡æ•°
+				userCircleFlag:''  // æ˜¯å¦å·²å…³æ³¨æ ‡è¯†ï¼Œ0ä»£è¡¨æœªå…³æ³¨ï¼Œ1ä»£è¡¨å·²å…³æ³¨
+				articleCollectionFlag:''  //  æ˜¯å¦æ”¶è—æ ‡è¯†ï¼Œ0ä»£è¡¨æœªæ”¶è—ï¼Œ1ä»£è¡¨å·²æ”¶è—
 			},
 			{
-                articleId:''  // Ğã³¡ÎÄÕÂID
-				nikeName:''   // êÇ³Æ
-				authorId:''  // ×÷ÕßID
-				userPhoto:''  // ÓÃ»§Í·Ïñ
-				title:''  // ÎÄÕÂ±êÌâ
-				titlePage:''  // ·âÃæÍ¼Æ¬
-				type:''  // ÎÄÕÂÀàĞÍ£º1¡¢Í¼ÎÄ£»2¡¢ÊÓÆµ
-				createTime:''  // ·¢±íÊ±¼ä
-				praiseCount:''  // µãÔŞ×Ü´ÎÊı
-				commentCount:''  // ÆÀÂÛ×Ü´ÎÊı
-				rewardCount:''  // ´òÉÍ×Ü´ÎÊı
-				userCircleFlag:''  // ÊÇ·ñÒÑ¹Ø×¢±êÊ¶£¬0´ú±íÎ´¹Ø×¢£¬1´ú±íÒÑ¹Ø×¢
-				articleCollectionFlag:''  //  ÊÇ·ñÊÕ²Ø±êÊ¶£¬0´ú±íÎ´ÊÕ²Ø£¬1´ú±íÒÑÊÕ²Ø
+                articleId:''  // ç§€åœºæ–‡ç« ID
+				nikeName:''   // æ˜µç§°
+				authorId:''  // ä½œè€…ID
+				userPhoto:''  // ç”¨æˆ·å¤´åƒ
+				title:''  // æ–‡ç« æ ‡é¢˜
+				titlePage:''  // å°é¢å›¾ç‰‡
+				type:''  // æ–‡ç« ç±»å‹ï¼š1ã€å›¾æ–‡ï¼›2ã€è§†é¢‘
+				createTime:''  // å‘è¡¨æ—¶é—´
+				praiseCount:''  // ç‚¹èµæ€»æ¬¡æ•°
+				commentCount:''  // è¯„è®ºæ€»æ¬¡æ•°
+				rewardCount:''  // æ‰“èµæ€»æ¬¡æ•°
+				userCircleFlag:''  // æ˜¯å¦å·²å…³æ³¨æ ‡è¯†ï¼Œ0ä»£è¡¨æœªå…³æ³¨ï¼Œ1ä»£è¡¨å·²å…³æ³¨
+				articleCollectionFlag:''  //  æ˜¯å¦æ”¶è—æ ‡è¯†ï¼Œ0ä»£è¡¨æœªæ”¶è—ï¼Œ1ä»£è¡¨å·²æ”¶è—
 			},
 			{...}
 			]
@@ -943,7 +943,7 @@ Response:{
 
 }
 
-### »ñÈ¡ÎÒÊÕµ½´òÉÍµÄÁĞ±í
+### è·å–æˆ‘æ”¶åˆ°æ‰“èµçš„åˆ—è¡¨
 call:http://website/show/show!getMyRewardInList
 
 method:post
@@ -951,14 +951,14 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		pageNo:'',     // ²éÑ¯µÄÒ³Âë
-        pageSize:''    // Ã¿Ò³ÏÔÊ¾ÌõÊı(ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯È«²¿Êı¾İ)
+        pageNo:'',     // æŸ¥è¯¢çš„é¡µç (é»˜è®¤ä¸º1)
+        pageSize:''    // æ¯é¡µæ˜¾ç¤ºæ¡æ•°(é»˜è®¤ä¸º10)
     }
 }
 
@@ -966,24 +966,24 @@ Response:{
 
     body:{
         success:true,
-        info:'»ñÈ¡ÎÒµÄ¹Ø×¢ÁĞ±í³É¹¦', 
+        info:'è·å–æˆ‘çš„å…³æ³¨åˆ—è¡¨æˆåŠŸ', 
         data:{
 			[
 			{
-				rewardId:''  // ´òÉÍ¼ÇÂ¼ID
-                articleId:''  // ÎÄÕÂID
-				title:''  // ÎÄÕÂ±êÌâ
-				itlePage:''  // ·âÃæÍ¼Æ¬
-				amount:''  // ´òÉÍ½ğ¶î
-				content:''  // ´òÉÍÅú×¢
+				rewardId:''  // æ‰“èµè®°å½•ID
+                		articleId:''  // æ–‡ç« ID
+				title:''  // æ–‡ç« æ ‡é¢˜
+				itlePage:''  // å°é¢å›¾ç‰‡
+				amount:''  // æ‰“èµé‡‘é¢
+				content:''  // æ‰“èµæ‰¹æ³¨
 			},
 			{
-				rewardId:''  // ´òÉÍ¼ÇÂ¼ID
-                articleId:''  // ÎÄÕÂID
-				title:''  // ÎÄÕÂ±êÌâ
-				itlePage:''  // ·âÃæÍ¼Æ¬
-				amount:''  // ´òÉÍ½ğ¶î
-				content:''  // ´òÉÍÅú×¢
+				rewardId:''  // æ‰“èµè®°å½•ID
+                		articleId:''  // æ–‡ç« ID
+				title:''  // æ–‡ç« æ ‡é¢˜
+				itlePage:''  // å°é¢å›¾ç‰‡
+				amount:''  // æ‰“èµé‡‘é¢
+				content:''  // æ‰“èµæ‰¹æ³¨
 			},
 			{...}
 			]
@@ -992,7 +992,7 @@ Response:{
 
 }
 
-### »ñÈ¡ÎÒ·¢³ö´òÉÍµÄÁĞ±í
+### è·å–æˆ‘å‘å‡ºæ‰“èµçš„åˆ—è¡¨
 call:http://website/show/show!getMyRewardOutList
 
 method:post
@@ -1000,14 +1000,14 @@ method:post
 Request:{
 
     headers:{
-        uid:"1000221",  // ÓÃ»§ID
-        accessToken:"", // ÓÃ»§token
-        client:"F9FQXGP8FCM5",  // ¿Í»§¶Ë±êÊ¶
-        expire:1411527886457  // Ê§Ğ§Ê±¼ä
+        uid:"1000221",  // ç”¨æˆ·ID
+        accessToken:"", // ç”¨æˆ·token
+        client:"F9FQXGP8FCM5",  // å®¢æˆ·ç«¯æ ‡è¯†
+        expire:1411527886457  // å¤±æ•ˆæ—¶é—´
     },
     params:{
-		pageNo:'',     // ²éÑ¯µÄÒ³Âë
-        pageSize:''    // Ã¿Ò³ÏÔÊ¾ÌõÊı(ÓëpageNoÒ»Æğ£¬Èç²»´«Ôò²éÑ¯È«²¿Êı¾İ)
+        pageNo:'',     // æŸ¥è¯¢çš„é¡µç (é»˜è®¤ä¸º1)
+        pageSize:''    // æ¯é¡µæ˜¾ç¤ºæ¡æ•°(é»˜è®¤ä¸º10)
     }
 }
 
@@ -1015,24 +1015,24 @@ Response:{
 
     body:{
         success:true,
-        info:'»ñÈ¡ÎÒµÄ¹Ø×¢ÁĞ±í³É¹¦', 
+        info:'è·å–æˆ‘çš„å…³æ³¨åˆ—è¡¨æˆåŠŸ', 
         data:{
 			[
 			{
-				rewardId:''  // ´òÉÍ¼ÇÂ¼ID
-                articleId:''  // ÎÄÕÂID
-				title:''  // ÎÄÕÂ±êÌâ
-				itlePage:''  // ·âÃæÍ¼Æ¬
-				amount:''  // ´òÉÍ½ğ¶î
-				content:''  // ´òÉÍÅú×¢
+				rewardId:''  // æ‰“èµè®°å½•ID
+                articleId:''  // æ–‡ç« ID
+				title:''  // æ–‡ç« æ ‡é¢˜
+				itlePage:''  // å°é¢å›¾ç‰‡
+				amount:''  // æ‰“èµé‡‘é¢
+				content:''  // æ‰“èµæ‰¹æ³¨
 			},
 			{
-				rewardId:''  // ´òÉÍ¼ÇÂ¼ID
-                articleId:''  // ÎÄÕÂID
-				title:''  // ÎÄÕÂ±êÌâ
-				itlePage:''  // ·âÃæÍ¼Æ¬
-				amount:''  // ´òÉÍ½ğ¶î
-				content:''  // ´òÉÍÅú×¢
+				rewardId:''  // æ‰“èµè®°å½•ID
+                articleId:''  // æ–‡ç« ID
+				title:''  // æ–‡ç« æ ‡é¢˜
+				itlePage:''  // å°é¢å›¾ç‰‡
+				amount:''  // æ‰“èµé‡‘é¢
+				content:''  // æ‰“èµæ‰¹æ³¨
 			},
 			{...}
 			]
