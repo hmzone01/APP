@@ -458,8 +458,8 @@ Request:{
     params:{
         userExtendVO.nikeName:''  // 用户昵称
         starInvestorVO.verifiedInfo:''  // 认证信息
-        verifiedAttachment:''  // 附件图片文件流
         starInvestorVO.conditions:''  // 多选添加，以“|”分隔
+        attachement: // 文件流
     }
 }
 
