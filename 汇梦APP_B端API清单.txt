@@ -458,7 +458,7 @@ Request:{
     params:{
         userExtendVO.nikeName:''  // 用户昵称
         starInvestorVO.verifiedInfo:''  // 认证信息
-        starInvestorVO.verifiedAttachment:''  // 附件图片文件流
+        verifiedAttachment:''  // 附件图片文件流
         starInvestorVO.conditions:''  // 多选添加，以“|”分隔
     }
 }
@@ -473,10 +473,7 @@ Response:{
     },
     body:{
         success:true,
-        info:'申请明星投资人成功，等待审核中', 
-        data:{
-
-        }
+        info:'申请明星投资人成功，等待审核中'
     }
 
 }
