@@ -669,7 +669,7 @@ Response:{
         data:{
 			[
 			{
-				userId:''  // 用户ID
+				friendId:''  // 被关注用户ID
 				nikeName:''  // 昵称
 				userPhoto:''  // 用户头像
 				showTitle:''  // 秀场头衔，1-美食达人，2-美食家，3-厨神
@@ -677,7 +677,7 @@ Response:{
 				sign:''  // 个性签名
 			},
 			{
-				userId:''  // 用户ID
+				friendId:''  // 被关注用户ID
 				nikeName:''  // 昵称
 				userPhoto:''  // 用户头像
 				showTitle:''  // 秀场头衔，1-美食达人，2-美食家，3-厨神
@@ -718,7 +718,7 @@ Response:{
         data:{
 			[
 			{
-				userId:''  // 用户ID
+				friendId:''  // 粉丝ID
 				nikeName:''  // 昵称
 				userPhoto:''  // 用户头像
 				showTitle:''  // 秀场头衔，1-美食达人，2-美食家，3-厨神
@@ -726,7 +726,7 @@ Response:{
 				sign:''  // 个性签名
 			},
 			{
-				userId:''  // 用户ID
+				friendId:''  // 粉丝ID
 				nikeName:''  // 昵称
 				userPhoto:''  // 用户头像
 				showTitle:''  // 秀场头衔，1-美食达人，2-美食家，3-厨神
