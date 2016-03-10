@@ -482,7 +482,7 @@ Response:{
 	/**
 	 * ### 根据userId读取用户信息
 		####  App像服务器发送userId,服务器反会成功或者失败，如果成功，返回查询用户的详细信息
-		url: http://website/user/user!readUser
+		url: http://website/user/user!getOtherUserInfo
 		method: post
 		Request:
 		* with headers{
