@@ -145,11 +145,13 @@ Response:{
 				detail_id:''  // 详情ID
 				path:''  // 图片或者视频的路径
 				desc:''  // 图片或视频对应的描述
+				sort:''  // 排序
             },
             {
 				detail_id:''  // 详情ID
 				path:''  // 图片或者视频的路径
 				desc:''  // 图片或视频对应的描述
+				sort:''  // 排序
             }，
             {
                 ...
