@@ -479,3 +479,63 @@ Response:{
 }
 
 
+	/**
+	 * ### 根据userId读取用户信息
+		####  App像服务器发送userId,服务器反会成功或者失败，如果成功，返回查询用户的详细信息
+		url: http://website/user/user!readUser
+		method: post
+		Request:
+		* with headers{
+			uid:"1000221",#用户ID
+		    	accessToken:"",#用户token
+		    	client:"F9FQXGP8FCM5",#客户端标识
+		    	expire:1411527886457#失效时间
+		}
+		* data {
+			userVO.userId:1111 #需要获取用户信息的用户ID
+		}
+		Response:
+		*headers{
+		    	uid:"1000221",#用户ID
+		    	accessToken:"",#用户token
+		    	client:"F9FQXGP8FCM5",#客户端标识
+		    	expire:1411527886457#失效时间
+		}
+		*data{
+		  	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+		  	"info": “获取用户信息成功”,#提示信息
+		  	"data": {
+				“userVO”: {
+			  		“userId”:112322, #用户ID
+	    			“sex”:”1”, #性别 1男 2女
+					“age”:”28”,#年龄
+					“phoneNumber”:”1362222222”,#电话号码
+					“country”:”001”,#国家
+					“province”:”44”,#省份
+					“city”:”4103”,#城市
+					“district”:”440304”,#区县
+					“street”:” 福华一路10001号”,#街道
+					“company”:”汇梦互联网有限公司”,#所在公司
+					“occupation”:” 互联网/电子商务”,#行业
+					“role”:” 高级软件工程师”,#职务
+					“degrees”:” 本科”,#学历
+					“school”:” 深圳大学”,#毕业院校
+					“nickName”:” 彪彪小王子”, #昵称
+			   		“userPhoto”:” http://website/upload/images/userPhoto/10176_avatar.jpg”, #用户头像
+					“signature”:”这里是个性签名”#个性签名
+					
+		            realName:''  // 用户真实姓名
+		            address:''   // 用户默认地址
+		            nameVerification:''  // 是否实名认证(1 是，0 否, 2审核中 , 3未通过)
+		            userIdFileA:''  // 身份证正面文件路径
+		            userIdFileB:''  // 身份证反面文件路径
+		            userIdFileC:''  // 手持身份证文件路径
+		            status:''  // 明星投资人审核状态：0 默认， 1 通过， 2 审核中 ，3 不通过
+		            verifiedInfo:'' // 明星投资人认证信息
+		            verifiedAttachment:''  // 明星投资人认证附件图片地址
+		            conditions:''  // 明星投资人认证条件
+				} 
+		  	}
+		}
+	 * @return
+	 */
