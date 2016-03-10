@@ -938,7 +938,7 @@ Request:{
     },
     params:{
 		investRecordCode:'' // 认购单号
-		status:''  // 订单状态
+	
     }
 }
 
