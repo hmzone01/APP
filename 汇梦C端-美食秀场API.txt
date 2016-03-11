@@ -905,7 +905,7 @@ Response:{
 
     body:{
         success:true,
-        info:'获取我的关注列表成功', 
+        info:'获取我的收藏列表成功', 
         data:{
 			[
 			{
@@ -968,7 +968,7 @@ Response:{
 
     body:{
         success:true,
-        info:'获取我的关注列表成功', 
+        info:'获取我的打赏列表成功', 
         data:{
 			[
 			{
@@ -1017,7 +1017,7 @@ Response:{
 
     body:{
         success:true,
-        info:'获取我的关注列表成功', 
+        info:'获取我的发出的列表成功', 
         data:{
 			[
 			{
