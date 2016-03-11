@@ -643,7 +643,7 @@ Response:{
 ------  一下接口在个人中心界面会用到  -------------------------------------------------------
 
 ### 获取我的关注列表
-call:http://website/show/show!getMyUserCircleList
+call:http://website/show/showcenter!getMyUserCircleList
 
 method:post
 
@@ -692,7 +692,7 @@ Response:{
 }
 
 ### 获取我的粉丝列表
-call:http://website/show/show!getMyFansList
+call:http://website/show/showcenter!getMyFansList
 
 method:post
 
@@ -741,7 +741,7 @@ Response:{
 }
 
 ### 获取我的粉丝信息
-call:http://website/show/show!getMyFansInfo
+call:http://website/show/showcenter!getMyFansInfo
 
 method:post
 
@@ -771,7 +771,7 @@ Response:{
 }
 
 ### 获取美食秀场个人信息
-call:http://website/show/show!getUserShowInfo
+call:http://website/show/showcenter!getUserShowInfo
 
 method:post
 
@@ -804,7 +804,7 @@ Response:{
 }
 
 ### 更新美食秀场个人信息
-call:http://website/show/show!updateUserShowInfo
+call:http://website/show/showcenter!updateUserShowInfo
 
 method:post
 
@@ -834,7 +834,7 @@ Response:{
 }
 
 ### 获取我的文章列表
-call:http://website/show/show!getMyArticleList
+call:http://website/show/showcenter!getMyArticleList
 
 method:post
 
@@ -883,7 +883,7 @@ Response:{
 }
 
 ### 获取我的收藏列表
-call:http://website/show/show!getMyCollectionList
+call:http://website/show/showcenter!getMyCollectionList
 
 method:post
 
@@ -946,7 +946,7 @@ Response:{
 }
 
 ### 获取我收到打赏的列表
-call:http://website/show/show!getMyRewardInList
+call:http://website/show/showcenter!getMyRewardInList
 
 method:post
 
@@ -995,7 +995,7 @@ Response:{
 }
 
 ### 获取我发出打赏的列表
-call:http://website/show/show!getMyRewardOutList
+call:http://website/show/showcenter!getMyRewardOutList
 
 method:post
 
