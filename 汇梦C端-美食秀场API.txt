@@ -946,7 +946,7 @@ Response:{
 }
 
 ### 获取我收到打赏的列表
-call:http://website/show/showcenter!getMyRewardInList
+call:http://website/show/showcenter!getMyRewardIncomeList
 
 method:post
 
@@ -995,7 +995,7 @@ Response:{
 }
 
 ### 获取我发出打赏的列表
-call:http://website/show/showcenter!getMyRewardOutList
+call:http://website/show/showcenter!getMyRewardOutcomeList
 
 method:post
 
