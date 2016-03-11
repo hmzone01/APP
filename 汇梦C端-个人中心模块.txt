@@ -997,7 +997,7 @@ Response:{
 
 }
 
-### 我的账户-获取交易记录
+### 我的账户-获取提现记录
 call:http://website/usercenter/account!getWithdrawCashRecordList
 
 method:post
@@ -1048,6 +1048,58 @@ Response:{
         }
     }
 
+}
+
+### 我的账户-获取充值记录
+call:http://website/usercenter/account!getRechargeRecordList
+method:post
+Request:{
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		pageNo:''  // 查询的页码
+        pageSize:''  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
+    }
+}
+
+Response:{
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:"获取充值记录成功", 
+        data:{
+			[
+				{
+					rechargeRecordId:''  // 记录ID
+					payTypeCode: #支付方式
+					payTypeName: #支付方式名称
+					payTypeCard: #支付账号
+					amount: #充值金额
+					status: #状态
+					bankcard：#新银行卡
+				},
+				{
+					rechargeRecordId:''  // 记录ID
+					payTypeCode: #支付方式
+					payTypeName: #支付方式名称
+					payTypeCard: #支付账号
+					amount: #充值金额
+					status: #状态
+					bankcard：#新银行卡
+				},
+				{...}
+			]
+        }
+    }
 }
 
 ### 我的账户-获取银行卡列表
