@@ -714,7 +714,7 @@ Response:{
 }
 
 ### 获取我的邀请列表
-call:http://website/usercenter/user!getInvitationalPersonList
+call:http://website/usercenter/usercenter!getInvitationalPersonList
 
 method:post
 
@@ -768,7 +768,7 @@ Response:{
 }
 
 ### 获取我的邀请信息
-call:http://website/usercenter/user!getInvitationalPersonInfo
+call:http://website/usercenter/usercenter!getInvitationalPersonInfo
 
 method:post
 
