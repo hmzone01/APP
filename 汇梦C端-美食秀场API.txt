@@ -959,6 +959,7 @@ Request:{
         expire:1411527886457  // 失效时间
     },
     params:{
+    	type:''        // 1代表我收到的打赏，2代表我发出的打赏  
         pageNo:'',     // 查询的页码(默认为0)
         pageSize:''    // 每页显示条数(默认为10)
     }
@@ -982,55 +983,6 @@ Response:{
 			{
 				rewardId:''  // 打赏记录ID
                 		articleId:''  // 文章ID
-				title:''  // 文章标题
-				itlePage:''  // 封面图片
-				amount:''  // 打赏金额
-				content:''  // 打赏批注
-			},
-			{...}
-			]
-        }
-    }
-
-}
-
-### 获取我发出打赏的列表
-call:http://website/show/showcenter!getMyRewardOutcomeList
-
-method:post
-
-Request:{
-
-    headers:{
-        uid:"1000221",  // 用户ID
-        accessToken:"", // 用户token
-        client:"F9FQXGP8FCM5",  // 客户端标识
-        expire:1411527886457  // 失效时间
-    },
-    params:{
-        pageNo:'',     // 查询的页码(默认为0)
-        pageSize:''    // 每页显示条数(默认为10)
-    }
-}
-
-Response:{
-
-    body:{
-        success:true,
-        info:'获取我的发出的列表成功', 
-        data:{
-			[
-			{
-				rewardId:''  // 打赏记录ID
-                articleId:''  // 文章ID
-				title:''  // 文章标题
-				itlePage:''  // 封面图片
-				amount:''  // 打赏金额
-				content:''  // 打赏批注
-			},
-			{
-				rewardId:''  // 打赏记录ID
-                articleId:''  // 文章ID
 				title:''  // 文章标题
 				itlePage:''  // 封面图片
 				amount:''  // 打赏金额
