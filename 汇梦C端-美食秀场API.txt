@@ -286,7 +286,7 @@ Response:{
 }
 
 ### 删除评论
-call:http://website/show/show!deleteComment
+call:http://website/show/show!cacleComment
 
 method:post
 
