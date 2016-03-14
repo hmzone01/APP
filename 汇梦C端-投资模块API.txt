@@ -19,7 +19,7 @@ Request:{
         projectFlag:"", // 项目过滤条件-项目标签
         projectName:"", // 项目过滤条件-项目名称
         pageNo:"",     // 查询的页码
-        pageSize:""    // 每页显示条数，与pageNo组合，这两个字段不传则查询全部
+        pageSize:""    // 每页显示条数，与pageNo组合，这两个字段不传则默认每次查10条
     }
 }
 
@@ -306,7 +306,7 @@ Request:{
     params:{
         projectId:'',  // 项目ID
         pageNo:'',     // 查询的页码
-        pageSize:''    // 每页显示条数
+        pageSize:''    // 每页显示条数, 这两个字段不传则默认每次查10条
     }
 }
 
@@ -361,7 +361,7 @@ Request:{
     params:{
         projectId:'',  // 项目ID
         pageNo:'',     // 查询的页码
-        pageSize:''    // 每页显示条数
+        pageSize:''    // 每页显示条数,这两个字段不传则默认每次查10条
     }
 }
 
@@ -579,7 +579,7 @@ Request:{
     },
     params:{
         pageNo:"",     // 查询的页码
-        pageSize:""    // 每页显示条数，与pageNo组合，这两个字段不传则查询全部
+        pageSize:""    // 每页显示条数，与pageNo组合，这两个字段不传则默认每次查10条
         investAmount:''  // 投资金额(份数*每份单价)
     }
 }
