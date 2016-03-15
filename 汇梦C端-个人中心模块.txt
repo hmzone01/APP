@@ -1,3 +1,42 @@
+### 我的店铺-获取我的店铺总和信息
+call:http://website/usercenter/store!getStoreInfo
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取我的店铺信息成功', 
+        data:{
+            totalDividend:''  // 累计分红总额
+            totalRewardsmoney:''  // 累计奖励金额
+            totalProgit:''  // 累计收益=累计分红+累计奖励金额
+        }
+    }
+
+}
+
+
+
 ### 我的店铺-获取我的店铺列表信息
 call:http://website/usercenter/store!getStoreList
 
