@@ -113,7 +113,7 @@ Request:{
     },
     params:{
         projectId:''  // 店铺ID
-        queryDate:''  // 查询的日期，yyyy-MM-dd，如为空会返回一个默认日期
+        queryDate:''  // 查询的日期，yyyy-MM-dd，如为空会提供一个默认日期
         pageNo:''  // 查询的页码
         pageSize  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
     }
