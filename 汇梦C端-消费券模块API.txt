@@ -141,6 +141,7 @@ Response:{
                 voucherPrice:'' // 股东券折后售价
                 avilidateTime:'' // 股东券有效期
                 couponType:''  // 消费券类型（1、店铺团购券，3股东券）
+                shareFlag:'' //助力标识0 不同意 1同意助力
             },
             {
                 voucherId:'', // 股东券ID
@@ -153,6 +154,7 @@ Response:{
                 voucherPrice:'' // 股东券折后售价
                 avilidateTime:'' // 股东券有效期
                 couponType:''  // 消费券类型（1、店铺团购券，3股东券）
+                shareFlag:'' //助力标识0 不同意 1同意助力
             },
             {
                 ...
