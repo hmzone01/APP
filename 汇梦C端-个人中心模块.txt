@@ -99,7 +99,7 @@ Response:{
 }
 
 ### 我的店铺-获取我的店铺日营业流水总和信息
-call:http://website/usercenter/store!getStoreInfo
+call:http://website/usercenter/store!getStoreOrdersInfo
 
 method:post
 
