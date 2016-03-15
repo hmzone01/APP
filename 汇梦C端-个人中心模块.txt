@@ -98,6 +98,42 @@ Response:{
 
 }
 
+### 我的店铺-获取我的店铺日营业流水总和信息
+call:http://website/usercenter/store!getStoreInfo
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取我的店铺日营业流水总和信息成功', 
+        data:{
+            count:''  // 日流水条数
+            costSum:''  // 日流水总额
+        }
+    }
+
+}
+
 ### 我的店铺-获取店铺日营业流水
 call:http://website/usercenter/store!getStoreOrders
 
