@@ -296,6 +296,7 @@ Response:{
         success:true,
         info:'获取店铺流水明细总额成功', 
         data:{
+            count:''  // 菜单明细总数
             costSum:''  // 消费总额
         }
     }
