@@ -305,7 +305,7 @@ Response:{
 
 
 ### 我的店铺-获取每期明细列表
-call:http://website/usercenter/store!getStoreOrderDetails
+call:http://website/usercenter/store!getDividendList
 
 method:post
 
