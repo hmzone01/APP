@@ -396,13 +396,11 @@ Response:{
                 investReportId:''  // 投资报告ID
                 title:''  // 投资报告标题
                 periodNumber:''  // 投资报告期号
-                content:''  // 报告内容
             },
             {
                 investReportId:''  // 投资报告ID
                 title:''  // 投资报告标题
                 periodNumber:''  // 投资报告期号
-                content:''  // 报告内容
             },
             {...}
             ]
@@ -411,6 +409,43 @@ Response:{
     }
 
 }
+
+### 我的店铺-获取投资报告详细信息
+call:http://website/usercenter/store!getInvestReportDetails
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        investReportId:''  //  投资报告ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取投资报告详细信息成功', 
+        data:{
+            content:''  // 报告详情
+        }
+    }
+
+}
+
 
 ### 我的店铺-获取店铺监控摄像头列表
 call:http://website/usercenter/store!getMonitorList
