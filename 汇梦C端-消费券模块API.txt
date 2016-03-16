@@ -320,6 +320,62 @@ Response:{
             ]
         }
     }
+}
+
+### 下订单
+call:http://website/hmvoucher/voucher!confirmOrder
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        voucherId:''  //卖家消费券ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'订单已生成', 
+        data:{
+            // 消费券实体ExpenseVoucherVO
+            [
+            {
+                expenseVoucherId:'',  // 消费券ID
+                code:'',  // 消费券编码（买单凭证）
+                amount:'',  // 消费金额
+                projectId:'',  // 项目ID
+                createTime:'', // 创建时间
+                useTime:'', //使用时间
+                status:'',  // 状态（0未使用(已停用)，1已使用，2过期，3取消，4转出，5转入，6托管中，7锁定中，8已出售，9购买中,10已购买(已停用)，11订单过期，12订单完成，13已消费待验证）
+                userId:'',  // 消费者（用户）ID
+                remark:'',  // 备注
+                availableTime:'',  // 有效时间
+                trustDeadline:'',  // 托管截止时间
+                expectedPrice:'',  // 期望售价
+                realPrice:'',  // 实际售价
+                shareFlag:'',  // 助力标识0 不同意 1同意助力
+                shareAmount:'',  // 助力金额
+                type:'',  // 券类型 1 汇梦股东券 2 店铺消费券
+                modifyTime:'',  // 最后更新时间
+            }
+            ]
+        }
+    }
 
 }
 
