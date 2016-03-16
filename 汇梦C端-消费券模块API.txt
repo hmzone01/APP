@@ -35,7 +35,7 @@ Response:{
                 projectId:'',  // 店铺ID
                 projectName:'', // 店铺名称
                 minDiscount:'', // 最低折扣
-                storePromRate:'' // 促销折扣（如minDiscount为空取此值）
+                minSaleRate:'' // 促销折扣（如minDiscount为空取此值）
                 projectLogo:'', // 店铺logo图片
                 addressDetail:'' // 店铺地址
             },
@@ -43,7 +43,7 @@ Response:{
                 projectId:'',  // 店铺ID
                 projectName:'', // 店铺名称
                 minDiscount:'', // 最低折扣
-                storePromRate:'' // 促销折扣（如minDiscount为空取此值）
+                minSaleRate:'' // 促销折扣（如minDiscount为空取此值）
                 projectLogo:'', // 店铺logo图片
                 addressDetail:'' // 店铺地址
             },
@@ -95,7 +95,6 @@ Response:{
 }
 
 
-
 ### 获取某一店铺股东券
 call:http://website/hmvoucher/voucher!getShareholderVoucherList
 
@@ -131,29 +130,27 @@ Response:{
             // 店铺消费券实体voucherVO列表
             [
             {
-                voucherId:'', // 股东券ID
+                expenseVoucherId:'', // 股东券ID
                 projectId:'',  // 店铺ID
                 projectName:'', // 店铺名称
-                voucherLogo:'' // 股东头像
-                phoneNumber:'', // 股东手机号
-                voucherAmount:'' // 股东券金额
+                userPhoto:'' // 股东头像
+                phoneNum:'', // 股东手机号
+                amount:'' // 股东券金额
                 discountRate:'' // 股东券折扣
-                voucherPrice:'' // 股东券折后售价
+                expectedPrice:'' // 股东券折后售价
                 avilidateTime:'' // 股东券有效期
-                couponType:''  // 消费券类型（1、店铺团购券，3股东券）
                 shareFlag:'' //助力标识0 不同意 1同意助力
             },
             {
-                voucherId:'', // 股东券ID
+                expenseVoucherId:'', // 股东券ID
                 projectId:'',  // 店铺ID
                 projectName:'', // 店铺名称
-                voucherLogo:'' // 股东头像
-                phoneNumber:'', // 股东手机号
-                voucherAmount:'' // 股东券金额
+                userPhoto:'' // 股东头像
+                phoneNum:'', // 股东手机号
+                amount:'' // 股东券金额
                 discountRate:'' // 股东券折扣
-                voucherPrice:'' // 股东券折后售价
+                expectedPrice:'' // 股东券折后售价
                 avilidateTime:'' // 股东券有效期
-                couponType:''  // 消费券类型（1、店铺团购券，3股东券）
                 shareFlag:'' //助力标识0 不同意 1同意助力
             },
             {
@@ -165,7 +162,7 @@ Response:{
 
 }
 
-### 获取某一店铺的店铺团购活动券
+### 获取某一店铺的店铺团购券
 call:http://website/hmvoucher/voucher!getStoreVoucherList
 
 method:post
@@ -204,42 +201,36 @@ Response:{
                 projectId:'',  // 项目ID
                 projectName:'',  // 项目名称
                 code:'',  // 优惠券编码
-                type:'',  // 优惠券类型(1.打折券，2活动券)
                 typeName:'',  // 优惠券类型名称
                 title:'',  // 标题
                 discount:'',  // 折扣金额
                 discountRate:'',  // 折扣率
                 originalPrice:'',  // 原价
-                amountOrRate:'',  // 价格或折扣率
                 startTime:'',  // 活动开始时间
                 endTime:'',  // 活动结束时间
                 state:'',  // 优惠券状态(1.录入 2.生效 3.取消4. 活动结束)
                 pic:'',  // 图片
                 remark:'',  // 备注
-                couponType:'',  // 费券类型：1:团购券 , 2:免费券， 3股东券
-                count:'',  // 限制购买数量
-                residueCount:'',  // 剩余购买数量
+                count:'',  // 限制购买数量 （-1为不限制数量）
+                residueCount:'',  // 剩余购买数量（-1为不限制数量）
             },
             {
                 couponId:'',  // 团购券ID
                 projectId:'',  // 项目ID
                 projectName:'',  // 项目名称
                 code:'',  // 优惠券编码
-                type:'',  // 优惠券类型(1.打折券，2活动券)
                 typeName:'',  // 优惠券类型名称
                 title:'',  // 标题
                 discount:'',  // 折扣金额
                 discountRate:'',  // 折扣率
                 originalPrice:'',  // 原价
-                amountOrRate:'',  // 价格或折扣率
                 startTime:'',  // 活动开始时间
                 endTime:'',  // 活动结束时间
                 state:'',  // 优惠券状态(1.录入 2.生效 3.取消4. 活动结束)
                 pic:'',  // 图片
                 remark:'',  // 备注
-                couponType:'',  // 费券类型：1:团购券 , 2:免费券， 3股东券
-                count:'',  // 限制购买数量
-                residueCount:'',  // 剩余购买数量
+                count:'',  // 限制购买数量 （-1为不限制数量）
+                residueCount:'',  // 剩余购买数量（-1为不限制数量）
             },
             {
                 ...
@@ -356,23 +347,14 @@ Response:{
             [
             {
                 expenseVoucherId:'',  // 消费券ID
-                code:'',  // 消费券编码（买单凭证）
-                amount:'',  // 消费金额
+                amount:'',  // 消费券金额
                 projectId:'',  // 项目ID
-                createTime:'', // 创建时间
-                useTime:'', //使用时间
-                status:'',  // 状态（0未使用(已停用)，1已使用，2过期，3取消，4转出，5转入，6托管中，7锁定中，
-                            8已出售，9购买中,10已购买(已停用)，11订单过期，12订单完成，13已消费待验证）
                 userId:'',  // 消费者（用户）ID
-                remark:'',  // 备注
-                availableTime:'',  // 有效时间
-                trustDeadline:'',  // 托管截止时间
                 expectedPrice:'',  // 期望售价
                 realPrice:'',  // 实际售价
-                shareFlag:'',  // 助力标识0 不同意 1同意助力
+                shareFlag:'',  // 消费券是否支持分享助力 (0 不同意 1同意助力)
                 shareAmount:'',  // 助力金额
                 type:'',  // 券类型 1 汇梦股东券 2 店铺消费券
-                modifyTime:'',  // 最后更新时间
                 expenseTransferId:'' //交易记录ID
             }
             ]
@@ -381,68 +363,6 @@ Response:{
 
 }
 
-### 扫码页信息初始化
-call:http://website/hmvoucher/voucher!scanPayLoad
-
-method:post
-
-Request:{
-    
-    headers:{
-        uid:"1000221",  // 用户ID
-    	accessToken:"", // 用户token
-    	client:"F9FQXGP8FCM5",  // 客户端标识
-    	expire:1411527886457  // 失效时间
-    },
-    params:{
-        voucherId:''  //出售的消费券ID
-    }
-}
-
-Response:{
-
-    headers:{
-        uid:"1000221",  // 用户ID
-    	accessToken:"", // 用户token
-    	client:"F9FQXGP8FCM5",  // 客户端标识
-    	expire:1411527886457  // 失效时间
-    },
-    body:{
-        success:true,
-        info:'订单已生成', 
-        data:{
-            // 消费券实体ExpenseVoucherVO
-            [
-            {
-                expenseVoucherId:'',  // 消费券ID
-                code:'',  // 消费券编码（买单凭证）
-                amount:'',  // 消费金额
-                projectId:'',  // 项目ID
-                createTime:'', // 创建时间
-                useTime:'', //使用时间
-                status:'',  // 状态（0未使用(已停用)，1已使用，2过期，3取消，4转出，5转入，6托管中，7锁定中，
-                            8已出售，9购买中,10已购买(已停用)，11订单过期，12订单完成，13已消费待验证）
-                userId:'',  // 消费者（用户）ID
-                remark:'',  // 备注
-                availableTime:'',  // 有效时间
-                trustDeadline:'',  // 托管截止时间
-                expectedPrice:'',  // 期望售价
-                realPrice:'',  // 实际售价
-                shareFlag:'',  // 助力标识0 不同意 1同意助力
-                shareAmount:'',  // 助力金额
-                type:'',  // 券类型 1 汇梦股东券 2 店铺消费券
-                modifyTime:'',  // 最后更新时间
-                expenseTransferId:'' //交易记录ID
-                shareId:'' //分享（扫码助力）ID
-            }
-            ]
-        }
-    }
-
-}
-
-### 助力页面：二维码生成链接
-http://website/share/sharevoucher!shareRecode?shareId=123
 
 ### 购买下单
 #### 此接口会检查消费券是否处于可卖状态，如是进行正常业务处理，如没有返回提示信息
@@ -484,6 +404,68 @@ Response:{
             shareFlag:''  // 消费券是否支持分享助力（0不同意，1同意）
             shareId:'' // 消费券分享ID
             qrCodeURL:'' // 助力二维码的链接地址，需要移动端转成二维码形式展现
+        }
+    }
+
+}
+
+
+### 扫码页信息初始化
+call:http://website/hmvoucher/voucher!scanPayLoad
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        voucherId:''  //出售的消费券ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'数据加载完成', 
+        data:{
+            // 消费券实体ExpenseVoucherVO
+            [
+            {
+                expenseVoucherId:'',  // 消费券ID
+                code:'',  // 消费券编码（买单凭证）
+                amount:'',  // 消费金额
+                projectId:'',  // 项目ID
+                createTime:'', // 创建时间
+                useTime:'', //使用时间
+                status:'',  // 状态（0未使用(已停用)，1已使用，2过期，3取消，4转出，5转入，6托管中，7锁定中，
+                            8已出售，9购买中,10已购买(已停用)，11订单过期，12订单完成，13已消费待验证）
+                userId:'',  // 消费者（用户）ID
+                remark:'',  // 备注
+                availableTime:'',  // 有效时间
+                trustDeadline:'',  // 托管截止时间
+                expectedPrice:'',  // 期望售价
+                realPrice:'',  // 实际售价
+                shareFlag:'',  // 助力标识0 不同意 1同意助力
+                shareAmount:'',  // 助力金额
+                type:'',  // 券类型 1 汇梦股东券 2 店铺消费券
+                modifyTime:'',  // 最后更新时间
+                expenseTransferId:'' //交易记录ID
+                shareId:'' //分享（扫码助力）ID
+                shareCodeLocal:'' //助力二维码生成链接
+            }
+            ]
         }
     }
 
