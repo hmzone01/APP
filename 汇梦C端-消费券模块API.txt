@@ -441,6 +441,9 @@ Response:{
 
 }
 
+### 助力页面：二维码生成链接
+http://website/share/sharevoucher!shareRecode?shareId=123
+
 ### 购买下单
 #### 此接口会检查消费券是否处于可卖状态，如是进行正常业务处理，如没有返回提示信息
 call:http://website/hmvoucher/voucher!buyVoucher
@@ -487,7 +490,7 @@ Response:{
 }
 
 ### 获取助力人员信息列表
-call:http://website/hmvoucher/voucher!getShareSupportList
+call:http://website/share/sharevoucher!getShareSupportList
 
 method:post
 
@@ -541,7 +544,7 @@ Response:{
 }
 
 ### 获取助力信息
-call:http://website/hmvoucher/voucher!getShareSupportInfo
+call:http://website/share/sharevoucher!getShareSupportInfo
 
 method:post
 
@@ -572,8 +575,43 @@ Response:{
         data:{
             shareId:'', // 消费券的分享ID
             currentNum:'' // 最新助力人数，如果助力人数不变，则不需要后续更新操作
-            sharePrice:''  // 助力总额，助力总额变动需要同步更新界面实际支付金额
+            sharePrice:''  // 助力总额
+            realPrice:'' // 实际支付金额
         }
+    }
+
+}
+
+### 更新助力状态
+call:http://website/share/sharevoucher!updateShareRecordStatus
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        shareId:'', // 消费券的分享ID
+        status:'', // 分享状态：0分享中，1分享完成
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'状态更新成功'
     }
 
 }
