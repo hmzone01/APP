@@ -446,6 +446,42 @@ Response:{
 
 }
 
+### 我的店铺-获取店铺监控摄像头总数
+#### 判断店铺是否已安装摄像头，如没有则直接提示用户
+call:http://website/usercenter/store!getMonitorCount
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 店铺ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取店铺监控摄像头总数成功', 
+        data:{
+            count:''  // 该店铺摄像头总数
+        }
+    }
+
+}
 
 ### 我的店铺-获取店铺监控摄像头列表
 call:http://website/usercenter/store!getMonitorList
