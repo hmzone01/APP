@@ -517,12 +517,12 @@ Response:{
                 {
                     monitorId:''  // 摄像头ID
                     monitorName:''  // 摄像头名称
-                    url:''  // 视频地址
+                    url:''  // 视频地址，点击访问此链接
                 },
                 {
                     monitorId:''  // 摄像头ID
                     monitorName:''  // 摄像头名称
-                    url:''  // 视频地址
+                    url:''  // 视频地址，点击访问此链接
                 },
                 {...}
             ]
