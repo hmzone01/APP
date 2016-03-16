@@ -1471,7 +1471,7 @@ Response:{
 }
 
 ### 系统消息通知
-call:http://website/usercenter/user!getSystemMessageList
+call:http://website/usercenter/usercenter!getSystemMessageList
 
 method:post
 
@@ -1523,7 +1523,7 @@ Response:{
 
 }
 
-call:http://website/usercenter/user!deleteSystemMessage
+call:http://website/usercenter/usercenter!deleteSystemMessage
 
 method:post
 
