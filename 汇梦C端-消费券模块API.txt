@@ -372,6 +372,8 @@ Response:{
                 shareAmount:'',  // 助力金额
                 type:'',  // 券类型 1 汇梦股东券 2 店铺消费券
                 modifyTime:'',  // 最后更新时间
+                orderUserId:'', // 下订单的用户ID
+                expenseTransferId:'' //交易记录ID
             }
             ]
         }
