@@ -1,5 +1,5 @@
 ### 我的店铺-获取我的店铺总和信息
-call:http://website/usercenter/store!getStoreInfo
+call:http://website/usercenter/mystore!getStoreInfo
 
 method:post
 
@@ -38,7 +38,7 @@ Response:{
 
 
 ### 我的店铺-获取我的店铺列表信息
-call:http://website/usercenter/store!getStoreList
+call:http://website/usercenter/mystore!getStoreList
 
 method:post
 
@@ -99,7 +99,7 @@ Response:{
 }
 
 ### 我的店铺-获取我的店铺日营业流水总和信息
-call:http://website/usercenter/store!getStoreOrdersInfo
+call:http://website/usercenter/mystore!getStoreOrdersInfo
 
 method:post
 
@@ -135,7 +135,7 @@ Response:{
 }
 
 ### 我的店铺-获取店铺日营业流水
-call:http://website/usercenter/store!getStoreOrders
+call:http://website/usercenter/mystore!getStoreOrders
 
 method:post
 
@@ -210,7 +210,7 @@ Response:{
 }
 
 ### 我的店铺-获取店铺流水明细
-call:http://website/usercenter/store!getStoreOrderDetailsList
+call:http://website/usercenter/mystore!getStoreOrderDetailsList
 
 method:post
 
@@ -267,7 +267,7 @@ Response:{
 }
 
 ### 我的店铺-获取店铺流水明细总额
-call:http://website/usercenter/store!getStoreOrderDetailsInfo
+call:http://website/usercenter/mystore!getStoreOrderDetailsInfo
 
 method:post
 
@@ -305,7 +305,7 @@ Response:{
 
 
 ### 我的店铺-获取每期明细列表
-call:http://website/usercenter/store!getDividendList
+call:http://website/usercenter/mystore!getDividendList
 
 method:post
 
@@ -360,7 +360,7 @@ Response:{
 }
 
 ### 我的店铺-获取投资报告列表
-call:http://website/usercenter/store!getInvestReportList
+call:http://website/usercenter/mystore!getInvestReportList
 
 method:post
 
@@ -411,7 +411,7 @@ Response:{
 }
 
 ### 我的店铺-获取投资报告详细信息
-call:http://website/usercenter/store!getInvestReportDetails
+call:http://website/usercenter/mystore!getInvestReportDetails
 
 method:post
 
@@ -448,7 +448,7 @@ Response:{
 
 ### 我的店铺-获取店铺监控摄像头总数
 #### 判断店铺是否已安装摄像头，如没有则直接提示用户
-call:http://website/usercenter/store!getMonitorCount
+call:http://website/usercenter/mystore!getMonitorCount
 
 method:post
 
@@ -484,7 +484,7 @@ Response:{
 }
 
 ### 我的店铺-获取店铺监控摄像头列表
-call:http://website/usercenter/store!getMonitorList
+call:http://website/usercenter/mystore!getMonitorList
 
 method:post
 
@@ -533,7 +533,7 @@ Response:{
 }
 
 ### 汇梦消费券-获取消费券账户信息
-call:http://website/usercenter/voucher!getExpenseAccountInfo
+call:http://website/usercenter/myvoucher!getExpenseAccountInfo
 
 method:post
 
@@ -572,7 +572,7 @@ Response:{
 
 
 ### 汇梦消费券-获取我的消费券店铺列表
-call:http://website/usercenter/voucher!getVoucherStoreList
+call:http://website/usercenter/myvoucher!getVoucherStoreList
 
 method:post
 
@@ -628,7 +628,7 @@ Response:{
 
 
 ### 汇梦消费券-获取某一店铺消费券账户信息
-call:http://website/usercenter/voucher!getStoreAccountInfo
+call:http://website/usercenter/myvoucher!getStoreAccountInfo
 
 method:post
 
@@ -670,7 +670,7 @@ Response:{
 }
 
 ### 汇梦消费券-获取某一店铺消费券列表
-call:http://website/usercenter/voucher!getStoreExpenseVoucherList
+call:http://website/usercenter/myvoucher!getStoreExpenseVoucherList
 
 method:post
 
@@ -736,7 +736,7 @@ Response:{
 }
 
 ### 汇梦消费券-消费接口，生成消费券
-call:http://website/usercenter/voucher!createVoucher
+call:http://website/usercenter/myvoucher!createVoucher
 
 method:post
 
@@ -774,7 +774,7 @@ Response:{
 }
 
 ### 汇梦消费券-出售，消费券托管接口
-call:http://website/usercenter/voucher!generateTrusteeshipVoucher
+call:http://website/usercenter/myvoucher!generateTrusteeshipVoucher
 
 method:post
 
@@ -816,7 +816,7 @@ Response:{
 }
 
 ### 汇梦消费券-转让
-call:http://website/usercenter/voucher!transferVoucher
+call:http://website/usercenter/myvoucher!transferVoucher
 
 method:post
 
@@ -952,7 +952,7 @@ Response:{
 }
 
 ### 我的账户-获取我的账户信息
-call:http://website/usercenter/account!getCurrentUserAccount
+call:http://website/usercenter/myaccount!getCurrentUserAccount
 
 method:post
 
@@ -995,7 +995,7 @@ Response:{
 }
 
 ### 我的账户-获取投资记录
-call:http://website/usercenter/account!getUserInverstRecordList
+call:http://website/usercenter/myaccount!getUserInverstRecordList
 
 method:post
 
@@ -1071,7 +1071,7 @@ Response:{
 }
 
 ### 我的账户-投资记录-立即支付前验证，验证成功则跳转支付
-call:http://website/usercenter/account!goPay
+call:http://website/usercenter/myaccount!goPay
 
 method:post
 
@@ -1108,7 +1108,7 @@ Response:{
 }
 
 ### 我的账户-投资记录-取消订单接口
-call:http://website/usercenter/account!cancelOrder
+call:http://website/usercenter/myaccount!cancelOrder
 
 method:post
 
@@ -1145,7 +1145,7 @@ Response:{
 }
 
 ### 我的账户-获取提现记录
-call:http://website/usercenter/account!getWithdrawCashRecordList
+call:http://website/usercenter/myaccount!getWithdrawCashRecordList
 
 method:post
 
@@ -1198,7 +1198,7 @@ Response:{
 }
 
 ### 我的账户-获取充值记录
-call:http://website/usercenter/account!getRechargeRecordList
+call:http://website/usercenter/myaccount!getRechargeRecordList
 method:post
 Request:{
     headers:{
@@ -1250,7 +1250,7 @@ Response:{
 }
 
 ### 我的账户-获取银行卡列表
-call:http://website/usercenter/account!getUserBankCardList
+call:http://website/usercenter/myaccount!getUserBankCardList
 
 method:post
 
@@ -1297,7 +1297,7 @@ Response:{
 }
 
 ### 我的账户-我的银行卡-新增银行卡
-call:http://website/usercenter/account!addBankCard
+call:http://website/usercenter/myaccount!addBankCard
 
 method:post
 
@@ -1335,7 +1335,7 @@ Response:{
 }
 
 ### 我的账户-我的银行卡-设置默认分红卡接口
-call:http://website/usercenter/account!setDefaultCard
+call:http://website/usercenter/myaccount!setDefaultCard
 
 method:post
 
@@ -1371,7 +1371,7 @@ Response:{
 
 
 ### 我的账户-我的银行卡-解除银行卡绑定接口
-call:http://website/usercenter/account!deleteCard
+call:http://website/usercenter/myaccount!deleteCard
 
 method:post
 
@@ -1406,7 +1406,7 @@ Response:{
 }
 
 ### 我的账户-获取投资抵用券列表
-call:http://website/usercenter/account!getInvestCouponsList
+call:http://website/usercenter/myaccount!getInvestCouponsList
 
 method:post
 
