@@ -295,7 +295,7 @@ Response:{
 
 
 ### 个人设置-修改昵称
-call:http://website/usercenter/personalSetting!updateNickname
+call:http://website/user/user!updateNickname
 
 method:post
 
