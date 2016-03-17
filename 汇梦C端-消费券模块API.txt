@@ -32,6 +32,7 @@ Response:{
             // 返回店铺StoreVO实体列表
             [
             {
+                coupon_id:'',  // 店铺出售券ID 
                 projectId:'',  // 店铺ID
                 projectName:'', // 店铺名称
                 minDiscount:'', // 最低折扣
@@ -40,6 +41,7 @@ Response:{
                 addressDetail:'' // 店铺地址
             },
             {
+                coupon_id:'',  // 店铺出售券ID 
                 projectId:'',  // 店铺ID
                 projectName:'', // 店铺名称
                 minDiscount:'', // 最低折扣
@@ -311,7 +313,7 @@ Response:{
     }
 }
 
-### 获取股东券购买页数据：下订单
+### 购买页（购买股东券）获取出售的股东券数据
 call:http://website/hmvoucher/voucher!shareholderConfirmOrder
 
 method:post
@@ -339,7 +341,7 @@ Response:{
     },
     body:{
         success:true,
-        info:'订单已生成', 
+        info:'数据加载完成', 
         data:{
             // 消费券实体ExpenseVoucherVO
             [
@@ -351,19 +353,16 @@ Response:{
                 expectedPrice:'',  // 期望售价
                 realPrice:'',  // 实际售价
                 shareFlag:'',  // 消费券是否支持分享助力 (0 不同意 1同意助力)
-                type:'',  // 券类型 1 汇梦股东券 2 店铺消费券
+                type:'',  // 券类型 1 汇梦股东券 2 店铺消费券（这里是1）
                 expenseTransferId:'' //交易记录ID
             }
             ]
         }
     }
-
 }
 
-
-### 购买下单
-#### 此接口会检查消费券是否处于可卖状态，如是进行正常业务处理，如没有返回提示信息
-call:http://website/hmvoucher/voucher!buyVoucher
+### 购买页（购买店铺券）获取出售的店铺券数据
+call:http://website/hmvoucher/voucher!storeConfirmOrder
 
 method:post
 
@@ -376,8 +375,7 @@ Request:{
     	expire:1411527886457  // 失效时间
     },
     params:{
-        voucherId:'', // 出售的消费券ID
-        couponType:'' // 消费券类型
+        couponId:''  //出售的店铺券ID
     }
 }
 
@@ -391,21 +389,25 @@ Response:{
     },
     body:{
         success:true,
-        info:'购买下单成功', 
+        info:'数据加载完成', 
         data:{
-            voucherId:'',  // 购买者新生成的消费券ID
-            voucherAmount:'' // 消费券金额
-            discountRate:'',  // 消费券折扣
-            sharePrice:'',  // 消费券分享砍价优惠
-            voucherPrice:'' // 消费券折后售价
-            shareFlag:''  // 消费券是否支持分享助力（0不同意，1同意）
-            shareId:'' // 消费券分享ID
-            qrCodeURL:'' // 助力二维码的链接地址，需要移动端转成二维码形式展现
+            // 消费券实体ExpenseVoucherVO
+            [
+            {
+                expenseVoucherId:'',  // 消费券ID
+                amount:'',  // 消费券金额
+                projectId:'',  // 项目ID
+                userId:'',  // 消费者（用户）ID
+                expectedPrice:'',  // 期望售价
+                realPrice:'',  // 实际售价
+                shareFlag:'',  // 消费券是否支持分享助力 (0 不同意 1同意助力)
+                type:'',  // 券类型 1 汇梦股东券 2 店铺消费券（这里是2）
+                expenseTransferId:'' //交易记录ID
+            }
+            ]
         }
     }
-
 }
-
 
 ### 扫码页信息初始化
 call:http://website/hmvoucher/voucher!scanPayLoad
@@ -583,6 +585,82 @@ Response:{
         info:'状态更新成功'
     }
 
+}
+
+### 购买下订单
+#### 此接口会检查消费券是否处于可卖状态，如是进行正常业务处理，如没有返回提示信息
+call:http://website/hmvoucher/voucher!buyVoucher
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        expenseTransferId:'', // 交易记录ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'购买下单成功', 
+        data:{ //下单成功需要调用支付接口
+          requestContent:'',  //支付记录
+          sign:'',  //
+          result:'', // 下订单结果：1  成功
+        }
+    }
+}
+
+### 购买下订单：0元免费购买的券，这种订单不走支付逻辑
+#### 此接口会检查消费券是否处于可卖状态，如是进行正常业务处理，如没有返回提示信息
+call:http://website/hmvoucher/voucher!buyVoucherByZero
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        expenseTransferId:'', // 交易记录ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'购买下单成功', 
+        data:{
+          voucherAmount:'',  //消费券金额
+          code:'',  //消费券编码
+          avaliableTime:'', // 消费券使用有效期
+        }
+    }
 }
 
 ### 支付完成
