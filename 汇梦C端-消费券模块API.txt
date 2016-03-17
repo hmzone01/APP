@@ -304,7 +304,6 @@ Response:{
                 guaranteeSaleFlag:'', //是否包销(0：否，1：是) 
                 leadFlag:'', //是否领投(0:否，1:是)
                 projectClass:'', //是否新项目1：新项目，2：已有项目)
-                copyNum:'', //融资份数
                 loanScale:'', //融资占股比例(如80.05%,则存储的是 80.05)
             }
             ]
