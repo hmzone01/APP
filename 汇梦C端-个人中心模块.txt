@@ -610,6 +610,10 @@ Response:{
 				amount:'' // 发放金额
 				spentAmount:'' // 已用金额
 				transferOutAmount:''  // 已转出金额
+				projectVO:{
+					projectLogo:''  // 店铺头像
+					projectName：''  //  店铺名称
+				}
 			},
 			{
 				evaId:''  // 消费券账户ID
@@ -618,6 +622,10 @@ Response:{
 				amount:'' // 发放金额
 				spentAmount:'' // 已用金额
 				transferOutAmount:''  // 已转出金额
+				projectVO:{
+					projectLogo:''  // 店铺头像
+					projectName：''  //  店铺名称
+				}
 			},
 			{...}
 			]
