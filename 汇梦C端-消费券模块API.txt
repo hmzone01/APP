@@ -294,7 +294,6 @@ Response:{
                 addressProvince:'',  // 项目地点-省
                 addressCity:'',  //项目地点-市
                 addressDetail:'', //项目地点-详细地址
-                addressDetail:'', //项目地点-详细地址
                 projectProfile:'', //项目简介
                 yieldLow:'', //收益预期-低
                 yieldMedium:'', //收益预期-中
