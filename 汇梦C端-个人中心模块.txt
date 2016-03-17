@@ -677,6 +677,42 @@ Response:{
 
 }
 
+### 汇梦消费券-判断用户是否该店铺股东，如不是则不能出售，明细中不现实已出售
+call:http://website/usercenter/myvoucher!checkShareholder
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 店铺ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'判断店铺股东成功', 
+        data:{
+		isShareHolder:''  // true代表是，falseb代表不是
+        }
+    }
+
+}
+
 ### 汇梦消费券-获取某一店铺消费券明细列表
 call:http://website/usercenter/myvoucher!getStoreAccountDetailsList
 
