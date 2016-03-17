@@ -677,6 +677,50 @@ Response:{
 
 }
 
+### 汇梦消费券-获取某一店铺消费券明细列表
+call:http://website/usercenter/myvoucher!getStoreAccountDetailsList
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 店铺ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取店铺消费券列表成功', 
+        data:{
+			availableAmount:'' // 该店铺账户可用余额
+			amount:''  // 该店铺已发放
+			trustAmount:''  // 托管金额
+			buyingAmount:''  //  购买中金额
+			waitConsumptionAmount:'' // 待消费金额
+			spentAmount:''  // 该店铺已消费金额
+			transferInAmount:''  // 转入金额
+			transferOutAmount:''  // 该店铺已转出金额
+			saleAmount:''  // 该店铺已出售金额
+        }
+    }
+
+}
+
 ### 汇梦消费券-获取某一店铺消费券列表
 call:http://website/usercenter/myvoucher!getStoreExpenseVoucherList
 
