@@ -824,6 +824,7 @@ Response:{
 }
 
 ### 汇梦消费券-消费接口，生成消费券
+#### 客户端需要验证生成券金额不能大于账户余额
 call:http://website/usercenter/myvoucher!createVoucher
 
 method:post
@@ -862,6 +863,7 @@ Response:{
 }
 
 ### 汇梦消费券-出售，消费券托管接口
+#### 客户端需要验证出售券金额不能大于账户余额
 call:http://website/usercenter/myvoucher!generateTrusteeshipVoucher
 
 method:post
@@ -904,6 +906,7 @@ Response:{
 }
 
 ### 汇梦消费券-转让
+#### 客户端需要验证转让金额不能大于账户余额
 call:http://website/usercenter/myvoucher!transferVoucher
 
 method:post
