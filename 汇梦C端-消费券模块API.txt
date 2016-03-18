@@ -243,8 +243,8 @@ Response:{
 
 }
 
-### 获取店铺信息
-call:http://website/hmvoucher/voucher!getProject
+### 店铺介绍信息，此接口还在编写中
+call:http://website/hmvoucher/voucher!getProjectIntroduce
 
 method:post
 
@@ -273,40 +273,13 @@ Response:{
         success:true,
         info:'店铺信息获取成功', 
         data:{
-            // 店铺实体projectVO
+            // 店铺实体projectIntroduceVO
             [
             {
+                projectIntroduceId:'', //项目介绍ID
                 projectId:'',  // 项目ID
                 projectName:'',  // 项目名称
-                projectCode:'',  // 项目编码
-                projectLogo:'',  // 项目列表图片
-                detailLogo:'', // 项目详情图片
-                projectTypeFirst:'', //项目一级分类 如：中餐/西餐/湘菜/粤菜
-                projectAmount:'',  // 项目总额
-                loanAmount:'',  // 项目融资额
-                investOneCopy:'',  // 单份投资额
-                copyNum:'',  // 融资份数
-                status:'',  // 项目状态（10:新建,20:审核中,30:已发布,31:意向项目,32:预热中,40:融资中,50:满标,60:融资成功,70融资失败）
-                publishTime:'',  // 项目发布时间
-                startTime:'',  // 开标时间
-                endTime:'',  // 融资截止时间
-                fullTime:'',  // 满标时间
-                praiseCount:'',  // 项目关注数
-                commentCount:'',  // 项目评论数
-                addressProvince:'',  // 项目地点-省
-                addressCity:'',  //项目地点-市
-                addressDetail:'', //项目地点-详细地址
-                projectProfile:'', //项目简介
-                yieldLow:'', //收益预期-低
-                yieldMedium:'', //收益预期-中
-                yieldHigh:'', //收益预期-高
-                payBackLow:'', //回本周期-保守（年）
-                payBackMedium:'', //回本周期-一般（年）
-                payBackHigh:'', //回本周期-乐观（年）
-                guaranteeSaleFlag:'', //是否包销(0：否，1：是) 
-                leadFlag:'', //是否领投(0:否，1:是)
-                projectClass:'', //是否新项目1：新项目，2：已有项目)
-                loanScale:'', //融资占股比例(如80.05%,则存储的是 80.05)
+                content:'', //介绍内容（含文字图片视频等）
             }
             ]
         }
@@ -659,6 +632,7 @@ Response:{
           voucherAmount:'',  //消费券金额
           code:'',  //消费券编码
           avaliableTime:'', // 消费券使用有效期
+          projectId：'', 项目ID
         }
     }
 }
