@@ -243,7 +243,7 @@ Response:{
 
 }
 
-### 店铺介绍信息，此接口还在编写中
+### 店铺简介
 call:http://website/hmvoucher/voucher!getProjectIntroduce
 
 method:post
