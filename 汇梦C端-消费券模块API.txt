@@ -29,8 +29,17 @@ Response:{
         success:true,
         info:'获取店铺信息列表成功', 
         data:{
+            //分页实体
+            pageInfo: [{
+                pageCount:'',//总页数
+                pageNo:'', //当前页
+                pageSize:'', //每页显示行数
+                rowPrevious:'', //结束行
+                rowStart:'', // 开始行
+            }],
+            
             // 返回店铺StoreVO实体列表
-            [
+           list: [
             {
                 coupon_id:'',  // 店铺出售券ID 
                 projectId:'',  // 店铺ID
@@ -129,8 +138,17 @@ Response:{
         success:true,
         info:'获取股东消费券信息成功', 
         data:{
+           //分页实体
+            pageInfo: [{
+                pageCount:'',//总页数
+                pageNo:'', //当前页
+                pageSize:'', //每页显示行数
+                rowPrevious:'', //结束行
+                rowStart:'', // 开始行
+            }],
+            
             // 店铺消费券实体voucherVO列表
-            [
+           list: [
             {
                 expenseVoucherId:'', // 股东券ID
                 projectId:'',  // 店铺ID
@@ -196,8 +214,16 @@ Response:{
         success:true,
         info:'获取店铺团购活动券信息成功', 
         data:{
+           //分页实体
+            pageInfo: [{
+                pageCount:'',//总页数
+                pageNo:'', //当前页
+                pageSize:'', //每页显示行数
+                rowPrevious:'', //结束行
+                rowStart:'', // 开始行
+            }],
             // 店铺消费券实体voucherVO列表
-            [
+            list: [
             {
                 couponId:'',  // 团购券ID
                 projectId:'',  // 项目ID
