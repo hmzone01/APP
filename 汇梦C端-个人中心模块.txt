@@ -714,7 +714,7 @@ Response:{
 }
 
 ### 汇梦消费券-获取某一店铺消费券明细列表
-call:http://website/usercenter/myvoucher!getStoreAccountDetailsList
+call:http://website/usercenter/myvoucher!getStoreAccountTotalList
 
 method:post
 
@@ -752,13 +752,14 @@ Response:{
 			transferInAmount:''  // 转入金额
 			transferOutAmount:''  // 该店铺已转出金额
 			saleAmount:''  // 该店铺已出售金额
+			availableTime:''  // 有效时间
         }
     }
 
 }
 
-### 汇梦消费券-获取某一店铺消费券列表
-call:http://website/usercenter/myvoucher!getStoreExpenseVoucherList
+### 汇梦消费券-获取店铺某一状态消费券列表
+call:http://website/usercenter/myvoucher!getStoreTotalDetailsList
 
 method:post
 
@@ -772,6 +773,7 @@ Request:{
     },
     params:{
         projectId:''  // 店铺ID
+		status:''  // 0-待消费，1-已使用，4-已转让，5-已转入，6-托管中，8-已出售，9-待支付
 		pageNo:''  // 查询的页码
         pageSize  // 每页显示条数（与pageNo一起，如不传则查询所有数据）
     }
@@ -838,6 +840,8 @@ Request:{
     },
     params:{
         projectId:''  // 店铺ID
+		voucherAmount:''  // 消费券金额
+		availableTime:''  // 有效期期间
     }
 }
 
@@ -880,6 +884,7 @@ Request:{
 		discount:'' // 折扣（不能小于0）
 		trustDeadline:''  // 托管截止时间
 		shareFlag:''  // 助力标识 1 同意 0不同意助力
+		availableTime:  //  账户金额的有效截止时间
     }
 }
 
@@ -920,7 +925,6 @@ Request:{
         projectId:''  // 店铺ID
 		amount:''  // 转让金额
 		phoneNumber:''  // 接收方手机号码
-		postscript:''  // 备注信息
     }
 }
 
@@ -947,6 +951,58 @@ Response:{
     }
 
 }
+
+### 消费券取消
+call:http://website/usercenter/myvoucher!doCancel
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+        expenseVoucherId:''  // 消费券ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'取消成功', 
+        data:{
+			expenseVoucherId:'' // 消费券ID
+			projectId:'' // 店铺ID
+			code:''  // 消费券编码
+			amount:''  // 消费券金额
+			useTime:''  // 使用时间
+			availableTime:''  // 有效时间
+			trustDeadline:''  // 托管截止时间
+			expectedPrice:''  // 期望售价
+			shareFlag:''  // 助力标识，0 同意 1不同意助力
+			type:''  // 消费券类型  券类型 1 汇梦股东券 2 店铺消费券
+			status:''  // 消费券状态（0未使用，1已使用，2过期，3取消，4转出，5转入，6托管中，7锁定中，8已出售，9购买中,10已购买，11已过期）
+        }
+    }
+
+}
+
+
+### 消费券去支付
+#### 调用汇梦消费券支付接口，参考汇梦消费券接口
+
+
 
 ### 获取我的邀请列表
 call:http://website/usercenter/usercenter!getInvitationalPersonList
@@ -1001,6 +1057,7 @@ Response:{
     }
 
 }
+
 
 ### 获取我的邀请信息
 call:http://website/usercenter/usercenter!getInvitationalPersonInfo
