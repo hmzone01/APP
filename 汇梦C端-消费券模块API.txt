@@ -81,7 +81,8 @@ Request:{
     	expire:1411527886457  // 失效时间
     },
     params:{
-        projectId:'' // 店铺ID
+        projectId:'', // 店铺ID
+        advertType:3, // 1托管页广告 2购买列表页广告 3店铺列表广告
     }
 }
 
