@@ -328,12 +328,16 @@ Response:{
                 realName:'', // 用户真实信息，界面显示时如姓名2个字隐藏名，如姓名3个字则隐藏中间的字
                 investAmount:'',  // 投资金额
                 investTime:''  // 投资时间
+                starFlag:''  // 明星投资人（1是，0否）
+                userPhoto:''  // 用户头像地址
             },
             {
                 userId:'',  // 用户ID
                 realName:'', // 用户真实信息，界面显示时如姓名2个字隐藏名，如姓名3个字则隐藏中间的字
                 investAmount:'',  // 投资金额
                 investTime:''  // 投资时间
+                starFlag:''  // 明星投资人（1是，0否）
+                userPhoto:''  // 用户头像地址
             }，
             {
                 ...
