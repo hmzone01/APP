@@ -16,7 +16,7 @@ Request:{
     params:{
         address:"",    // 项目过滤条件-项目地址
         status："",    // 项目过滤条件-项目状态
-        projectFlag:"", // 项目过滤条件-项目标签
+        projectTag:"", // 项目过滤条件-项目标签
         projectName:"", // 项目过滤条件-项目名称
         pageNo:"",     // 查询的页码
         pageSize:""    // 每页显示条数，与pageNo组合，这两个字段不传则默认每次查10条
