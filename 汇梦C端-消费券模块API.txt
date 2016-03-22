@@ -37,8 +37,8 @@ Response:{
                 projectLogo:'', // 店铺logo图片
                 addressDetail:'', // 店铺地址
                 projectTagList:[  //标签名称，最多3个
-                    { tag_name},
-                    { tag_name},
+                    { tagName:''},
+                    { tagName:''},
                     { ...     }
                 ]
             },
@@ -50,8 +50,8 @@ Response:{
                 projectLogo:'', // 店铺logo图片
                 addressDetail:'', // 店铺地址
                 projectTagList:[  //标签名称，最多3个
-                    { tag_name},
-                    { tag_name},
+                    { tagName:''},
+                    { tagNname:''},
                     { ...     }
                 ]
             },
@@ -243,8 +243,8 @@ Response:{
     }
 }
 
-### 店铺简介
-call:http://website/hmvoucher/voucher!getProjectIntroduce
+### 店铺信息
+call:http://website/hmvoucher/voucher!getProject
 
 method:post
 
@@ -273,7 +273,56 @@ Response:{
         success:true,
         info:'店铺信息获取成功', 
         data:{
-            // 店铺实体projectIntroduceVO
+             //项目标签集，最多3个
+             projectTagList:[  
+                    { tagName:''},
+                    { tagName:''},
+                    { ...     }
+                ]
+            // 店铺实体projectVO
+            projectVO: [
+            {
+                projectId:'', //项目ID
+                projectName:'',  // 项目名称
+                addressDetail:'', //项目详细地址
+                projectLogo:'' //项目图片
+            }
+            ]
+        }
+    }
+}
+
+### 店铺简介
+call:http://website/hmvoucher/voucher!getProjectIntroduce
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'店铺简介获取成功', 
+        data:{
+            // 店铺简介实体projectIntroduceVO
             [
             {
                 projectIntroduceId:'', //项目介绍ID
