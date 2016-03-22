@@ -28,43 +28,38 @@ Response:{
     body:{
         success:true,
         info:'获取店铺信息列表成功', 
-        data:{
-            //分页实体
-            pageInfo: [{
-                pageCount:'',//总页数
-                pageNo:'', //当前页
-                pageSize:'', //每页显示行数
-                rowPrevious:'', //结束行
-                rowStart:'', // 开始行
-            }],
-            
-            // 返回店铺StoreVO实体列表
-           list: [
+        data:[
             {
-                coupon_id:'',  // 店铺出售券ID 
                 projectId:'',  // 店铺ID
                 projectName:'', // 店铺名称
                 minDiscount:'', // 最低折扣
                 minSaleRate:'' // 促销折扣（如minDiscount为空取此值）
                 projectLogo:'', // 店铺logo图片
-                addressDetail:'' // 店铺地址
+                addressDetail:'', // 店铺地址
+                projectTagList:[  //标签名称，最多3个
+                    { tag_name},
+                    { tag_name},
+                    { ...     }
+                ]
             },
             {
-                coupon_id:'',  // 店铺出售券ID 
                 projectId:'',  // 店铺ID
                 projectName:'', // 店铺名称
                 minDiscount:'', // 最低折扣
                 minSaleRate:'' // 促销折扣（如minDiscount为空取此值）
                 projectLogo:'', // 店铺logo图片
-                addressDetail:'' // 店铺地址
+                addressDetail:'', // 店铺地址
+                projectTagList:[  //标签名称，最多3个
+                    { tag_name},
+                    { tag_name},
+                    { ...     }
+                ]
             },
             {
                 ...
             }
-            ]
-        }
+        ]
     }
-
 }
 
 ### 获取某一店铺Banner广告
@@ -138,18 +133,8 @@ Response:{
     body:{
         success:true,
         info:'获取股东消费券信息成功', 
-        data:{
-           //分页实体
-            pageInfo: [{
-                pageCount:'',//总页数
-                pageNo:'', //当前页
-                pageSize:'', //每页显示行数
-                rowPrevious:'', //结束行
-                rowStart:'', // 开始行
-            }],
-            
+        data:[
             // 店铺消费券实体voucherVO列表
-           list: [
             {
                 expenseVoucherId:'', // 股东券ID
                 projectId:'',  // 店铺ID
@@ -177,10 +162,8 @@ Response:{
             {
                 ...
             }
-            ]
-        }
+        ]
     }
-
 }
 
 ### 获取某一店铺的店铺团购券
@@ -214,17 +197,9 @@ Response:{
     body:{
         success:true,
         info:'获取店铺团购活动券信息成功', 
-        data:{
-           //分页实体
-            pageInfo: [{
-                pageCount:'',//总页数
-                pageNo:'', //当前页
-                pageSize:'', //每页显示行数
-                rowPrevious:'', //结束行
-                rowStart:'', // 开始行
-            }],
+        data:
             // 店铺消费券实体voucherVO列表
-            list: [
+            [
             {
                 couponId:'',  // 团购券ID
                 projectId:'',  // 项目ID
@@ -265,9 +240,7 @@ Response:{
                 ...
             }
             ]
-        }
     }
-
 }
 
 ### 店铺简介
