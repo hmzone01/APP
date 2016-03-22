@@ -36,11 +36,9 @@ Response:{
                 minSaleRate:'' // 促销折扣（如minDiscount为空取此值）
                 projectLogo:'', // 店铺logo图片
                 addressDetail:'', // 店铺地址
-                projectTagList:[  //标签名称，最多3个
-                    { tagName:''},
-                    { tagName:''},
-                    { ...     }
-                ]
+                projectTypeFirst:'' , // 第一个标签
+                projectTypeSecond:'', // 第二个标签
+                projectTypeThird:''  // 第三个标签
             },
             {
                 projectId:'',  // 店铺ID
@@ -49,11 +47,9 @@ Response:{
                 minSaleRate:'' // 促销折扣（如minDiscount为空取此值）
                 projectLogo:'', // 店铺logo图片
                 addressDetail:'', // 店铺地址
-                projectTagList:[  //标签名称，最多3个
-                    { tagName:''},
-                    { tagNname:''},
-                    { ...     }
-                ]
+                projectTypeFirst:'' , // 第一个标签
+                projectTypeSecond:'', // 第二个标签
+                projectTypeThird:''  // 第三个标签
             },
             {
                 ...
