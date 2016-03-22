@@ -37,6 +37,7 @@ Response:{
         data:{
             // 返回项目实体对象ProjectVO的list
             [{
+            	projectId:'',  // 项目ID
                 projectStoreId:'',  // 项目库ID
                 projectCode:'', // 项目编号
                 projectName:'',  // 项目名称
@@ -144,6 +145,7 @@ Response:{
         info:'获取项目详细信息成功', 
         data:{
             // 返回项目实体对象ProjectVO信息
+            projectId:'',  // 项目ID
             projectStoreId:'',  // 项目库ID
             projectCode:'', // 项目编号
             projectName:'',  // 项目名称
