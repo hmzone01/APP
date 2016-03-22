@@ -269,21 +269,13 @@ Response:{
         success:true,
         info:'店铺信息获取成功', 
         data:{
-             //项目标签集，最多3个
-             projectTagList:[  
-                    { tagName:''},
-                    { tagName:''},
-                    { ...     }
-                ]
-            // 店铺实体projectVO
-            projectVO: [
-            {
                 projectId:'', //项目ID
                 projectName:'',  // 项目名称
                 addressDetail:'', //项目详细地址
                 projectLogo:'' //项目图片
-            }
-            ]
+                projectTypeFirst:'' , // 第一个标签
+                projectTypeSecond:'', // 第二个标签
+                projectTypeThird:''  // 第三个标签
         }
     }
 }
