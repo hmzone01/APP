@@ -96,7 +96,6 @@ Response:{
             },
             {
                 advertId:'', //广告ID
-                projectId:'',  // 店铺ID
                 wechatPic:'' //图片路径（绝对路径）
             },
             {
