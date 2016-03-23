@@ -14,10 +14,9 @@ Request:{
     	expire:1411527886457  // 失效时间
     },
     params:{
-        address:"",    // 项目过滤条件-项目地址
+        addressCity:"",    // 项目过滤条件-项目地址
         status："",    // 项目过滤条件-项目状态
-        projectTag:"", // 项目过滤条件-项目标签
-        projectName:"", // 项目过滤条件-项目名称
+        searchValue:"", // 文本输入框的搜索内容
         pageNo:"",     // 查询的页码
         pageSize:""    // 每页显示条数，与pageNo组合，这两个字段不传则默认每次查10条
     }
@@ -110,6 +109,92 @@ Response:{
         }
     }
 
+}
+
+### 获取热门搜索列表
+call:http://website/project/project!getProjectHotSearch
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取项目详细信息成功', 
+            {
+	      "searchId": 6,              // 主键ID
+	      "searchValue": "会展中心",  // 搜索内容
+	      "sort": 6,                  // 排序内容
+	      "type": 1                   // 内容类别（1、地址，2、项目，3、菜系）
+	    },
+	    {
+	      "searchId": 5,
+	      "searchValue": "少年宫",
+	      "sort": 5,
+	      "type": 1
+	    },
+    }
+}
+
+### 获取匹配搜索列表
+call:http://website/project/project!getProjectSearchList
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+    	searchValue:''  // 输入框查询的内容
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+	{
+	  "data": [
+	    {
+	      "COUNT": 10,              // 数据数量，如果为0则不显示
+	      "SEARCHVALUE": "肥羊"     // 匹配的内容
+	    },
+	    {
+	      "COUNT": 5,
+	      "SEARCHVALUE": "小肥羊"
+	    }
+	  ],
+	  "success": true,
+	  "info": "获取热门搜索成功"
+	}
 }
 
 ### 获取项目详情
