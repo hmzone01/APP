@@ -72,7 +72,7 @@ Request:{
     	expire:1411527886457  // 失效时间
     },
     params:{
-        projectId:'', // 店铺ID
+        projectId:'', // 店铺ID （传0获取店铺列表广告）
         advertType:3, // 1托管页广告 2购买列表页广告 3店铺列表广告
     }
 }
@@ -89,7 +89,7 @@ Response:{
         success:true,
         info:'获取店铺广告信息成功', 
         data:{
-            projectId:'', // 店铺ID （默认图片和店铺列表页广告不需要项目ID）
+            projectId:'', // 店铺ID （默认广告/店铺列表页广告不需要项目ID）
             wechatPic:'', // 店铺广告图片
             type:''  // 1托管页面的广告,2购买列表页面的广告,3店铺列表页面的广告
         }
