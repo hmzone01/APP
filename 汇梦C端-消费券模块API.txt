@@ -671,14 +671,13 @@ Response:{
         info:'购买下单成功', 
         data:{
           voucherAmount:'',  //消费券金额
-          code:'',  //消费券编码
-          avaliableTime:'', // 消费券使用有效期
+          expenseVoucherId:'',  //买家消费券ID
           projectId：'', 项目ID
         }
     }
 }
 
-### 支付完成
+### 支付完成获取消费券信息
 
 call:http://website/hmvoucher/voucher!payCallBack
 
@@ -693,7 +692,7 @@ Request:{
     	expire:1411527886457  // 失效时间
     },
     params:{
-            voucherId:''  // 购买者新生成的消费券ID
+            expenseTransferId:''  // 交易记录ID
     }
 }
 
@@ -709,7 +708,10 @@ Response:{
         success:true,
         info:'支付成功', 
         data:{
-
+                // 返回消费券实体对象：expenseVoucherVO
+          voucherAmount:'',  //消费券金额
+          expenseVoucherId:'',  //买家消费券ID
+          projectId：'', 项目ID
         }
     }
 
