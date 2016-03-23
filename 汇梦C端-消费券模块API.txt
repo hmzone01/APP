@@ -58,7 +58,7 @@ Response:{
     }
 }
 
-### 获取某一店铺Banner广告
+### 获取店铺Banner广告
 call:http://website/hmvoucher/voucher!getStoreAdvert
 
 method:post
@@ -89,9 +89,9 @@ Response:{
         success:true,
         info:'获取店铺广告信息成功', 
         data:{
-            projectId:'', // 店铺ID
+            projectId:'', // 店铺ID （默认图片和店铺列表页广告不需要项目ID）
             wechatPic:'', // 店铺广告图片
-            type:''  // 0时表示默认广告,1托管页面的广告,2购买列表页面的广告,
+            type:''  // 1托管页面的广告,2购买列表页面的广告,3店铺列表页面的广告
         }
     }
 
