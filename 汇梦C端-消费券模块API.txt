@@ -203,43 +203,27 @@ Response:{
         success:true,
         info:'获取店铺团购活动券信息成功', 
         data:
-            // 店铺消费券实体voucherVO列表
+            // 店铺团购券列表
             [
             {
                 couponId:'',  // 团购券ID
                 projectId:'',  // 项目ID
                 projectName:'',  // 项目名称
-                code:'',  // 优惠券编码
-                typeName:'',  // 优惠券类型名称
-                title:'',  // 标题
                 discount:'',  // 折扣金额
                 discountRate:'',  // 折扣率
                 originalPrice:'',  // 原价
-                startTime:'',  // 活动开始时间
                 endTime:'',  // 活动结束时间
-                state:'',  // 优惠券状态(1.录入 2.生效 3.取消4. 活动结束)
-                pic:'',  // 图片
-                remark:'',  // 备注
-                count:'',  // 限制购买数量 （-1为不限制数量）
-                residueCount:'',  // 剩余购买数量（-1为不限制数量）
+                expenseTransferId:'' //交易记录ID
             },
             {
                 couponId:'',  // 团购券ID
                 projectId:'',  // 项目ID
                 projectName:'',  // 项目名称
-                code:'',  // 优惠券编码
-                typeName:'',  // 优惠券类型名称
-                title:'',  // 标题
                 discount:'',  // 折扣金额
                 discountRate:'',  // 折扣率
                 originalPrice:'',  // 原价
-                startTime:'',  // 活动开始时间
                 endTime:'',  // 活动结束时间
-                state:'',  // 优惠券状态(1.录入 2.生效 3.取消4. 活动结束)
-                pic:'',  // 图片
-                remark:'',  // 备注
-                count:'',  // 限制购买数量 （-1为不限制数量）
-                residueCount:'',  // 剩余购买数量（-1为不限制数量）
+                expenseTransferId:'' //交易记录ID
             },
             {
                 ...
