@@ -212,8 +212,7 @@ Response:{
                 discount:'',  // 折扣金额
                 discountRate:'',  // 折扣率
                 originalPrice:'',  // 原价
-                endTime:'',  // 活动结束时间
-                expenseTransferId:'' //交易记录ID
+                endTime:''  // 活动结束时间
             },
             {
                 couponId:'',  // 团购券ID
@@ -222,8 +221,7 @@ Response:{
                 discount:'',  // 折扣金额
                 discountRate:'',  // 折扣率
                 originalPrice:'',  // 原价
-                endTime:'',  // 活动结束时间
-                expenseTransferId:'' //交易记录ID
+                endTime:''  // 活动结束时间
             },
             {
                 ...
