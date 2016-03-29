@@ -497,6 +497,114 @@ Response:{
 
 }
 
+### 获取项目简介详情
+call:http://website/project/project!getProjectContent
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 项目ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取项目简介详情成功', 
+        data:{
+			content:''  // html格式文本
+        }
+    }
+
+}
+
+### 获取项目简介分红机制
+call:http://website/project/project!getProjectProfit
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 项目ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取项目简介分红机制成功', 
+        data:{
+			profitDetail:''  // html格式文本
+        }
+    }
+
+}
+
+### 获取项目简介退出机制
+call:http://website/project/project!getProjectQuit
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 项目ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取项目简介退出机制成功', 
+        data:{
+			quitDetail:''  // html格式文本
+        }
+    }
+
+}
+
 ### 获取项目试吃信息
 #### 获取项目试吃的简介信息
 call:http://website/project/project!getProjectTasteDetail
