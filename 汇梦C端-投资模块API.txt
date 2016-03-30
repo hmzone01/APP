@@ -605,6 +605,117 @@ Response:{
 
 }
 
+### 获取项目印象列表
+call:http://website/project/project!getProjectImpressionList
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 项目ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取项目印象列表成功', 
+        data:{
+			IMPRESSION:''  // 印象内容
+			NUM:'' // 印象数量
+        }
+    }
+
+}
+
+### 新增项目印象
+call:http://website/project/project!addProjectImpression
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:''  // 项目ID
+		investRecordId:''  // 投资记录ID
+		impressions:''  // 印象
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'新增项目印象成功', 
+        data:{
+        }
+    }
+
+}
+
+
+### 删除项目印象
+call:http://website/project/project!deleteProjectImpression
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+		investRecordId:''  // 投资记录ID
+		impressions:''  // 印象
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'删除项目印象', 
+        data:{
+        }
+    }
+
+}
+
 ### 获取项目试吃信息
 #### 获取项目试吃的简介信息
 call:http://website/project/project!getProjectTasteDetail
@@ -812,6 +923,222 @@ Response:{
 			},
 			{...}]
         }
+    }
+
+}
+
+### 新增合同地址
+call:http://website/project/project!addUserAddress
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+		contactName:''  // 联系人名称
+		contactPhone:''  // 联系人电话
+		province:''  // 省份
+		city:''  // 城市
+		district:''  // 地区
+		street:''  // 街道等详细地址
+		isDefault:''  // 是否默认地址，0非默认，1默认
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'新增合同地址成功', 
+        data:{
+        }
+    }
+
+}
+
+### 更改合同地址
+call:http://website/project/project!updateUserAddress
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+		addressId:''  // 地址ID
+		contactName:''  // 联系人名称
+		contactPhone:''  // 联系人电话
+		province:''  // 省份
+		city:''  // 城市
+		district:''  // 地区
+		street:''  // 街道等详细地址
+		isDefault:''  // 是否默认地址，0非默认，1默认
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'更新合同地址成功', 
+        data:{
+        }
+    }
+
+}
+
+### 删除合同地址
+call:http://website/project/project!deleteUserAddress
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+		addressId:''  // 地址ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'删除合同地址成功', 
+        data:{
+        }
+    }
+
+}
+
+### 获取合同地址列表
+call:http://website/project/project!getUserAddressList
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'删除合同地址成功', 
+        data:{[
+		{
+			addressId:''  // 地址ID
+			contactName:''  // 联系人名称
+			contactPhone:''  // 联系人电话
+			province:''  // 省份
+			city:''  // 城市
+			district:''  // 地区
+			street:''  // 街道等详细地址
+			isDefault:''  // 是否默认地址，0非默认，1默认
+		}，
+		{
+			addressId:''  // 地址ID
+			contactName:''  // 联系人名称
+			contactPhone:''  // 联系人电话
+			province:''  // 省份
+			city:''  // 城市
+			district:''  // 地区
+			street:''  // 街道等详细地址
+			isDefault:''  // 是否默认地址，0非默认，1默认
+		}，
+		{...}
+		]}
+    }
+
+}
+
+### 获取合同地址详情
+call:http://website/project/project!getUserAddressDetail
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+		addressId:''  // 地址ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'删除合同地址成功', 
+        data:{
+			addressId:''  // 地址ID
+			contactName:''  // 联系人名称
+			contactPhone:''  // 联系人电话
+			province:''  // 省份
+			city:''  // 城市
+			district:''  // 地区
+			street:''  // 街道等详细地址
+			isDefault:''  // 是否默认地址，0非默认，1默认
+		}
     }
 
 }
