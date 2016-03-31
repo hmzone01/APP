@@ -1,0 +1,216 @@
+/**
+ * 获取banner需要显示的内容
+ */
+call:http://website/index/home!banner
+Request:{
+    params:{
+    }
+}
+Response:{
+    body:{
+        success:true,
+        info:'获取首页banner成功', 
+        data:[
+            {
+                advertId:'', //广告ID
+                wechatPic:'' //图片路径（绝对路径）
+            },
+			{
+                advertId:'', //广告ID
+                wechatPic:'' //图片路径（绝对路径）
+            },
+			{...}
+        ]
+    }
+}
+
+
+/**
+ * 首页秀场精选
+ */
+call:http://website/index/home!showArticle
+Request:{
+    params:{
+    }
+}
+Response:{
+    body:{
+        success:true,
+        info:'获取首页秀场精选成功', 
+        data:[
+		{
+			articleId:''  // 秀场文章ID
+			nikeName:''   // 昵称
+			authorId:''  // 作者ID
+			userPhoto:''  // 用户头像
+			title:''  // 文章标题
+			titlePage:''  // 封面图片
+			titleDesc:''  // 封面说明
+			type:''  // 文章类型：1、图文；2、视频
+			createTime:''  // 发表时间
+			praiseCount:''  // 点赞总次数
+			commentCount:''  // 评论总次数
+			rewardCount:''  // 打赏总次数
+			userCircleFlag:''  // 是否已关注标识，0代表未关注，1代表已关注
+			articleCollectionFlag:''  //  是否收藏标识，0代表未收藏，1代表已收藏
+			articlePraiseFlag:''  // 是否收藏已点赞，0代表未点赞，1代表已点赞
+		},
+		{
+			articleId:''  // 秀场文章ID
+			nikeName:''   // 昵称
+			authorId:''  // 作者ID
+			userPhoto:''  // 用户头像
+			title:''  // 文章标题
+			titlePage:''  // 封面图片
+			titleDesc:''  // 封面说明
+			type:''  // 文章类型：1、图文；2、视频
+			createTime:''  // 发表时间
+			praiseCount:''  // 点赞总次数
+			commentCount:''  // 评论总次数
+			rewardCount:''  // 打赏总次数
+			userCircleFlag:''  // 是否已关注标识，0代表未关注，1代表已关注
+			articleCollectionFlag:''  //  是否收藏标识，0代表未收藏，1代表已收藏
+			articlePraiseFlag:''  // 是否收藏已点赞，0代表未点赞，1代表已点赞
+		},
+		{...}
+		]
+    }
+}
+
+/**
+ * 首页消费精选couponRecommendProject
+ * @return
+ */
+call:http://website/index/home!shopVoucherList
+请求参数：pageNo,pageSize
+Request:{
+    params:{
+    }
+}
+Response:{
+    body:{
+        success:true,
+        info:'获取首页消费券精选成功', 
+        data:[
+            {
+                projectId:'',  // 店铺ID
+                projectName:'', // 店铺名称
+                minDiscount:'', // 最低折扣
+                minSaleRate:'' // 促销折扣（如minDiscount为空取此值）
+                projectLogo:'', // 店铺logo图片
+                addressDetail:'', // 店铺地址
+                projectTypeFirst:'' , // 第一个标签
+                projectTypeSecond:'', // 第二个标签
+                projectTypeThird:''  // 第三个标签
+            },
+            {
+                projectId:'',  // 店铺ID
+                projectName:'', // 店铺名称
+                minDiscount:'', // 最低折扣
+                minSaleRate:'' // 促销折扣（如minDiscount为空取此值）
+                projectLogo:'', // 店铺logo图片
+                addressDetail:'', // 店铺地址
+                projectTypeFirst:'' , // 第一个标签
+                projectTypeSecond:'', // 第二个标签
+                projectTypeThird:''  // 第三个标签
+            },
+            {
+                ...
+            }
+		]
+    }
+}
+
+/**
+ * 首页投资精选
+ * @return
+ */
+call:http://website/index/home!projectList
+Request:{
+    params:{
+    }
+}
+Response:{
+    body:{
+        success:true,
+        info:'获取首页消费券精选成功', 
+        data:[
+            {
+            	projectId:'',  // 项目ID
+                projectStoreId:'',  // 项目库ID
+                projectCode:'', // 项目编号
+                projectName:'',  // 项目名称
+                projectPhoto:'',  // 项目首页图片
+                projectLogo:'',  // 项目Logo图片
+                hotPhoto:'',  // 项目列表页推荐图片
+                detailLogo:'',  // 明细大图
+                detailPhoto:'',  // 明细第一张图
+                projectTypeFirst:'',  // 一级分类
+                projectTypeSecond:'',  // 项目二级分类
+                projectTypeThird:'',  // 项目三级分类
+                loanAmount:'',  // 融资金额
+                minLoanAmount:'',  // 最小融资金额
+                projectAmount:'',  // 项目总额
+                investSponsor:'',  // 项目发起人投资额
+                investLead:'',  // 领投人投资额
+                investOneCopy:'',  // 单份投资额
+                copyNum:'',  // 融资份数
+                loanScale:'',  // 融资占股比例
+                minCopy:'',  // 最小认购份数
+                maxCopy:'',  // 最大认购份数
+                projectSponsor:'',  // 项目发起人
+                projectProfile:'',  // 项目简介
+                hotFlag:'',  // 是否热门项目
+                status:'',  // 项目状态
+                loanComplete:'',  // 已融资金额
+                investCopyComplete:'',  // 已认购份数
+                completeScale:'',  // 已融资比例
+                publishTime:'',  // 项目发布时间
+                startTime:'',  // 开标时间
+                endTime:'',  // 融资截止时间
+                fullTime:'',  // 满额时间
+                ratedLevel:'',  //项目评级(星级)
+                praiseCount:'',  // 关注数
+                commentCount:'',  // 评论数
+                addressProvince:'',  // 项目地点-省
+                addressCity:'',  // 项目地点-市
+                addressDetail:'',  // 项目地点-详细地址
+                modifierId:'',  // 最后修改人
+                modifyTime:'',  // 最后修改时间
+                starPurchasesStartTime:'',  // 明星投资人购买开始时间
+                starMinCopy:'',  // 明星投资人最小投资份额
+                starMaxCopy:'',  // 明星投资人最大投资份额
+                isDeleted:'',  // 是否删除
+                remainingDay:'',  // 剩余时间 - 天
+                remainingMin:'',  // 剩余时间 - 分钟
+                version:'',  // 版本
+                intCompleteScale:'',  // 完成比例 整数版
+                remainingAmount:'',  // 剩余未完成融资金额
+                investerCount:'',  // 投资数
+                private ProjectVO next:'',  // 下一个
+                private ProjectVO previous:'',  // 上一个
+                timeLeftStart:'', // 距离开标时间
+                yieldLow:'',  // 收益预期 -- 低
+                yieldMedium:'',  // 收益预期 -- 中
+                yieldHigh:'',  // 收益预期 -- 高
+                payBackLow:'',  // 回本周期--地
+                payBackMedium:'',  // 回本周期--中
+                payBackHigh:'',  // 回本周期--高
+                guaranteeSaleFlag:'',  // 是否包销(0：否，1：是)
+                projectClass:'',  // 是否包销分类(1：新项目，2：已有项目)
+                leadFlag:''   // 是否领投(0:否，1:是)
+            },
+            {
+                projectStoreId:'',  // 项目库ID
+                projectCode:'', // 项目编号
+                projectName:'',  // 项目名称
+                ....
+            }
+		]
+    }
+}
+
+
+
+
+

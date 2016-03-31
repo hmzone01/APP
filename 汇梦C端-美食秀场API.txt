@@ -33,6 +33,7 @@ Response:{
 				userPhoto:''  // 用户头像
 				title:''  // 文章标题
 				titlePage:''  // 封面图片
+				titleDesc:''  // 封面说明
 				type:''  // 文章类型：1、图文；2、视频
 				createTime:''  // 发表时间
 				praiseCount:''  // 点赞总次数
@@ -40,6 +41,7 @@ Response:{
 				rewardCount:''  // 打赏总次数
 				userCircleFlag:''  // 是否已关注标识，0代表未关注，1代表已关注
 				articleCollectionFlag:''  //  是否收藏标识，0代表未收藏，1代表已收藏
+				articlePraiseFlag:''  // 是否收藏已点赞，0代表未点赞，1代表已点赞
             },
             {
                 articleId:''  // 秀场文章ID
@@ -48,6 +50,7 @@ Response:{
 				userPhoto:''  // 用户头像
 				title:''  // 文章标题
 				titlePage:''  // 封面图片
+				titleDesc:''  // 封面说明
 				type:''  // 文章类型：1、图文；2、视频
 				createTime:''  // 发表时间
 				praiseCount:''  // 点赞总次数
@@ -55,6 +58,7 @@ Response:{
 				rewardCount:''  // 打赏总次数
 				userCircleFlag:''  // 是否已关注标识，0代表未关注，1代表已关注
 				articleCollectionFlag:''  //  是否收藏标识，0代表未收藏，1代表已收藏
+				articlePraiseFlag:''  // 是否收藏已点赞，0代表未点赞，1代表已点赞
             }，
             {
                 ...
@@ -297,6 +301,7 @@ Response:{
 			authorId:''  // 作者ID
 			userCircleFlag:''  // 是否已关注标识，0代表未关注，1代表已关注
 			articleCollectionFlag:''  //  是否收藏标识，0代表未收藏，1代表已收藏
+			articlePraiseFlag:''  // 是否收藏已点赞，0代表未点赞，1代表已点赞
         }
     }
 

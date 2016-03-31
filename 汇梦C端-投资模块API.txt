@@ -1213,6 +1213,7 @@ Request:{
         projectId:'',  // 项目ID
         investCopy:'', // 投资份数
         investCouponsId:''  // 投资抵用券ID
+		addressId:''  // 项目地址ID
     }
 }
 
