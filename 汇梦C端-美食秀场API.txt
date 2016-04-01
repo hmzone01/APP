@@ -739,6 +739,38 @@ Response:{
 
 }
 
+### 检查我的关注列表是否有文章更新
+call:http://website/show/show!checkAttentionUpdate
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		lastQueryTime:''  // yyyy-MM-dd HH:mm:ss 上次刷新成功的时间，不传则表示第一次刷新，获取所有
+    }
+}
+
+Response:{
+
+    body:{
+        success:true,
+        info:'删除文章成功', 
+		data: {
+			"updateFlag": 1   // 0-没有更新，1有更新
+		}
+    }
+
+}
+
+
+
 ------  一下接口在个人中心界面会用到  -------------------------------------------------------
 
 ### 获取我的关注列表
