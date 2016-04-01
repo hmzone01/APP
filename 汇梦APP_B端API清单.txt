@@ -135,6 +135,9 @@ Request:
 	“userExtendVO.school”:” 深圳大学”,#毕业院校
 	“userExtendVO.nickName”:” 彪彪小王子”,#昵称
 	“userExtendVO.signature”:”这里是个性签名”#个性签名
+	
+	"userShowInfoVO.sign": #个性签名
+	"userShowInfoVO.goodContent": #擅长内容
 }
 Response:
 *headers{
