@@ -99,18 +99,38 @@ Response:{
             {
 				articleCommentId:''  // 评论ID
 				operateId:''  // 评论人ID
-				parentId:''  // 被评论人ID，0表示对文章评论
+				parentId:''  // 被评论的评论ID，0表示对文章评论
 				nickName:''  // 评论人昵称
 				userPhoto:''  // 评论人头像
 				comment:''  // 评论内容
+				replyList:[{
+					articleCommentId:''  // 评论ID
+					operateId:''  // 评论人ID
+					parentId:''  // 被评论的评论ID，0表示对文章评论
+					nickName:''  // 评论人昵称
+					userPhoto:''  // 评论人头像
+					comment:''  // 评论内容
+				},{
+				....
+				}]
             },
             {
 				articleCommentId:''  // 评论ID
 				operateId:''  // 评论人ID
-				parentId:''  // 被评论人ID，0表示对文章评论
+				parentId:''  // 被评论的评论ID，0表示对文章评论
 				nickName:''  // 评论人昵称
 				userPhoto:''  // 评论人头像
 				comment:''  // 评论内容
+				replyList:[{
+					articleCommentId:''  // 评论ID
+					operateId:''  // 评论人ID
+					parentId:''  // 被评论的评论ID，0表示对文章评论
+					nickName:''  // 评论人昵称
+					userPhoto:''  // 评论人头像
+					comment:''  // 评论内容
+				},{
+				....
+				}]
             }，
             {
                 ...
