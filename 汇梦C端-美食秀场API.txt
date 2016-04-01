@@ -299,9 +299,18 @@ Response:{
         data:{
 			articleId:''  // 文章ID
 			authorId:''  // 作者ID
+			nikeName:'' // 作者昵称
 			userCircleFlag:''  // 是否已关注标识，0代表未关注，1代表已关注
 			articleCollectionFlag:''  //  是否收藏标识，0代表未收藏，1代表已收藏
 			articlePraiseFlag:''  // 是否收藏已点赞，0代表未点赞，1代表已点赞
+			showTitle:'' // 作者秀场头衔，0-暂无头衔，1-美食达人，2-美食家，3-厨神
+			userPhoto:'' // 作者头像
+			articleTitle:'' // 文章标题
+			articleCreateTime:'' // 文章创建时间
+			articleCommentCount:'' // 文章评论次数（不包括回复数）
+			articleRewardCount:'' // 文章打赏次数
+			articlePraiseCount:'' // 文章点赞次数
+		
         }
     }
 
