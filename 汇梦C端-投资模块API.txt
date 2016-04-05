@@ -800,6 +800,44 @@ Response:{
 
 }
 
+### 获取项目已报名人数
+call:http://website/project/project!getProjectTasteRecordCount
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        projectId:'',  // 项目ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+		{
+		  "data": {
+			"count": 1
+		  },
+		  "success": true,
+		  "info": "获取项目报名人数成功"
+		}
+    }
+
+}
+
 
 ### 获取项目进展信息
 #### 获取项目进展列表信息
