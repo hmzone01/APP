@@ -1259,22 +1259,22 @@ Response:{
         success:true,
         info:'购买下单成功', 
         data:{
-            investRecordId:'',  // 投资记录ID
-			investRecordCode:'',  // 认购单号
-			projectId:'',  // 认购的项目ID
-			projectCode:'',  // 项目编码
-			userId:'',  // 投资人ID
-		    investCopy:'',  // 认购份数
-			unitPrice:'',  // 每份单价
-			investAmount:'',  // 认购总额
-			couponsAmount:'',  // 抵扣金额
-			realPay:'',  // 实际支付
-			payType:'',  // 支付方式
-			status:'',  // 状态
-			investCouponsId:'',  // 抵用券ID
-			bankcard:'',  // 使用新银行卡支付
-			userBankcardId:'',  // 用户选择银行卡
-			identity:''  // 投资人身份 1：普通投资人，2：明星投资人
+            	investRecordId:'',  // 投资记录ID
+		investRecordCode:'',  // 认购单号
+		projectId:'',  // 认购的项目ID
+		projectCode:'',  // 项目编码
+		userId:'',  // 投资人ID
+	        investCopy:'',  // 认购份数
+		unitPrice:'',  // 每份单价
+		investAmount:'',  // 认购总额
+		couponsAmount:'',  // 抵扣金额
+		realPay:'',  // 实际支付
+		payType:'',  // 支付方式
+		status:'',  // 状态
+		investCouponsId:'',  // 抵用券ID
+		bankcard:'',  // 使用新银行卡支付
+		userBankcardId:'',  // 用户选择银行卡
+		identity:''  // 投资人身份 1：普通投资人，2：明星投资人
         }
     }
 
@@ -1318,6 +1318,49 @@ Response:{
 
 }
 
+### 获取系统项目印象列表
+call:http://website/project/project!getSysImpressionList
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'获取系统项目印象列表成功', 
+        data:[
+	    {
+	    	impression  //印象名
+	    },
+	     {
+	    	impression  //印象名
+	    },
+	    {
+	    ...
+	    }
+        ]
+    }
+
+}
+
 ### 项目投资支付成功页面信息
 call:http://website/project/project!paySuccess
 
@@ -1346,16 +1389,55 @@ Response:{
     },
     body:{
         success:true,
-        info:'购买项目成功', 
+        info:'获取支付成功页面信息成功', 
         data:{
         	projectId:'' //项目ID
         	projectName:'' //项目名称
         	investCount:'' //投资人数（第N位股东）
+        	investCopy:'' //投资份数
+        	investAmount:'' //投资金额
+        	bankName:'' //银行卡开户行
+        	bankCard:'' //银行卡号
         }
     }
 
 }
 
+### 新增用户对项目的印象
+call:http://website/project/project!addUserImpression
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        investRecordId:''  // 投资记录ID
+        projectId:''   // 项目ID
+        impressions:''  // 印象集，字符串拼接如：  A,B,C
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'新增用户项目印象成功', 
+        data:{ }
+    }
+
+}
 
 
 
