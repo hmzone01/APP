@@ -728,7 +728,7 @@ Response:{
 
     body:{
         success:true,
-        info:'删除文章成功', 
+        info:'检查我的关注列表是否有文章更新成功', 
 		data: {
 			"updateFlag": 1   // 0-没有更新，1有更新
 		}
