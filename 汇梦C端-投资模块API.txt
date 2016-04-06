@@ -1167,16 +1167,41 @@ Response:{
     body:{
         success:true,
         info:'删除合同地址成功', 
-        data:{
-			addressId:''  // 地址ID
-			contactName:''  // 联系人名称
-			contactPhone:''  // 联系人电话
-			province:''  // 省份
-			city:''  // 城市
-			district:''  // 地区
-			street:''  // 街道等详细地址
-			isDefault:''  // 是否默认地址，0非默认，1默认
-		}
+        data:{}
+    }
+
+}
+
+### 设置默认地址
+call:http://website/project/project!setDefaultAddress
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+		addressId:''  // 地址ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'设置默认地址成功', 
+        data:{}
     }
 
 }
