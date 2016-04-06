@@ -797,7 +797,7 @@ Response:{
             signFlag:'', // 当前用户是否已报名标识
             name:'',  // 当前用户报名的名称
             phoneNumber:'', // 当前用户报名的联系方式
-            sex:''  // 当前用户报名的性别信息
+            sex:''  // 当前用户报名的性别信息，1男、2女
             lessLimit:'' //活动人数最低要求
             fullLimit:'' // 活动容纳最多人数：0表示不限制上限
             projectName:'' //项目名称
