@@ -700,8 +700,8 @@ Request:{
     },
     params:{
         projectId:''  // 项目ID
-		investRecordId:''  // 投资记录ID
-		impressions:''  // 印象
+	investRecordId:''  // 投资记录ID
+	impressions:''  // 印象
     }
 }
 
@@ -1402,43 +1402,6 @@ Response:{
     }
 
 }
-
-### 新增用户对项目的印象
-call:http://website/project/project!addUserImpression
-
-method:post
-
-Request:{
-    
-    headers:{
-        uid:"1000221",  // 用户ID
-    	accessToken:"", // 用户token
-    	client:"F9FQXGP8FCM5",  // 客户端标识
-    	expire:1411527886457  // 失效时间
-    },
-    params:{
-        investRecordId:''  // 投资记录ID
-        projectId:''   // 项目ID
-        impressions:''  // 印象集，字符串拼接如：  A,B,C
-    }
-}
-
-Response:{
-
-    headers:{
-        uid:"1000221",  // 用户ID
-    	accessToken:"", // 用户token
-    	client:"F9FQXGP8FCM5",  // 客户端标识
-    	expire:1411527886457  // 失效时间
-    },
-    body:{
-        success:true,
-        info:'新增用户项目印象成功', 
-        data:{ }
-    }
-
-}
-
 
 
 
