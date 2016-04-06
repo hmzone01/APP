@@ -455,39 +455,6 @@ Response:{
 
 }
 
-### 获取打赏支付参数
-call:http://website/show/show!getPayParams
-
-method:post
-
-Request:{
-
-    headers:{
-        uid:"1000221",  // 用户ID
-        accessToken:"", // 用户token
-        client:"F9FQXGP8FCM5",  // 客户端标识
-        expire:1411527886457  // 失效时间
-    },
-    params:{
-	articleId:''  // 文章ID
-	amount:''  // 打赏金额
-	openId:''  // 用户OpenId
-    }
-}
-
-Response:{
-    body:{
-	  data: {
-		sign: "1c0f3bad73c7dd20feeca76ca091373b",
-		result: "1",
-		requestContent: "{\"attach\":\"100000\",\"busiFlowCode\":\"100\",\"merchantId\":\"100007\",\"projectCode\":\"\",\"tradeId\":0,\"tradeList\":[{\"attach\":\"100000\",\"busiFlowCode\":\"\",\"channelCode\":\"WX_JSAPI\",\"errorCode\":\"\",\"errorMsg\":\"\",\"merchantId\":\"\",\"projectCode\":\"\",\"protocolVersion\":\"1.0\",\"reqIp\":\"\",\"requestSeqCode\":\"f5ox91T1\",\"tradeAmount\":\"1000.0\",\"tradeId\":0,\"tradeList\":[],\"tradeType\":\"\",\"tradeUserId\":\"\",\"tradeUserName\":\"\",\"userBankcardId\":\"\"}],\"tradeType\":\"0\",\"tradeUserId\":\"10583\",\"tradeUserName\":\"wangjinbiao\",\"userBankcardId\":\"\"}"
-	  },
-	  success: true,
-	  info: "获取查询条件成功"
-    }
-}
-
-
 ### 新增打赏
 call:http://website/show/show!addReward
 
