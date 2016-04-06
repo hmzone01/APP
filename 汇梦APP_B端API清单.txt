@@ -101,6 +101,8 @@ Response:
 		            verifiedInfo:'' // 明星投资人认证信息
 		            verifiedAttachment:''  // 明星投资人认证附件图片地址
 		            conditions:''  // 明星投资人认证条件
+		            
+		            starFlag:''  // 是否明星投资人
 		} 
   	}
 }
