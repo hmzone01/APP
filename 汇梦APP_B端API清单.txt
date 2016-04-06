@@ -23,7 +23,7 @@ Response:
   	"data": {
      	“userVO”: {
                 	“userId”:112231,#用户ID
-                	“sex”:”1”, #性别 1男 2女
+                	“sex”:”1”, #性别 0男 1女
                 	“age”:”28”,#年龄
                 	“phoneNumber”:”1362222222”,#电话号码
                 	“country”:”001”,#国家
@@ -73,7 +73,7 @@ Response:
   	"data": {
 		“userVO”: {
 	  		“userId”:112322, #用户ID
-    			“sex”:”1”, #性别 1男 2女
+    			“sex”:”1”, #性别 0男 1女
 			“age”:”28”,#年龄
 			“phoneNumber”:”1362222222”,#电话号码
 			“country”:”001”,#国家
@@ -122,7 +122,7 @@ Request:
 }
 * with parameters{
 	“userVO.userId”:” 12323”,#用户ID
-	“userVO.sex”:”1”, #性别 1男 2女 
+	“userVO.sex”:”1”, #性别 0男 1女 
 	“userExtendVO.age”:”28”,#年龄
 	“userExtendVO.phoneNumber”:”1362222222”,#电话号码
 	“userExtendVO.country”:”001”,#国家
@@ -516,7 +516,7 @@ Response:{
 		  	"data": {
 				“userVO”: {
 			  		“userId”:112322, #用户ID
-	    			“sex”:”1”, #性别 1男 2女
+	    			“sex”:”1”, #性别 0男 1女
 					“age”:”28”,#年龄
 					“phoneNumber”:”1362222222”,#电话号码
 					“country”:”001”,#国家
