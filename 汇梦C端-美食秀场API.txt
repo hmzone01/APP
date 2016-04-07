@@ -826,6 +826,7 @@ Response:{
 				showTitle:''  // 秀场头衔，1-美食达人，2-美食家，3-厨神
 				goodContent:''  // 擅长内容
 				sign:''  // 个性签名
+				focusFlag: 0  // 是否互相关注，0代表否，1代表是
 			},
 			{
 				friendId:''  // 粉丝ID
@@ -834,6 +835,7 @@ Response:{
 				showTitle:''  // 秀场头衔，1-美食达人，2-美食家，3-厨神
 				goodContent:''  // 擅长内容
 				sign:''  // 个性签名
+				focusFlag: 0  // 是否互相关注，0代表否，1代表是
 			},
 			{...}
 			]
@@ -1077,7 +1079,7 @@ Response:{
 			[
 			{
 				rewardId:''  // 打赏记录ID
-                		articleId:''  // 文章ID
+                articleId:''  // 文章ID
 				title:''  // 文章标题
 				itlePage:''  // 封面图片
 				amount:''  // 打赏金额
@@ -1085,7 +1087,7 @@ Response:{
 			},
 			{
 				rewardId:''  // 打赏记录ID
-                		articleId:''  // 文章ID
+                articleId:''  // 文章ID
 				title:''  // 文章标题
 				itlePage:''  // 封面图片
 				amount:''  // 打赏金额
