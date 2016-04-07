@@ -754,6 +754,7 @@ Request:{
         expire:1411527886457  // 失效时间
     },
     params:{
+		authorId:''  // 查看他人主页时传他人的UserId，查自己的不传
 		lastQueryTime:''  // yyyy-MM-dd HH:mm:ss 上次刷新成功的时间，不传则表示第一次刷新，从最开始获取
 		pageNo:'',     // 查询的页码(默认为1)
         pageSize:''    // 每页显示条数(默认为10)
@@ -804,6 +805,7 @@ Request:{
         expire:1411527886457  // 失效时间
     },
     params:{
+		authorId:''  // 查看他人主页时传他人的UserId，查自己的不传
 		lastQueryTime:''  // yyyy-MM-dd HH:mm:ss 上次刷新成功的时间，不传则表示第一次刷新，从最开始获取
         pageNo:'',     // 查询的页码(默认为0)
         pageSize:''    // 每页显示条数(默认为10)
@@ -947,6 +949,7 @@ Request:{
         expire:1411527886457  // 失效时间
     },
     params:{
+		authorId:''  // 查看他人主页时传他人的UserId，查自己的不传
         pageNo:'',     // 查询的页码(默认为1)
         pageSize:''    // 每页显示条数(默认为10)
     }
@@ -1093,5 +1096,37 @@ Response:{
         }
     }
 
+### 获取秀场信息总数
+call:http://website/show/showcenter!getShowCenterCount
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+		authorId:''  // 查看他人主页时传他人的UserId，查自己的不传
+    }
+}
+
+Response:{
+
+    body:{
+		"data": {
+			"articleCount": 15,
+			"collectionCount": 0,
+			"attentionCount": 0,
+			"fansCount": 0
+		  },
+		  "success": true,
+		  "info": "获取个人美食秀场信息总数成功"
+		}
+    }
+	
 }
 
