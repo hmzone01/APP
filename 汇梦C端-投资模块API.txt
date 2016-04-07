@@ -997,15 +997,17 @@ Response:{
         success:true,
         info:'获取投资抵用券列表成功', 
         data:{
-			[{
-            investCouponsId:'',  // 抵用券ID
-            roleAmount:''  // 抵用券金额
-			},
-			{
-			investCouponsId:'',  // 抵用券ID
-            roleAmount:''  // 抵用券金额
-			},
-			{...}]
+		[{
+	            investCouponsId:'',  // 抵用券ID
+	            roleAmount:''  // 抵用券金额
+	            validEnd:''  // 有效截止时间（为空时是不限制截止时间）
+		},
+		{
+	   	    investCouponsId:'',  // 抵用券ID
+        	    roleAmount:''  // 抵用券金额
+        	    validEnd:''  // 有效截止时间（为空时是不限制截止时间）
+		},
+		{...}]
         }
     }
 
