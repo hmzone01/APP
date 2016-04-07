@@ -1083,6 +1083,8 @@ Response:{
 				itlePage:''  // 封面图片
 				amount:''  // 打赏金额
 				content:''  // 打赏批注
+				NICK_NAME:''  // 用户昵称
+		  		USER_PHOTO:''  // 用户头像
 			},
 			{
 				rewardId:''  // 打赏记录ID
@@ -1091,6 +1093,8 @@ Response:{
 				itlePage:''  // 封面图片
 				amount:''  // 打赏金额
 				content:''  // 打赏批注
+				NICK_NAME:''  // 用户昵称
+		  		USER_PHOTO:''  // 用户头像
 			},
 			{...}
 			]
