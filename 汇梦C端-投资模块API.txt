@@ -1396,8 +1396,7 @@ Response:{
         	investCount:'' //投资人数（第N位股东）
         	investCopy:'' //投资份数
         	investAmount:'' //投资金额
-        	bankName:'' //银行卡开户行
-        	bankCard:'' //银行卡号
+        
         }
     }
 
