@@ -889,6 +889,7 @@ Request:{
         expire:1411527886457  // 失效时间
     },
     params:{
+		authorId:''  // 如是他人信息，authorId传他人的userId，如是自己的则不传，使用uid
     }
 }
 
