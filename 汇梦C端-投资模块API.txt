@@ -701,7 +701,7 @@ Request:{
     params:{
         projectId:''  // 项目ID
 	investRecordId:''  // 投资记录ID
-	impressions:''  // 印象
+	impressions:''  // 印象 List集合
     }
 }
 
