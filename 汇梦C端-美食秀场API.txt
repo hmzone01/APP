@@ -330,6 +330,7 @@ Response:{
 			articleCommentCount:'' // 文章评论次数（不包括回复数）
 			articleRewardCount:'' // 文章打赏次数
 			articlePraiseCount:'' // 文章点赞次数
+			articleShareLocal:'' // 文章分享链接
 		
         }
     }
