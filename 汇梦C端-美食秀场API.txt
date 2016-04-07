@@ -1118,10 +1118,10 @@ Response:{
 
     body:{
 		"data": {
-			"articleCount": 15,
-			"collectionCount": 0,
-			"attentionCount": 0,
-			"fansCount": 0
+			"articleCount": 15,  // 文章总数
+			"collectionCount": 0,  // 收藏总数
+			"attentionCount": 0,  // 关注总数
+			"fansCount": 0  // 粉丝总数
 		  },
 		  "success": true,
 		  "info": "获取个人美食秀场信息总数成功"
