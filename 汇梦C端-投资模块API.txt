@@ -1383,7 +1383,7 @@ Request:{
     	expire:1411527886457  // 失效时间
     },
     params:{
-        investRecordId:''  // 投资记录ID
+        investRecordCode:''  // 投资记录ID
     }
 }
 
