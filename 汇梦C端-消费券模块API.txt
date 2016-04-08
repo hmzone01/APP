@@ -678,6 +678,7 @@ Request:{
     },
     params:{
         expenseTransferId:'', // 交易记录ID
+        openId:'' // 微信openId
     }
 }
 
