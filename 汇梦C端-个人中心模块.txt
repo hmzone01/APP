@@ -112,6 +112,8 @@ Request:{
         expire:1411527886457  // 失效时间
     },
     params:{
+		projectId:''  // 项目ID
+		queryDate:''  // 查询日期
     }
 }
 
