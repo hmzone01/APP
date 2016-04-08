@@ -1,0 +1,22 @@
+### 1.安卓app获取最新版本接口
+####  App向服务器查询最新版本信息
+url: http://website/version/versionhistory!queryNewVersion
+method: post
+Request:    
+* with parameters{
+    	 "projectName”:’hmzone_dream’, #项目名称,hmzone_dream表示梦想掌柜,hmzone用户app,
+}
+Response:
+
+*data{
+  	"success": true,#是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “获取最新版本成功”,#提示信息
+  	"data": {
+     	“versionVO”:{	
+		"createTime":"2016-04-07T19:55:12",
+		"projectName":"hmzone_dream",
+		"url":"www.baidu.com",
+                "versionNo":"v1.0.3"
+            } 
+        }
+     }

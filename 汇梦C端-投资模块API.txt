@@ -1299,7 +1299,13 @@ Request:{
         projectId:'',  // 项目ID
         investCopy:'', // 投资份数
         investCouponsId:''  // 投资抵用券ID
-		addressId:''  // 项目地址ID
+	addressId:''  // 项目地址ID
+	investRecordCode:'' //认购单号
+	copyNum:'' //认购份数
+	investAmount:'' //认购金额
+	cardNo:'' //银行卡号
+	realPay:'' //实际支付金额
+	couponsAmount: '' //投资抵用金额
     }
 }
 
@@ -1377,7 +1383,7 @@ Request:{
     	expire:1411527886457  // 失效时间
     },
     params:{
-        investRecordId:''  // 投资记录ID
+        investRecordCode:''  // 投资记录ID
     }
 }
 

@@ -649,35 +649,6 @@ Response:{
 
 }
 
-### 删除文章明细
-call:http://website/show/show!deleteArticleDetail
-
-method:post
-
-Request:{
-
-    headers:{
-        uid:"1000221",  // 用户ID
-        accessToken:"", // 用户token
-        client:"F9FQXGP8FCM5",  // 客户端标识
-        expire:1411527886457  // 失效时间
-    },
-    params:{
-	detailId:''  // 文章对应明细ID
-    }
-}
-
-Response:{
-
-    body:{
-        success:true,
-        info:'删除文章明细成功', 
-        data:{
-        }
-    }
-
-}
-
 ### 删除文章
 call:http://website/show/show!deleteArticle
 
@@ -1086,6 +1057,8 @@ Response:{
 				itlePage:''  // 封面图片
 				amount:''  // 打赏金额
 				content:''  // 打赏批注
+				NICK_NAME:''  // 用户昵称
+		  		USER_PHOTO:''  // 用户头像
 			},
 			{
 				rewardId:''  // 打赏记录ID
@@ -1094,6 +1067,8 @@ Response:{
 				itlePage:''  // 封面图片
 				amount:''  // 打赏金额
 				content:''  // 打赏批注
+				NICK_NAME:''  // 用户昵称
+		  		USER_PHOTO:''  // 用户头像
 			},
 			{...}
 			]
