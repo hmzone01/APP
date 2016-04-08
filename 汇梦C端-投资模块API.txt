@@ -1306,6 +1306,7 @@ Request:{
 	cardNo:'' //银行卡号
 	realPay:'' //实际支付金额
 	couponsAmount: '' //投资抵用金额
+	payType: '' //支付类型 Account：账户余额支付， LIANLIAN_SDK_PAY：连连支付
     }
 }
 
