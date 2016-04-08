@@ -1,18 +1,18 @@
-### 1.°²×¿app»ñÈ¡×îĞÂ°æ±¾½Ó¿Ú
-####  AppÏò·şÎñÆ÷²éÑ¯×îĞÂ°æ±¾ĞÅÏ¢
+### 1.å®‰å“appè·å–æœ€æ–°ç‰ˆæœ¬æ¥å£
+####  Appå‘æœåŠ¡å™¨æŸ¥è¯¢æœ€æ–°ç‰ˆæœ¬ä¿¡æ¯
 url: http://website/version/versionhistory!queryNewVersion
 method: post
 Request:    
 * with parameters{
-    	 "projectName¡±:¡¯hmzone_dream¡¯, #ÏîÄ¿Ãû³Æ,hmzone_dream±íÊ¾ÃÎÏëÕÆ¹ñ,hmzoneÓÃ»§app,
+    	 "projectNameâ€:â€™hmzone_dreamâ€™, #é¡¹ç›®åç§°,hmzone_dreamè¡¨ç¤ºæ¢¦æƒ³æŒæŸœ,hmzoneç”¨æˆ·app,
 }
 Response:
 
 *data{
-  	"success": true,#ÊÇ·ñ³É¹¦£¬trueÎª³É¹¦£¬falseÎªÊ§°Ü¡£Èç¹ûÎªfalse,¡°info¡±±íÊ¾Ê§°ÜÔ­Òò¡£
-  	"info": ¡°»ñÈ¡×îĞÂ°æ±¾³É¹¦¡±,#ÌáÊ¾ĞÅÏ¢
+  	"success": true,#æ˜¯å¦æˆåŠŸï¼Œtrueä¸ºæˆåŠŸï¼Œfalseä¸ºå¤±è´¥ã€‚å¦‚æœä¸ºfalse,â€œinfoâ€è¡¨ç¤ºå¤±è´¥åŸå› ã€‚
+  	"info": â€œè·å–æœ€æ–°ç‰ˆæœ¬æˆåŠŸâ€,#æç¤ºä¿¡æ¯
   	"data": {
-     	¡°versionVO¡±:{	
+     	â€œversionVOâ€:{	
 		"createTime":"2016-04-07T19:55:12",
 		"projectName":"hmzone_dream",
 		"url":"www.baidu.com",
@@ -20,3 +20,10 @@ Response:
             } 
         }
      }
+     
+     
+### 2.æå…‰æ¨é€çš„æ¶ˆæ¯å‚æ•°è¯´æ˜ï¼š
+userId // æ“ä½œäººID
+authorId // ä½œè€…ID
+articleId // æ–‡ç« ID
+operationType // æ“ä½œç±»å‹ï¼šç‚¹èµpraiseï¼Œæ‰“èµrewardï¼Œè¯„è®ºcomment
