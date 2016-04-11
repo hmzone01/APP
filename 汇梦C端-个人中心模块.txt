@@ -844,7 +844,6 @@ Request:{
     params:{
         projectId:''  // 店铺ID
 		voucherAmount:''  // 消费券金额
-		availableTime:''  // 有效期期间
     }
 }
 
