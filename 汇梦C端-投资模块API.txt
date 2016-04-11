@@ -1244,8 +1244,7 @@ Request:{
     	expire:1411527886457  // 失效时间
     },
     params:{
-        projectId:'',  // 项目ID
-        investCopy:'', // 投资份数
+        projectId:''  // 项目ID
     }
 }
 
@@ -1267,7 +1266,7 @@ Response:{
 
 }
 
-### 项目投资支付
+### 项目投资银行卡支付：获取支付参数
 call:http://website/invest/invest!pay
 
 method:post
@@ -1305,7 +1304,77 @@ Response:{
     },
     body:{
         success:true,
-        info:'购买项目成功', 
+        info:'购买设置连连支付成功', 
+        data:{
+        	oid_partner:'',
+        	no_order:'',
+        	busi_partner:'',
+        	sign_type:'',
+        	notify_url:'',
+        	acct_name:'',
+        	name_goods:'',
+        	card_no:'',
+        	money_order:'',
+        	info_order:'',
+        	sign:'',
+        	id_type:'',
+        	user_id:'',
+        	dt_order,
+        	id_no:'',
+        	risk_item:[{
+        		frms_ware_category:'',
+        		user_info_mercht_userno:'',
+        		user_info_dt_register:'',
+        		user_info_full_name:'',
+        		user_info_id_no:'',
+        		user_info_identify_state:'',
+        		user_info_identify_type:'',
+        		user_info_bind_phone:''
+        	}],
+        }
+    }
+
+}
+
+### 项目投资:余额支付
+call:http://website/invest/invest!payByAccount
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+    	identity:'' //投资人身份 1普通投资人，2明星投资人
+	addressId:''  // 项目地址ID
+	investRecordId:'' //投资记录ID
+	copyNum:'' //认购份数
+	investAmount:'' //认购金额
+        investCouponsId:''  // 投资抵用券ID，0表示没有使用
+	userBankcardId:'' //支付的银行卡主键ID
+	dividendBankCardId:'' //分红的银行卡主键ID
+	realPay:'' //实际支付金额
+	couponsAmount: '' //投资抵用金额 0表示没有抵用
+	payType: '' //支付类型 Account：账户余额支付， LIANLIAN_SDK_PAY：连连支付
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'余额支付成功', 
         data:{
         }
     }
@@ -1354,6 +1423,45 @@ Response:{
     }
 
 }
+
+
+### 项目投资银行卡支付成功回调页面 --待完成
+call:http://website/payment/paycallback!callBack
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        investRecordId:''  // 投资记录ID
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'支付回调成功', 
+        data:{
+        
+        
+        }
+    }
+
+}
+
 
 ### 项目投资支付成功页面信息
 call:http://website/project/project!paySuccess
