@@ -1261,22 +1261,7 @@ Response:{
         success:true,
         info:'购买下单成功', 
         data:{
-            	investRecordId:'',  // 投资记录ID
-		investRecordCode:'',  // 认购单号
-		projectId:'',  // 认购的项目ID
-		projectCode:'',  // 项目编码
-		userId:'',  // 投资人ID
-	        investCopy:'',  // 认购份数
-		unitPrice:'',  // 每份单价
-		investAmount:'',  // 认购总额
-		couponsAmount:'',  // 抵扣金额
-		realPay:'',  // 实际支付
-		payType:'',  // 支付方式
-		status:'',  // 状态
-		investCouponsId:'',  // 抵用券ID
-		bankcard:'',  // 使用新银行卡支付
-		userBankcardId:'',  // 用户选择银行卡
-		identity:''  // 投资人身份 1：普通投资人，2：明星投资人
+            	investRecordId:''  // 投资记录ID
         }
     }
 
@@ -1296,16 +1281,16 @@ Request:{
     	expire:1411527886457  // 失效时间
     },
     params:{
-        projectId:'',  // 项目ID
-        investCopy:'', // 投资份数
-        investCouponsId:''  // 投资抵用券ID
+    	identity:'' //投资人身份 1普通投资人，2明星投资人
 	addressId:''  // 项目地址ID
-	investRecordCode:'' //认购单号
+	investRecordId:'' //投资记录ID
 	copyNum:'' //认购份数
 	investAmount:'' //认购金额
-	cardNo:'' //银行卡号
+        investCouponsId:''  // 投资抵用券ID，0表示没有使用
+	userBankcardId:'' //支付的银行卡主键ID
+	dividendBankCardId:'' //分红的银行卡主键ID
 	realPay:'' //实际支付金额
-	couponsAmount: '' //投资抵用金额
+	couponsAmount: '' //投资抵用金额 0表示没有抵用
 	payType: '' //支付类型 Account：账户余额支付， LIANLIAN_SDK_PAY：连连支付
     }
 }
