@@ -887,7 +887,6 @@ Request:{
 		discount:'' // 折扣（不能小于0）
 		trustDeadline:''  // 托管截止时间
 		shareFlag:''  // 助力标识 1 同意 0不同意助力
-		availableTime:  //  账户金额的有效截止时间
     }
 }
 
