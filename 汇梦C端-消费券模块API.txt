@@ -677,8 +677,7 @@ Request:{
     	expire:1411527886457  // 失效时间
     },
     params:{
-        expenseTransferId:'', // 交易记录ID
-        openId:'' // 微信openId，8ec3d84b535ee33b4c0b753323ed0c61
+        expenseTransferId:'' // 交易记录ID
     }
 }
 
