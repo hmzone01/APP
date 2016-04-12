@@ -297,6 +297,13 @@ Response:{
             guaranteeSaleFlag:'',  // 是否包销(0：否，1：是)
             projectClass:'',  // 是否包销分类(1：新项目，2：已有项目)
             leadFlag:''   // 是否领投(0:否，1:是)
+        },
+        groups：{
+         GROUP_ID：#汇梦群ID,
+         PROJECT_ID： #项目ID,
+         GROUP_NAME： #群名称,
+         CHAT_GROUP_ID： #环信群ID,
+         TYPE： #群类型：1项目群，2股东群
         }
     }
 
