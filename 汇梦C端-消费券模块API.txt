@@ -662,7 +662,7 @@ Response:{
 
 }
 
-### 购买支付
+### 购买获取参数支付
 #### 此接口会检查消费券是否处于可卖状态，如是进行正常业务处理，如没有返回提示信息
 call:http://website/hmvoucher/voucher!buyVoucher
 
@@ -678,7 +678,7 @@ Request:{
     },
     params:{
         expenseTransferId:'', // 交易记录ID
-        openId:'' // 微信openId
+        openId:'' // 微信openId，8ec3d84b535ee33b4c0b753323ed0c61
     }
 }
 
@@ -692,11 +692,15 @@ Response:{
     },
     body:{
         success:true,
-        info:'购买下单成功', 
-        data:{ //下单成功需要调用支付接口
-          requestContent:'',  //支付记录
-          sign:'',  //
-          result:'', // 下订单结果：1  成功
+        info:'订单支付参数获取完成', 
+        data:{
+          appId
+          timeStamp:'',
+          signType:'',
+          busiFlowCode:'',
+          package:'',
+          nonceStr:'',
+          paySign:''
         }
     }
 }
