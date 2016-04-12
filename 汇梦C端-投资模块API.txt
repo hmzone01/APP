@@ -1424,45 +1424,6 @@ Response:{
 
 }
 
-
-### 项目投资银行卡支付成功回调页面 --待完成
-call:http://website/payment/paycallback!callBack
-
-method:post
-
-Request:{
-    
-    headers:{
-        uid:"1000221",  // 用户ID
-    	accessToken:"", // 用户token
-    	client:"F9FQXGP8FCM5",  // 客户端标识
-    	expire:1411527886457  // 失效时间
-    },
-    params:{
-        investRecordId:''  // 投资记录ID
-    }
-}
-
-Response:{
-
-    headers:{
-        uid:"1000221",  // 用户ID
-    	accessToken:"", // 用户token
-    	client:"F9FQXGP8FCM5",  // 客户端标识
-    	expire:1411527886457  // 失效时间
-    },
-    body:{
-        success:true,
-        info:'支付回调成功', 
-        data:{
-        
-        
-        }
-    }
-
-}
-
-
 ### 项目投资支付成功页面信息
 call:http://website/project/project!paySuccess
 
