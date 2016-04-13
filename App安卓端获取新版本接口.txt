@@ -26,4 +26,4 @@ Response:
 userId // 操作人ID
 authorId // 作者ID
 articleId // 文章ID
-operationType // 操作类型：点赞praise，打赏reward，评论comment
+operationType // 操作类型：点赞praise，打赏reward，评论comment, 实名认证realNameAudit，明星投资人申请starInvestorAudit
