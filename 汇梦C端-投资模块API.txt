@@ -305,6 +305,12 @@ Response:{
          GROUP_NAME： #群名称,
          CHAT_GROUP_ID： #环信群ID,
          TYPE： #群类型：1项目群，2股东群
+        },
+        customerServices: {
+         GROUP_ID:'', #项目群ID
+	 USER_ID:'', #客服ID
+ 	 SHOW_NAME:'', #客服名称
+	 USER_TYPE:'' #4代表客服
         }
     }
 
