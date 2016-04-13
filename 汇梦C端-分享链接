@@ -1,11 +1,11 @@
 ## 美食秀场文章分享链接--美食秀场模块接口：getShowArticleDetailInfo的articleShareLocal字段
 ### articleId的值为文章ID
-call: http://192.168.40.241:8280/weixin/com/hmzone/show/showDetail.jsp?articleId=XXX
+call: http://website/weixin/com/hmzone/show/showDetail.jsp?articleId=XXX
 
 ## 项目分享链接--投资模块接口：getProjectDetail的shareLocal字段
 ### projectCode的值为项目编码
-call: http://192.168.40.241:8280/weixin/project/project!detail?source=hm10205&projectCode=XXX
+call: http://website/weixin/project/project!detail?source=hm10205&projectCode=XXX
 
 ## 邀请用户注册--个人中心模块接口：getInvitationalPersonInfo的invitationURL字段
 ### iu的值为邀请人的userId
-call: http://192.168.40.241:8280/weixin/register.html?iu=XXX&appInvitation
+call: http://website/weixin/register.html?iu=XXX&appInvitation
