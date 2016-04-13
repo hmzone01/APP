@@ -79,6 +79,9 @@ Response:{
                 shareRatio:''  // 份额占比
                 totalProfit:''  // 累计收益
                 createTime:'' // 最近一次分红时间
+                groupId:'' // 群ID
+                groupName:'' // 群名称
+                chatGroupId:'' // 环信群ID
             },
             {
                 projectId:''  // 店铺ID
@@ -90,6 +93,9 @@ Response:{
                 shareRatio:''  // 份额占比
                 totalProfit:''  // 累计收益
                 createTime:'' // 最近一次分红时间
+                groupId:'' // 群ID
+                groupName:'' // 群名称
+                chatGroupId:'' // 环信群ID
             },
             {...}
             ]
