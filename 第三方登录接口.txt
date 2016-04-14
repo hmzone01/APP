@@ -1,0 +1,207 @@
+### 1.QQ登录
+####  App向服务器发送用户账号和密码,服务器返回登录成功或者登陆失败，如果是登陆成功，在header中包含token信息。
+url: http://website/user/thirdparty/qqLogin
+method: post
+Request:    
+* with headers{
+	client:"F9FQXGP8FCM5",#客户端标识	
+}
+* with parameters{
+    	openid:'', #腾讯服务器返回的openid
+		token:'', #腾讯服务器返回的accessToken
+		nickname:'', #QQ昵称
+		avatar:'' #QQ头像
+}
+Response: #只有在success为true，同时没有noPhoneNumber时才有响应头
+*headers{
+    	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+*data{
+  	"success": true,#是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “登录成功”,#提示信息
+	"type": '', #类型，在绑定手机号码和关联汇梦账户时需要传给服务器	
+  	"noPhoneNumber": true   #对应的账户中没有手机号码
+}
+
+
+
+### 2.微信登录
+####  App向服务器发送用户账号和密码,服务器返回登录成功或者登陆失败，如果是登陆成功，在header中包含token信息。
+url: http://website/user/thirdparty/wxLogin
+method: post
+Request:    
+* with headers{
+	client:"F9FQXGP8FCM5",#客户端标识	
+}
+* with parameters{
+    	openid:'', #腾讯服务器返回的openid
+		token:'', #腾讯服务器返回的accessToken
+		unionid:'', #腾讯服务器返回的
+		nickname:'', #微信昵称
+		avatar:'' #微信头像
+}
+Response: #只有在success为true，同时没有noPhoneNumber时才有响应头
+*headers{
+    	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+*data{
+  	"success": true,#是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “登录成功”,#提示信息
+	"type": '', #类型，在绑定手机号码和关联汇梦账户时需要传给服务器
+  	"noPhoneNumber": true   #对应的账户中没有手机号码
+}
+
+
+
+### 3.发送短信验证码
+####   App向服务器发送有效的手机号码，服务器发送短信到对应手机上，并返回成功或者失败.
+url: http://website/user/user!sendRegisterCode
+method: post
+Request:
+* with headers{
+    	client:"F9FQXGP8FCM5",#客户端标识
+}
+* with parameters{
+	“userExtendVO.phoneNumber”:” 13512345678”#用户要重置密码的手机号
+}
+Response:{
+  	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “验证码已发送到手机”,#提示信息
+}
+
+
+
+### 4.绑定手机号码
+url: http://website/user/thirdparty!phoneLogin
+method: post
+Request:    
+* with headers{
+	client:"F9FQXGP8FCM5",#客户端标识	
+}
+* with parameters{
+    	openid:'', #腾讯服务器返回的openid
+		token:'', #腾讯服务器返回的accessToken
+		unionid:'', #腾讯服务器返回的
+		nickname:'', #昵称
+		avatar:'', #头像
+		phoneNumber：'', #手机号码
+		securityCode: '', #验证码
+}
+Response: #只有在success为true时才有响应头
+*headers{
+    	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+*data{
+  	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “获取用户信息成功”,#提示信息
+  	"data": {
+		“userVO”: {
+	  		“userId”:112322, #用户ID
+			“sex”:”1”, #性别 0男 1女
+			“age”:”28”,#年龄
+			“phoneNumber”:”1362222222”,#电话号码
+			“country”:”001”,#国家
+			“province”:”44”,#省份
+			“city”:”4103”,#城市
+			“district”:”440304”,#区县
+			“street”:” 福华一路10001号”,#街道
+			“company”:”汇梦互联网有限公司”,#所在公司
+			“occupation”:” 互联网/电子商务”,#行业
+			“role”:” 高级软件工程师”,#职务
+			“degrees”:” 本科”,#学历
+			“school”:” 深圳大学”,#毕业院校
+			“nickName”:” 彪彪小王子”, #昵称
+	   		“userPhoto”:” http://website/upload/images/userPhoto/10176_avatar.jpg”, #用户头像
+			“signature”:”这里是个性签名”#个性签名
+			
+			
+			realName:''  // 用户真实姓名
+			address:''   // 用户默认地址
+			nameVerification:''  // 是否实名认证(1 是，0 否, 2审核中 , 3未通过)
+			userIdFileA:''  // 身份证正面文件路径
+			userIdFileB:''  // 身份证反面文件路径
+			userIdFileC:''  // 手持身份证文件路径
+			status:''  // 明星投资人审核状态：0 默认， 1 通过， 2 审核中 ，3 不通过
+			verifiedInfo:'' // 明星投资人认证信息
+			verifiedAttachment:''  // 明星投资人认证附件图片地址
+			conditions:''  // 明星投资人认证条件
+			
+			starFlag:''  // 是否明星投资人
+		} 
+  	}
+}
+
+
+
+
+### 5.关联汇梦账户
+url: http://website/user/thirdparty!association
+method: post
+Request:    
+* with headers{
+	client:"F9FQXGP8FCM5",#客户端标识	
+}
+* with parameters{
+    	openid:'', #腾讯服务器返回的openid
+		token:'', #腾讯服务器返回的accessToken
+		unionid:'', #腾讯服务器返回的
+		nickname:'', #昵称
+		avatar:'', #头像
+		phoneNumber：'', #手机号码
+		password: '', #密码
+}
+Response: #只有在success为true时才有响应头
+*headers{
+    	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+*data{
+  	"success": true, #是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “获取用户信息成功”,#提示信息
+  	"data": {
+		“userVO”: {
+	  		“userId”:112322, #用户ID
+			“sex”:”1”, #性别 0男 1女
+			“age”:”28”,#年龄
+			“phoneNumber”:”1362222222”,#电话号码
+			“country”:”001”,#国家
+			“province”:”44”,#省份
+			“city”:”4103”,#城市
+			“district”:”440304”,#区县
+			“street”:” 福华一路10001号”,#街道
+			“company”:”汇梦互联网有限公司”,#所在公司
+			“occupation”:” 互联网/电子商务”,#行业
+			“role”:” 高级软件工程师”,#职务
+			“degrees”:” 本科”,#学历
+			“school”:” 深圳大学”,#毕业院校
+			“nickName”:” 彪彪小王子”, #昵称
+	   		“userPhoto”:” http://website/upload/images/userPhoto/10176_avatar.jpg”, #用户头像
+			“signature”:”这里是个性签名”#个性签名
+			
+			
+			realName:''  // 用户真实姓名
+			address:''   // 用户默认地址
+			nameVerification:''  // 是否实名认证(1 是，0 否, 2审核中 , 3未通过)
+			userIdFileA:''  // 身份证正面文件路径
+			userIdFileB:''  // 身份证反面文件路径
+			userIdFileC:''  // 手持身份证文件路径
+			status:''  // 明星投资人审核状态：0 默认， 1 通过， 2 审核中 ，3 不通过
+			verifiedInfo:'' // 明星投资人认证信息
+			verifiedAttachment:''  // 明星投资人认证附件图片地址
+			conditions:''  // 明星投资人认证条件
+			
+			starFlag:''  // 是否明星投资人
+		} 
+  	}
+}
