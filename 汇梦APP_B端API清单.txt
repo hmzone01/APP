@@ -433,6 +433,7 @@ Request:{
         userIdFileA:''  // 身份证正面文件流
         userIdFileB:''  // 身份证反面文件流
         userIdFileC:''  // 手持身份证文件流
+        validateCode:'' // 验证码
     }
 }
 
