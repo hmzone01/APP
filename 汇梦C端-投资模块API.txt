@@ -1280,7 +1280,7 @@ Response:{
 
 }
 
-### 项目投资银行卡支付：获取支付参数
+### 项目投资银行卡支付
 call:http://website/invest/invest!pay
 
 method:post
