@@ -1365,7 +1365,7 @@ Request:{
     },
     params:{
     	identity:'' //投资人身份 1普通投资人，2明星投资人
-	addressId:''  // 项目地址ID
+	addressId:''  // 合同地址ID
 	investRecordId:'' //投资记录ID
 	copyNum:'' //认购份数
 	investAmount:'' //认购金额
