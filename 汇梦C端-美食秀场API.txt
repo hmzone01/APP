@@ -14,7 +14,7 @@ Request:{
     params:{
         type:''  // 查询条件，0-推荐列表，1-最新列表，2-关注列表
 		lastQueryTime:''  // yyyy-MM-dd HH:mm:ss 上次刷新成功的时间，不传则表示第一次刷新，从最开始获取
-        pageNo:'',     // 查询的页码(默认为0)
+        pageNo:'',     // 查询的页码(默认为1)
         pageSize:''    // 每页显示条数(默认为10)
     }
 }
@@ -84,7 +84,7 @@ Request:{
     },
     params:{
         articleId:'',  // 文章ID
-        pageNo:'',     // 查询的页码(默认为0)
+        pageNo:'',     // 查询的页码(默认为1)
         pageSize:''    // 每页显示条数(默认为10)
     }
 }
@@ -156,7 +156,7 @@ Request:{
     },
     params:{
         articleId:'',  // 文章ID
-        pageNo:'',     // 查询的页码(默认为0)
+        pageNo:'',     // 查询的页码(默认为1)
         pageSize:''    // 每页显示条数(默认为10)
     }
 }
@@ -206,7 +206,7 @@ Request:{
     },
     params:{
         articleId:'',  // 文章ID
-        pageNo:'',     // 查询的页码(默认为0)
+        pageNo:'',     // 查询的页码(默认为1)
         pageSize:''    // 每页显示条数(默认为10)
     }
 }
@@ -779,7 +779,7 @@ Request:{
     params:{
 		authorId:''  // 查看他人主页时传他人的UserId，查自己的不传
 		lastQueryTime:''  // yyyy-MM-dd HH:mm:ss 上次刷新成功的时间，不传则表示第一次刷新，从最开始获取
-        pageNo:'',     // 查询的页码(默认为0)
+        pageNo:'',     // 查询的页码(默认为1)
         pageSize:''    // 每页显示条数(默认为10)
     }
 }
@@ -974,7 +974,7 @@ Request:{
         expire:1411527886457  // 失效时间
     },
     params:{
-        pageNo:'',     // 查询的页码(默认为0)
+        pageNo:'',     // 查询的页码(默认为1)
         pageSize:''    // 每页显示条数(默认为10)
     }
 }
@@ -1038,7 +1038,7 @@ Request:{
     },
     params:{
     	type:''        // 1代表我收到的打赏，2代表我发出的打赏  
-        pageNo:'',     // 查询的页码(默认为0)
+        pageNo:'',     // 查询的页码(默认为1)
         pageSize:''    // 每页显示条数(默认为10)
     }
 }

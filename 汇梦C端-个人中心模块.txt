@@ -1771,5 +1771,50 @@ Response:{
 
 }
 
+### 获取交易记录
+call:http://website/usercenter/myaccount!getAccountRechargeCashDetail
+
+method:post
+
+Request:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    params:{
+
+	}
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+        accessToken:"", // 用户token
+        client:"F9FQXGP8FCM5",  // 客户端标识
+        expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'删除通知成功', 
+        data:{
+		[
+		{
+			userId:''  // 用户id
+			type:''    // 操作类型，1-充值，2-提现
+			bankName:''  // 银行名称
+			bankCard:''  // 银行卡号
+			amount:''  // 交易金额
+			status:''  // 交易状态：type=1时：10-新建，20-审核中，30-审核通过，40-审核不通过； type=2时：1：申请中 2：处理中 3：处理完成 4：审核失败
+		},
+		{..}
+		]
+        }
+    }
+
+}
 
 
