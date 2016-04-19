@@ -92,6 +92,7 @@ Request:
 		avatar:'', #头像
 		phoneNumber：'', #手机号码
 		securityCode: '', #验证码
+		type:'', #1为qq登录，2为新浪微博登录，3为微信登录
 }
 Response: #只有在success为true时才有响应头
 *headers{
