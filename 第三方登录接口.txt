@@ -30,7 +30,7 @@ Response: #只有在success为true，同时没有noPhoneNumber时才有响应头
 
 ### 2.微信登录
 ####  App向服务器发送用户账号和密码,服务器返回登录成功或者登陆失败，如果是登陆成功，在header中包含token信息。
-url: http://website/user/thirdparty/wxLogin
+url: http://website/user/thirdparty!wxLogin
 method: post
 Request:    
 * with headers{
