@@ -1817,4 +1817,47 @@ Response:{
 
 }
 
+/*
+账户充值：http://.../hmzoneapp/usercenter/myaccount!rechargeData
+headers{
+    	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+params: {
+			"rechargeRecord.amount" : '', #充值金额
+			"rechargeRecord.payTypeCode" : '',  #支付类型，例如：LIANLIAN_PAY
+			"rechargeRecord.bankcard":'', #银行卡号
+			"rechargeRecord.userBankcardId":'' #银行卡ID
+}
+data{
+  	"success": true,#是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “”,#提示信息
+	"rechargeInfo"：'', #内容
+	"sign": '' #前面
+}
+
+*/
+
+
+/*
+账户充值：http://.../hmzoneapp/usercenter/myaccount!withdraw
+headers{
+    	uid:"1000221",#用户ID
+    	accessToken:"",#用户token
+    	client:"F9FQXGP8FCM5",#客户端标识
+    	expire:1411527886457#失效时间
+}
+params: {
+			"recordVO.bankLine" : '', #由银行名称和银行卡号拼接而成，例如：中国工商银行_6222022********3888
+			"recordVO.applicantAmount" : '',  #提现金额
+			"recordVO.freeCharge":'' #是否面手续费（每月仅限一次）
+}
+data{
+  	"success": true,#是否成功，true为成功，false为失败。如果为false,“info”表示失败原因。
+  	"info": “”,#提示信息
+}
+
+*/
 
