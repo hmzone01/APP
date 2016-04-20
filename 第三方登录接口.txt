@@ -1,6 +1,6 @@
 ### 1.QQ登录
 ####  App向服务器发送用户账号和密码,服务器返回登录成功或者登陆失败，如果是登陆成功，在header中包含token信息。
-url: http://website/user/thirdparty/qqLogin
+url: http://website/user/thirdparty!qqLogin
 method: post
 Request:    
 * with headers{
