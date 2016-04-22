@@ -1827,7 +1827,7 @@ headers{
 }
 params: {
 			"rechargeRecord.amount" : '', #充值金额
-			"rechargeRecord.payTypeCode" : '',  #支付类型，例如：LIANLIAN_PAY
+			"rechargeRecord.payTypeCode" : '',  #支付类型，例如：LIANLIAN_SDK_PAY
 			"rechargeRecord.bankcard":'', #银行卡号
 			"rechargeRecord.userBankcardId":'' #银行卡ID
 }
