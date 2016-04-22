@@ -1,5 +1,5 @@
 /**
- * »ñÈ¡bannerĞèÒªÏÔÊ¾µÄÄÚÈİ
+ * è·å–banneréœ€è¦æ˜¾ç¤ºçš„å†…å®¹
  */
 call:http://website/index/home!banner
 Request:{
@@ -9,15 +9,15 @@ Request:{
 Response:{
     body:{
         success:true,
-        info:'»ñÈ¡Ê×Ò³banner³É¹¦', 
+        info:'è·å–é¦–é¡µbanneræˆåŠŸ', 
         data:[
             {
-                advertId:'', //¹ã¸æID
-                wechatPic:'' //Í¼Æ¬Â·¾¶£¨¾ø¶ÔÂ·¾¶£©
+                advertId:'', //å¹¿å‘ŠID
+                wechatPic:'' //å›¾ç‰‡è·¯å¾„ï¼ˆç»å¯¹è·¯å¾„ï¼‰
             },
 			{
-                advertId:'', //¹ã¸æID
-                wechatPic:'' //Í¼Æ¬Â·¾¶£¨¾ø¶ÔÂ·¾¶£©
+                advertId:'', //å¹¿å‘ŠID
+                wechatPic:'' //å›¾ç‰‡è·¯å¾„ï¼ˆç»å¯¹è·¯å¾„ï¼‰
             },
 			{...}
         ]
@@ -26,7 +26,7 @@ Response:{
 
 
 /**
- * Ê×Ò³Ğã³¡¾«Ñ¡
+ * é¦–é¡µç§€åœºç²¾é€‰
  */
 call:http://website/index/home!showArticle
 Request:{
@@ -36,41 +36,41 @@ Request:{
 Response:{
     body:{
         success:true,
-        info:'»ñÈ¡Ê×Ò³Ğã³¡¾«Ñ¡³É¹¦', 
+        info:'è·å–é¦–é¡µç§€åœºç²¾é€‰æˆåŠŸ', 
         data:[
 		{
-			articleId:''  // Ğã³¡ÎÄÕÂID
-			nikeName:''   // êÇ³Æ
-			authorId:''  // ×÷ÕßID
-			userPhoto:''  // ÓÃ»§Í·Ïñ
-			title:''  // ÎÄÕÂ±êÌâ
-			titlePage:''  // ·âÃæÍ¼Æ¬
-			titleDesc:''  // ·âÃæËµÃ÷
-			type:''  // ÎÄÕÂÀàĞÍ£º1¡¢Í¼ÎÄ£»2¡¢ÊÓÆµ
-			createTime:''  // ·¢±íÊ±¼ä
-			praiseCount:''  // µãÔŞ×Ü´ÎÊı
-			commentCount:''  // ÆÀÂÛ×Ü´ÎÊı
-			rewardCount:''  // ´òÉÍ×Ü´ÎÊı
-			userCircleFlag:''  // ÊÇ·ñÒÑ¹Ø×¢±êÊ¶£¬0´ú±íÎ´¹Ø×¢£¬1´ú±íÒÑ¹Ø×¢
-			articleCollectionFlag:''  //  ÊÇ·ñÊÕ²Ø±êÊ¶£¬0´ú±íÎ´ÊÕ²Ø£¬1´ú±íÒÑÊÕ²Ø
-			articlePraiseFlag:''  // ÊÇ·ñÊÕ²ØÒÑµãÔŞ£¬0´ú±íÎ´µãÔŞ£¬1´ú±íÒÑµãÔŞ
+			articleId:''  // ç§€åœºæ–‡ç« ID
+			nikeName:''   // æ˜µç§°
+			authorId:''  // ä½œè€…ID
+			userPhoto:''  // ç”¨æˆ·å¤´åƒ
+			title:''  // æ–‡ç« æ ‡é¢˜
+			titlePage:''  // å°é¢å›¾ç‰‡
+			titleDesc:''  // å°é¢è¯´æ˜
+			type:''  // æ–‡ç« ç±»å‹ï¼š1ã€å›¾æ–‡ï¼›2ã€è§†é¢‘
+			createTime:''  // å‘è¡¨æ—¶é—´
+			praiseCount:''  // ç‚¹èµæ€»æ¬¡æ•°
+			commentCount:''  // è¯„è®ºæ€»æ¬¡æ•°
+			rewardCount:''  // æ‰“èµæ€»æ¬¡æ•°
+			userCircleFlag:''  // æ˜¯å¦å·²å…³æ³¨æ ‡è¯†ï¼Œ0ä»£è¡¨æœªå…³æ³¨ï¼Œ1ä»£è¡¨å·²å…³æ³¨
+			articleCollectionFlag:''  //  æ˜¯å¦æ”¶è—æ ‡è¯†ï¼Œ0ä»£è¡¨æœªæ”¶è—ï¼Œ1ä»£è¡¨å·²æ”¶è—
+			articlePraiseFlag:''  // æ˜¯å¦æ”¶è—å·²ç‚¹èµï¼Œ0ä»£è¡¨æœªç‚¹èµï¼Œ1ä»£è¡¨å·²ç‚¹èµ
 		},
 		{
-			articleId:''  // Ğã³¡ÎÄÕÂID
-			nikeName:''   // êÇ³Æ
-			authorId:''  // ×÷ÕßID
-			userPhoto:''  // ÓÃ»§Í·Ïñ
-			title:''  // ÎÄÕÂ±êÌâ
-			titlePage:''  // ·âÃæÍ¼Æ¬
-			titleDesc:''  // ·âÃæËµÃ÷
-			type:''  // ÎÄÕÂÀàĞÍ£º1¡¢Í¼ÎÄ£»2¡¢ÊÓÆµ
-			createTime:''  // ·¢±íÊ±¼ä
-			praiseCount:''  // µãÔŞ×Ü´ÎÊı
-			commentCount:''  // ÆÀÂÛ×Ü´ÎÊı
-			rewardCount:''  // ´òÉÍ×Ü´ÎÊı
-			userCircleFlag:''  // ÊÇ·ñÒÑ¹Ø×¢±êÊ¶£¬0´ú±íÎ´¹Ø×¢£¬1´ú±íÒÑ¹Ø×¢
-			articleCollectionFlag:''  //  ÊÇ·ñÊÕ²Ø±êÊ¶£¬0´ú±íÎ´ÊÕ²Ø£¬1´ú±íÒÑÊÕ²Ø
-			articlePraiseFlag:''  // ÊÇ·ñÊÕ²ØÒÑµãÔŞ£¬0´ú±íÎ´µãÔŞ£¬1´ú±íÒÑµãÔŞ
+			articleId:''  // ç§€åœºæ–‡ç« ID
+			nikeName:''   // æ˜µç§°
+			authorId:''  // ä½œè€…ID
+			userPhoto:''  // ç”¨æˆ·å¤´åƒ
+			title:''  // æ–‡ç« æ ‡é¢˜
+			titlePage:''  // å°é¢å›¾ç‰‡
+			titleDesc:''  // å°é¢è¯´æ˜
+			type:''  // æ–‡ç« ç±»å‹ï¼š1ã€å›¾æ–‡ï¼›2ã€è§†é¢‘
+			createTime:''  // å‘è¡¨æ—¶é—´
+			praiseCount:''  // ç‚¹èµæ€»æ¬¡æ•°
+			commentCount:''  // è¯„è®ºæ€»æ¬¡æ•°
+			rewardCount:''  // æ‰“èµæ€»æ¬¡æ•°
+			userCircleFlag:''  // æ˜¯å¦å·²å…³æ³¨æ ‡è¯†ï¼Œ0ä»£è¡¨æœªå…³æ³¨ï¼Œ1ä»£è¡¨å·²å…³æ³¨
+			articleCollectionFlag:''  //  æ˜¯å¦æ”¶è—æ ‡è¯†ï¼Œ0ä»£è¡¨æœªæ”¶è—ï¼Œ1ä»£è¡¨å·²æ”¶è—
+			articlePraiseFlag:''  // æ˜¯å¦æ”¶è—å·²ç‚¹èµï¼Œ0ä»£è¡¨æœªç‚¹èµï¼Œ1ä»£è¡¨å·²ç‚¹èµ
 		},
 		{...}
 		]
@@ -78,11 +78,11 @@ Response:{
 }
 
 /**
- * Ê×Ò³Ïû·Ñ¾«Ñ¡couponRecommendProject
+ * é¦–é¡µæ¶ˆè´¹ç²¾é€‰couponRecommendProject
  * @return
  */
 call:http://website/index/home!shopVoucherList
-ÇëÇó²ÎÊı£ºpageNo,pageSize
+è¯·æ±‚å‚æ•°ï¼špageNo,pageSize
 Request:{
     params:{
     }
@@ -90,29 +90,29 @@ Request:{
 Response:{
     body:{
         success:true,
-        info:'»ñÈ¡Ê×Ò³Ïû·ÑÈ¯¾«Ñ¡³É¹¦', 
+        info:'è·å–é¦–é¡µæ¶ˆè´¹åˆ¸ç²¾é€‰æˆåŠŸ', 
         data:[
             {
-                projectId:'',  // µêÆÌID
-                projectName:'', // µêÆÌÃû³Æ
-                minDiscount:'', // ×îµÍÕÛ¿Û
-                minSaleRate:'' // ´ÙÏúÕÛ¿Û£¨ÈçminDiscountÎª¿ÕÈ¡´ËÖµ£©
-                projectLogo:'', // µêÆÌlogoÍ¼Æ¬
-                addressDetail:'', // µêÆÌµØÖ·
-                projectTypeFirst:'' , // µÚÒ»¸ö±êÇ©
-                projectTypeSecond:'', // µÚ¶ş¸ö±êÇ©
-                projectTypeThird:''  // µÚÈı¸ö±êÇ©
+                projectId:'',  // åº—é“ºID
+                projectName:'', // åº—é“ºåç§°
+                minDiscount:'', // æœ€ä½æŠ˜æ‰£
+                minSaleRate:'' // ä¿ƒé”€æŠ˜æ‰£ï¼ˆå¦‚minDiscountä¸ºç©ºå–æ­¤å€¼ï¼‰
+                projectLogo:'', // åº—é“ºlogoå›¾ç‰‡
+                addressDetail:'', // åº—é“ºåœ°å€
+                projectTypeFirst:'' , // ç¬¬ä¸€ä¸ªæ ‡ç­¾
+                projectTypeSecond:'', // ç¬¬äºŒä¸ªæ ‡ç­¾
+                projectTypeThird:''  // ç¬¬ä¸‰ä¸ªæ ‡ç­¾
             },
             {
-                projectId:'',  // µêÆÌID
-                projectName:'', // µêÆÌÃû³Æ
-                minDiscount:'', // ×îµÍÕÛ¿Û
-                minSaleRate:'' // ´ÙÏúÕÛ¿Û£¨ÈçminDiscountÎª¿ÕÈ¡´ËÖµ£©
-                projectLogo:'', // µêÆÌlogoÍ¼Æ¬
-                addressDetail:'', // µêÆÌµØÖ·
-                projectTypeFirst:'' , // µÚÒ»¸ö±êÇ©
-                projectTypeSecond:'', // µÚ¶ş¸ö±êÇ©
-                projectTypeThird:''  // µÚÈı¸ö±êÇ©
+                projectId:'',  // åº—é“ºID
+                projectName:'', // åº—é“ºåç§°
+                minDiscount:'', // æœ€ä½æŠ˜æ‰£
+                minSaleRate:'' // ä¿ƒé”€æŠ˜æ‰£ï¼ˆå¦‚minDiscountä¸ºç©ºå–æ­¤å€¼ï¼‰
+                projectLogo:'', // åº—é“ºlogoå›¾ç‰‡
+                addressDetail:'', // åº—é“ºåœ°å€
+                projectTypeFirst:'' , // ç¬¬ä¸€ä¸ªæ ‡ç­¾
+                projectTypeSecond:'', // ç¬¬äºŒä¸ªæ ‡ç­¾
+                projectTypeThird:''  // ç¬¬ä¸‰ä¸ªæ ‡ç­¾
             },
             {
                 ...
@@ -122,7 +122,7 @@ Response:{
 }
 
 /**
- * Ê×Ò³Í¶×Ê¾«Ñ¡
+ * é¦–é¡µæŠ•èµ„ç²¾é€‰
  * @return
  */
 call:http://website/index/home!projectList
@@ -133,84 +133,109 @@ Request:{
 Response:{
     body:{
         success:true,
-        info:'»ñÈ¡Ê×Ò³Ïû·ÑÈ¯¾«Ñ¡³É¹¦', 
+        info:'è·å–é¦–é¡µæ¶ˆè´¹åˆ¸ç²¾é€‰æˆåŠŸ', 
         data:[
             {
-            	projectId:'',  // ÏîÄ¿ID
-                projectStoreId:'',  // ÏîÄ¿¿âID
-                projectCode:'', // ÏîÄ¿±àºÅ
-                projectName:'',  // ÏîÄ¿Ãû³Æ
-                projectPhoto:'',  // ÏîÄ¿Ê×Ò³Í¼Æ¬
-                projectLogo:'',  // ÏîÄ¿LogoÍ¼Æ¬
-                hotPhoto:'',  // ÏîÄ¿ÁĞ±íÒ³ÍÆ¼öÍ¼Æ¬
-                detailLogo:'',  // Ã÷Ï¸´óÍ¼
-                detailPhoto:'',  // Ã÷Ï¸µÚÒ»ÕÅÍ¼
-                projectTypeFirst:'',  // Ò»¼¶·ÖÀà
-                projectTypeSecond:'',  // ÏîÄ¿¶ş¼¶·ÖÀà
-                projectTypeThird:'',  // ÏîÄ¿Èı¼¶·ÖÀà
-                loanAmount:'',  // ÈÚ×Ê½ğ¶î
-                minLoanAmount:'',  // ×îĞ¡ÈÚ×Ê½ğ¶î
-                projectAmount:'',  // ÏîÄ¿×Ü¶î
-                investSponsor:'',  // ÏîÄ¿·¢ÆğÈËÍ¶×Ê¶î
-                investLead:'',  // ÁìÍ¶ÈËÍ¶×Ê¶î
-                investOneCopy:'',  // µ¥·İÍ¶×Ê¶î
-                copyNum:'',  // ÈÚ×Ê·İÊı
-                loanScale:'',  // ÈÚ×ÊÕ¼¹É±ÈÀı
-                minCopy:'',  // ×îĞ¡ÈÏ¹º·İÊı
-                maxCopy:'',  // ×î´óÈÏ¹º·İÊı
-                projectSponsor:'',  // ÏîÄ¿·¢ÆğÈË
-                projectProfile:'',  // ÏîÄ¿¼ò½é
-                hotFlag:'',  // ÊÇ·ñÈÈÃÅÏîÄ¿
-                status:'',  // ÏîÄ¿×´Ì¬
-                loanComplete:'',  // ÒÑÈÚ×Ê½ğ¶î
-                investCopyComplete:'',  // ÒÑÈÏ¹º·İÊı
-                completeScale:'',  // ÒÑÈÚ×Ê±ÈÀı
-                publishTime:'',  // ÏîÄ¿·¢²¼Ê±¼ä
-                startTime:'',  // ¿ª±êÊ±¼ä
-                endTime:'',  // ÈÚ×Ê½ØÖ¹Ê±¼ä
-                fullTime:'',  // Âú¶îÊ±¼ä
-                ratedLevel:'',  //ÏîÄ¿ÆÀ¼¶(ĞÇ¼¶)
-                praiseCount:'',  // ¹Ø×¢Êı
-                commentCount:'',  // ÆÀÂÛÊı
-                addressProvince:'',  // ÏîÄ¿µØµã-Ê¡
-                addressCity:'',  // ÏîÄ¿µØµã-ÊĞ
-                addressDetail:'',  // ÏîÄ¿µØµã-ÏêÏ¸µØÖ·
-                modifierId:'',  // ×îºóĞŞ¸ÄÈË
-                modifyTime:'',  // ×îºóĞŞ¸ÄÊ±¼ä
-                starPurchasesStartTime:'',  // Ã÷ĞÇÍ¶×ÊÈË¹ºÂò¿ªÊ¼Ê±¼ä
-                starMinCopy:'',  // Ã÷ĞÇÍ¶×ÊÈË×îĞ¡Í¶×Ê·İ¶î
-                starMaxCopy:'',  // Ã÷ĞÇÍ¶×ÊÈË×î´óÍ¶×Ê·İ¶î
-                isDeleted:'',  // ÊÇ·ñÉ¾³ı
-                remainingDay:'',  // Ê£ÓàÊ±¼ä - Ìì
-                remainingMin:'',  // Ê£ÓàÊ±¼ä - ·ÖÖÓ
-                version:'',  // °æ±¾
-                intCompleteScale:'',  // Íê³É±ÈÀı ÕûÊı°æ
-                remainingAmount:'',  // Ê£ÓàÎ´Íê³ÉÈÚ×Ê½ğ¶î
-                investerCount:'',  // Í¶×ÊÊı
-                private ProjectVO next:'',  // ÏÂÒ»¸ö
-                private ProjectVO previous:'',  // ÉÏÒ»¸ö
-                timeLeftStart:'', // ¾àÀë¿ª±êÊ±¼ä
-                yieldLow:'',  // ÊÕÒæÔ¤ÆÚ -- µÍ
-                yieldMedium:'',  // ÊÕÒæÔ¤ÆÚ -- ÖĞ
-                yieldHigh:'',  // ÊÕÒæÔ¤ÆÚ -- ¸ß
-                payBackLow:'',  // »Ø±¾ÖÜÆÚ--µØ
-                payBackMedium:'',  // »Ø±¾ÖÜÆÚ--ÖĞ
-                payBackHigh:'',  // »Ø±¾ÖÜÆÚ--¸ß
-                guaranteeSaleFlag:'',  // ÊÇ·ñ°üÏú(0£º·ñ£¬1£ºÊÇ)
-                projectClass:'',  // ÊÇ·ñ°üÏú·ÖÀà(1£ºĞÂÏîÄ¿£¬2£ºÒÑÓĞÏîÄ¿)
-                leadFlag:''   // ÊÇ·ñÁìÍ¶(0:·ñ£¬1:ÊÇ)
+            	projectId:'',  // é¡¹ç›®ID
+                projectStoreId:'',  // é¡¹ç›®åº“ID
+                projectCode:'', // é¡¹ç›®ç¼–å·
+                projectName:'',  // é¡¹ç›®åç§°
+                projectPhoto:'',  // é¡¹ç›®é¦–é¡µå›¾ç‰‡
+                projectLogo:'',  // é¡¹ç›®Logoå›¾ç‰‡
+                hotPhoto:'',  // é¡¹ç›®åˆ—è¡¨é¡µæ¨èå›¾ç‰‡
+                detailLogo:'',  // æ˜ç»†å¤§å›¾
+                detailPhoto:'',  // æ˜ç»†ç¬¬ä¸€å¼ å›¾
+                projectTypeFirst:'',  // ä¸€çº§åˆ†ç±»
+                projectTypeSecond:'',  // é¡¹ç›®äºŒçº§åˆ†ç±»
+                projectTypeThird:'',  // é¡¹ç›®ä¸‰çº§åˆ†ç±»
+                loanAmount:'',  // èèµ„é‡‘é¢
+                minLoanAmount:'',  // æœ€å°èèµ„é‡‘é¢
+                projectAmount:'',  // é¡¹ç›®æ€»é¢
+                investSponsor:'',  // é¡¹ç›®å‘èµ·äººæŠ•èµ„é¢
+                investLead:'',  // é¢†æŠ•äººæŠ•èµ„é¢
+                investOneCopy:'',  // å•ä»½æŠ•èµ„é¢
+                copyNum:'',  // èèµ„ä»½æ•°
+                loanScale:'',  // èèµ„å è‚¡æ¯”ä¾‹
+                minCopy:'',  // æœ€å°è®¤è´­ä»½æ•°
+                maxCopy:'',  // æœ€å¤§è®¤è´­ä»½æ•°
+                projectSponsor:'',  // é¡¹ç›®å‘èµ·äºº
+                projectProfile:'',  // é¡¹ç›®ç®€ä»‹
+                hotFlag:'',  // æ˜¯å¦çƒ­é—¨é¡¹ç›®
+                status:'',  // é¡¹ç›®çŠ¶æ€
+                loanComplete:'',  // å·²èèµ„é‡‘é¢
+                investCopyComplete:'',  // å·²è®¤è´­ä»½æ•°
+                completeScale:'',  // å·²èèµ„æ¯”ä¾‹
+                publishTime:'',  // é¡¹ç›®å‘å¸ƒæ—¶é—´
+                startTime:'',  // å¼€æ ‡æ—¶é—´
+                endTime:'',  // èèµ„æˆªæ­¢æ—¶é—´
+                fullTime:'',  // æ»¡é¢æ—¶é—´
+                ratedLevel:'',  //é¡¹ç›®è¯„çº§(æ˜Ÿçº§)
+                praiseCount:'',  // å…³æ³¨æ•°
+                commentCount:'',  // è¯„è®ºæ•°
+                addressProvince:'',  // é¡¹ç›®åœ°ç‚¹-çœ
+                addressCity:'',  // é¡¹ç›®åœ°ç‚¹-å¸‚
+                addressDetail:'',  // é¡¹ç›®åœ°ç‚¹-è¯¦ç»†åœ°å€
+                modifierId:'',  // æœ€åä¿®æ”¹äºº
+                modifyTime:'',  // æœ€åä¿®æ”¹æ—¶é—´
+                starPurchasesStartTime:'',  // æ˜æ˜ŸæŠ•èµ„äººè´­ä¹°å¼€å§‹æ—¶é—´
+                starMinCopy:'',  // æ˜æ˜ŸæŠ•èµ„äººæœ€å°æŠ•èµ„ä»½é¢
+                starMaxCopy:'',  // æ˜æ˜ŸæŠ•èµ„äººæœ€å¤§æŠ•èµ„ä»½é¢
+                isDeleted:'',  // æ˜¯å¦åˆ é™¤
+                remainingDay:'',  // å‰©ä½™æ—¶é—´ - å¤©
+                remainingMin:'',  // å‰©ä½™æ—¶é—´ - åˆ†é’Ÿ
+                version:'',  // ç‰ˆæœ¬
+                intCompleteScale:'',  // å®Œæˆæ¯”ä¾‹ æ•´æ•°ç‰ˆ
+                remainingAmount:'',  // å‰©ä½™æœªå®Œæˆèèµ„é‡‘é¢
+                investerCount:'',  // æŠ•èµ„æ•°
+                private ProjectVO next:'',  // ä¸‹ä¸€ä¸ª
+                private ProjectVO previous:'',  // ä¸Šä¸€ä¸ª
+                timeLeftStart:'', // è·ç¦»å¼€æ ‡æ—¶é—´
+                yieldLow:'',  // æ”¶ç›Šé¢„æœŸ -- ä½
+                yieldMedium:'',  // æ”¶ç›Šé¢„æœŸ -- ä¸­
+                yieldHigh:'',  // æ”¶ç›Šé¢„æœŸ -- é«˜
+                payBackLow:'',  // å›æœ¬å‘¨æœŸ--åœ°
+                payBackMedium:'',  // å›æœ¬å‘¨æœŸ--ä¸­
+                payBackHigh:'',  // å›æœ¬å‘¨æœŸ--é«˜
+                guaranteeSaleFlag:'',  // æ˜¯å¦åŒ…é”€(0ï¼šå¦ï¼Œ1ï¼šæ˜¯)
+                projectClass:'',  // æ˜¯å¦åŒ…é”€åˆ†ç±»(1ï¼šæ–°é¡¹ç›®ï¼Œ2ï¼šå·²æœ‰é¡¹ç›®)
+                leadFlag:''   // æ˜¯å¦é¢†æŠ•(0:å¦ï¼Œ1:æ˜¯)
             },
             {
-                projectStoreId:'',  // ÏîÄ¿¿âID
-                projectCode:'', // ÏîÄ¿±àºÅ
-                projectName:'',  // ÏîÄ¿Ãû³Æ
+                projectStoreId:'',  // é¡¹ç›®åº“ID
+                projectCode:'', // é¡¹ç›®ç¼–å·
+                projectName:'',  // é¡¹ç›®åç§°
                 ....
             }
 		]
     }
 }
 
-
-
+### è·å–ç³»ç»Ÿå…¬å‘Š
+http://webset/hmzoneapp/index/home!getNewsList
+Request:{
+    params:{
+    	pageNOï¼š""  // é¡µç 
+    	pageSizeï¼š""  // æ¯é¡µæ˜¾ç¤ºæ¡æ•°
+    	lastQueryTimeï¼š""  // ä¸Šä¼ æˆåŠŸæŸ¥è¯¢æ—¶é—´
+    }
+}
+Response:{
+    body:{
+        success:true,
+        info:'è·å–é¦–é¡µæ¶ˆè´¹åˆ¸ç²¾é€‰æˆåŠŸ', 
+        data:[
+            {
+	      "newsId": 49,
+	      "newsPage": "201601/20160119182811.html",  // æ–°é—»å†…å®¹é¡µï¼Œhtmlé¡µç ï¼Œå‰ç¼€http://news.hmzone.com/
+	      "newsTitle": "ä¸€å¤§æ³¢é¡¹ç›®åˆ†çº¢å³å°†æ¥è¢­ï¼",
+	      "sourceAddress": "http:/192.168.40.241:8280/weixin",
+	      "titleImg": "http://192.168.40.241:8380/hmnews/upload/images/newstitleimg/1453256883199.jpg"   // å…¬å‘Šå°é¢
+            },
+            {
+                ...
+            }
+		]
+    }
+}
 
 
