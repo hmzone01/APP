@@ -1,6 +1,6 @@
 --OK-----------------------------------------------------------------------------------------------------------------
 ### 获取店铺列表
-call:http://website/hmvoucher/voucher!getStoreList
+call:http://website/hmzoneapp/hmvoucher/voucher!getStoreList
 
 method:post
 
@@ -60,7 +60,7 @@ Response:{
 }
 
 ### 获取店铺Banner广告
-call:http://website/hmvoucher/voucher!getStoreAdvert
+call:http://website/hmzoneapp/hmvoucher/voucher!getStoreAdvert
 
 method:post
 
@@ -107,7 +107,7 @@ Response:{
 
 --OK-----------------------------------------------------------------------------------------------------------------
 ### 获取某一店铺股东券
-call:http://website/hmvoucher/voucher!getShareholderVoucherList
+call:http://website/hmzoneapp/hmvoucher/voucher!getShareholderVoucherList
 
 method:post
 
@@ -172,7 +172,7 @@ Response:{
 
 --OK-----------------------------------------------------------------------------------------------------------------
 ### 获取某一店铺的店铺团购券
-call:http://website/hmvoucher/voucher!getStoreVoucherList
+call:http://website/hmzoneapp/hmvoucher/voucher!getStoreVoucherList
 
 method:post
 
@@ -232,7 +232,7 @@ Response:{
 
 --OK-----------------------------------------------------------------------------------------------------------------
 ### 店铺信息
-call:http://website/hmvoucher/voucher!getProject
+call:http://website/hmzoneapp/hmvoucher/voucher!getProject
 
 method:post
 
@@ -274,7 +274,7 @@ Response:{
 
 --OK-----------------------------------------------------------------------------------------------------------------
 ### 店铺简介
-call:http://website/hmvoucher/voucher!getProjectIntroduce
+call:http://website/hmzoneapp/hmvoucher/voucher!getProjectIntroduce
 
 method:post
 
@@ -317,7 +317,7 @@ Response:{
 }
 
 ### 店铺股东券列表页：点击购买生成订单
-call:http://website/hmvoucher/voucher!shareholderConfirmOrder
+call:http://website/hmzoneapp/hmvoucher/voucher!shareholderConfirmOrder
 
 method:post
 
@@ -356,7 +356,7 @@ Response:{
 }
 
 ### 加载股东券购买页数据
-call:http://website/hmvoucher/voucher!getShareholderOrder
+call:http://website/hmzoneapp/hmvoucher/voucher!getShareholderOrder
 
 method:post
 
@@ -402,7 +402,7 @@ Response:{
 }
 
 ### 店铺团购券列表页：点击购买生成订单
-call:http://website/hmvoucher/voucher!storeConfirmOrder
+call:http://website/hmzoneapp/hmvoucher/voucher!storeConfirmOrder
 
 method:post
 
@@ -441,7 +441,7 @@ Response:{
 }
 
 ###  加载团购券购买页数据
-call:http://website/hmvoucher/voucher!getStoreOrder
+call:http://website/hmzoneapp/hmvoucher/voucher!getStoreOrder
 
 method:post
 
@@ -485,7 +485,7 @@ Response:{
 }
 
 ### 扫码页信息初始化
-call:http://website/hmvoucher/voucher!scanPayLoad
+call:http://website/hmzoneapp/hmvoucher/voucher!scanPayLoad
 
 method:post
 
@@ -537,7 +537,7 @@ Response:{
 }
 
 ### 获取助力人员信息列表
-call:http://website/share/sharevoucher!getShareSupportList
+call:http://website/hmzoneapp/share/sharevoucher!getShareSupportList
 
 method:post
 
@@ -591,7 +591,7 @@ Response:{
 }
 
 ### 获取助力信息
-call:http://website/share/sharevoucher!getShareSupportInfo
+call:http://website/hmzoneapp/share/sharevoucher!getShareSupportInfo
 
 method:post
 
@@ -630,7 +630,7 @@ Response:{
 }
 
 ### 更新助力状态
-call:http://website/share/sharevoucher!updateShareRecordStatus
+call:http://website/hmzoneapp/share/sharevoucher!updateShareRecordStatus
 
 method:post
 
@@ -665,7 +665,7 @@ Response:{
 
 ### 购买获取参数支付
 #### 此接口会检查消费券是否处于可卖状态，如是进行正常业务处理，如没有返回提示信息
-call:http://website/hmvoucher/voucher!buyVoucher
+call:http://website/hmzoneapp/hmvoucher/voucher!buyVoucher
 
 method:post
 
@@ -707,7 +707,7 @@ Response:{
 
 ### 购买支付：0元免费购买的券，这种订单不走支付逻辑
 #### 此接口会检查消费券是否处于可卖状态，如是进行正常业务处理，如没有返回提示信息
-call:http://website/hmvoucher/voucher!buyVoucherByZero
+call:http://website/hmzoneapp/hmvoucher/voucher!buyVoucherByZero
 
 method:post
 
@@ -743,7 +743,7 @@ Response:{
 
 ### 加载支付成功页信息
 
-call:http://website/hmvoucher/voucher!payCallBack
+call:http://website/hmzoneapp/hmvoucher/voucher!payCallBack
 
 method:post
 
