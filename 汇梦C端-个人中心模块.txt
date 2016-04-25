@@ -1842,7 +1842,7 @@ data{
 
 
 /*
-账户充值：http://.../hmzoneapp/usercenter/myaccount!withdraw
+账户提现：http://.../hmzoneapp/usercenter/myaccount!withdraw
 headers{
     	uid:"1000221",#用户ID
     	accessToken:"",#用户token
@@ -1860,4 +1860,46 @@ data{
 }
 
 */
+
+
+### 检查是否可以免费提现
+http://.../hmzoneapp/usercenter/myaccount!getWithdrawFreeFlag
+Request:{
+	headers{
+			uid:"1000221",#用户ID
+			accessToken:"",#用户token
+			client:"F9FQXGP8FCM5",#客户端标识
+			expire:1411527886457#失效时间
+	}
+	params: {
+	}
+}
+
+Response:{
+	data{
+		"success": true,#是否成功，true为成功，false为失败
+		"info": "",#提示信息
+		"data":{
+			freeFlag:''  // 为0代表免费，否则代表需要手续费
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
