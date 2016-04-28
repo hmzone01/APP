@@ -307,8 +307,14 @@ Response:{
          TYPE： #群类型：1项目群，2股东群
         },
         customerServices: {
-	 USER_ID:'', #客服ID
- 	 NICKNAME:'' #客服昵称
+	  {
+	      "USER_ID": 10769,
+	      "NICKNAME": "啊啊啊啊啊"
+	    },
+	    {
+	      "USER_ID": 10772,
+	      "NICKNAME": "aaaaaaaa"
+	    }
         }
     }
 
