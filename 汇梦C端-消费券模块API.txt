@@ -779,3 +779,53 @@ Response:{
     }
 
 }
+
+
+###  通过交易记录ID获取消费券信息（消费券购买成功页面）
+
+call:http://website/hmzoneapp/hmvoucher/voucher!getExpenseVoucherByTransferId
+
+method:post
+
+Request:{
+    
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    params:{
+        expenseTransferId:''  // 消费券交易记录ID，下单支付接口返回的内容
+    }
+}
+
+Response:{
+
+    headers:{
+        uid:"1000221",  // 用户ID
+    	accessToken:"", // 用户token
+    	client:"F9FQXGP8FCM5",  // 客户端标识
+    	expire:1411527886457  // 失效时间
+    },
+    body:{
+        success:true,
+        info:'加载完成', 
+        data:{
+          amount:'',  //消费券金额
+          createTime:'',  //创建时间
+		  availableTime：''  // 消费券有效期
+		  code：''  // 消费券编码
+          projectId：'', 项目ID
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
