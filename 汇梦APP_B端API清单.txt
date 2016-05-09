@@ -97,7 +97,7 @@ Response:
 		            userIdFileA:''  // 身份证正面文件路径
 		            userIdFileB:''  // 身份证反面文件路径
 		            userIdFileC:''  // 手持身份证文件路径
-		            status:''  // 明星投资人审核状态：-1：未申请，0 审核中， 1 通过， 2 审核中 ，3 不通过
+		            status:''  // 明星投资人审核状态：-1：未申请，0 审核中， 1 通过， 2 不通过
 		            verifiedInfo:'' // 明星投资人认证信息
 		            verifiedAttachment:''  // 明星投资人认证附件图片地址
 		            conditions:''  // 明星投资人认证条件
