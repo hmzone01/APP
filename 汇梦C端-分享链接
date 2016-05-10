@@ -7,5 +7,5 @@ call: http://website/weixin/com/hmzone/show/showDetail.jsp?articleId=XXX
 call: http://website/weixin/project/project!detail?source=hm10205&projectCode=XXX
 
 ## 邀请用户注册--个人中心模块接口：getInvitationalPersonInfo的invitationURL字段
-### iu的值为邀请人的userId
-call: http://website/weixin/register.html?iu=XXX&appInvitation
+### is的值为邀请人的userId
+call: http://website/weixin/register.html?is=XXX&appInvitation
